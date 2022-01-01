@@ -1,0 +1,46 @@
+@import '../../styles/shared.scss';
+
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: $color-modal-backdrop;
+  position: fixed;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: $transitionModal;
+  opacity: 0;
+  z-index: 100;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.modalContent {
+  position: relative;
+  transform: scale(0.1);
+  max-height: 600px;
+  max-width: 600px;
+  overflow-y: auto;
+  padding: 40px;
+  background-color: $main-text-color;
+  border-radius: 4px;
+  transition: $transitionModal;
+
+  &.active {
+    transform: scale(1);
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+}

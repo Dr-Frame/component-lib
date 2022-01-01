@@ -1,0 +1,232 @@
+@import '../../styles/shared.scss';
+
+.button {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: transparent;
+  background-position: center;
+  transition: 0.3s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.isFlex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.small {
+  width: 100px;
+}
+
+.medium {
+  width: 150px;
+  padding: 10px 15px;
+}
+
+.large {
+  width: 200px;
+  padding: 10px 20px;
+}
+
+.default {
+  width: 100%;
+}
+
+.outlined {
+  /*   &.black {
+    background-color: #000;
+    border: 2px solid grey;
+    color: $main-text-color;
+    &:hover {
+      background-color: rgb(67, 67, 67);
+      color: $main-text-color;
+    }
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter(rgb(67, 67, 67));
+    }
+  }
+
+  &.orange {
+    background-color: orange;
+    border: 2px solid rgb(143, 93, 0);
+    color: $main-text-color;
+    &:hover {
+      background-color: rgb(245, 187, 80);
+      color: $main-text-color;
+    }
+    &:disabled {
+      cursor: default;
+    }
+
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter(rgb(245, 187, 80));
+    }
+  } */
+
+  &.mainLight {
+    border: 2px solid $color-medium-mainTheme;
+    background-color: $color-light-mainTheme;
+    color: $main-text-color;
+    &:hover {
+      background-color: $color-medium-mainTheme;
+    }
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter($color-main-mainTheme);
+    }
+  }
+  &.mainDark {
+    border: 2px solid $color-darkest-mainTheme;
+    background-color: $color-medium-mainTheme;
+    color: $main-text-color;
+    &:hover {
+      background-color: $color-darkest-mainTheme;
+    }
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter($color-darkest-mainTheme);
+    }
+  }
+}
+
+.contained {
+  /*   &.black {
+    background-color: #000;
+    color: $main-text-color;
+    &:hover {
+      background-color: rgb(67, 67, 67);
+      color: $main-text-color;
+    }
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter(rgb(67, 67, 67));
+    }
+  }
+
+  &.orange {
+    background-color: orange;
+    color: $main-text-color;
+    &:hover {
+      background-color: rgb(245, 187, 80);
+      color: $main-text-color;
+    }
+    &:disabled {
+      cursor: default;
+    }
+
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter(rgb(245, 187, 80));
+    }
+  } */
+
+  &.mainLight {
+    background-color: $color-light-mainTheme;
+    color: $main-text-color;
+    &:hover {
+      background-color: $color-medium-mainTheme;
+    }
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter($color-main-mainTheme);
+    }
+  }
+  &.mainDark {
+    background-color: $color-dark-mainTheme;
+    color: $main-text-color;
+    &:hover {
+      background-color: $color-darkest-mainTheme;
+    }
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter($color-darkest-mainTheme);
+    }
+  }
+}
+
+.transparent {
+  &.mainLight {
+    border: 1px solid $color-superLight-mainTheme;
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter($main-text-color);
+    }
+    & .ripple {
+      background-color: $rippleEffectColorLight;
+    }
+  }
+  &.mainDark {
+    border: 1px solid $color-darkest-mainTheme;
+    &:disabled {
+      cursor: default;
+    }
+    &.rippleCenter {
+      transition: 0.5s;
+      @include rippleCenter($main-text-color);
+    }
+    & .ripple {
+      background-color: $rippleEffectColorDark;
+    }
+  }
+}
+
+.scaleUp {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.mouseRipple {
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: $rippleEffectColor;
+  }
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

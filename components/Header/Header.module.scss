@@ -1,0 +1,22 @@
+@import '../../styles/shared.scss';
+
+.header {
+  width: 100%;
+  background-color: $color-dark-mainTheme;
+  @include for-size(mobile) {
+    height: 120px;
+  }
+  @include for-size(tablet) {
+    height: 100px;
+  }
+  @include for-size(desktop) {
+    padding: 20px 40px;
+    height: 100px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

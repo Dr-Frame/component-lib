@@ -1,0 +1,30 @@
+@import './mixins';
+
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+%container {
+  @include for-size(mobile) {
+    max-width: 320px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    max-width: 768px;
+    padding: 26px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(desktop) {
+    max-width: 1280px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

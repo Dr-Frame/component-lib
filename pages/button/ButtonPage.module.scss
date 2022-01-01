@@ -1,0 +1,19 @@
+.wrapper {
+  width: 400px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listItem {
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: block;
+}

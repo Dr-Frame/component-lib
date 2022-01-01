@@ -1,0 +1,43 @@
+@import '../../styles/shared.scss';
+
+.button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: $transition;
+
+  &.transparent {
+    background-color: transparent;
+    &:hover {
+      background-color: $color-superLight-mainTheme;
+    }
+  }
+
+  &.mainLight {
+    background-color: $color-superLight-mainTheme;
+    &:hover {
+      background-color: $color-medium-mainTheme;
+    }
+  }
+
+  &.mainDark {
+    background-color: $color-medium-mainTheme;
+    &:hover {
+      background-color: $color-dark-mainTheme;
+    }
+  }
+  &.small {
+    padding: 5px;
+  }
+  &.medium {
+    padding: 10px;
+  }
+  &.large {
+    padding: 15px;
+  }
+  &.rounded {
+    border-radius: 50%;
+  }
+}

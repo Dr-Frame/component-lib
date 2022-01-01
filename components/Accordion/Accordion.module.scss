@@ -1,0 +1,106 @@
+@import '../../styles/shared.scss';
+
+.menuItem {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+
+  border-radius: 0px !important;
+  border-bottom: 1px solid $color-dark-mainTheme !important;
+}
+
+.menuItem span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//
+.subMenuItemsWrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+
+  &.active {
+    height: auto;
+    max-height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.subMenuItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 5px 20px;
+  height: 35px;
+  width: 100%;
+  background-color: $color-medium-mainTheme;
+  font-weight: 700;
+  border-bottom: 1px solid $color-light-mainTheme;
+  color: $main-text-color;
+
+  //отвечает за полоску в саб меню
+  &::before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-300%);
+    width: 10px;
+    height: 105%;
+    background: $color-superLight-mainTheme;
+    transition: $hover;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transform: translateX(-200%);
+  }
+
+  //отвечает за анимацию при нажатии на саб меню
+  &::after {
+    content: '';
+    background: $color-superLight-mainTheme;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transform: translateX(+120%);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  &:active:after {
+    transform: translateX(-10px);
+    opacity: 0.3;
+    transition: 0s;
+  }
+}
+
+.subMenuItem span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.activeSubMenuItem {
+  &::before {
+    content: '';
+    opacity: 1;
+    transform: translateX(-200%);
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: $color-superLight-mainTheme;
+    transition: $hover;
+  }
+}
