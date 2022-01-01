@@ -13,7 +13,7 @@ const gameDevices = [
 function MultiSelectPage() {
   return (
     <div style={{ width: '400px' }}>
-      <MultiSelect data={gameDevices} label="Game devices manufacturer" />
+      <MultiSelect data={gameDevices} label="Game devices manufacturer" isMulti isSearchable/>
     </div>
   );
 }

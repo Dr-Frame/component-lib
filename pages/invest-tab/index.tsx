@@ -3,8 +3,37 @@ import Input from '../../components/Input';
 import { useEffect, useState } from 'react';
 import { investAPI } from '../../services/InvestService';
 import classNames from 'classnames';
+import MultiSelect from '../../components/MultiSelect';
+import axios from 'axios';
+import cryptoArr from '../../utils/cryptoArr'
+import selectCryptoArr from '../../utils/selectCryptoArr';
 
 const cx = classNames.bind(s);
+
+console.log(cryptoArr.data);
+
+
+function cryptofiltered() {
+  let newArr = []
+  /* const rankedCrypto = cryptoArr.data.sort((a, b) => a - b); */
+
+  cryptoArr.data.map(asset => {
+    const obj = {
+     /*  id: asset.id, */
+      value: asset.name,
+      label: asset.name,
+     /*  symbol: asset.symbol, */
+    }
+    newArr.push(obj)
+  })
+  return newArr
+}
+
+console.log(cryptofiltered());
+
+
+const API_KEY = '87538458-e107-4252-8115-7da0e9b8586d'
+const BASE_URL = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/map'
 
 export default function InvestTabPage() {
   const [asset, setAsset] = useState('');
@@ -36,6 +65,23 @@ export default function InvestTabPage() {
     }
   };
 
+  /* const fetchCrypto = async () => {
+    try {
+      const response = await axios.get(BASE_URL, {
+        headers: {
+         'X-CMC_PRO_API_KEY': API_KEY,
+        }
+      })
+      return response.data
+    } catch (error) {
+      console.log(error.message);
+      
+    }
+  }
+
+  console.log(fetchCrypto()); */
+  
+  
   const handleFormSubmit = () => {};
 
   return (
@@ -66,6 +112,7 @@ export default function InvestTabPage() {
             theme="mainLight"
             onChange={handleInputChange}
           />
+          <MultiSelect data={selectCryptoArr} isMulti={false} isSearchable label='Choose crypto asset'/>
         </form>
       </div>
       <div>

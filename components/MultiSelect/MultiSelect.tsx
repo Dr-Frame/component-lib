@@ -13,6 +13,8 @@ interface MultiSelectProps<T> {
   data: IData[];
   value?: IData[];
   label: string;
+  isMulti: boolean;
+  isSearchable: boolean;
   minWidth?: string;
   maxWidth?: string;
   multiSelectType?: string;
@@ -39,6 +41,8 @@ function MultiSelect<T>({
   data,
   value,
   label = 'район',
+  isMulti,
+  isSearchable,
   minWidth = '200px',
   maxWidth = '400px',
   multiSelectType,
@@ -99,7 +103,8 @@ function MultiSelect<T>({
   };
 
   return (
-    <Select
+    <>
+      <Select
       options={data}
       theme={theme => ({
         ...theme,
@@ -117,8 +122,8 @@ function MultiSelect<T>({
         },
       })}
       styles={customStyle}
-      isMulti
-      isSearchable={false}
+      isMulti={isMulti}
+      isSearchable={isSearchable}
       closeMenuOnSelect={false}
       hideSelectedOptions={false}
       components={{ Option }}
@@ -126,6 +131,8 @@ function MultiSelect<T>({
       placeholder={'Не вибрано'}
       {...rest}
     />
+    </>
+    
   );
 }
 
