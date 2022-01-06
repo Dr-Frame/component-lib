@@ -10,15 +10,17 @@ const cx = classNames.bind(s);
 interface ModalProps {
   active: boolean;
   setActive(e: boolean): void;
+  onClose?(): void;
   children: React.ReactChild | React.ReactNode;
 }
 
-function Modal({ active, setActive, children }: ModalProps) {
+function Modal({ active, setActive, onClose, children }: ModalProps) {
   //close modal on ESC
   useEffect(() => {
     function close(this: Window, e: KeyboardEvent) {
       if (e.key === 'Escape') {
         setActive(false);
+        onClose ? onClose() : null;
       }
     }
     window.addEventListener('keydown', close);
@@ -43,7 +45,10 @@ function Modal({ active, setActive, children }: ModalProps) {
         className={cx(s.backdrop, {
           active,
         })}
-        onClick={() => setActive(false)}
+        onClick={() => {
+          setActive(false);
+          onClose ? onClose() : null;
+        }}
       >
         <div
           className={cx(s.modalContent, {
@@ -54,7 +59,10 @@ function Modal({ active, setActive, children }: ModalProps) {
           <IconButton
             size="small"
             theme="transparent"
-            onClick={() => setActive(false)}
+            onClick={() => {
+              setActive(false);
+              onClose ? onClose() : null;
+            }}
             extraClass={s.icon}
           >
             <GrClose fontSize={16} />

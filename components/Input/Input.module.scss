@@ -1,7 +1,6 @@
 @import '../../styles/shared.scss';
 
 .wrapper {
-  transition: $transition;
   position: relative;
 
   &:focus-within {
@@ -22,10 +21,9 @@
       }
     }
   }
-
-  &.animated {
+  /*  &.animated {
     margin: 15px 0;
-  }
+  } */
   &.standart {
     display: flex;
     flex-direction: column;
@@ -33,11 +31,12 @@
 }
 
 .input {
-  font-size: 16px;
+  width: 100%;
   padding: 15px;
   border-radius: 3px;
   outline: none;
-  transition: 0.3s;
+  transition: $transition;
+  font-size: 16px;
 
   &.mainLight {
     border: 2px solid $color-light-mainTheme;
@@ -58,7 +57,7 @@
 
 .label {
   background: $main-text-color;
-  transition: 0.3s;
+  transition: $transition;
   font-size: 16px;
   line-height: 22px;
 
@@ -100,4 +99,33 @@
       color: $color-darkest-mainTheme;
     }
   }
+}
+
+.autocompleteWrapper {
+  width: 100%;
+
+  position: absolute;
+  z-index: 1;
+  border: 1px solid $color-light-mainTheme;
+  border-radius: 3px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: $color-superLight-mainTheme;
+}
+
+.autocompleteItem {
+  cursor: pointer;
+  border: 1px solid $color-light-mainTheme;
+  padding: 10px;
+  &:hover {
+    background-color: $color-light-mainTheme;
+  }
+}
+
+.hiddenLabel {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

@@ -9,5 +9,5 @@ export type ButtonAnimationType =
   | 'mouseRipple'
   | 'none';
 
-export type InputType = 'animated' | 'standart';
+export type InputStyleType = 'animated' | 'standart';
 export type IconButtonColor = 'mainLight' | 'mainDark' | 'transparent';

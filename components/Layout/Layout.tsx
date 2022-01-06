@@ -45,14 +45,16 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <div className={styles.container}>
+
+      <div className={styles.wrapper}>
+        <nav className={styles.sideBar}>
+          <Accordion size="small" menuItems={menu} />
+        </nav>
         <main className={styles.main}>
-          <nav className={styles.sideBar}>
-            <Accordion size="small" menuItems={menu} />
-          </nav>
           <div className={styles.content}>{children}</div>
         </main>
       </div>
+
       <Footer />
     </>
   );

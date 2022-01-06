@@ -1,0 +1,58 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 2px;
+
+  &:first-child {
+    font-size: 22px;
+  }
+}
+
+.isRedacting {
+  padding: 5px;
+  margin: 0 !important;
+  font-size: 14px;
+}
+
+.tableCell {
+  &.number {
+    width: 2%;
+  }
+  &.asset {
+    width: 10%;
+  }
+  &.symbol {
+    width: 7%;
+  }
+  &.category {
+    width: 12%;
+
+    &.editing {
+      padding: 0;
+    }
+  }
+  &.amount {
+    width: 10%;
+  }
+  &.invested {
+    width: 15%;
+  }
+  &.avarage {
+    width: 15%;
+  }
+  &.current {
+    width: 8%;
+  }
+  &.profit {
+    width: 9%;
+  }
+  &.edit {
+    width: 5%;
+  }
+  &.delete {
+    width: 5%;
+  }
+}

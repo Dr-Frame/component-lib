@@ -1,5 +1,11 @@
 @import './colors';
 
 :export {
-  colorPrimaryDark: $secondary-text-color;
+  colorSuperLightMainTheme: $color-superLight-mainTheme;
+  colorLightMainTheme: $color-light-mainTheme;
+  colorMediumMainTheme: $color-medium-mainTheme;
+  colorMainMainTheme: $color-main-mainTheme;
+  colorDarkMainTheme: $color-dark-mainTheme;
+  colorDarkestMainTheme: $color-darkest-mainTheme;
+  white: $main-text-color;
 }

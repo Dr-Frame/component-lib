@@ -1,13 +1,41 @@
 @import '../../styles/shared.scss';
 
-.label {
+.selectWrapper {
+  width: calc(100% - 1px);
   position: relative;
-  display: flex;
-  align-items: center;
-  font-weight: normal;
-  font-size: 12px;
+
+  &:focus-within {
+    .label {
+      top: 0;
+      font-size: 14px;
+      color: $color-darkest-mainTheme;
+    }
+  }
+}
+
+.label {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: block;
+  padding: 2px 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+
+  font-weight: 500;
+  font-size: 16px;
   line-height: 15px;
-  color: #3599b8;
+  color: $color-light-mainTheme;
+  background-color: $bg-white-color;
+  transition: $transition;
+
+  &.active {
+    top: 0;
+    font-size: 14px;
+    color: $color-darkest-mainTheme;
+  }
 }
 
 .wrapper {
@@ -32,4 +60,8 @@
 }
 .formFilterType {
   color: $color-dark-mainTheme;
+}
+
+.isLabelHidden {
+  display: none;
 }

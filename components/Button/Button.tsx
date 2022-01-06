@@ -23,7 +23,7 @@ interface ButtonProps<T> {
   disabled?: boolean;
   isFlex?: boolean;
   uppercase?: boolean;
-  onClick?(e: any): void | any;
+  onClick?(e: any): void;
   as: RootComponent;
   extraClass?: string;
   children: React.ReactChild | React.ReactNode;
@@ -63,6 +63,7 @@ function Button<T>({
       className={cx(combinedClasses, {
         isFlex,
         uppercase,
+        disabled,
       })}
       type={type}
       disabled={disabled}

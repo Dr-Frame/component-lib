@@ -9,7 +9,7 @@ interface IconButtonProps {
   size?: Size;
   rounded?: boolean;
   children: React.ReactChild | React.ReactNode;
-  onClick?(): void;
+  onClick?(arg: any): void;
   extraClass?: string;
 }
 

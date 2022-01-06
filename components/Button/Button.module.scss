@@ -48,41 +48,6 @@
 }
 
 .outlined {
-  /*   &.black {
-    background-color: #000;
-    border: 2px solid grey;
-    color: $main-text-color;
-    &:hover {
-      background-color: rgb(67, 67, 67);
-      color: $main-text-color;
-    }
-    &:disabled {
-      cursor: default;
-    }
-    &.rippleCenter {
-      transition: 0.5s;
-      @include rippleCenter(rgb(67, 67, 67));
-    }
-  }
-
-  &.orange {
-    background-color: orange;
-    border: 2px solid rgb(143, 93, 0);
-    color: $main-text-color;
-    &:hover {
-      background-color: rgb(245, 187, 80);
-      color: $main-text-color;
-    }
-    &:disabled {
-      cursor: default;
-    }
-
-    &.rippleCenter {
-      transition: 0.5s;
-      @include rippleCenter(rgb(245, 187, 80));
-    }
-  } */
-
   &.mainLight {
     border: 2px solid $color-medium-mainTheme;
     background-color: $color-light-mainTheme;
@@ -92,6 +57,7 @@
     }
     &:disabled {
       cursor: default;
+      pointer-events: none;
     }
     &.rippleCenter {
       transition: 0.5s;
@@ -107,6 +73,7 @@
     }
     &:disabled {
       cursor: default;
+      pointer-events: none;
     }
     &.rippleCenter {
       transition: 0.5s;
@@ -116,39 +83,6 @@
 }
 
 .contained {
-  /*   &.black {
-    background-color: #000;
-    color: $main-text-color;
-    &:hover {
-      background-color: rgb(67, 67, 67);
-      color: $main-text-color;
-    }
-    &:disabled {
-      cursor: default;
-    }
-    &.rippleCenter {
-      transition: 0.5s;
-      @include rippleCenter(rgb(67, 67, 67));
-    }
-  }
-
-  &.orange {
-    background-color: orange;
-    color: $main-text-color;
-    &:hover {
-      background-color: rgb(245, 187, 80);
-      color: $main-text-color;
-    }
-    &:disabled {
-      cursor: default;
-    }
-
-    &.rippleCenter {
-      transition: 0.5s;
-      @include rippleCenter(rgb(245, 187, 80));
-    }
-  } */
-
   &.mainLight {
     background-color: $color-light-mainTheme;
     color: $main-text-color;
@@ -157,6 +91,7 @@
     }
     &:disabled {
       cursor: default;
+      pointer-events: none;
     }
     &.rippleCenter {
       transition: 0.5s;
@@ -171,6 +106,7 @@
     }
     &:disabled {
       cursor: default;
+      pointer-events: none;
     }
     &.rippleCenter {
       transition: 0.5s;
@@ -184,6 +120,7 @@
     border: 1px solid $color-superLight-mainTheme;
     &:disabled {
       cursor: default;
+      pointer-events: none;
     }
     &.rippleCenter {
       transition: 0.5s;
@@ -197,6 +134,7 @@
     border: 1px solid $color-darkest-mainTheme;
     &:disabled {
       cursor: default;
+      pointer-events: none;
     }
     &.rippleCenter {
       transition: 0.5s;

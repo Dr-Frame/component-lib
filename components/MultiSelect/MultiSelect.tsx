@@ -1,10 +1,13 @@
 import Select, { components } from 'react-select';
-import classNames from 'classnames';
-import styles from './MultiSelect.module.scss';
+import classNames from 'classnames/bind';
+import s from './MultiSelect.module.scss';
 import Checkbox from './Checkbox';
-import variables from '../../styles/exportColorVars.module.scss';
+import color from '../../styles/exportColorVars.module.scss';
+
+const cx = classNames.bind(s);
 
 interface IData {
+  id?: number;
   value: string;
   label: string;
 }
@@ -14,19 +17,25 @@ interface MultiSelectProps<T> {
   value?: IData[];
   label: string;
   isMulti: boolean;
+  onChange(e: any): void;
+  selectedOption?: string | number;
   isSearchable: boolean;
+  placeholder?: string;
   minWidth?: string;
   maxWidth?: string;
-  multiSelectType?: string;
   placeholderColor?: string;
   placeholderFontSize?: string;
   boxFontSize?: string;
   arrowColor?: string;
+  borderThickness?: string;
+  borderColor?: string;
+  isLabelHidden?: boolean;
+  innerPading?: string;
   rest?: T[];
 }
 
 const Option = props => (
-  <div className={styles.optionVar}>
+  <div className={s.optionVar}>
     <components.Option {...props}>
       <Checkbox
         state={props.isSelected}
@@ -40,43 +49,50 @@ const Option = props => (
 function MultiSelect<T>({
   data,
   value,
-  label = 'район',
+  label = 'label',
   isMulti,
+  onChange,
+  selectedOption,
   isSearchable,
-  minWidth = '200px',
-  maxWidth = '400px',
-  multiSelectType,
+  placeholder,
+  minWidth = '140px',
+  maxWidth,
   placeholderColor,
   placeholderFontSize,
   boxFontSize,
+  borderThickness,
+  borderColor,
   arrowColor,
+  isLabelHidden,
+  innerPading,
   ...rest
 }: MultiSelectProps<T>) {
   const customStyle = {
     container: (base: object) => ({
       ...base,
-      width: '100%',
+      maxWidth,
+      minWidth,
     }),
     control: (base: object) => ({
       ...base,
-      paddingRight: '2px',
-      minHeight: '42px',
-      borderColor: '#AFAFAF',
+      border: `${borderThickness} solid ${color.colorLightMainTheme}`,
+      /* paddingRight: '2px', */
+      /*  minHeight: '52px', */
     }),
     placeholder: (base: object) => ({
       ...base,
-      color: placeholderColor || '#737B7D',
+      color: placeholderColor || color.colorLightMainTheme,
       fontWeight: '400',
-      fontSize: placeholderFontSize || '12px',
-      lineHeight: '15px',
+      fontSize: placeholderFontSize || '16px',
+      /* lineHeight: '15px', */
     }),
     valueContainer: (base: object) => ({
       ...base,
-      padding: '5px',
+      padding: innerPading || '11px 12px',
     }),
     indicatorSeparator: (base: object) => ({
       ...base,
-      backgroundColor: '#AFAFAF',
+      backgroundColor: color.colorMediumMainTheme,
     }),
     multiValue: (base: object) => ({
       ...base,
@@ -84,13 +100,11 @@ function MultiSelect<T>({
       borderRadius: '3px',
       padding: '3px 3px 3px 0',
       fontWeight: '400',
-      fontSize: boxFontSize || '10px',
-      lineHeight: '11px',
+      fontSize: boxFontSize || '13px',
+      /* lineHeight: '11px', */
     }),
     menu: (base: object) => ({
       ...base,
-      minWidth,
-      maxWidth,
       zIndex: 4,
     }),
     option: (base: object) => ({
@@ -98,41 +112,51 @@ function MultiSelect<T>({
       padding: '0',
       display: 'flex',
       alignItems: 'center',
-      backgroundColor: '#ffffff',
+      backgroundColor: color.white,
     }),
   };
 
   return (
-    <>
-      <Select
-      options={data}
-      theme={theme => ({
-        ...theme,
-        controlHeight: '42px',
-        borderRadius: '3px',
-        colors: {
-          ...theme.colors,
-          primary50: '#ffffff',
-          primary75: '#ffffff',
-          primary25: '#ffffff',
-          primary: '#737B7D',
-          neutral10: '#D0D0D0',
-          neutral20: arrowColor || '#737B7D',
-          dangerLight: '#D0D0D0',
-        },
-      })}
-      styles={customStyle}
-      isMulti={isMulti}
-      isSearchable={isSearchable}
-      closeMenuOnSelect={false}
-      hideSelectedOptions={false}
-      components={{ Option }}
-      value={value}
-      placeholder={'Не вибрано'}
-      {...rest}
-    />
-    </>
-    
+    <div className={s.selectWrapper}>
+      <p
+        className={cx(s.label, {
+          active: selectedOption,
+          isLabelHidden,
+        })}
+      >
+        {label}
+      </p>
+      <div /* className={s.selectWrapper} */>
+        <Select
+          options={data}
+          theme={theme => ({
+            ...theme,
+            controlHeight: '42px',
+            borderRadius: '3px',
+            colors: {
+              ...theme.colors,
+              primary50: color.white,
+              primary75: color.white,
+              primary25: color.white,
+              primary: color.colorMainMainTheme,
+              neutral10: color.colorLightMainTheme,
+              neutral20: arrowColor || color.colorMediumMainTheme,
+              dangerLight: color.colorLightMainTheme,
+            },
+          })}
+          styles={customStyle}
+          isMulti={isMulti}
+          isSearchable={isSearchable}
+          closeMenuOnSelect={false}
+          hideSelectedOptions={false}
+          components={{ Option }}
+          value={value}
+          placeholder={placeholder}
+          onChange={onChange}
+          {...rest}
+        />
+      </div>
+    </div>
   );
 }
 

@@ -3,19 +3,17 @@ import Input from '../../components/Input';
 import s from './inputPage.module.scss';
 
 function InputPage() {
+  const [test, setTest] = useState('');
   const [firstName, setFirstName] = useState('');
   const [secondName, setSecondName] = useState('');
   const [country, setCountry] = useState('');
   const [city, setCity] = useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target);
-
-    const { name, value } = e.target;
-    console.log(name);
-    console.log(value);
-
     switch (e.target.name) {
+      case 'test':
+        setTest(e.target.value);
+        break;
       case 'firstname':
         setFirstName(e.target.value);
         break;
@@ -37,11 +35,23 @@ function InputPage() {
     <ul className={s.list}>
       <li className={s.item}>
         <Input
+          name="test"
+          onChange={handleInputChange}
+          label="Test"
+          value={test}
+          styleType="animated"
+          theme="mainLight"
+          isLabelHidden
+          placeholder="test.."
+        />
+      </li>
+      <li className={s.item}>
+        <Input
           name="firstname"
           onChange={handleInputChange}
           label="Firstname"
           value={firstName}
-          type="animated"
+          styleType="animated"
           theme="mainLight"
         />
       </li>
@@ -51,7 +61,7 @@ function InputPage() {
           onChange={handleInputChange}
           label="Second name"
           value={secondName}
-          type="animated"
+          styleType="animated"
           theme="mainDark"
         />
       </li>
@@ -61,7 +71,7 @@ function InputPage() {
           onChange={handleInputChange}
           label="Country"
           value={country}
-          type="standart"
+          styleType="standart"
           theme="mainLight"
         />
       </li>
@@ -71,7 +81,7 @@ function InputPage() {
           onChange={handleInputChange}
           label="City"
           value={city}
-          type="standart"
+          styleType="standart"
           theme="mainDark"
         />
       </li>

@@ -1,11 +1,59 @@
 {
   "investments": [
-    { "id": 1, "asset": "BTC", "amount": 1.2 , "invested": 68000 },
-    { "id": 1, "asset": "ETH", "amount": 11 , "invested": 47900 },
-    { "id": 1, "asset": "BNB", "amount": 100 , "invested": 50000 }
+    {
+      "asset": "Bitcoin",
+      "price": 61000,
+      "invested": 234324,
+      "id": 3,
+      "category": "mid-term"
+    },
+    {
+      "asset": "Dogecoin",
+      "price": 2,
+      "invested": 3434,
+      "id": 4,
+      "category": "long-term"
+    },
+    {
+      "asset": "Ethereum",
+      "price": 3333,
+      "invested": 4343434,
+      "id": 5,
+      "category": "mid-term"
+    },
+    {
+      "asset": "FTX Token",
+      "price": 1.33,
+      "invested": 3000,
+      "id": 6,
+      "category": "short-term"
+    },
+    {
+      "asset": "Cardano",
+      "price": 3,
+      "invested": 3000,
+      "category": "short-term",
+      "id": 7
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "category": [
+    {
+      "id": 1,
+      "label": "short-term",
+      "value": "short-term"
+    },
+    {
+      "id": 2,
+      "label": "mid-term",
+      "value": "mid-term"
+    },
+    {
+      "id": 3,
+      "label": "long-term",
+      "value": "long-term"
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
