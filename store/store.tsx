@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { cryptoApi } from '../services/CryptoService';
 import { investAPI } from '../services/InvestService';
 
 const rootReducer = combineReducers({
   [investAPI.reducerPath]: investAPI.reducer,
+  [cryptoApi.reducerPath]: cryptoApi.reducer,
 });
 
 export const setupStore = () => {

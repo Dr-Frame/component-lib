@@ -1,0 +1,62 @@
+@import '../../styles/shared.scss';
+
+.title {
+  width: 100%;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  color: $main-text-color;
+  background-color: $color-dark-mainTheme;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.list {
+  padding: 0px 10px 0px 0px;
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+/* .list {
+  padding: 10px;
+  border: 1px solid $color-superLight-mainTheme;
+  border-radius: 3px;
+  max-height: 270px;
+  overflow-y: auto;
+} */
+
+.listItem {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: $color-superLight-mainTheme;
+  padding: 5px 15px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.coinRank {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.coinImg {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.coinName {
+  margin-right: 10px;
+}
+
+.coinSymbol {
+  margin-right: 10px;
+}
+
+.coinPrice {
+  font-weight: 700;
+}

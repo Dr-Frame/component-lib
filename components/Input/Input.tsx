@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import s from './Input.module.scss';
 import { InputStyleType, Color } from '../../types/classnameTypes';
-import { ICryptoData } from '../../types/investTypes';
+import { ICryptoList } from '../../types/investTypes';
 
 const cx = classNames.bind(s);
 
@@ -18,7 +18,7 @@ interface InputProps<T> {
   styleType: InputStyleType;
   isLabelHidden?: boolean;
   isAutocomplete?: boolean;
-  list?: ICryptoData[];
+  list?: ICryptoList[];
   setClickedValue?(e: string): void;
   theme: Color;
   extraClass?: string;
@@ -43,11 +43,11 @@ function Input<T>({
   extraWrapperClass,
   ...rest
 }: InputProps<T>) {
-  const [suggestions, setSuggestions] = useState<ICryptoData[]>([]);
+  const [suggestions, setSuggestions] = useState<ICryptoList[]>([]);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     if (isAutocomplete) {
-      let matches: ICryptoData[] = [];
+      let matches: ICryptoList[] = [];
       if (e.target.value.length > 0 && list) {
         matches = list.filter(asset => {
           const regex = new RegExp(`${e.target.value}`, 'gi');

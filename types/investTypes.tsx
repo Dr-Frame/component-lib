@@ -12,7 +12,7 @@ export interface ICategory {
   value: string;
 }
 
-export interface ICryptoData extends Object {
+export interface ICryptoList extends Object {
   id: number;
   name: string;
   symbol: string;

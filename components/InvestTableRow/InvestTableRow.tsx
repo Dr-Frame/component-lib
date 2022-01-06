@@ -12,6 +12,7 @@ import Input from '../Input';
 import topCryptoList from '../../utils/topCryptoList';
 import { getRelevantSymbol } from '../../utils/getRelevantSymbol';
 import MultiSelect from '../MultiSelect';
+import millify from 'millify';
 
 const cx = classNames.bind(s);
 
@@ -132,7 +133,7 @@ function InvestTableRow(props: IInvestTableRowProps) {
             extraClass={s.isRedacting}
           />
         ) : (
-          invested
+          millify(invested, { precision: 2, lowercase: true })
         )}
       </td>
       <td className={cx('tableCell', 'avarage')}>

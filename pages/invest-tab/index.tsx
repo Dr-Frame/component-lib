@@ -13,6 +13,9 @@ import IconButton from '../../components/IconButton';
 import { RiDeleteBack2Fill } from 'react-icons/ri';
 import { RiAddBoxFill } from 'react-icons/ri';
 import Modal from '../../components/Modal';
+import CryptoStatsBar from '../../components/CryptoStatsBar';
+import { cryptoApi } from '../../services/CryptoService';
+import CryptoRankList from '../../components/CryptoRankList';
 
 const cx = classNames.bind(s);
 
@@ -30,6 +33,8 @@ export default function InvestTabPage() {
 
   const [isBtnDisabled, setisBtnDisabled] = useState(true);
 
+  //redux querry
+  const { data: cryptoStats } = cryptoApi.useFetchCryptoDataQuery(50);
   const { data: categories } = investAPI.useFetchCategoryQuery(null);
   const [addCategory, {}] = investAPI.useAddCategoryMutation();
   const [deleteCategory, {}] = investAPI.useDeleteCategoryMutation();
@@ -61,6 +66,8 @@ export default function InvestTabPage() {
         break;
     }
   };
+
+  console.log(cryptoStats);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -190,7 +197,15 @@ export default function InvestTabPage() {
             </Button>
           </form>
         </div>
-        <div className={s.rankWrapper}>crypto rank list</div>
+
+        {/* <div className={s.rankWrapper}>
+          {cryptoStats ? (
+            <CryptoRankList coinList={cryptoStats?.data.coins} />
+          ) : null}
+        </div> */}
+        <div className={s.statWrapper}>
+          <CryptoStatsBar />
+        </div>
       </div>
 
       <div className={s.wrapperBottom}>

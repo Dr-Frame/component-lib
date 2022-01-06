@@ -1,6 +1,6 @@
-import { ICryptoData } from '../types/investTypes';
+import { ICryptoList } from '../types/investTypes';
 
-const topCryptoList: ICryptoData[] = [
+const topCryptoList: ICryptoList[] = [
   {
     id: 1,
     name: 'Bitcoin',

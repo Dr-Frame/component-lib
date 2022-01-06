@@ -1,0 +1,32 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  color: $color-dark-mainTheme;
+  width: 100%;
+}
+.title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.statList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  width: 35%;
+  margin-right: 50px;
+  margin-bottom: 15px;
+}
+
+.statTitle {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.statValue {
+  font-size: 14px;
+  color: $color-medium-mainTheme;
+}

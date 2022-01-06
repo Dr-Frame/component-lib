@@ -1,10 +1,12 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { ICategory, IInvestItem } from '../types/investTypes';
 
+const baseURL = process.env.NEXT_PUBLIC_DB_URL;
+
 export const investAPI = createApi({
   reducerPath: 'investAPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:8000',
+    baseUrl: baseURL,
   }),
   tagTypes: ['Investment', 'Category'],
   endpoints: build => ({
