@@ -3,6 +3,7 @@ export interface IInvestItem {
   asset: string;
   price: number;
   invested: number;
+  investType: string;
   category: string;
 }
 

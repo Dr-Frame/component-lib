@@ -17,9 +17,9 @@
     {
       "asset": "Ethereum",
       "price": 3333,
-      "invested": 4343434,
+      "invested": 4343,
       "id": 5,
-      "category": "mid-term"
+      "category": ""
     },
     {
       "asset": "FTX Token",
@@ -34,6 +34,14 @@
       "invested": 3000,
       "category": "short-term",
       "id": 7
+    },
+    {
+      "asset": "Bitcoin",
+      "price": 44000,
+      "invested": 200000,
+      "investType": "Sell",
+      "category": "short-term",
+      "id": 8
     }
   ],
   "category": [

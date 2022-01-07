@@ -11,7 +11,7 @@ export const setupStore = () => {
   return configureStore({
     reducer: rootReducer,
     middleware: getDefaultMiddleware => {
-      return getDefaultMiddleware().concat(investAPI.middleware);
+      return getDefaultMiddleware().concat(investAPI.middleware, cryptoApi.middleware);
     },
   });
 };

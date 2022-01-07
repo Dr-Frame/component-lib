@@ -37,6 +37,7 @@ const menu: IMenuItem[] = [
     sub: [
       { title: 'Drag&Drops', link: '/dragdrop' },
       { title: 'Invest', link: '/invest-tab' },
+      { title: 'Chart', link: '/chart' },
     ],
   },
 ];

@@ -16,12 +16,19 @@ import Modal from '../../components/Modal';
 import CryptoStatsBar from '../../components/CryptoStatsBar';
 import { cryptoApi } from '../../services/CryptoService';
 import CryptoRankList from '../../components/CryptoRankList';
+import PieChart from '../../components/PieChart';
 
 const cx = classNames.bind(s);
+
+const investTypeData = [
+  { value: 'Sell', label: 'Sell' },
+  {value: 'Buy', label: 'Buy'}
+]
 
 export default function InvestTabPage() {
   const [asset, setAsset] = useState('');
   const [price, setPrice] = useState('');
+  const [investType, setInvestType] = useState('')
   const [investedAmount, setInvestedAmount] = useState('');
   const [category, setCategory] = useState('');
 
@@ -35,14 +42,15 @@ export default function InvestTabPage() {
 
   //redux querry
   const { data: cryptoStats } = cryptoApi.useFetchCryptoDataQuery(50);
-  const { data: categories } = investAPI.useFetchCategoryQuery(null);
-  const [addCategory, {}] = investAPI.useAddCategoryMutation();
-  const [deleteCategory, {}] = investAPI.useDeleteCategoryMutation();
-  const {
+    const {
     data: investments,
     error,
     isLoading,
   } = investAPI.useFetchAllInvestmentQuery(10);
+  const { data: categories } = investAPI.useFetchCategoryQuery(null);
+  const [addCategory, {}] = investAPI.useAddCategoryMutation();
+  const [deleteCategory, {}] = investAPI.useDeleteCategoryMutation();
+
   const [createInvestment, {}] = investAPI.useCreateInvestmentMutation();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -57,6 +65,9 @@ export default function InvestTabPage() {
         break;
       case 'invested':
         setInvestedAmount(value);
+        break;
+      case 'type':
+        setInvestType(value);
         break;
       case 'category':
         setNewCategory(value);
@@ -75,6 +86,7 @@ export default function InvestTabPage() {
       asset,
       price: Number(price),
       invested: Number(investedAmount),
+      investType,
       category,
     };
     await createInvestment(investment as IInvestItem);
@@ -82,6 +94,7 @@ export default function InvestTabPage() {
     setPrice('');
     setCategory('');
     setInvestedAmount('');
+    setInvestType('')
   }
 
   function handleAddCategory(categoryName: string) {
@@ -99,6 +112,10 @@ export default function InvestTabPage() {
   const handleSelectChange = (selected: ICategory) => {
     setCategory(selected.value);
   };
+
+  function handleTypeChange (selected: ICategory) {
+    setInvestType(selected.value)
+  }
 
   function handleSelectCategoryToDelete(selected: ICategory) {
     setCategoryToDelete(selected.id);
@@ -128,7 +145,7 @@ export default function InvestTabPage() {
               extraWrapperClass={s.extraWrapper}
             />
             <Input
-              label="Buy price, $"
+              label="Entry price, $"
               name="price"
               value={price}
               type="number"
@@ -147,6 +164,25 @@ export default function InvestTabPage() {
               onChange={handleInputChange}
               extraWrapperClass={s.extraWrapper}
             />
+            {/* <Input
+              label="Type"
+              name="type"
+              value={investType}
+              type="text"
+              styleType="animated"
+              theme="mainLight"
+              onChange={handleInputChange}
+              extraWrapperClass={s.extraWrapper}
+            /> */}
+            <MultiSelect
+                  isMulti={false}
+                  data={investTypeData}
+                  label={'Type'}
+                  isSearchable
+                  borderThickness={'2px'}
+                  onChange={handleTypeChange}
+                  selectedOption={investType}
+                />
             {categories && (
               <div className={s.selectTabWrapper}>
                 <MultiSelect
@@ -219,10 +255,11 @@ export default function InvestTabPage() {
                 <th className={cx(s.headCell, s.number)}>№</th>
                 <th className={cx(s.headCell, s.asset)}>Asset</th>
                 <th className={cx(s.headCell, s.symbol)}>Symbol</th>
+                 <th className={cx(s.headCell, s.type)}>Type</th>
                 <th className={cx(s.headCell, s.category)}>Category</th>
                 <th className={cx(s.headCell, s.amount)}>Amount</th>
                 <th className={cx(s.headCell, s.invested)}>Invested, $</th>
-                <th className={cx(s.headCell, s.avarage)}>Buy price</th>
+                <th className={cx(s.headCell, s.avarage)}>Entry price, $</th>
                 <th className={cx(s.headCell, s.current)}>Current price</th>
                 <th className={cx(s.headCell, s.profit)}>Profit</th>
                 <th className={cx(s.headCell, s.edit)}></th>
@@ -242,7 +279,9 @@ export default function InvestTabPage() {
             </tbody>
           </table>
         </div>
-        <div className={s.diagramWrapper}>portfolio diagram</div>
+        <div className={s.diagramWrapper}>portfolio diagram
+          <PieChart prop={investments}/>
+        </div>
       </div>
       <Modal
         active={isAddModalActive}

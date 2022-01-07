@@ -23,7 +23,7 @@ interface IInvestTableRowProps {
 }
 
 function InvestTableRow(props: IInvestTableRowProps) {
-  const { id, asset, price, invested, category } = props.item;
+  const { id, asset, price, invested, investType, category } = props.item;
   const { index, categories } = props;
 
   const [isEditing, setIsEditing] = useState<boolean>(false);
@@ -63,6 +63,7 @@ function InvestTableRow(props: IInvestTableRowProps) {
       asset: updatedAsset,
       price: Number(updatedBuyPrice),
       invested: Number(updatedInvestedSum),
+      investType,
       category: updatedCategory,
     });
   };
@@ -95,6 +96,7 @@ function InvestTableRow(props: IInvestTableRowProps) {
         )}
       </td>
       <td className={cx('tableCell', 'symbol')}>{getRelevantSymbol(asset)}</td>
+      <td className={cx('tableCell', 'symbol')}>{investType}</td>
       <td
         className={cx('tableCell', 'category', {
           editing: isEditing,
