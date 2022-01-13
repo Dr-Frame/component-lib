@@ -20,6 +20,7 @@ const menu: IMenuItem[] = [
       { title: 'Button', link: '/button' },
       { title: 'Input', link: '/input' },
       { title: 'Icon Button', link: '/icon-button' },
+      { title: 'Select', link: '/select' },
     ],
   },
   {
@@ -56,7 +57,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         </main>
       </div>
 
-      <Footer />
+      {/*  <Footer /> */}
     </>
   );
 };

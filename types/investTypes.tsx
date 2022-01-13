@@ -1,26 +1,18 @@
+import { ICoins } from './cryptoTypes';
+
 export interface IInvestItem {
   id: number;
-  asset: string;
-  price: number;
+  asset: ICoins;
+  buyPrice: number;
   invested: number;
-  investType: string;
+  investType: 'Sell' | 'Buy';
   category: string;
+  profit: number;
+  profitPercentage: number;
 }
 
 export interface ICategory {
   id: number;
   label: string;
-  value: string;
-}
-
-export interface ICryptoList extends Object {
-  id: number;
-  name: string;
-  symbol: string;
-  slug: string;
-  rank: number;
-  is_active: number;
-  first_historical_data: string;
-  last_historical_data: string;
-  platform: object | null | undefined;
+  value?: string;
 }

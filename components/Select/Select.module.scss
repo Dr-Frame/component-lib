@@ -1,0 +1,94 @@
+@import '../../styles/shared.scss';
+
+.select {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.selectHeader {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+
+  border-radius: 3px;
+  border: 2px solid $color-light-mainTheme;
+  color: $color-light-mainTheme;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: default;
+  }
+  &.selected {
+    color: $color-darkest-mainTheme;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 48px;
+    width: 2px;
+    height: 32px;
+    background-color: $color-light-mainTheme;
+  }
+}
+
+.selectIcon {
+  color: $color-light-mainTheme;
+  font-size: 24px;
+
+  transition: 250ms;
+
+  &.isOpen {
+    transform: rotate(180deg);
+  }
+  &:hover {
+    color: $color-darkest-mainTheme;
+  }
+}
+
+.selectContent {
+  width: 100%;
+  background-color: $main-text-color;
+  position: absolute;
+  top: 96%;
+  left: 0;
+  margin-top: 3px;
+
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid $color-light-mainTheme;
+
+  overflow: hidden;
+  opacity: 0;
+  transition: 250ms;
+  z-index: 2;
+  pointer-events: none;
+
+  &.isOpen {
+    pointer-events: all;
+    height: auto;
+    max-height: 150px;
+    opacity: 1;
+
+    overflow-y: auto;
+  }
+}
+
+.selectItem {
+  padding: 10px 10px 10px 15px;
+  cursor: pointer;
+  transition: 250ms;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: $color-superLight-mainTheme;
+  }
+}

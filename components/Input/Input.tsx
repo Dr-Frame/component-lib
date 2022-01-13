@@ -19,6 +19,7 @@ interface InputProps<T> {
   isLabelHidden?: boolean;
   isAutocomplete?: boolean;
   list?: ICryptoList[];
+  setChoosedAsset?(e: string): void;
   setClickedValue?(e: string): void;
   theme: Color;
   extraClass?: string;
@@ -37,6 +38,7 @@ function Input<T>({
   isLabelHidden = false,
   isAutocomplete = false,
   list,
+  setChoosedAsset,
   setClickedValue,
   theme,
   extraClass,
@@ -61,11 +63,13 @@ function Input<T>({
       return;
     }
     onChange(e);
+    /* console.log('INPUT', e); */
   }
 
-  function onSuggestHandler(text: string) {
+  function onSuggestHandler(item: object) {
     if (setClickedValue) {
-      setClickedValue(text);
+      setChoosedAsset(item);
+      setClickedValue(item.name);
     }
     setSuggestions([]);
   }
@@ -123,7 +127,7 @@ function Input<T>({
                 <li
                   className={s.autocompleteItem}
                   key={i}
-                  onClick={() => onSuggestHandler(item.name)}
+                  onClick={() => onSuggestHandler(item)}
                 >
                   {item.name}
                 </li>

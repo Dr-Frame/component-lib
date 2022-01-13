@@ -14,6 +14,18 @@ const cx = classNames.bind(styles);
 
 type RootComponent = 'button' | 'link';
 
+const emptyObj = {};
+
+console.log(JSON.stringify(emptyObj));
+
+function createObj(key, value) {
+  return {
+    [key]: value,
+  };
+}
+
+console.log(createObj('a', 1));
+
 interface ButtonProps<T> {
   type?: ButtonType;
   view?: ButtonView;

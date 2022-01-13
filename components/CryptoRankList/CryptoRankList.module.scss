@@ -27,6 +27,7 @@
 .listItem {
   height: 40px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-size: 14px;
   background-color: $color-superLight-mainTheme;
@@ -37,6 +38,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.leftWrapper {
+  display: flex;
+  align-items: center;
 }
 
 .coinRank {
@@ -59,4 +65,41 @@
 
 .coinPrice {
   font-weight: 700;
+  margin-right: 20px;
+}
+
+.coinChangeWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coinChangeIcon {
+  position: absolute;
+  top: -1px;
+  left: -20px;
+  font-size: 15px;
+  margin-right: 2px;
+
+  &.green {
+    color: green;
+  }
+
+  &.red {
+    color: red;
+  }
+}
+
+.coinChange {
+  font-size: 14px;
+  font-weight: 700;
+
+  &.green {
+    color: green;
+  }
+
+  &.red {
+    color: red;
+  }
 }

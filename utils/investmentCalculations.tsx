@@ -1,4 +1,4 @@
-type getAvaragePriceFn = (fisrt: number, second: number) => number;
+type getAmount = (fisrt: number, second: number) => number;
 
-export const getAvaragePrice: getAvaragePriceFn = (invested, buyPrice) =>
+export const getAmount: getAmount = (invested, buyPrice) =>
   Number((invested / buyPrice).toFixed(2));

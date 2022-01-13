@@ -60,28 +60,6 @@ const ButtonPage: FC<ButtonPageProps> = () => {
           </Button>
         </li>
       </ul>
-      {/* <div className={styles.colors}>
-        <ul>
-          <li style={{ width: '200px', height: '50px', background: '#eceff1' }}>
-            superLight
-          </li>
-          <li style={{ width: '200px', height: '50px', background: '#b0bec5' }}>
-            light
-          </li>
-          <li style={{ width: '200px', height: '50px', background: '#78909c' }}>
-            medium
-          </li>
-          <li style={{ width: '200px', height: '50px', background: '#455a64' }}>
-            main
-          </li>
-          <li style={{ width: '200px', height: '50px', background: '#37474f' }}>
-            dark
-          </li>
-          <li style={{ width: '200px', height: '50px', background: '#263238' }}>
-            darkest
-          </li>
-        </ul>
-      </div> */}
     </div>
   );
 };

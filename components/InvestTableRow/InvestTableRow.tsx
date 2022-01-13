@@ -1,5 +1,5 @@
 import { ICategory, IInvestItem } from '../../types/investTypes';
-import { getAvaragePrice } from '../../utils/investmentCalculations';
+import { getAmount } from '../../utils/investmentCalculations';
 import classNames from 'classnames/bind';
 import s from './InvestTableRow.module.scss';
 import Button from '../Button';
@@ -9,10 +9,10 @@ import { BiEditAlt } from 'react-icons/bi';
 import { investAPI } from '../../services/InvestService';
 import { useState } from 'react';
 import Input from '../Input';
-import topCryptoList from '../../utils/topCryptoList';
-import { getRelevantSymbol } from '../../utils/getRelevantSymbol';
-import MultiSelect from '../MultiSelect';
 import millify from 'millify';
+import { cryptoApi } from '../../services/CryptoService';
+import MySelect from '../MySelect';
+import { getProfit } from '../../utils/getProfit';
 
 const cx = classNames.bind(s);
 
@@ -23,16 +23,29 @@ interface IInvestTableRowProps {
 }
 
 function InvestTableRow(props: IInvestTableRowProps) {
-  const { id, asset, price, invested, investType, category } = props.item;
+  const {
+    id,
+    asset,
+    buyPrice,
+    invested,
+    investType,
+    category,
+    profit,
+    profitPercentage,
+  } = props.item;
   const { index, categories } = props;
 
   const [isEditing, setIsEditing] = useState<boolean>(false);
-  const [updatedAsset, setUpdatedAsset] = useState(asset || '');
-  const [updatedBuyPrice, setUpdatedBuyPrice] = useState(price || '');
+  const [updatedAsset, setUpdatedAsset] = useState(asset.name || '');
+  const [updatedBuyPrice, setUpdatedBuyPrice] = useState(buyPrice || '');
   const [updatedInvestedSum, setUpdatedInvestedSum] = useState(invested || '');
-  const [updatedCategory, setUpdatedCategory] = useState('');
+  const [updatedCategory, setUpdatedCategory] = useState(category || '');
   const [deleteInvestment, {}] = investAPI.useDeleteInvestmentMutation();
   const [editInvestment, {}] = investAPI.useEditInvestmentMutation();
+  const { data: searchResult } = cryptoApi.useSearchCryptoQuery(
+    updatedAsset || asset.name,
+  );
+  const [choosedAssetData, setChoosedAssetData] = useState(asset);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -60,8 +73,8 @@ function InvestTableRow(props: IInvestTableRowProps) {
   const handleEdit = () => {
     editInvestment({
       id: Number(id),
-      asset: updatedAsset,
-      price: Number(updatedBuyPrice),
+      asset: choosedAssetData,
+      buyPrice: Number(updatedBuyPrice),
       invested: Number(updatedInvestedSum),
       investType,
       category: updatedCategory,
@@ -73,126 +86,139 @@ function InvestTableRow(props: IInvestTableRowProps) {
   };
 
   return (
-    <tr className={s.tableRow}>
-      <td className={cx('tableCell', 'number')}>{index + 1}.</td>
-      <td className={cx('tableCell', 'asset')}>
-        {isEditing ? (
-          <Input
-            label="Asset"
-            name="updateAsset"
-            value={updatedAsset}
-            styleType="animated"
-            theme="mainLight"
-            onChange={handleInputChange}
-            isAutocomplete
-            setClickedValue={setUpdatedAsset}
-            list={topCryptoList}
-            isLabelHidden
-            placeholder="Choose asset"
-            extraClass={s.isRedacting}
-          />
-        ) : (
-          asset
-        )}
-      </td>
-      <td className={cx('tableCell', 'symbol')}>{getRelevantSymbol(asset)}</td>
-      <td className={cx('tableCell', 'symbol')}>{investType}</td>
-      <td
-        className={cx('tableCell', 'category', {
-          editing: isEditing,
-        })}
-      >
-        {isEditing ? (
-          <MultiSelect
-            isMulti={false}
-            data={categories}
-            isSearchable
-            borderThickness={'2px'}
-            isLabelHidden
-            innerPading={'0px 5px'}
-            onChange={handleSelectChange}
-          />
-        ) : (
-          category
-        )}
-      </td>
-      <td className={cx('tableCell', 'amount')}>
-        {getAvaragePrice(invested, price)}
-      </td>
+    <>
+      {props.item && (
+        <tr className={s.tableRow}>
+          <td className={cx('tableCell', 'number')}>{index + 1}.</td>
+          <td className={cx('tableCell', 'asset')}>
+            {isEditing ? (
+              <Input
+                label="Asset"
+                name="updateAsset"
+                value={updatedAsset}
+                styleType="animated"
+                theme="mainLight"
+                onChange={handleInputChange}
+                isAutocomplete
+                setClickedValue={setUpdatedAsset}
+                setChoosedAsset={setChoosedAssetData}
+                list={searchResult?.data?.coins}
+                isLabelHidden
+                placeholder="Choose asset"
+                extraClass={s.isRedacting}
+              />
+            ) : (
+              asset.name
+            )}
+          </td>
+          <td className={cx('tableCell', 'symbol')}>
+            {asset.symbol ? asset.symbol : <p>-</p>}
+          </td>
+          <td className={cx('tableCell', 'type')}>{investType}</td>
+          <td
+            className={cx('tableCell', 'category', {
+              editing: isEditing,
+            })}
+          >
+            {isEditing && categories ? (
+              <MySelect
+                list={categories}
+                label="Category"
+                selected={updatedCategory}
+                setSelected={handleSelectChange}
+                theme="mainLight"
+                padding={false}
+              />
+            ) : (
+              category
+            )}
+          </td>
+          <td className={cx('tableCell', 'amount')}>
+            {getAmount(invested, buyPrice)}
+          </td>
 
-      <td className={cx('tableCell', 'invested')}>
-        {isEditing ? (
-          <Input
-            label="Invested"
-            name="updateInvested"
-            value={updatedInvestedSum}
-            type="number"
-            styleType="animated"
-            theme="mainLight"
-            onChange={handleInputChange}
-            isLabelHidden
-            placeholder="Enter sum, $"
-            extraClass={s.isRedacting}
-          />
-        ) : (
-          millify(invested, { precision: 2, lowercase: true })
-        )}
-      </td>
-      <td className={cx('tableCell', 'avarage')}>
-        {isEditing ? (
-          <Input
-            label="avarage price"
-            name="updatePrice"
-            value={updatedBuyPrice}
-            type="number"
-            styleType="animated"
-            theme="mainLight"
-            onChange={handleInputChange}
-            isLabelHidden
-            placeholder="Enter buy price, $"
-            extraClass={s.isRedacting}
-          />
-        ) : (
-          price
-        )}
-      </td>
-      <td className={cx('tableCell', 'current')}>{'current price'}</td>
-      <td className={cx('tableCell', 'profit')}>{'Profit'}</td>
-      <td className={cx('tableCell', 'edit')}>
-        {!isEditing ? (
-          <Button
-            as="button"
-            onClick={() => setIsEditing(true)}
-            extraClass={s.button}
-          >
-            <BiEditAlt />
-          </Button>
-        ) : (
-          <Button
-            as="button"
-            extraClass={s.button}
-            onClick={() => {
-              handleEdit();
-              setIsEditing(false);
-            }}
-          >
-            <MdDownloadDone />
-          </Button>
-        )}
-      </td>
-      <td className={cx('tableCell', 'delete')}>
-        <Button
-          as="button"
-          onClick={e => {
-            handleDelete(id);
-            e.stopPropagation();
-          }}
-          extraClass={s.button}
-        >
-          <MdDeleteForever />
-        </Button>
-      </td>
-    </tr>
+          <td className={cx('tableCell', 'invested')}>
+            {isEditing ? (
+              <Input
+                label="Invested"
+                name="updateInvested"
+                value={updatedInvestedSum}
+                type="number"
+                styleType="animated"
+                theme="mainLight"
+                onChange={handleInputChange}
+                isLabelHidden
+                placeholder="Enter sum, $"
+                extraClass={s.isRedacting}
+              />
+            ) : (
+              invested.toFixed(2)
+            )}
+          </td>
+          <td className={cx('tableCell', 'buyPrice')}>
+            {isEditing ? (
+              <Input
+                label="avarage price"
+                name="updatePrice"
+                value={updatedBuyPrice}
+                type="number"
+                styleType="animated"
+                theme="mainLight"
+                onChange={handleInputChange}
+                isLabelHidden
+                placeholder="Enter buy price, $"
+                extraClass={s.isRedacting}
+              />
+            ) : (
+              buyPrice
+            )}
+          </td>
+          <td className={cx('tableCell', 'current')}>
+            {Number(asset.price).toFixed(2)}
+          </td>
+          <td className={cx('tableCell', 'profit')}>
+            {profit ? profit.toFixed(2) : '--'}
+          </td>
+          <td className={cx('tableCell', 'profitPercent')}>
+            {profitPercentage ? `${profitPercentage.toFixed(2)}%` : '--'}
+          </td>
+          <td className={cx('tableCell', 'edit')}>
+            {!isEditing ? (
+              <Button
+                as="button"
+                onClick={() => setIsEditing(true)}
+                extraClass={s.button}
+              >
+                <BiEditAlt />
+              </Button>
+            ) : (
+              <Button
+                as="button"
+                extraClass={s.button}
+                onClick={() => {
+                  handleEdit();
+                  setIsEditing(false);
+                }}
+              >
+                <MdDownloadDone />
+              </Button>
+            )}
+          </td>
+          <td className={cx('tableCell', 'delete')}>
+            <Button
+              as="button"
+              onClick={e => {
+                handleDelete(id);
+                e.stopPropagation();
+              }}
+              extraClass={s.button}
+            >
+              <MdDeleteForever />
+            </Button>
+          </td>
+        </tr>
+      )}
+    </>
   );
 }
 

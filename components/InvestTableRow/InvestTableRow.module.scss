@@ -27,21 +27,20 @@
   &.symbol {
     width: 7%;
   }
+  &.type {
+    width: 5%;
+  }
   &.category {
-    width: 12%;
-
-    &.editing {
-      padding: 0;
-    }
+    width: 17%;
   }
   &.amount {
     width: 10%;
   }
   &.invested {
-    width: 15%;
+    width: 10%;
   }
   &.avarage {
-    width: 15%;
+    width: 10%;
   }
   &.current {
     width: 8%;

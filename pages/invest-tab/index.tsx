@@ -3,51 +3,55 @@ import Input from '../../components/Input';
 import { useEffect, useState } from 'react';
 import { investAPI } from '../../services/InvestService';
 import classNames from 'classnames/bind';
-import topCryptoList from '../../utils/topCryptoList';
 import Button from '../../components/Button';
 import { ICategory, IInvestItem } from '../../types/investTypes';
 import { ImBoxAdd } from 'react-icons/im';
-import InvestTableRow from '../../components/InvestTableRow';
-import MultiSelect from '../../components/MultiSelect';
 import IconButton from '../../components/IconButton';
 import { RiDeleteBack2Fill } from 'react-icons/ri';
 import { RiAddBoxFill } from 'react-icons/ri';
 import Modal from '../../components/Modal';
 import CryptoStatsBar from '../../components/CryptoStatsBar';
 import { cryptoApi } from '../../services/CryptoService';
-import CryptoRankList from '../../components/CryptoRankList';
 import PieChart from '../../components/PieChart';
+import MySelect from '../../components/MySelect';
+import Table from '../../components/Table';
+import { getProfit } from '../../utils/getProfit';
+import { getAmount } from '../../utils/investmentCalculations';
+import LineChart from '../../components/LineChart';
 
 const cx = classNames.bind(s);
 
 const investTypeData = [
-  { value: 'Sell', label: 'Sell' },
-  {value: 'Buy', label: 'Buy'}
-]
+  { id: 1, label: 'Sell' },
+  { id: 2, label: 'Buy' },
+];
 
 export default function InvestTabPage() {
+  const [choosedAssetData, setChoosedAssetData] = useState({});
+
   const [asset, setAsset] = useState('');
-  const [price, setPrice] = useState('');
-  const [investType, setInvestType] = useState('')
+  const [buyPrice, setBuyPrice] = useState('');
+  const [investType, setInvestType] = useState('');
   const [investedAmount, setInvestedAmount] = useState('');
   const [category, setCategory] = useState('');
 
   const [newCategory, setNewCategory] = useState('');
-  const [categoryToDelete, setCategoryToDelete] = useState<null | number>(null);
+  const [categoryToDelete, setCategoryToDelete] = useState<ICategory>({});
 
   const [isAddModalActive, setIsAddModalActive] = useState(false);
   const [isDeleteModalActive, setIsDeleteModalActive] = useState(false);
 
-  const [isBtnDisabled, setisBtnDisabled] = useState(true);
+  const [isBtnDisabled, setIsBtnDisabled] = useState(true);
 
   //redux querry
-  const { data: cryptoStats } = cryptoApi.useFetchCryptoDataQuery(50);
-    const {
+  const { data: searchResult } = cryptoApi.useSearchCryptoQuery(asset);
+  const {
     data: investments,
     error,
     isLoading,
   } = investAPI.useFetchAllInvestmentQuery(10);
   const { data: categories } = investAPI.useFetchCategoryQuery(null);
+
   const [addCategory, {}] = investAPI.useAddCategoryMutation();
   const [deleteCategory, {}] = investAPI.useDeleteCategoryMutation();
 
@@ -61,7 +65,7 @@ export default function InvestTabPage() {
         setAsset(value);
         break;
       case 'price':
-        setPrice(value);
+        setBuyPrice(value);
         break;
       case 'invested':
         setInvestedAmount(value);
@@ -78,23 +82,33 @@ export default function InvestTabPage() {
     }
   };
 
-  console.log(cryptoStats);
-
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    const result = getProfit(
+      Number(buyPrice),
+      Number(choosedAssetData.price),
+      getAmount(Number(investedAmount), Number(buyPrice)),
+      Number(investedAmount),
+      investType,
+    );
+
     const investment = {
-      asset,
-      price: Number(price),
+      asset: choosedAssetData,
+      buyPrice: Number(buyPrice),
       invested: Number(investedAmount),
       investType,
       category,
+      profit: result.profit,
+      profitPercentage: result.profitInPercent,
     };
     await createInvestment(investment as IInvestItem);
+    setChoosedAssetData('');
     setAsset('');
-    setPrice('');
+    setBuyPrice('');
     setCategory('');
     setInvestedAmount('');
-    setInvestType('')
+    setInvestType('');
   }
 
   function handleAddCategory(categoryName: string) {
@@ -105,27 +119,33 @@ export default function InvestTabPage() {
     addCategory(categoryToAdd);
   }
 
-  function handleDeleteCategory(id: number) {
-    deleteCategory(id);
+  function handleInvestTypeSelect(selected: ICategory) {
+    setInvestType(selected.label);
   }
 
-  const handleSelectChange = (selected: ICategory) => {
-    setCategory(selected.value);
-  };
-
-  function handleTypeChange (selected: ICategory) {
-    setInvestType(selected.value)
+  function handleCategorySelect(selected: ICategory) {
+    setCategory(selected.label);
   }
 
-  function handleSelectCategoryToDelete(selected: ICategory) {
-    setCategoryToDelete(selected.id);
+  function handleCategoryToDeleteSelect(selected: ICategory) {
+    setCategoryToDelete(selected);
   }
+
+  console.log(investments);
 
   useEffect(() => {
-    if ((asset || price || investedAmount || category) && true) {
-      setisBtnDisabled(false);
+    if (
+      (asset === '' ||
+        buyPrice === '' ||
+        investedAmount === '' ||
+        category === '' ||
+        investType === '') === true
+    ) {
+      setIsBtnDisabled(true);
+    } else {
+      setIsBtnDisabled(false);
     }
-  }, [asset, price, investedAmount, category]);
+  }, [asset, buyPrice, investedAmount, category, investType]);
 
   return (
     <div className={s.container}>
@@ -141,13 +161,14 @@ export default function InvestTabPage() {
               onChange={handleInputChange}
               isAutocomplete
               setClickedValue={setAsset}
-              list={topCryptoList}
+              setChoosedAsset={setChoosedAssetData}
+              list={searchResult?.data?.coins}
               extraWrapperClass={s.extraWrapper}
             />
             <Input
               label="Entry price, $"
               name="price"
-              value={price}
+              value={buyPrice}
               type="number"
               styleType="animated"
               theme="mainLight"
@@ -164,35 +185,23 @@ export default function InvestTabPage() {
               onChange={handleInputChange}
               extraWrapperClass={s.extraWrapper}
             />
-            {/* <Input
+            <MySelect
+              list={investTypeData}
               label="Type"
-              name="type"
-              value={investType}
-              type="text"
-              styleType="animated"
+              selected={investType}
+              setSelected={handleInvestTypeSelect}
               theme="mainLight"
-              onChange={handleInputChange}
-              extraWrapperClass={s.extraWrapper}
-            /> */}
-            <MultiSelect
-                  isMulti={false}
-                  data={investTypeData}
-                  label={'Type'}
-                  isSearchable
-                  borderThickness={'2px'}
-                  onChange={handleTypeChange}
-                  selectedOption={investType}
-                />
+              animated={true}
+            />
             {categories && (
               <div className={s.selectTabWrapper}>
-                <MultiSelect
-                  isMulti={false}
-                  data={categories}
-                  label={'Category'}
-                  isSearchable
-                  borderThickness={'2px'}
-                  onChange={handleSelectChange}
-                  selectedOption={category}
+                <MySelect
+                  list={categories}
+                  label="Category"
+                  selected={category}
+                  setSelected={handleCategorySelect}
+                  theme="mainLight"
+                  animated={true}
                 />
                 <div className={s.buttonsWrapper}>
                   <IconButton
@@ -233,12 +242,10 @@ export default function InvestTabPage() {
             </Button>
           </form>
         </div>
-
-        {/* <div className={s.rankWrapper}>
-          {cryptoStats ? (
-            <CryptoRankList coinList={cryptoStats?.data.coins} />
-          ) : null}
-        </div> */}
+        <div className={s.topCryptoWrapper}>
+          <LineChart />
+          <LineChart />
+        </div>
         <div className={s.statWrapper}>
           <CryptoStatsBar />
         </div>
@@ -248,39 +255,24 @@ export default function InvestTabPage() {
         {' '}
         {isLoading && <h2>loading...</h2>}
         {error && <h2>error occured</h2>}
-        <div className={s.tableWrapper}>
-          <table className={s.table}>
-            <thead className={s.tableHead}>
-              <tr className={s.tableRow}>
-                <th className={cx(s.headCell, s.number)}>№</th>
-                <th className={cx(s.headCell, s.asset)}>Asset</th>
-                <th className={cx(s.headCell, s.symbol)}>Symbol</th>
-                 <th className={cx(s.headCell, s.type)}>Type</th>
-                <th className={cx(s.headCell, s.category)}>Category</th>
-                <th className={cx(s.headCell, s.amount)}>Amount</th>
-                <th className={cx(s.headCell, s.invested)}>Invested, $</th>
-                <th className={cx(s.headCell, s.avarage)}>Entry price, $</th>
-                <th className={cx(s.headCell, s.current)}>Current price</th>
-                <th className={cx(s.headCell, s.profit)}>Profit</th>
-                <th className={cx(s.headCell, s.edit)}></th>
-                <th className={cx(s.headCell, s.delete)}></th>
-              </tr>
-            </thead>
-            <tbody className={s.tableBody}>
-              {investments &&
-                investments.map((investment, i) => (
-                  <InvestTableRow
-                    key={investment.id}
-                    index={i}
-                    item={investment}
-                    categories={categories}
-                  />
-                ))}
-            </tbody>
-          </table>
-        </div>
-        <div className={s.diagramWrapper}>portfolio diagram
-          <PieChart prop={investments}/>
+        {investments && categories && (
+          <div className={s.tableWrapper}>
+            <Table investments={investments} categories={categories} />
+          </div>
+        )}
+        <div className={s.diagramsWrapper}>
+          <div className={s.diagramBuyWrapper}>
+            <p className={s.diagramTitle}>Your Longs</p>
+            {investments && (
+              <PieChart investments={investments} investType="Buy" />
+            )}
+          </div>
+          <div className={s.diagramSellWrapper}>
+            <p className={s.diagramTitle}>Your Shorts</p>
+            {investments && (
+              <PieChart investments={investments} investType="Sell" />
+            )}
+          </div>
         </div>
       </div>
       <Modal
@@ -309,6 +301,7 @@ export default function InvestTabPage() {
             onClick={() => {
               handleAddCategory(newCategory);
               setIsAddModalActive(false);
+              setNewCategory('');
             }}
           >
             Add category
@@ -318,18 +311,17 @@ export default function InvestTabPage() {
       <Modal
         active={isDeleteModalActive}
         setActive={setIsDeleteModalActive}
-        onClose={() => setCategoryToDelete(null)}
+        onClose={() => setCategoryToDelete({})}
       >
         <div className={s.modalContentWrapper}>
           {categories && (
-            <MultiSelect
-              isMulti={false}
-              data={categories}
-              label={'Category'}
-              isSearchable
-              borderThickness={'2px'}
-              onChange={handleSelectCategoryToDelete}
-              selectedOption={categoryToDelete}
+            <MySelect
+              list={categories}
+              label="Category"
+              selected={categoryToDelete.label}
+              setSelected={handleCategoryToDeleteSelect}
+              theme="mainLight"
+              animated={true}
             />
           )}
 
@@ -340,11 +332,12 @@ export default function InvestTabPage() {
             color="mainLight"
             size="default"
             animation="mouseRipple"
-            disabled={categoryToDelete ? false : true}
+            disabled={categoryToDelete.id ? false : true}
             extraClass={s.deleteBtnModal}
             onClick={() => {
-              categoryToDelete ? handleDeleteCategory(categoryToDelete) : null;
+              categoryToDelete ? deleteCategory(categoryToDelete) : null;
               setIsDeleteModalActive(false);
+              setCategoryToDelete({});
             }}
           >
             Delete category

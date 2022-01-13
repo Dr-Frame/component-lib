@@ -21,9 +21,7 @@
       }
     }
   }
-  /*  &.animated {
-    margin: 15px 0;
-  } */
+
   &.standart {
     display: flex;
     flex-direction: column;
@@ -92,7 +90,7 @@
   &.animated {
     &.mainLight {
       top: 0;
-      color: $color-dark-mainTheme;
+      color: $color-light-mainTheme;
     }
     &.mainDark {
       top: 0;

@@ -1,0 +1,155 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  background-color: $main-text-color;
+  position: relative;
+  width: 100%;
+}
+
+.labelWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3px;
+
+  &.withPadding {
+    padding: 10px 10px 10px 15px;
+  }
+
+  &.noPadding {
+    padding: 0 5px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 25%;
+      right: 36px;
+      width: 2px;
+      height: 16px;
+      background-color: $color-light-mainTheme;
+    }
+  }
+
+  &.mainLight {
+    color: $color-light-mainTheme;
+    border: 2px solid $color-light-mainTheme;
+  }
+  &.mainDark {
+    color: $color-dark-mainTheme;
+    border: 2px solid $color-dark-mainTheme;
+  }
+  &.disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 48px;
+    width: 2px;
+    height: 32px;
+    background-color: $color-light-mainTheme;
+  }
+}
+
+.label {
+  transition: $transition;
+  font-size: 16px;
+
+  &.animated {
+    font-size: 14px;
+    padding: 0 5px;
+    position: absolute;
+    transform: translate(-7px, -150%);
+    background-color: $main-text-color;
+  }
+  &.hidden {
+    display: none;
+  }
+  &.isOpen {
+    color: $color-dark-mainTheme;
+  }
+}
+
+.icon {
+  display: inline-flex;
+  font-size: 26px;
+  cursor: pointer;
+  transition: $transition;
+
+  &.iconDown {
+    transform: rotate(180deg);
+  }
+
+  &.mainLight {
+    color: $color-light-mainTheme;
+    :hover {
+      color: $color-dark-mainTheme;
+    }
+  }
+  &.mainDark {
+    color: $color-dark-mainTheme;
+    :hover {
+      color: $color-light-mainTheme;
+    }
+  }
+}
+
+.list {
+  z-index: 2;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background-color: $main-text-color;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+  transition: $transition;
+
+  &.mainLight {
+    border: 1px solid $color-light-mainTheme;
+  }
+  &.mainDark {
+    border: 1px solid $color-dark-mainTheme;
+  }
+
+  &.isOpen {
+    opacity: 1;
+    pointer-events: all;
+    overflow-y: auto;
+    max-height: 200px;
+  }
+}
+
+.listItem {
+  font-size: 14px;
+  padding: 5px 15px;
+  transition: $transition;
+  cursor: pointer;
+  &.mainLight {
+    color: $color-medium-mainTheme;
+  }
+  &.mainDark {
+    color: $color-dark-mainTheme;
+  }
+
+  &:hover {
+    background-color: $color-superLight-mainTheme;
+  }
+}
+
+.selectedValue {
+  font-size: 16px;
+  &.mainLight {
+    color: $color-dark-mainTheme;
+  }
+  &.mainDark {
+    color: $color-dark-mainTheme;
+  }
+  &.noPadding {
+    font-size: 14px;
+  }
+}

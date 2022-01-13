@@ -1,78 +1,67 @@
-import { Doughnut } from "react-chartjs-2";
+import { Doughnut, Pie } from 'react-chartjs-2';
+import s from './PieChart.module.scss';
 import Chart from 'chart.js/auto';
 import { IInvestItem } from '../../types/investTypes';
-import getRandomRgb from "../../utils/getRandomRGB";
+import dataChartCreator from '../../utils/pieChartDataCreator';
+import colors from '../../styles/exportColorVars.module.scss';
+import { useRef } from 'react';
 
 Chart.register();
+Chart.defaults.color = colors.white;
 
-const data = {
-  labels: [
-    'Red',
-    'Blue',
-    'Yellow',
-  ],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [300, 50, 100],
-    backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
-    ],
-    hoverOffset: 4
-
-  }]
-};
-
-const options = {
-
-  title: {
-    display: true,
-    text: 'Crypto Chart'
-  },
-  borderAlign: 'inner'
+interface IPieChartProps {
+  investments: IInvestItem[];
+  investType: 'Sell' | 'Buy';
+  options?: object[];
+  type?: 'pie' | 'doughnut';
 }
 
-export default function PieChart({ prop }) {
+export default function PieChart({
+  investments,
+  options,
+  type = 'doughnut',
+  investType,
+}: IPieChartProps) {
+  const sortedByInvestType = investments.filter(
+    item => investType === item.investType,
+  );
+  const totalMoneyInvested = sortedByInvestType.reduce(
+    (acc, item) => acc + item.invested,
+    0,
+  );
 
-  function dataChartCreator(rawData: IInvestItem[], label: string) {
+  const chartRef = useRef();
 
-    interface IDatasets extends Object {
-      label: string,
-      data: (number | string)[],
-      backgroundColor: string[],
-    }
-
-    interface IChartData {
-      labels: string[],
-      datasets: IDatasets[]
-    }
-
-    const chartData: IChartData = {
-      labels: [],
-      datasets: [{
-        label,
-        data: [],
-        backgroundColor: [],
-      }]
-    }
-    rawData?.forEach(item => {
-      chartData.labels.push(item.asset)
-
-      chartData.datasets.forEach((subItem) => {
-        subItem.data.push(item.invested);
-        subItem.backgroundColor.push(getRandomRgb())
-      });
-
-    })
-    return chartData
-  }
-
-  console.log(dataChartCreator(prop, 'My portfolio'));
-
-
-  console.log(prop);
-
-  return <div><Doughnut data={dataChartCreator(prop, 'My portfolio')} /* options={options} */ /></div>
-
+  return (
+    <div className={s.chartWrapper}>
+      {type === 'doughnut' && (
+        <Doughnut
+          ref={chartRef}
+          data={dataChartCreator(sortedByInvestType, 'My portfolio')}
+          options={options}
+        />
+      )}
+      {type === 'pie' && (
+        <Pie
+          data={dataChartCreator(sortedByInvestType, 'My portfolio')}
+          options={options}
+        />
+      )}
+      {chartRef.current && (
+        <p
+          style={{
+            top: `${
+              chartRef.current.height / 2 + chartRef.current.chartArea.top / 2
+            }px`,
+          }}
+          className={s.total}
+        >
+          Total ,$ :{' '}
+          <span className={s.totalAmount}>{`${totalMoneyInvested.toFixed(
+            2,
+          )} `}</span>{' '}
+        </p>
+      )}
+    </div>
+  );
 }

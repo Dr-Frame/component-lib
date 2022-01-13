@@ -7,18 +7,11 @@ import s from './CryptoStatsBar.module.scss';
 const units = ['', 'K', 'M', 'Billion', 'Trillion', 'P', 'E'];
 
 function CryptoStatsBar() {
-  const { data: stats, isLoading } = cryptoApi.useFetchCryptoDataQuery(50);
-
-  /*  if (stats) {
-    const {
-      totalMarketCap,
-      total24hVolume,
-      totalCoins,
-      totalMarkets,
-      totalExchanges,
-    }: IStats = stats?.data?.stats;
-    
-  } */
+  const { data: stats, isLoading } = cryptoApi.useFetchCryptoDataQuery(
+    50 /* , {
+    refetchOnFocus: true,
+  } */,
+  ); //будет делать запрос когда снова зашли на страницу (меняли вкладки в браузере например)
 
   return (
     <>
@@ -63,8 +56,7 @@ function CryptoStatsBar() {
               </li>
             </ul>
           </div>
-
-          <CryptoRankList coinList={stats?.data.coins} />
+          {stats && <CryptoRankList coinList={stats?.data.coins} />}
         </div>
       )}
     </>

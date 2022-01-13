@@ -39,6 +39,7 @@ export const investAPI = createApi({
         body: investment,
       }),
       invalidatesTags: ['Investment'],
+      /* invalidatesTags: result => [{ type: 'Investment', id: result?.id }], */ // когда
     }),
     fetchCategory: build.query<ICategory[], any>({
       query: () => ({
@@ -63,9 +64,9 @@ export const investAPI = createApi({
       }),
       invalidatesTags: ['Category'],
     }),
-    deleteCategory: build.mutation<ICategory, number>({
-      query: id => ({
-        url: `/category/${id}`,
+    deleteCategory: build.mutation<ICategory, ICategory>({
+      query: category => ({
+        url: `/category/${category.id}`,
         method: 'DELETE',
       }),
       invalidatesTags: ['Category'],
