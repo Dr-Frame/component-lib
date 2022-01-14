@@ -18,6 +18,7 @@ import Table from '../../components/Table';
 import { getProfit } from '../../utils/getProfit';
 import { getAmount } from '../../utils/investmentCalculations';
 import LineChart from '../../components/LineChart';
+import { symbolsUrlConstructor } from '../../utils/urlSymbolConstructor';
 
 const cx = classNames.bind(s);
 
@@ -44,6 +45,11 @@ export default function InvestTabPage() {
   const [isBtnDisabled, setIsBtnDisabled] = useState(true);
 
   //redux querry
+  const { data: topThreeCrypto } = cryptoApi.useFetchInvestedCryptoQuery([
+    'BTC',
+    'ETH',
+    'BNB',
+  ]);
   const { data: searchResult } = cryptoApi.useSearchCryptoQuery(asset);
   const {
     data: investments,
@@ -54,7 +60,6 @@ export default function InvestTabPage() {
 
   const [addCategory, {}] = investAPI.useAddCategoryMutation();
   const [deleteCategory, {}] = investAPI.useDeleteCategoryMutation();
-
   const [createInvestment, {}] = investAPI.useCreateInvestmentMutation();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -85,13 +90,13 @@ export default function InvestTabPage() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    const result = getProfit(
+    /* const result = getProfit(
       Number(buyPrice),
       Number(choosedAssetData.price),
       getAmount(Number(investedAmount), Number(buyPrice)),
       Number(investedAmount),
       investType,
-    );
+    ); */
 
     const investment = {
       asset: choosedAssetData,
@@ -99,8 +104,8 @@ export default function InvestTabPage() {
       invested: Number(investedAmount),
       investType,
       category,
-      profit: result.profit,
-      profitPercentage: result.profitInPercent,
+      /*       profit: result.profit,
+      profitPercentage: result.profitInPercent, */
     };
     await createInvestment(investment as IInvestItem);
     setChoosedAssetData('');
@@ -146,6 +151,9 @@ export default function InvestTabPage() {
       setIsBtnDisabled(false);
     }
   }, [asset, buyPrice, investedAmount, category, investType]);
+  console.log('TOP', topThreeCrypto);
+
+  console.log(symbolsUrlConstructor(['BTC', 'ETH', 'BNB']));
 
   return (
     <div className={s.container}>
@@ -243,8 +251,10 @@ export default function InvestTabPage() {
           </form>
         </div>
         <div className={s.topCryptoWrapper}>
-          <LineChart />
-          <LineChart />
+          {topThreeCrypto &&
+            topThreeCrypto.data.coins.map(item => {
+              return <LineChart key={item.rank} asset={item} />;
+            })}
         </div>
         <div className={s.statWrapper}>
           <CryptoStatsBar />

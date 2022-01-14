@@ -9,10 +9,9 @@ import { BiEditAlt } from 'react-icons/bi';
 import { investAPI } from '../../services/InvestService';
 import { useState } from 'react';
 import Input from '../Input';
-import millify from 'millify';
-import { cryptoApi } from '../../services/CryptoService';
 import MySelect from '../MySelect';
 import { getProfit } from '../../utils/getProfit';
+import { cryptoApi } from '../../services/CryptoService';
 
 const cx = classNames.bind(s);
 
@@ -23,16 +22,7 @@ interface IInvestTableRowProps {
 }
 
 function InvestTableRow(props: IInvestTableRowProps) {
-  const {
-    id,
-    asset,
-    buyPrice,
-    invested,
-    investType,
-    category,
-    profit,
-    profitPercentage,
-  } = props.item;
+  const { id, asset, buyPrice, invested, investType, category } = props.item;
   const { index, categories } = props;
 
   const [isEditing, setIsEditing] = useState<boolean>(false);
@@ -40,6 +30,7 @@ function InvestTableRow(props: IInvestTableRowProps) {
   const [updatedBuyPrice, setUpdatedBuyPrice] = useState(buyPrice || '');
   const [updatedInvestedSum, setUpdatedInvestedSum] = useState(invested || '');
   const [updatedCategory, setUpdatedCategory] = useState(category || '');
+
   const [deleteInvestment, {}] = investAPI.useDeleteInvestmentMutation();
   const [editInvestment, {}] = investAPI.useEditInvestmentMutation();
   const { data: searchResult } = cryptoApi.useSearchCryptoQuery(
@@ -53,6 +44,7 @@ function InvestTableRow(props: IInvestTableRowProps) {
     switch (name) {
       case 'updateAsset':
         setUpdatedAsset(value);
+
         break;
       case 'updatePrice':
         setUpdatedBuyPrice(value);
@@ -84,6 +76,14 @@ function InvestTableRow(props: IInvestTableRowProps) {
   const handleDelete = (id: number) => {
     deleteInvestment(id);
   };
+
+  const result = getProfit(
+    Number(buyPrice),
+    Number(choosedAssetData.price),
+    getAmount(Number(updatedInvestedSum), Number(buyPrice)),
+    Number(updatedInvestedSum),
+    investType,
+  );
 
   return (
     <>
@@ -177,16 +177,21 @@ function InvestTableRow(props: IInvestTableRowProps) {
             {Number(asset.price).toFixed(2)}
           </td>
           <td className={cx('tableCell', 'profit')}>
-            {profit ? profit.toFixed(2) : '--'}
+            {result.profit ? result.profit.toFixed(2) : '--'}
           </td>
           <td className={cx('tableCell', 'profitPercent')}>
-            {profitPercentage ? `${profitPercentage.toFixed(2)}%` : '--'}
+            {result.profitInPercent
+              ? `${result.profitInPercent.toFixed(2)}%`
+              : '--'}
           </td>
           <td className={cx('tableCell', 'edit')}>
             {!isEditing ? (
               <Button
                 as="button"
-                onClick={() => setIsEditing(true)}
+                onClick={() => {
+                  setIsEditing(true);
+                  /* searchCoinById(asset.uuid); */
+                }}
                 extraClass={s.button}
               >
                 <BiEditAlt />

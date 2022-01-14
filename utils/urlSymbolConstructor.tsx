@@ -1,4 +1,4 @@
-function symbolsUrlConstructor(symbols: string[]) {
+export function symbolsUrlConstructor(symbols: string[]) {
   if (symbols) {
     const urlItems = symbols.map(item => {
       return `symbols[]=${item}`;
@@ -8,4 +8,14 @@ function symbolsUrlConstructor(symbols: string[]) {
   return;
 }
 
-export default symbolsUrlConstructor;
+export function uuidUrlConstructor(uuid: string[]) {
+  if (uuid) {
+    const urlItems = uuid.map(item => {
+      return `uuids[]=${item}`;
+    });
+    console.log(urlItems.join('&'));
+
+    return urlItems.join('&');
+  }
+  return;
+}

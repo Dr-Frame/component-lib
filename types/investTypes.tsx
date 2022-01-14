@@ -7,8 +7,6 @@ export interface IInvestItem {
   invested: number;
   investType: 'Sell' | 'Buy';
   category: string;
-  profit: number;
-  profitPercentage: number;
 }
 
 export interface ICategory {

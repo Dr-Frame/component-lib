@@ -1,4 +1,7 @@
 import classNames from 'classnames/bind';
+import { useEffect, useState } from 'react';
+import { cryptoApi } from '../../services/CryptoService';
+import { investAPI } from '../../services/InvestService';
 import { ICategory, IInvestItem } from '../../types/investTypes';
 import InvestTableRow from '../InvestTableRow';
 import s from './Table.module.scss';
@@ -11,6 +14,28 @@ interface ITableProps {
 }
 
 function Table({ investments, categories }: ITableProps) {
+  const investedCrypto = investments.map(item => item.asset.uuid);
+  const { data: currentCryptoStats } =
+    cryptoApi.useSearchCoinByIdQuery(investedCrypto);
+  const [editInvestment] = investAPI.useEditInvestmentMutation();
+
+  useEffect(() => {
+    getNewData(investments, currentCryptoStats?.data.coins);
+  }, [investments]);
+
+  function getNewData(oldData: IInvestItem[], newData: IInvestItem[]) {
+    if (oldData && newData) {
+      oldData.map(item => {
+        currentCryptoStats?.data.coins.forEach(subItem => {
+          if (subItem.name === item.asset.name) {
+            editInvestment({ id: item.id, asset: subItem });
+          }
+        });
+      });
+    }
+    return;
+  }
+
   return (
     <table className={s.table}>
       <thead className={s.tableHead}>
