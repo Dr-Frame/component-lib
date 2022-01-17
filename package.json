@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db": "json-server --watch db.json -p 8000"
+    "db": "json-server --watch db.json -p 7999"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",

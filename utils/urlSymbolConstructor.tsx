@@ -13,7 +13,6 @@ export function uuidUrlConstructor(uuid: string[]) {
     const urlItems = uuid.map(item => {
       return `uuids[]=${item}`;
     });
-    console.log(urlItems.join('&'));
 
     return urlItems.join('&');
   }

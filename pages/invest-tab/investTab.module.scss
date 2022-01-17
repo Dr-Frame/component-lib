@@ -6,9 +6,42 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.investWrapper {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  @extend %boxBorder;
+}
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-darkest-mainTheme;
+  margin-bottom: 10px;
+}
+
+.titleIcon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .formWrapper {
-  width: 30%;
+  width: 100%;
 }
 .form {
   width: 100%;
@@ -20,10 +53,13 @@
 }
 
 .topCryptoWrapper {
-  width: 38.5%;
+  padding: 10px 0;
+  width: 43%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  @extend %boxBorder;
 }
 
 .statWrapper {
@@ -54,6 +90,7 @@
   width: 100%;
 }
 .diagramsWrapper {
+  min-height: 400px;
   width: 100%;
   display: flex;
   align-items: center;

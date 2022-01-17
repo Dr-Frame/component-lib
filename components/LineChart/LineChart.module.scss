@@ -1,11 +1,15 @@
 @import '../../styles/shared.scss';
 
 .chartWrapper {
+  margin-right: 30px;
   width: 300px;
-  max-height: 250px;
+  max-height: 300px;
   position: relative;
   background-color: $color-darkest-mainTheme;
   border-radius: 5px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .statWrapper {

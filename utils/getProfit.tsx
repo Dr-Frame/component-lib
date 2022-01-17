@@ -18,10 +18,9 @@ export const getProfit: GetProfitFnType = (
   invested,
   type,
 ) => {
-  console.log(buyPrice, assetPrice, amount, invested, type);
-
   let profit = 0;
   let profitInPercent = 0;
+
   if (type === 'Sell') {
     profit = (buyPrice - assetPrice) * amount;
     profitInPercent = (profit / invested) * 100;
@@ -30,7 +29,6 @@ export const getProfit: GetProfitFnType = (
     profit = (assetPrice - buyPrice) * amount;
     profitInPercent = (profit / invested) * 100;
   }
-  console.log(profit, profitInPercent);
 
   return { profit, profitInPercent };
 };

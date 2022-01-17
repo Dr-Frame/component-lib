@@ -63,7 +63,6 @@ function Input<T>({
       return;
     }
     onChange(e);
-    /* console.log('INPUT', e); */
   }
 
   function onSuggestHandler(item: object) {

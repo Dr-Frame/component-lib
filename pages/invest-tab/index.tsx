@@ -19,6 +19,7 @@ import { getProfit } from '../../utils/getProfit';
 import { getAmount } from '../../utils/investmentCalculations';
 import LineChart from '../../components/LineChart';
 import { symbolsUrlConstructor } from '../../utils/urlSymbolConstructor';
+import { FaBitcoin } from 'react-icons/fa';
 
 const cx = classNames.bind(s);
 
@@ -49,6 +50,7 @@ export default function InvestTabPage() {
     'BTC',
     'ETH',
     'BNB',
+    'LINK',
   ]);
   const { data: searchResult } = cryptoApi.useSearchCryptoQuery(asset);
   const {
@@ -136,7 +138,7 @@ export default function InvestTabPage() {
     setCategoryToDelete(selected);
   }
 
-  console.log(investments);
+  console.log('INvset', investments);
 
   useEffect(() => {
     if (
@@ -151,105 +153,116 @@ export default function InvestTabPage() {
       setIsBtnDisabled(false);
     }
   }, [asset, buyPrice, investedAmount, category, investType]);
-  console.log('TOP', topThreeCrypto);
+  console.log('TOP', topThreeCrypto?.data.coins);
 
   console.log(symbolsUrlConstructor(['BTC', 'ETH', 'BNB']));
 
   return (
     <div className={s.container}>
       <div className={s.wrapperTop}>
-        <div className={s.formWrapper}>
-          <form className={s.form} onSubmit={handleSubmit}>
-            <Input
-              label="Asset"
-              name="asset"
-              value={asset}
-              styleType="animated"
-              theme="mainLight"
-              onChange={handleInputChange}
-              isAutocomplete
-              setClickedValue={setAsset}
-              setChoosedAsset={setChoosedAssetData}
-              list={searchResult?.data?.coins}
-              extraWrapperClass={s.extraWrapper}
-            />
-            <Input
-              label="Entry price, $"
-              name="price"
-              value={buyPrice}
-              type="number"
-              styleType="animated"
-              theme="mainLight"
-              onChange={handleInputChange}
-              extraWrapperClass={s.extraWrapper}
-            />
-            <Input
-              label="Invested, $"
-              name="invested"
-              value={investedAmount}
-              type="number"
-              styleType="animated"
-              theme="mainLight"
-              onChange={handleInputChange}
-              extraWrapperClass={s.extraWrapper}
-            />
-            <MySelect
-              list={investTypeData}
-              label="Type"
-              selected={investType}
-              setSelected={handleInvestTypeSelect}
-              theme="mainLight"
-              animated={true}
-            />
-            {categories && (
-              <div className={s.selectTabWrapper}>
-                <MySelect
-                  list={categories}
-                  label="Category"
-                  selected={category}
-                  setSelected={handleCategorySelect}
-                  theme="mainLight"
-                  animated={true}
-                />
-                <div className={s.buttonsWrapper}>
-                  <IconButton
-                    size="small"
-                    theme="transparent"
-                    extraClass={s.categoryBtn}
-                    onClick={() => setIsAddModalActive(true)}
-                  >
-                    <RiAddBoxFill />
-                  </IconButton>
-                  <IconButton
-                    size="small"
-                    theme="transparent"
-                    extraClass={s.categoryBtn}
-                    onClick={() => setIsDeleteModalActive(true)}
-                  >
-                    <RiDeleteBack2Fill />
-                  </IconButton>
-                </div>
-              </div>
-            )}
+        <div className={s.investWrapper}>
+          <div className={s.titleWrapper}>
+            <div className={s.logoWrapper}>
+              <FaBitcoin className={s.titleIcon} />
+              <h1 className={s.title}>Crypto Dashboard</h1>
+            </div>
+            <p className={s.description}>Invest wisely, think clever</p>
+          </div>
 
-            <Button
-              as="button"
-              type="submit"
-              view="outlined"
-              color="mainLight"
-              size="default"
-              animation="mouseRipple"
-              isFlex
-              disabled={isBtnDisabled}
-              extraClass={s.button}
-            >
-              <p className={s.buttonText}>
-                <ImBoxAdd className={s.buttonIcon} />
-                Add to portfolio
-              </p>
-            </Button>
-          </form>
+          <div className={s.formWrapper}>
+            <form className={s.form} onSubmit={handleSubmit}>
+              <Input
+                label="Asset"
+                name="asset"
+                value={asset}
+                styleType="animated"
+                theme="mainLight"
+                onChange={handleInputChange}
+                isAutocomplete
+                setClickedValue={setAsset}
+                setChoosedAsset={setChoosedAssetData}
+                list={searchResult?.data?.coins}
+                extraWrapperClass={s.extraWrapper}
+              />
+              <Input
+                label="Entry price, $"
+                name="price"
+                value={buyPrice}
+                type="number"
+                styleType="animated"
+                theme="mainLight"
+                onChange={handleInputChange}
+                extraWrapperClass={s.extraWrapper}
+              />
+              <Input
+                label="Invested, $"
+                name="invested"
+                value={investedAmount}
+                type="number"
+                styleType="animated"
+                theme="mainLight"
+                onChange={handleInputChange}
+                extraWrapperClass={s.extraWrapper}
+              />
+              <MySelect
+                list={investTypeData}
+                label="Type"
+                selected={investType}
+                setSelected={handleInvestTypeSelect}
+                theme="mainLight"
+                animated={true}
+              />
+              {categories && (
+                <div className={s.selectTabWrapper}>
+                  <MySelect
+                    list={categories}
+                    label="Category"
+                    selected={category}
+                    setSelected={handleCategorySelect}
+                    theme="mainLight"
+                    animated={true}
+                  />
+                  <div className={s.buttonsWrapper}>
+                    <IconButton
+                      size="small"
+                      theme="transparent"
+                      extraClass={s.categoryBtn}
+                      onClick={() => setIsAddModalActive(true)}
+                    >
+                      <RiAddBoxFill />
+                    </IconButton>
+                    <IconButton
+                      size="small"
+                      theme="transparent"
+                      extraClass={s.categoryBtn}
+                      onClick={() => setIsDeleteModalActive(true)}
+                    >
+                      <RiDeleteBack2Fill />
+                    </IconButton>
+                  </div>
+                </div>
+              )}
+
+              <Button
+                as="button"
+                type="submit"
+                view="outlined"
+                color="mainLight"
+                size="default"
+                animation="mouseRipple"
+                isFlex
+                disabled={isBtnDisabled}
+                extraClass={s.button}
+              >
+                <p className={s.buttonText}>
+                  <ImBoxAdd className={s.buttonIcon} />
+                  Add to portfolio
+                </p>
+              </Button>
+            </form>
+          </div>
         </div>
+
         <div className={s.topCryptoWrapper}>
           {topThreeCrypto &&
             topThreeCrypto.data.coins.map(item => {
@@ -263,8 +276,8 @@ export default function InvestTabPage() {
 
       <div className={s.wrapperBottom}>
         {' '}
-        {isLoading && <h2>loading...</h2>}
-        {error && <h2>error occured</h2>}
+        {/* {isLoading && <h2>loading...</h2>}
+        {error && <h2>error occured</h2>} */}
         {investments && categories && (
           <div className={s.tableWrapper}>
             <Table investments={investments} categories={categories} />

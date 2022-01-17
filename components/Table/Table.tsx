@@ -18,10 +18,11 @@ function Table({ investments, categories }: ITableProps) {
   const { data: currentCryptoStats } =
     cryptoApi.useSearchCoinByIdQuery(investedCrypto);
   const [editInvestment] = investAPI.useEditInvestmentMutation();
+  const { data: newInvestments } = investAPI.useFetchAllInvestmentQuery(50);
 
   useEffect(() => {
     getNewData(investments, currentCryptoStats?.data.coins);
-  }, [investments]);
+  }, [currentCryptoStats]);
 
   function getNewData(oldData: IInvestItem[], newData: IInvestItem[]) {
     if (oldData && newData) {
@@ -56,8 +57,8 @@ function Table({ investments, categories }: ITableProps) {
         </tr>
       </thead>
       <tbody className={s.tableBody}>
-        {investments &&
-          investments.map((investment, i) => (
+        {newInvestments &&
+          newInvestments.map((investment, i) => (
             <InvestTableRow
               key={investment.id}
               index={i}

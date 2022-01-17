@@ -5,7 +5,11 @@ import { menu } from '../utils/navItems';
 interface AccordionPageProps {}
 
 const AccordionPage: FC<AccordionPageProps> = () => {
-  return <Accordion menuItems={menu} />;
+  return (
+    <div style={{ width: '300px' }}>
+      <Accordion menuItems={menu} />
+    </div>
+  );
 };
 
 export default AccordionPage;
