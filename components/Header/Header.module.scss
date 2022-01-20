@@ -2,7 +2,7 @@
 
 .header {
   width: 100%;
-  background-color: $color-dark-mainTheme;
+  background-color: $color-darkest-mainTheme;
   @include for-size(mobile) {
     height: 120px;
   }

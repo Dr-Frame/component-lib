@@ -247,7 +247,7 @@ export default function InvestTabPage() {
                 as="button"
                 type="submit"
                 view="outlined"
-                color="mainLight"
+                color="mainDark"
                 size="default"
                 animation="mouseRipple"
                 isFlex

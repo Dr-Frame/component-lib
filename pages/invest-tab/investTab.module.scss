@@ -53,7 +53,7 @@
 }
 
 .topCryptoWrapper {
-  padding: 10px 0;
+  padding: 10px;
   width: 43%;
   display: flex;
   flex-wrap: wrap;
@@ -98,28 +98,28 @@
 }
 
 .diagramBuyWrapper {
-  background-color: $color-light-mainTheme;
   padding: 10px;
   max-width: 20%;
   @extend %boxBorder;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-right: 20px;
 }
 .diagramSellWrapper {
-  background-color: $color-light-mainTheme;
   padding: 10px;
   max-width: 20%;
   @extend %boxBorder;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .diagramTitle {
   text-align: center;
   text-transform: uppercase;
   padding: 5px 15px;
-  margin-bottom: 10px;
-  background-color: $color-dark-mainTheme;
-  border-radius: 5px;
+  /* margin-bottom: 10px; */
+  background-color: $color-darkest-mainTheme;
+  /* border-radius: 5px; */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   color: $main-text-color;
 }
 

@@ -3,7 +3,8 @@
 .button {
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  /* display: block; */
+  /* margin: 0 auto; */
   text-align: center;
   padding: 5px 10px;
   cursor: pointer;
@@ -56,6 +57,7 @@
       background-color: $color-medium-mainTheme;
     }
     &:disabled {
+      opacity: 0.5;
       cursor: default;
       pointer-events: none;
     }
@@ -72,6 +74,7 @@
       background-color: $color-darkest-mainTheme;
     }
     &:disabled {
+      opacity: 0.5;
       cursor: default;
       pointer-events: none;
     }
@@ -90,6 +93,7 @@
       background-color: $color-medium-mainTheme;
     }
     &:disabled {
+      opacity: 0.5;
       cursor: default;
       pointer-events: none;
     }
@@ -99,12 +103,13 @@
     }
   }
   &.mainDark {
-    background-color: $color-dark-mainTheme;
+    background-color: $color-darkest-mainTheme;
     color: $main-text-color;
     &:hover {
-      background-color: $color-darkest-mainTheme;
+      background-color: $color-dark-mainTheme;
     }
     &:disabled {
+      opacity: 0.5;
       cursor: default;
       pointer-events: none;
     }
@@ -119,6 +124,7 @@
   &.mainLight {
     border: 1px solid $color-superLight-mainTheme;
     &:disabled {
+      opacity: 0.5;
       cursor: default;
       pointer-events: none;
     }
@@ -133,6 +139,7 @@
   &.mainDark {
     border: 1px solid $color-darkest-mainTheme;
     &:disabled {
+      opacity: 0.5;
       cursor: default;
       pointer-events: none;
     }

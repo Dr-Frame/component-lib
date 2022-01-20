@@ -1,9 +1,11 @@
 @import '../../styles/shared.scss';
 
 .chartWrapper {
-  background-color: $color-dark-mainTheme;
+  background-color: $color-darkest-mainTheme;
   position: relative;
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .total {

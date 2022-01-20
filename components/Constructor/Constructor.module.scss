@@ -1,0 +1,23 @@
+@import '../../styles/shared.scss';
+
+.slide {
+  margin: 0 auto;
+
+  width: 40%;
+  padding: 40px;
+  @extend %boxBorder;
+}
+.wordAmount {
+  text-align: right;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  font-size: 14px;
+  width: 120px;
+}

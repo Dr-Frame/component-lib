@@ -1,0 +1,73 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.translatedWord {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: $color-darkest-mainTheme;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: $color-medium-mainTheme;
+}
+
+.list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cellToFill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid $color-darkest-mainTheme;
+  border-radius: 3px;
+  font-size: 12px;
+
+  &.current {
+    border: 2px solid $color-letter-border;
+  }
+
+  &.quessed {
+    background-color: $color-right-letter;
+  }
+}
+
+.cellToClick {
+  background-color: $color-letter-border;
+  cursor: pointer;
+}
+
+.wrong {
+  &:active {
+    background-color: $color-wrong-letter;
+  }
+}
+
+.right {
+  &:active {
+    background-color: $color-right-letter;
+  }
+}
+
+.keyWrong {
+  background-color: $color-wrong-letter;
+}
+.keyRight {
+  background-color: $color-right-letter;
+}
+
+.hidden {
+  visibility: hidden;
+}

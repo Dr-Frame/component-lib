@@ -23,19 +23,15 @@ function dataChartCreator(rawData: IInvestItem[], label: string) {
         data: [],
         backgroundColor: [],
         hoverBackgroundColor: [],
-        /* borderColor: [], */
+        borderColor: [],
         borderWidth: 2,
         /* hoverBorderWidth: 4, */
-        borderRadius: 2,
+        /* borderRadius: 2, */
         hoverOffset: 15,
         cutout: '40%',
+        tooltip: {},
       },
     ],
-    options: {
-      legend: {
-        display: true,
-      },
-    },
   };
 
   rawData?.forEach(item => {
@@ -43,6 +39,7 @@ function dataChartCreator(rawData: IInvestItem[], label: string) {
     chartData.datasets.forEach(subItem => {
       subItem.data.push(item.invested);
       subItem.backgroundColor.push(item.asset.color);
+      subItem.borderColor.push('transparent');
       subItem.hoverBackgroundColor.push(shadeColor(item.asset.color, 40));
     });
   });
