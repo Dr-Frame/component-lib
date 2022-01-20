@@ -1,18 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from '../Button';
-import WordContainer from '../WordContainer';
+import WordContainer2 from '../WordContainer2';
 import s from './Constructor.module.scss';
 
 interface IConstructorProps {}
 
 const wordList = [
   {
-    word: 'mother',
-    translate: 'мама',
-  },
-  {
     word: 'concrete',
     translate: 'цемент',
+  },
+  {
+    word: 'mother',
+    translate: 'мама',
   },
 
   {
@@ -59,10 +59,12 @@ function Constructor() {
       item => (item.mix = item.word.split('').sort(() => Math.random() - 0.5)),
     );
   }
-  addMixed(wordList);
+
+  useEffect(() => {
+    addMixed(wordList);
+  }, []);
 
   let currentWord = wordList[currentSlide - 1];
-  console.log(currentWord);
 
   return (
     <div className={s.slide}>
@@ -70,7 +72,7 @@ function Constructor() {
         Word: {currentSlide}/{wordList.length}
       </p>
 
-      <WordContainer
+      <WordContainer2
         word={currentWord}
         setIsCorrect={setIsCorrect}
         slide={currentSlide}
