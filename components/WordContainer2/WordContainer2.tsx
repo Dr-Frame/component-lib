@@ -14,6 +14,7 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
     word.word.split(''),
   );
   const [wordObj, setWordObj] = useState({});
+  console.log(word);
 
   console.log('WORD CONTAINER answer', answer);
   console.log('WORD CONTAINER position', position);
@@ -41,20 +42,25 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
   }, [word]);
 
   function wordObjCreator(lettersArr) {
-    const wordToQuessObject = lettersArr.reduce((prev, cur) => {
-      prev[cur] = (prev[cur] || 0) + 1;
-      return prev;
-    }, {});
+    console.log(word.mix);
+    console.log(lettersArr);
+
+    const wordToQuessObject = lettersArr
+      .sort(() => Math.random() - 0.5)
+      .reduce((prev, cur) => {
+        prev[cur] = (prev[cur] || 0) + 1;
+        return prev;
+      }, {});
     return wordToQuessObject;
   }
 
   function newHandleClick(e, type) {
     if (type === 'mouse') {
       if (e.target.firstChild.textContent === startWordSplitted[position]) {
-        console.log('INSIDE click works');
+        /*  console.log('INSIDE click works');
         console.log('INSIDE fn key', e.key);
         console.log('INSIDE fn word pos', startWordSplitted[position]);
-        console.log('INSIDE startWordSplitted', startWordSplitted);
+        console.log('INSIDE startWordSplitted', startWordSplitted); */
         const letterPosition = splittedQuessWord.indexOf(
           e.target.firstChild.textContent,
         );
@@ -67,9 +73,6 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
       }
     }
     if (type === 'keyboard' && e.key === startWordSplitted[position]) {
-      /*  console.log('fn key', e.key);
-      console.log('fn word pos', startWordSplitted[position]); */
-
       const letterPosition = splittedQuessWord.indexOf(e.key);
       const copySplittedWord = [...splittedQuessWord];
       copySplittedWord.splice(letterPosition, 1);
@@ -80,6 +83,7 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
     }
   }
 
+  //handle keypress
   useEffect(() => {
     function addLetter(e: KeyboardEvent) {
       newHandleClick(e, 'keyboard');
@@ -89,10 +93,11 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
     return () => window.removeEventListener('keydown', addLetter);
   }, [position, startWordSplitted]);
 
+  //handle enter press
   useEffect(() => {
     function nextWordPress(e: KeyboardEvent) {
       if (e.key === 'Enter' && isCorrect) {
-        setSlide(prevState => prevState + 1);
+        setSlide((prevState: number) => prevState + 1);
       }
     }
     window.addEventListener('keypress', nextWordPress);
@@ -105,27 +110,9 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
 
   return (
     <div className={s.wrapper}>
-      <ul className={s.list}>
-        {Object.keys(wordObj).length > 0
-          ? Object.entries(wordObj).map((letter, i) => {
-              return (
-                <li
-                  onClick={e => newHandleClick(e, 'mouse')}
-                  key={i}
-                  className={cx(s.cellToFill, s.cellToClick, {
-                    wrong: letter[0] !== startWordSplitted[position],
-                    right: letter[0] === startWordSplitted[position],
-                  })}
-                >
-                  {letter[0]}
-                  {letter[1] > 1 && (
-                    <span className={s.letterAmount}>{letter[1]}</span>
-                  )}
-                </li>
-              );
-            })
-          : 'net bukv podskazok'}
-      </ul>
+      <p className={s.translatedWord}>{word.translate}</p>
+      <p className={s.description}>make up a word from letters below</p>
+
       <ul className={s.list}>
         {answer
           ? startWordSplitted.map((letter, i) => {
@@ -145,8 +132,29 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
               return <li key={i} className={s.cellToFill}></li>;
             })}
       </ul>
-
-      <p>another variant</p>
+      <ul className={s.list}>
+        {Object.keys(wordObj).length > 0 ? (
+          Object.entries(wordObj).map((letter, i) => {
+            return (
+              <li
+                onClick={e => newHandleClick(e, 'mouse')}
+                key={i}
+                className={cx(s.cellToFill, s.cellToClick, {
+                  wrong: letter[0] !== startWordSplitted[position],
+                  right: letter[0] === startWordSplitted[position],
+                })}
+              >
+                {letter[0]}
+                {letter[1] > 1 && (
+                  <span className={s.letterAmount}>{letter[1]}</span>
+                )}
+              </li>
+            );
+          })
+        ) : (
+          <div className={s.wordQuessed}></div>
+        )}
+      </ul>
     </div>
   );
 }

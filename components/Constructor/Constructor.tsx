@@ -52,7 +52,7 @@ const wordList = [
 ];
 
 function Constructor() {
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [currentSlide, setCurrentSlide] = useState<number>(1);
   const [isCorrect, setIsCorrect] = useState(false);
   const [currentWord, setCurrentWord] = useState(wordList[0]);
 
@@ -60,7 +60,7 @@ function Constructor() {
   console.log('Constructor curWord', currentWord);
   console.log('Constructor isCorrect', isCorrect);
 
-  function addMixed(list) {
+  /* function addMixed(list) {
     list.forEach(
       item => (item.mix = item.word.split('').sort(() => Math.random() - 0.5)),
     );
@@ -68,7 +68,7 @@ function Constructor() {
 
   useEffect(() => {
     addMixed(wordList);
-  }, []);
+  }, []); */
 
   useEffect(() => {
     setCurrentWord(wordList[currentSlide - 1]);
