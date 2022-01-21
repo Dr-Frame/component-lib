@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Button from '../Button';
 import WordContainer2 from '../WordContainer2';
+import WordContainer from '../WordContainer';
 import s from './Constructor.module.scss';
 
 interface IConstructorProps {}
@@ -53,6 +54,11 @@ const wordList = [
 function Constructor() {
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [currentWord, setCurrentWord] = useState(wordList[0]);
+
+  console.log('Constructor curSlide', currentSlide);
+  console.log('Constructor curWord', currentWord);
+  console.log('Constructor isCorrect', isCorrect);
 
   function addMixed(list) {
     list.forEach(
@@ -64,7 +70,9 @@ function Constructor() {
     addMixed(wordList);
   }, []);
 
-  let currentWord = wordList[currentSlide - 1];
+  useEffect(() => {
+    setCurrentWord(wordList[currentSlide - 1]);
+  }, [currentSlide]);
 
   return (
     <div className={s.slide}>
@@ -74,17 +82,18 @@ function Constructor() {
 
       <WordContainer2
         word={currentWord}
+        isCorrect={isCorrect}
         setIsCorrect={setIsCorrect}
         slide={currentSlide}
+        setSlide={setCurrentSlide}
       />
-
       <Button
         as="button"
         color="mainDark"
         size="small"
         uppercase
         disabled={!isCorrect}
-        onClick={() => setCurrentSlide(currentSlide + 1)}
+        onClick={() => setCurrentSlide(prevState => prevState + 1)}
         extraClass={s.button}
       >
         next word
