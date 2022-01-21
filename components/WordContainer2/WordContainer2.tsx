@@ -14,18 +14,13 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
     word.word.split(''),
   );
   const [wordObj, setWordObj] = useState({});
-  console.log(word);
 
-  console.log('WORD CONTAINER answer', answer);
-  console.log('WORD CONTAINER position', position);
-  console.log('WORD CONTAINER startWordSplitted', startWordSplitted);
-  console.log('WORD CONTAINER splittedQuessWord', splittedQuessWord);
-  console.log('WORD CONTAINER wordObj', wordObj);
+  //link to the <ul>
+  const letterList = useRef(null);
 
   useEffect(() => {
     setPosition(0);
     setAnswer([]);
-    /* setStartWordSplitted(''); */
   }, [slide]);
 
   useEffect(() => {
@@ -42,9 +37,6 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
   }, [word]);
 
   function wordObjCreator(lettersArr) {
-    console.log(word.mix);
-    console.log(lettersArr);
-
     const wordToQuessObject = lettersArr
       .sort(() => Math.random() - 0.5)
       .reduce((prev, cur) => {
@@ -57,10 +49,6 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
   function newHandleClick(e, type) {
     if (type === 'mouse') {
       if (e.target.firstChild.textContent === startWordSplitted[position]) {
-        /*  console.log('INSIDE click works');
-        console.log('INSIDE fn key', e.key);
-        console.log('INSIDE fn word pos', startWordSplitted[position]);
-        console.log('INSIDE startWordSplitted', startWordSplitted); */
         const letterPosition = splittedQuessWord.indexOf(
           e.target.firstChild.textContent,
         );
@@ -72,6 +60,7 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
         setPosition(prevState => prevState + 1);
       }
     }
+    //если буква верная
     if (type === 'keyboard' && e.key === startWordSplitted[position]) {
       const letterPosition = splittedQuessWord.indexOf(e.key);
       const copySplittedWord = [...splittedQuessWord];
@@ -80,6 +69,28 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
       setSplittedQuessWord(copySplittedWord);
       setAnswer(prevState => [...prevState, e.key]);
       setPosition(prevState => prevState + 1);
+    } //если буква не верная цвет
+    else if (type === 'keyboard' && e.key !== startWordSplitted[position]) {
+      if (letterList.current.children) {
+        Object.values(letterList.current.children).forEach(liItem => {
+          if (liItem?.firstChild?.textContent === e.key) {
+            liItem.classList.add(cx(s.keyWrong));
+          }
+        });
+      }
+    }
+  }
+
+  //remove colors
+  function removeColor(e: KeyboardEvent) {
+    if (e.key !== startWordSplitted[position]) {
+      if (letterList.current.children) {
+        Object.values(letterList.current.children).forEach(liItem => {
+          if (liItem?.firstChild?.textContent === e.key) {
+            liItem.classList.remove(cx(s.keyWrong));
+          }
+        });
+      }
     }
   }
 
@@ -90,7 +101,11 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
     }
 
     window.addEventListener('keydown', addLetter);
-    return () => window.removeEventListener('keydown', addLetter);
+    window.addEventListener('keyup', removeColor);
+    return () => {
+      window.removeEventListener('keydown', addLetter);
+      window.removeEventListener('keyup', removeColor);
+    };
   }, [position, startWordSplitted]);
 
   //handle enter press
@@ -105,8 +120,6 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
       window.removeEventListener('keypress', nextWordPress);
     };
   }, [isCorrect]);
-
-  /* console.log(position); */
 
   return (
     <div className={s.wrapper}>
@@ -132,7 +145,7 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
               return <li key={i} className={s.cellToFill}></li>;
             })}
       </ul>
-      <ul className={s.list}>
+      <ul className={s.list} ref={letterList}>
         {Object.keys(wordObj).length > 0 ? (
           Object.entries(wordObj).map((letter, i) => {
             return (

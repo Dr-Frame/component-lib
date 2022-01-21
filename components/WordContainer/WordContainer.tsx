@@ -79,10 +79,10 @@ function WordContainer({ word, setIsCorrect, slide }) {
     answer.join('') === word.word ? setIsCorrect(true) : setIsCorrect(false);
   }, [answer]);
 
-  console.log('STATE');
+  /* console.log('STATE');
   console.log('ANSWER', answer);
   console.log('POSITION', position);
-  console.log('Supposed ', splittedQuessWord[position]);
+  console.log('Supposed ', splittedQuessWord[position]); */
 
   return (
     <div className={s.wrapper}>

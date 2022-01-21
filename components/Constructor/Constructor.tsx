@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Button from '../Button';
 import WordContainer2 from '../WordContainer2';
-import WordContainer from '../WordContainer';
 import s from './Constructor.module.scss';
 
 interface IConstructorProps {}
@@ -55,20 +54,6 @@ function Constructor() {
   const [currentSlide, setCurrentSlide] = useState<number>(1);
   const [isCorrect, setIsCorrect] = useState(false);
   const [currentWord, setCurrentWord] = useState(wordList[0]);
-
-  console.log('Constructor curSlide', currentSlide);
-  console.log('Constructor curWord', currentWord);
-  console.log('Constructor isCorrect', isCorrect);
-
-  /* function addMixed(list) {
-    list.forEach(
-      item => (item.mix = item.word.split('').sort(() => Math.random() - 0.5)),
-    );
-  }
-
-  useEffect(() => {
-    addMixed(wordList);
-  }, []); */
 
   useEffect(() => {
     setCurrentWord(wordList[currentSlide - 1]);
