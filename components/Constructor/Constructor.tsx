@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Button from '../Button';
-import WordContainer2 from '../WordContainer2';
+import WordContainer2 from '../WordContainer';
 import s from './Constructor.module.scss';
 
 interface IConstructorProps {}

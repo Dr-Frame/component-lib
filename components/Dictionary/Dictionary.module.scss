@@ -1,0 +1,103 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  @extend %boxBorder;
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.topWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.wordsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding: 5px 10px;
+  width: 200px;
+  height: 40px;
+  margin-right: 20px;
+  &:focus {
+    border: 2px solid $color-letter-border !important;
+  }
+}
+
+.addBtn {
+  height: 40px;
+  background-color: transparent !important;
+  color: $color-light-mainTheme !important;
+  border: 2px solid $color-light-mainTheme !important;
+  font-weight: 500;
+
+  &:hover {
+    color: $color-letter-border !important;
+    border: 2px solid $color-letter-border !important;
+  }
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-right: 10px;
+  width: 40px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-light-mainTheme !important;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 5px;
+  width: auto;
+  background-color: white !important;
+  color: $secondary-text-color !important;
+  font-weight: 500;
+  color: $color-light-mainTheme !important;
+
+  &:hover {
+    border: 2px solid $color-letter-border !important;
+    color: $color-letter-border !important;
+  }
+
+  &.active {
+    border: 2px solid $color-letter-border !important;
+    color: $color-letter-border !important;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon {
+  font-size: 20px;
+  color: $color-light-mainTheme;
+  transition: $transition;
+
+  .button:hover & {
+    color: $color-letter-border;
+  }
+
+  .button.active & {
+    color: $color-letter-border;
+  }
+}
+
+.listWrapper {
+}

@@ -1,0 +1,61 @@
+@import '../../styles/shared.scss';
+
+.item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid $color-light-mainTheme;
+}
+
+.soundButton {
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.soundButtonIcon,
+.deleteButtonIcon {
+  font-size: 22px;
+}
+
+.translationWrapper {
+}
+
+.english {
+  color: $color-letter-border;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.translation {
+}
+
+.stageWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.stageIcon {
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 2px solid $color-light-mainTheme;
+  color: $color-light-mainTheme;
+  border-radius: 3px;
+}
+
+.deleteBtn {
+  width: 42px;
+  height: 42px;
+  background-color: #fff !important;
+  border: 2px solid $color-light-mainTheme !important;
+  border-radius: 3px;
+  padding: 0 !important;
+  font-size: 24px !important;
+  color: $color-light-mainTheme;
+
+  &:hover {
+    border: 2px solid $color-letter-border !important;
+    color: $color-letter-border;
+  }
+}

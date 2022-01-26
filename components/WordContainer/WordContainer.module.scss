@@ -24,12 +24,13 @@
 }
 
 .cellToFill {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
   border: 1px solid $color-darkest-mainTheme;
   border-radius: 3px;
@@ -47,6 +48,10 @@
 .cellToClick {
   background-color: $color-letter-border;
   cursor: pointer;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .wrong {
@@ -70,4 +75,27 @@
 
 .hidden {
   visibility: hidden;
+}
+
+.letterAmount {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -5px;
+  z-index: 1;
+  border-radius: 50%;
+  padding: 7px;
+  border: 1px solid black;
+  font-size: 10px;
+  background: $color-letter-border;
+  color: white;
+}
+
+.wordQuessed {
+  height: 30px;
+  width: 100%;
 }

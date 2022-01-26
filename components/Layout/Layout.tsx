@@ -39,7 +39,7 @@ const menu: IMenuItem[] = [
       { title: 'Drag&Drops', link: '/dragdrop' },
       { title: 'Invest', link: '/invest-tab' },
       { title: 'Word Constructor', link: '/word-constructor' },
-      { title: 'Chart', link: '/chart' },
+      { title: 'Dictionary', link: '/dictionary' },
     ],
   },
 ];

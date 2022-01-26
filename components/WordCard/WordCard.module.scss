@@ -1,0 +1,252 @@
+@import '../../styles/shared.scss';
+
+.cardWrapper {
+  position: relative;
+  min-width: 600px;
+  min-height: 400px;
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+
+  .word {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-letter-border;
+    margin-bottom: 10px;
+  }
+
+  .soundButton {
+    font-size: 20px;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: $color-light-mainTheme;
+    &:hover {
+      color: $color-dark-mainTheme;
+    }
+  }
+
+  .phoneticWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .phonetic {
+    font-size: 16px;
+    text-align: center;
+    color: $color-dark-mainTheme;
+  }
+
+  .translateChangeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .translateWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.visible {
+        display: flex;
+      }
+      &.hidden {
+        display: none;
+      }
+    }
+
+    .yourTranslate {
+      margin-bottom: 0;
+    }
+    .translate {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      color: $color-darkest-mainTheme;
+      margin-right: 10px;
+    }
+    .changeButton {
+      font-size: 20px;
+      margin-right: 5px;
+      border-radius: 3px;
+      color: $color-light-mainTheme;
+      &:hover {
+        color: $color-dark-mainTheme;
+      }
+    }
+    .inputWrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      &.visible {
+        display: flex;
+      }
+      &.hidden {
+        display: none;
+      }
+      .input {
+        padding: 5px 10px;
+        width: 200px;
+        height: 40px;
+        margin-right: 10px;
+        &:focus {
+          border: 2px solid $color-letter-border !important;
+        }
+      }
+    }
+  }
+
+  .addBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 145px;
+    padding: 10px 0;
+    background-color: transparent;
+    /* color: $color-light-mainTheme;
+    border-color: $color-light-mainTheme; */
+    color: $color-letter-border;
+    border-color: $color-letter-border;
+    font-size: 16px;
+    &:hover {
+      /*       color: $color-letter-border;
+      border-color: $color-letter-border; */
+      /* background-color: $color-letterLight-border; */
+      background-color: rgba(178, 198, 250, 0.2);
+
+      /* background-color: transparent; */
+      /*  color: $color-letter-border;
+      border-color: $color-letter-border;
+      background-color: $color-superLight-mainTheme; */
+    }
+  }
+
+  .extraTranslation {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .extraTranslationItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 12px;
+
+    .extraTranslationText {
+      color: $color-medium-mainTheme;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .extraSynonim {
+      color: $color-light-mainTheme;
+    }
+  }
+
+  .meaningsWrapper {
+    margin-bottom: 10px;
+  }
+
+  .partOfSpeechTitle {
+    font-size: 14px;
+    color: $color-medium-mainTheme;
+    margin-bottom: 5px;
+  }
+
+  .partOfSpeech,
+  .additionalText,
+  .yourTranslate {
+    display: inline-block;
+    color: $color-dark-mainTheme;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 3px 7px;
+    background-color: $color-superLight-mainTheme;
+    border-radius: 3px;
+  }
+
+  .defList {
+    .defItem {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .defItemWrapper {
+      font-size: 12px;
+    }
+
+    .defNumberWrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .definitionNumber {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      padding: 8px;
+      background-color: $color-superLight-mainTheme;
+      font-weight: 500;
+      margin-right: 15px;
+      border-radius: 100%;
+      font-size: 10px;
+      color: $color-dark-mainTheme;
+    }
+    .definition {
+      font-size: 14px;
+      font-weight: 500;
+      color: $color-dark-mainTheme;
+      /* overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; */
+    }
+    .example {
+      color: $color-medium-mainTheme;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .synonym {
+      color: $color-medium-mainTheme;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+    .example span {
+      font-weight: 400;
+      color: $color-light-mainTheme;
+      font-style: italic;
+      margin-left: 10px;
+    }
+
+    .synonymsList {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .synonymItem {
+        font-size: 12px;
+        padding: 3px 7px;
+        border-radius: 10px;
+        border: 1px solid $color-superLight-mainTheme;
+        color: $color-medium-mainTheme;
+        margin: 2px;
+      }
+    }
+  }
+}
