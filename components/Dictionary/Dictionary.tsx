@@ -23,7 +23,7 @@ type wordStateT = 'all' | 'new' | 'inProgress' | 'done';
 function Dictionary() {
   const [search, setSearch] = useState('');
   const [wordsToShow, setWordsToShow] = useState<wordStateT>('all');
-  const [wordData, setWordData] = useState<IWord | null>(null);
+  const [wordData, setWordData] = useState<IWord[] | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isErrorOcurred, setIsErrorOcurred] = useState(false);
@@ -34,14 +34,27 @@ function Dictionary() {
   const [getTranslation] = dictionaryApi.useLazyGetTranslationQuery();
   const [getWord] = dictionaryApi2.useLazyGetWordQuery();
 
+  const filterWordList = (
+    list: IWord[],
+    filter: string | number,
+    filterType: 'word' | 'stage',
+  ) => {
+    let filtered;
+    if (filterType === 'word' && typeof filter === 'string') {
+      return (filtered = list.filter(item => item.word.includes(filter)));
+    }
+    if (filterType === 'stage' && typeof filter === 'number') {
+      return (filtered = list.filter(item => item.stage === filter));
+    }
+  };
+
   useEffect(() => {
     setSearch('');
   }, [wordList]);
 
   useEffect(() => {
     if (wordList) {
-      const filtered = wordList.filter(item => item.word.includes(search));
-      setFilteredList(filtered);
+      setFilteredList(filterWordList(wordList, search, 'word'));
     }
   }, [search, wordList]);
 
@@ -72,9 +85,8 @@ function Dictionary() {
   const handleAddWord = async () => {
     setIsLoading(true);
     let wordData;
-
+    setIsModalOpen(true);
     try {
-      setIsModalOpen(true);
       const { data } = await getTranslation(search);
       const apiData = await getWord(search);
 
@@ -128,34 +140,46 @@ function Dictionary() {
             extraClass={cx(s.button, {
               active: wordsToShow === 'all',
             })}
-            onClick={() => setWordsToShow('all')}
+            onClick={() => {
+              setWordsToShow('all');
+              setFilteredList(wordList);
+            }}
           >
             All
           </Button>
           <Button
             as="button"
-            extraClass={cx(s.button, {
+            extraClass={cx(s.button, s.new, {
               active: wordsToShow === 'new',
             })}
-            onClick={() => setWordsToShow('new')}
+            onClick={() => {
+              setWordsToShow('new');
+              setFilteredList(filterWordList(wordList, 0, 'stage'));
+            }}
           >
             <BsBook className={s.icon} />
           </Button>
           <Button
             as="button"
-            extraClass={cx(s.button, {
+            extraClass={cx(s.button, s.half, {
               active: wordsToShow === 'inProgress',
             })}
-            onClick={() => setWordsToShow('inProgress')}
+            onClick={() => {
+              setWordsToShow('inProgress');
+              setFilteredList(filterWordList(wordList, 1, 'stage'));
+            }}
           >
             <BsBookHalf className={s.icon} />
           </Button>
           <Button
             as="button"
-            extraClass={cx(s.button, {
+            extraClass={cx(s.button, s.done, {
               active: wordsToShow === 'done',
             })}
-            onClick={() => setWordsToShow('done')}
+            onClick={() => {
+              setWordsToShow('done');
+              setFilteredList(filterWordList(wordList, 2, 'stage'));
+            }}
           >
             <BsBookFill className={s.icon} />
           </Button>

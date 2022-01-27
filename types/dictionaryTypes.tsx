@@ -26,4 +26,5 @@ export interface IWord {
   translate: string;
   translations: object;
   word: string;
+  id?: number;
 }

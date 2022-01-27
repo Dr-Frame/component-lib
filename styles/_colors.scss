@@ -9,9 +9,14 @@ $transition: 0.2s;
 $transitionModal: 0.3s;
 $color-modal-backdrop: rgba(21, 2, 35, 0.3);
 $color-letter-border: rgb(0, 166, 255);
+$color-letterLight-border: rgb(84, 192, 250);
+$color-letterSuperLight-border: rgb(154, 220, 255);
 $color-wrong-letter: rgb(208, 3, 3);
 $color-right-letter: rgb(0, 148, 0);
-$color-letterLight-border: rgba(0, 165, 253, 0.6);
+
+$color-stage-0: rgb(84, 192, 250);
+$color-stage-1: rgb(255, 185, 35);
+$color-stage-2: rgb(2, 189, 2);
 
 //main theme
 $color-superLight-mainTheme: #cfd8dc;

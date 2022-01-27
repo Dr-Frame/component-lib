@@ -347,7 +347,7 @@
   },
   "dictionary": [
     {
-      "translate": "мама, мамуля",
+      "translate": "мама, мамуля, мамочка",
       "translations": {
         "Mother": [
           "Mother"
@@ -502,7 +502,7 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "",
       "folder": "",
       "id": 1
@@ -621,230 +621,10 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 2,
       "category": "",
       "folder": "",
       "id": 2
-    },
-    {
-      "translate": "сервер, официант",
-      "translations": {
-        "Server": [
-          "Server"
-        ],
-        "официант": [
-          "waiter",
-          "server",
-          "waitress",
-          "busboy",
-          "trainee",
-          "waitperson",
-          "waitor",
-          "Garcon"
-        ],
-        "подающий мяч игрок": [
-          "server",
-          ""
-        ],
-        "поднос": [
-          "tray",
-          "plate",
-          "food tray",
-          "serving dish",
-          "lapboard",
-          "salver",
-          "server",
-          "platter"
-        ],
-        "сервак": [
-          "server",
-          ""
-        ],
-        "сервер": [
-          "server",
-          "mainframe",
-          "backups"
-        ],
-        "серверная": [
-          "server",
-          "server room"
-        ],
-        "серверный": [
-          "server",
-          "server-based",
-          "server-side",
-          "serverside"
-        ],
-        "серверных": [
-          "server",
-          "server-side"
-        ],
-        "служитель": [
-          "servant",
-          "minister",
-          "a man of",
-          "officer",
-          "attendant",
-          "page",
-          "server",
-          "servaunt"
-        ]
-      },
-      "word": "server",
-      "phonetic": "ˈsəːvə",
-      "phonetics": [
-        {
-          "text": "ˈsəːvə",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/server--_gb_1.mp3"
-        }
-      ],
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a person or thing that serves.",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "a computer or computer program which manages access to a centralized resource or service in a network.",
-              "example": "the software runs on a variety of Unix servers",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": 0,
-      "category": "",
-      "folder": "",
-      "time": 1643199679239,
-      "id": 3
-    },
-    {
-      "translate": "обезьяна, мартышка",
-      "translations": {
-        "Monkey": [
-          "Monkey"
-        ],
-        "Манки": [
-          "Monkey",
-          "Munky"
-        ],
-        "Монки": [
-          "Monkey"
-        ],
-        "макака": [
-          "monkey",
-          "macaque",
-          ""
-        ],
-        "мартышка": [
-          "monkey",
-          "marmoset",
-          "ape",
-          "guenon",
-          "Pongo"
-        ],
-        "обезьяна": [
-          "monkey",
-          "ape",
-          "jocko",
-          "jacko"
-        ],
-        "обезьяний": [
-          "monkey",
-          "ape",
-          "simian"
-        ],
-        "обезьянка": [
-          "monkey",
-          "marmoset"
-        ]
-      },
-      "word": "monkey",
-      "phonetic": "ˈmʌŋki",
-      "phonetics": [
-        {
-          "text": "ˈmʌŋki",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/monkey--_gb_1.mp3"
-        }
-      ],
-      "origin": "mid 16th century: of unknown origin, perhaps from Low German.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a small to medium-sized primate that typically has a long tail, most kinds of which live in trees in tropical countries.",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "a sum of £500.",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "a piledriving machine consisting of a heavy hammer or ram working vertically in a groove.",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "behave in a silly or playful way.",
-              "example": "I saw them monkeying about by the shop",
-              "synonyms": [
-                "fool about",
-                "fool around",
-                "play about",
-                "play around",
-                "clown about",
-                "clown around",
-                "fiddle-faddle",
-                "mess about",
-                "mess around",
-                "horse about",
-                "horse around",
-                "screw around",
-                "puddle about",
-                "puddle around",
-                "muck about",
-                "muck around",
-                "fanny about",
-                "fanny around",
-                "footle about",
-                "footle around",
-                "lark (about)",
-                "lark (around)",
-                "piss about",
-                "piss around",
-                "arse about",
-                "arse around",
-                "bugger about",
-                "bugger around"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "ape; mimic.",
-              "example": "then marched the Three who monkeyed our Great and Dead",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": 0,
-      "category": "",
-      "folder": "",
-      "time": 1643199927286,
-      "id": 4
     }
   ]
 }

@@ -16,20 +16,28 @@ const cx = classNames.bind(s);
 
 interface IWordCardProps {
   wordData: IWord;
-  isLoading: boolean;
-  search: string;
-  setModal(arg: boolean): void;
+  isLoading?: boolean;
+  search?: string;
+  setModal?(arg: boolean): void;
+  isAddFuncOn: boolean;
 }
 
-function WordCard({ wordData, isLoading, search, setModal }: IWordCardProps) {
+function WordCard({
+  wordData,
+  isLoading,
+  search,
+  setModal,
+  isAddFuncOn = true,
+}: IWordCardProps) {
   const [userTranslation, setUserTranslation] = useState(wordData.translate);
   const [isRedacting, setIsRedacting] = useState(false);
 
-  console.log('isLoading', isLoading);
-  console.log('wordData', wordData);
+  /* console.log('isLoading', isLoading);
+  console.log('wordData', wordData); */
 
   //redux
   const [addWord] = wordsApi.useAddWordMutation();
+  const [updateWord] = wordsApi.useUpdateWordMutation();
 
   useEffect(() => {
     setIsRedacting(false);
@@ -103,7 +111,9 @@ function WordCard({ wordData, isLoading, search, setModal }: IWordCardProps) {
                   size="small"
                   theme="transparent"
                   extraClass={s.changeButton}
-                  onClick={() => setIsRedacting(true)}
+                  onClick={() => {
+                    setIsRedacting(true);
+                  }}
                 >
                   <BsPencilSquare />
                 </IconButton>
@@ -132,22 +142,30 @@ function WordCard({ wordData, isLoading, search, setModal }: IWordCardProps) {
                   extraClass={s.changeButton}
                   onClick={() => {
                     setIsRedacting(false);
+                    if (!isAddFuncOn) {
+                      const updatedWord = {
+                        ...wordData,
+                        translate: userTranslation,
+                      };
+                      updateWord(updatedWord);
+                    }
                   }}
                 >
                   <FiCheckSquare />
                 </IconButton>
               </div>
             </div>
-
-            <Button
-              color="mainDark"
-              as="button"
-              size="default"
-              extraClass={s.addBtn}
-              onClick={handleWordAdd}
-            >
-              Add word
-            </Button>
+            {isAddFuncOn && (
+              <Button
+                color="mainDark"
+                as="button"
+                size="default"
+                extraClass={s.addBtn}
+                onClick={handleWordAdd}
+              >
+                Add word
+              </Button>
+            )}
 
             <p className={s.additionalText}>translation variants: </p>
             <ul className={s.extraTranslation}>

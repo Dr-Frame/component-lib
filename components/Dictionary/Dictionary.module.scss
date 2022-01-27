@@ -66,7 +66,6 @@
   padding: 5px;
   width: auto;
   background-color: white !important;
-  color: $secondary-text-color !important;
   font-weight: 500;
   color: $color-light-mainTheme !important;
 
@@ -74,10 +73,48 @@
     border: 2px solid $color-letter-border !important;
     color: $color-letter-border !important;
   }
-
   &.active {
     border: 2px solid $color-letter-border !important;
     color: $color-letter-border !important;
+  }
+
+  &.new {
+    color: $color-light-mainTheme !important;
+    &:hover {
+      border: 2px solid $color-stage-0 !important;
+      color: $color-stage-0 !important;
+    }
+
+    &.active {
+      border: 2px solid $color-stage-0 !important;
+      color: $color-stage-0 !important;
+    }
+  }
+
+  &.half {
+    color: $color-light-mainTheme !important;
+    &:hover {
+      border: 2px solid $color-stage-1 !important;
+      color: $color-stage-1 !important;
+    }
+
+    &.active {
+      border: 2px solid $color-stage-1 !important;
+      color: $color-stage-1 !important;
+    }
+  }
+
+  &.done {
+    color: $color-light-mainTheme !important;
+    &:hover {
+      border: 2px solid $color-stage-2 !important;
+      color: $color-stage-2 !important;
+    }
+
+    &.active {
+      border: 2px solid $color-stage-2 !important;
+      color: $color-stage-2 !important;
+    }
   }
 
   &:last-child {
@@ -87,16 +124,6 @@
 
 .icon {
   font-size: 20px;
-  color: $color-light-mainTheme;
-  transition: $transition;
-
-  .button:hover & {
-    color: $color-letter-border;
-  }
-
-  .button.active & {
-    color: $color-letter-border;
-  }
 }
 
 .listWrapper {

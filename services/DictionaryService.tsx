@@ -63,5 +63,20 @@ export const wordsApi = createApi({
       }),
       invalidatesTags: ['Words'],
     }),
+    deleteWord: build.mutation<IWord, number>({
+      query: id => ({
+        url: `/dictionary/${id}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['Words'],
+    }),
+    updateWord: build.mutation<IWord, IWord>({
+      query: word => ({
+        url: `dictionary/${word.id}`,
+        method: 'PATCH',
+        body: word,
+      }),
+      invalidatesTags: ['Words'],
+    }),
   }),
 });
