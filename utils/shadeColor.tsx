@@ -1,4 +1,10 @@
-function shadeColor(color: string, percent: number) {
+function shadeColor(color = '#000000', percent: number) {
+  console.log(color);
+
+  if (!color) {
+    return '#ffffff'
+  }
+
   var R = parseInt(color.substring(1, 3), 16);
   var G = parseInt(color.substring(3, 5), 16);
   var B = parseInt(color.substring(5, 7), 16);
@@ -16,6 +22,9 @@ function shadeColor(color: string, percent: number) {
   var BB = B.toString(16).length == 1 ? '0' + B.toString(16) : B.toString(16);
 
   return '#' + RR + GG + BB;
+
+
+
 }
 
 export default shadeColor;
