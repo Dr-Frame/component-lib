@@ -7,44 +7,44 @@
         "name": "Bitcoin",
         "color": "#f7931A",
         "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
-        "marketCap": "692589956091",
-        "price": "36568.35181791739",
+        "marketCap": "697009583211",
+        "price": "36796.93393425241",
         "listedAt": 1330214400,
         "tier": 1,
-        "change": "10.07",
+        "change": "0.94",
         "rank": 1,
         "sparkline": [
-          "33223.0613030685974877110000",
-          "33622.9856335849804601540000",
-          "33970.8858400567395316070000",
-          "34241.7629350453958479840000",
-          "34853.8686368707113727060000",
-          "35896.4409935805768884450000",
-          "35915.3557022416950250540000",
-          "36327.8674286639962394660000",
-          "36934.6758505634778307230000",
-          "36614.8569690503188938630000",
-          "36545.2503145125810226460000",
-          "36496.3786337789039808500000",
-          "36127.8966031901073790400000",
-          "36161.6812238814773884870000",
-          "36264.6594470433165345500000",
-          "36377.6924156824617520970000",
-          "36063.3715863894688170910000",
-          "36024.3090010227489304420000",
-          "35895.8378499082119407930000",
-          "36109.0288190399545085140000",
-          "36194.5052048224746011590000",
-          "36392.8928603940929453580000",
-          "36484.3072768217642250720000",
-          "36401.3679681559668802950000",
-          "36494.3270752323380242630000",
-          "36425.3860053965158516460000",
-          "36568.3518179173897279650000"
+          "36453.8724986221239909230000",
+          "36581.2511410426228438290000",
+          "36452.4924512604032499370000",
+          "36681.9375232204971353710000",
+          "36704.1301791650151526740000",
+          "36798.0351842414959210390000",
+          "36927.6348230570934927190000",
+          "36645.8687044078358072820000",
+          "36522.0531116700756436130000",
+          "36269.9526664677843961930000",
+          "36154.2209680113624154460000",
+          "36183.2067874645030589960000",
+          "36016.1731242766568753480000",
+          "35834.2790856794552569820000",
+          "36261.1767436030762936050000",
+          "36910.6494865223175748060000",
+          "37217.7147500436361400130000",
+          "37074.6605812598476701910000",
+          "36819.1983246147240274100000",
+          "37130.1676837590354688380000",
+          "37348.5091719914672609830000",
+          "37216.4866860427676866650000",
+          "37315.5175174727251670360000",
+          "37148.1952691173547434500000",
+          "36881.7088638878081859540000",
+          "36615.8901604695365553730000",
+          "36796.9339342524112919740000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/Qwsogvtv82FCd+bitcoin-btc",
-        "24hVolume": "34500635033",
+        "24hVolume": "21101270541",
         "btcPrice": "1"
       },
       "buyPrice": 40000,
@@ -62,45 +62,45 @@
         "name": "Ethereum",
         "color": "#3C3C3D",
         "iconUrl": "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
-        "marketCap": "289828345541",
-        "price": "2436.9854224943515",
+        "marketCap": "289811191743",
+        "price": "2436.0608385471214",
         "listedAt": 1438905600,
         "tier": 1,
-        "change": "12.17",
+        "change": "-0.02",
         "rank": 2,
         "sparkline": [
-          "2172.6103181293870392980000",
-          "2207.3215341542032808500000",
-          "2246.8336055039756295660000",
-          "2263.0617334702051539920000",
-          "2284.1422950082882458150000",
-          "2379.3656372571260824410000",
-          "2366.3751922033913760590000",
-          "2406.0421890267911040120000",
-          "2452.1754714318314717720000",
-          "2437.3038632734478231390000",
-          "2429.7299270305022758270000",
-          "2433.2835677374591035440000",
-          "2397.0620109707463863250000",
-          "2392.7081173016425258660000",
-          "2408.4233592953435466730000",
-          "2413.3135893829573313740000",
-          "2389.8610245102185331790000",
-          "2386.4348152244047039880000",
-          "2367.7235951581699834130000",
-          "2386.9995546193906891450000",
-          "2391.9491329017158962630000",
-          "2418.9888179598305107430000",
-          "2433.9525368151321923950000",
-          "2424.0725252800453486900000",
-          "2434.7617918679001593640000",
-          "2421.4176669109533891530000",
-          "2436.9854224943515785120000"
+          "2436.6132169934896111760000",
+          "2445.1110918556913354760000",
+          "2430.8606558952054592200000",
+          "2453.5968141681858424780000",
+          "2464.7898417555699308560000",
+          "2483.9323495532024964350000",
+          "2500.6749834539069418330000",
+          "2477.4904961711546203390000",
+          "2475.2280688155019855220000",
+          "2450.5272116242522748290000",
+          "2431.2529354736147030750000",
+          "2413.1255675265615338470000",
+          "2385.1708921453414243420000",
+          "2360.1452418160521463300000",
+          "2374.2141565033231917010000",
+          "2422.3034385934459452520000",
+          "2446.0670922226339534640000",
+          "2440.5022090253049345920000",
+          "2406.5362334462257503890000",
+          "2441.9376494983405259400000",
+          "2466.6451419453147690220000",
+          "2460.5219098810467066740000",
+          "2474.3530962271208186620000",
+          "2461.3559188326716643940000",
+          "2428.2348050493594119500000",
+          "2413.3457456654600052450000",
+          "2436.0608385471211988340000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/razxDUgYGNAdQ+ethereum-eth",
-        "24hVolume": "19359607947",
-        "btcPrice": "0.06664192673021435"
+        "24hVolume": "13906420843",
+        "btcPrice": "0.06620282121602297"
       },
       "buyPrice": 4000,
       "invested": 5000,
@@ -115,45 +115,45 @@
         "name": "Chainlink",
         "color": "#4680b0",
         "iconUrl": "https://cdn.coinranking.com/9NOP9tOem/chainlink.svg",
-        "marketCap": "7147265461",
-        "price": "15.304324190642914",
+        "marketCap": "7122888504",
+        "price": "15.252126204739172",
         "listedAt": 1505952000,
         "tier": 1,
-        "change": "12.8",
-        "rank": 21,
+        "change": "1.71",
+        "rank": 22,
         "sparkline": [
-          "13.5676684991523951700000",
-          "13.9484438212416423480000",
-          "14.3155783125505848530000",
-          "14.4866478098728613240000",
-          "14.5208614342318665370000",
-          "15.1280224694565464890000",
-          "15.0829584318937174430000",
-          "15.3676208311443011500000",
-          "15.6872440027028309560000",
-          "15.6099766243697895810000",
-          "15.5827982440175270400000",
-          "15.4884118295772506260000",
-          "15.2107906431203165550000",
-          "15.2851709656449563050000",
-          "15.3543215764506341940000",
-          "15.3515961978037991030000",
-          "14.9258419830155370180000",
-          "14.8277583580896960900000",
-          "14.7305297508953334560000",
-          "14.9559315420685346150000",
-          "15.0277126538098602600000",
-          "15.1868719509509898430000",
-          "15.3410562304416403850000",
-          "15.2573032509092185010000",
-          "15.2951434468933560320000",
-          "15.1748835051330962100000",
-          "15.3043241906429145490000"
+          "14.9952540128435898750000",
+          "15.0303806409672330900000",
+          "14.9672795147602552880000",
+          "15.1660231885182321540000",
+          "15.2823223518383519890000",
+          "15.4405957339851557290000",
+          "15.5291926045080332730000",
+          "15.4120346532772046150000",
+          "15.4458645420656094700000",
+          "15.1387052793981202750000",
+          "15.0314631701053147970000",
+          "14.9230737763516419530000",
+          "14.7276999911412903010000",
+          "14.6414238129745193130000",
+          "14.7631822549345792520000",
+          "15.0124524333626881940000",
+          "15.2047871014876324440000",
+          "15.1746089247306011580000",
+          "14.9823152198316360400000",
+          "15.2387905154563709550000",
+          "15.3665264848257297400000",
+          "15.3132561140382125830000",
+          "15.4068948304549715980000",
+          "15.3367675993245452000000",
+          "15.1579611616934921050000",
+          "15.0655251367208084710000",
+          "15.2521262047391720590000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/VLqpJwogdhHNb+chainlink-link",
-        "24hVolume": "1132312644",
-        "btcPrice": "0.000418512824062917"
+        "24hVolume": "745869751",
+        "btcPrice": "0.000414494485654462"
       },
       "buyPrice": 20,
       "invested": 3000,
@@ -168,45 +168,45 @@
         "name": "Litecoin",
         "color": "#345d9d",
         "iconUrl": "https://cdn.coinranking.com/BUvPxmc9o/ltcnew.svg",
-        "marketCap": "7481802506",
-        "price": "107.67083854385992",
+        "marketCap": "7409616209",
+        "price": "106.59756404947602",
         "listedAt": 1382572800,
         "tier": 1,
-        "change": "9.15",
+        "change": "-0.8",
         "rank": 20,
         "sparkline": [
-          "98.6436607678538214390000",
-          "100.2696615941529433700000",
-          "101.8032006626567772160000",
-          "102.5259735897176480930000",
-          "103.2088592156302761360000",
-          "107.3494963680970206350000",
-          "107.3839987290286582790000",
-          "108.7322622840138893250000",
-          "110.3031991615826957550000",
-          "109.5841960933330264510000",
-          "109.4412947663480382860000",
-          "108.7917812555918254430000",
-          "107.6935220988186647430000",
-          "107.7763183103278654060000",
-          "107.9750609980137309590000",
-          "108.0385573857619029400000",
-          "106.8507129721053590580000",
-          "107.0052116808764556210000",
-          "106.5672100296361569980000",
-          "107.3331648946032383690000",
-          "107.7428339804905172910000",
-          "108.3943476074956023740000",
-          "108.6398873723712503950000",
-          "108.1884391058353040640000",
-          "107.9983050173046623130000",
-          "106.8456520301230152910000",
-          "107.6708385438599131340000"
+          "107.4596455798324522930000",
+          "108.0716263207076212240000",
+          "107.8372045950994930920000",
+          "108.1561630138775589660000",
+          "108.2920366551315117920000",
+          "108.4494038625545377930000",
+          "108.8650928478060607700000",
+          "108.2510644477741013740000",
+          "107.7825922695419968730000",
+          "107.5314113228374759430000",
+          "107.0647113459339331800000",
+          "107.1023326279183588930000",
+          "106.0068183122455191520000",
+          "104.1106408876483452150000",
+          "104.9785551919519786710000",
+          "106.6397773437394233010000",
+          "107.1169566320784725380000",
+          "107.4697535946267604360000",
+          "106.3097842606056186990000",
+          "107.0135600650725548710000",
+          "108.1484690448826130520000",
+          "107.6856088398440792250000",
+          "107.9834564766120673390000",
+          "107.9711680909028173970000",
+          "107.1065901626286829360000",
+          "106.2818660843658949770000",
+          "106.5975640494760250270000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/D7B1x_ks7WhV5+litecoin-ltc",
-        "24hVolume": "1127305640",
-        "btcPrice": "0.002944372201404616"
+        "24hVolume": "649497176",
+        "btcPrice": "0.002912451907926197"
       },
       "buyPrice": 200,
       "invested": 20000,
@@ -221,45 +221,45 @@
         "name": "Binance Coin",
         "color": "#e8b342",
         "iconUrl": "https://cdn.coinranking.com/B1N19L_dZ/bnb.svg",
-        "marketCap": "50365073886",
-        "price": "338.7901398335266",
+        "marketCap": "57303408710",
+        "price": "385.4621536732475",
         "listedAt": 1503014400,
         "tier": 1,
-        "change": "-11.31",
+        "change": "4.23",
         "rank": 4,
         "sparkline": [
-          "381.9797723783793581700000",
-          "385.0610418276572404190000",
-          "381.6233809196855049060000",
-          "372.5190124549513711930000",
-          "373.4722996811221674870000",
-          "374.8924013481930565130000",
-          "373.6283619300609136760000",
-          "368.7493554545168481980000",
-          "366.6842509087842555970000",
-          "367.2636548872258755270000",
-          "368.0103912705586490540000",
-          "374.5794750888403463030000",
-          "381.6539034960736751470000",
-          "377.3187267553447829940000",
-          "374.3610504530567085220000",
-          "372.9967807658624085680000",
-          "372.9367516475488825720000",
-          "370.2225847412557474360000",
-          "366.6720034301308675500000",
-          "369.5509861752424858920000",
-          "365.8110820729422031790000",
-          "364.4158381399637962030000",
-          "357.2833814669555130610000",
-          "346.7400877189315089580000",
-          "345.4700170017209341700000",
-          "343.2642671060642863560000",
-          "338.7901398335265911030000"
+          "369.8269042759466629790000",
+          "370.3338436107265627530000",
+          "369.4422213983378142720000",
+          "370.1340684247289624270000",
+          "372.0735673774742730620000",
+          "373.6262764076189236000000",
+          "375.7239100161315086240000",
+          "375.1159338063108197490000",
+          "372.7557913369351702130000",
+          "370.2705189101275738590000",
+          "368.7235290097751011830000",
+          "369.1018247492883792320000",
+          "366.3086051150901770890000",
+          "362.6391992902268589460000",
+          "377.6949979209168251940000",
+          "390.4437977134076313300000",
+          "390.6803940369974899000000",
+          "390.8891956476825596970000",
+          "385.1732430134088954220000",
+          "387.4619764790598591210000",
+          "390.5998158011677089960000",
+          "391.5565057498126486960000",
+          "391.3990706890496017040000",
+          "389.7252199968482159980000",
+          "387.3699095135415659100000",
+          "384.7594126807024693470000",
+          "385.4621536732474670650000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/WcwrkfNI4FUAe+binancecoin-bnb",
-        "24hVolume": "2446650618",
-        "btcPrice": "0.010196679626776542"
+        "24hVolume": "2021578959",
+        "btcPrice": "0.01053157260120813"
       },
       "buyPrice": 300,
       "invested": 1000,
@@ -276,45 +276,45 @@
         "name": "Monero",
         "color": "#ff7519",
         "iconUrl": "https://cdn.coinranking.com/Syz-oSd_Z/xmr.svg",
-        "marketCap": "2498366178",
-        "price": "138.27813866487384",
+        "marketCap": "2580705715",
+        "price": "142.8191196697839",
         "listedAt": 1422489600,
         "tier": 1,
-        "change": "-10.35",
-        "rank": 44,
+        "change": "-1.22",
+        "rank": 48,
         "sparkline": [
-          "154.2403121046657369120000",
-          "154.1588941615670601430000",
-          "154.3160581267023500840000",
-          "151.2964512074532623210000",
-          "152.0722444628294465190000",
-          "151.9188950628612092210000",
-          "152.7903464769105143750000",
-          "152.3310127985396277910000",
-          "150.2605978226361691180000",
-          "150.7046088553542420340000",
-          "149.9462728624629666580000",
-          "150.5897596463442109310000",
-          "155.2889013145093654950000",
-          "154.1881617802667806700000",
-          "153.2411818856375961260000",
-          "151.6650339849713919510000",
-          "151.0522157729558062460000",
-          "151.2440498633595652070000",
-          "149.9139219697221351380000",
-          "150.5252297791401392760000",
-          "150.5950675912482717790000",
-          "149.5944546381821425360000",
-          "147.8423320151451916550000",
-          "143.9974790072440625160000",
-          "141.1468912902822537960000",
-          "139.9122922799492802740000",
-          "138.2781386648738406030000"
+          "144.5793713250109778690000",
+          "145.0079367226761176610000",
+          "144.8946773830904726650000",
+          "145.5778455100641829700000",
+          "147.1597357198372126160000",
+          "147.7917309359310166990000",
+          "148.5038068809417953080000",
+          "147.5526111282039651250000",
+          "146.2392254191951661760000",
+          "145.5732227534205929130000",
+          "145.0492045514267838310000",
+          "145.4837847674143243530000",
+          "142.9218323383209848580000",
+          "140.7330174814504421910000",
+          "140.7496898196056223660000",
+          "142.8113940830041699490000",
+          "144.3327103846213116790000",
+          "144.9939842544463542150000",
+          "143.4049201728452340380000",
+          "144.5703257104496577120000",
+          "145.6645274269533229040000",
+          "144.8500125945750853340000",
+          "145.4791908630933340170000",
+          "145.3186238586039784460000",
+          "144.4139381416413054890000",
+          "142.7567775675686525680000",
+          "142.8191196697839037440000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/3mVx2FX_iJFp5+monero-xmr",
-        "24hVolume": "129158347",
-        "btcPrice": "0.004124169183660576"
+        "24hVolume": "119616499",
+        "btcPrice": "0.003902094961358984"
       },
       "buyPrice": 20,
       "invested": 1000,
@@ -347,246 +347,793 @@
   },
   "dictionary": [
     {
-      "translate": "мама, мамуля, мамочка",
+      "translate": "по рукам, договор",
       "translations": {
-        "Mother": [
-          "Mother"
+        "дело": [
+          "case",
+          "it's",
+          "business",
+          "matter",
+          "deal",
+          "the thing",
+          "dealing",
+          "cause",
+          "point",
+          "job"
         ],
-        "мама": [
-          "mom",
-          "mother",
-          "mama",
-          "mum",
-          "mommy",
-          "ma",
-          "mummy",
-          "mam",
-          "momma",
-          "mamma"
+        "договор": [
+          "treaty",
+          "contract",
+          "agreement",
+          "compact",
+          "deal",
+          "pact",
+          "instrument",
+          "convention",
+          "arrangement",
+          "deed"
         ],
-        "мамаша": [
-          "mother",
-          "mom",
-          "mama",
-          "mum",
-          "mommy",
-          "mamacita",
-          "mummy",
-          "gammer"
+        "договориться": [
+          "agree",
+          "negotiate",
+          "arrange",
+          "make a deal",
+          "reach agreement",
+          "make arrangements",
+          "reason",
+          "reach an agreement",
+          "settle",
+          "work something out"
         ],
-        "мамка": [
-          "mother",
-          "mama",
-          "mum",
-          "madam",
-          "Dam"
+        "иметь дело": [
+          "deal",
+          "doing business",
+          "be dealing",
+          "be dealt",
+          "do business",
+          "contend"
         ],
-        "мамочка": [
-          "mommy",
-          "mom",
-          "mummy",
-          "mother",
-          "mama",
-          "mum",
-          "ma",
-          "mami",
-          "mammy",
-          "mommie"
+        "касаться": [
+          "address",
+          "touch",
+          "concern",
+          "deal with",
+          "relate to",
+          "include",
+          "apply to",
+          "refer to",
+          "cover",
+          "involve"
         ],
-        "материнства": [
-          "maternity",
-          "motherhood",
-          "mother",
-          "parenthood"
+        "контракт": [
+          "contract",
+          "signed",
+          "deal",
+          "contracted",
+          "sign",
+          "appointment",
+          "signing",
+          "agreement",
+          "engagement",
+          "indenture"
         ],
-        "матушка": [
-          "mother",
-          "mom",
-          "mama",
-          "mummy",
-          "Goody",
-          "Matushka"
+        "разбираться": [
+          "deal",
+          "understand",
+          "figure out",
+          "handle",
+          "knowledge",
+          "sort",
+          "sort out",
+          "make au fait",
+          "get right",
+          "have an eye for"
         ],
-        "мать": [
-          "mother",
-          "mom",
-          "mum",
-          "mama",
-          "sake",
-          "ma",
-          "parent",
-          "mater",
-          "fucking",
-          "fuck"
+        "сделка": [
+          "deal",
+          "transaction",
+          "bargain",
+          "trade",
+          "sale",
+          "business",
+          "plea",
+          "operation",
+          "trans",
+          "bargin"
         ],
-        "родная мать": [
-          "mother",
-          "birth mom",
-          "venter"
+        "соглашение": [
+          "agreement",
+          "arrangement",
+          "accord",
+          "treaty",
+          "deal",
+          "contract",
+          "settlement",
+          "compact",
+          "convention",
+          "pact"
+        ],
+        "уговор": [
+          "deal",
+          "agreement",
+          "arrangement",
+          "pact",
+          "engagement",
+          "remonstrance",
+          "perswasion"
         ]
       },
-      "word": "mother",
-      "phonetic": "ˈmʌðə",
+      "word": "deal",
+      "phonetic": "diːl",
       "phonetics": [
         {
-          "text": "ˈmʌðə",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/mother--_gb_1.mp3"
+          "text": "diːl",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/deal--_gb_1.mp3"
         }
       ],
-      "origin": "Old English mōdor, of Germanic origin; related to Dutch moeder and German Mutter, from an Indo-European root shared by Latin mater and Greek mētēr .",
+      "origin": "Old English dǣlan  ‘divide’, ‘participate’, of Germanic origin; related to Dutch deel and German Teil ‘part’ (noun), also to dole1. The sense ‘divide’ gave rise to ‘distribute’, hence deal1 (sense 1 of the verb, sense 4 of the verb); the sense ‘participate’ gave rise to ‘have dealings with’, hence deal1 (sense 2 of the verb, sense 3 of the verb).",
       "meanings": [
         {
-          "partOfSpeech": "noun",
+          "partOfSpeech": "verb",
           "definitions": [
             {
-              "definition": "a woman in relation to her child or children.",
-              "example": "she returned to Bristol to nurse her ageing mother",
+              "definition": "distribute (cards) in an orderly rotation to players for a game or round.",
+              "example": "the cards were dealt for the last hand",
               "synonyms": [
-                "female parent",
-                "biological mother",
-                "birth mother",
-                "foster mother",
-                "adoptive mother",
-                "stepmother",
-                "surrogate mother",
-                "materfamilias",
-                "matriarch",
-                "mama",
-                "mamma",
-                "ma",
-                "mammy",
-                "old dear",
-                "old lady",
-                "old woman",
-                "mum",
-                "mummy",
-                "mumsy",
-                "mam",
-                "mom",
-                "mommy",
-                "mater",
-                "Mata",
-                "amma",
-                "progenitress",
-                "progenitrix"
+                "distribute",
+                "give out",
+                "share out",
+                "divide out",
+                "divide up",
+                "hand out",
+                "pass out",
+                "pass round",
+                "dole out",
+                "mete out",
+                "dispense",
+                "allocate",
+                "allot",
+                "assign",
+                "apportion",
+                "bestow",
+                "divvy up"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "take part in commercial trading of a particular commodity.",
+              "example": "directors were prohibited from dealing in the company's shares",
+              "synonyms": [
+                "trade in",
+                "buy and sell",
+                "be concerned with trading",
+                "be engaged in trading",
+                "do business in",
+                "sell",
+                "vend",
+                "purvey",
+                "supply",
+                "stock",
+                "offer",
+                "offer for sale",
+                "have for sale",
+                "peddle",
+                "market",
+                "merchandise",
+                "traffic in",
+                "smuggle",
+                "run",
+                "rustle",
+                "push",
+                "flog"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "take measures concerning (someone or something), especially with the intention of putting something right.",
+              "synonyms": [
+                "cope with",
+                "handle",
+                "manage",
+                "attend to",
+                "see to",
+                "take care of",
+                "take charge of",
+                "take in hand",
+                "sort out",
+                "tackle",
+                "take on",
+                "control",
+                "master",
+                "influence",
+                "manipulate"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "inflict (a blow) on (someone or something).",
+              "example": "hopes of an economic recovery were dealt another blow",
+              "synonyms": [
+                "deliver",
+                "administer",
+                "dispense",
+                "inflict",
+                "give",
+                "impose",
+                "direct",
+                "aim"
               ],
               "antonyms": []
             }
           ]
         },
         {
-          "partOfSpeech": "verb",
+          "partOfSpeech": "noun",
           "definitions": [
             {
-              "definition": "bring up (a child) with care and affection.",
-              "example": "she didn't know how to mother my brother and he was very sensitive",
-              "synonyms": [],
+              "definition": "an agreement entered into by two or more parties for their mutual benefit, especially in a business or political context.",
+              "example": "the government was ready to do a deal with the opposition",
+              "synonyms": [
+                "agreement",
+                "understanding",
+                "pact",
+                "compact",
+                "bargain",
+                "covenant",
+                "contract",
+                "treaty",
+                "protocol",
+                "concordat",
+                "entente",
+                "accord",
+                "arrangement",
+                "accommodation",
+                "compromise",
+                "settlement",
+                "negotiation",
+                "terms",
+                "transaction",
+                "sale",
+                "account",
+                "indenture",
+                "engagement"
+              ],
               "antonyms": []
             },
             {
-              "definition": "give birth to.",
-              "example": "she's mothered two foals that have gone on to be impressive dressage competitors",
-              "synonyms": [
-                "give birth to",
-                "have",
-                "deliver",
-                "bear",
-                "produce",
-                "bring forth",
-                "birth",
-                "drop",
-                "be brought to bed of"
-              ],
+              "definition": "the process of distributing the cards to players in a card game.",
+              "example": "after the deal, players A and B stay out",
+              "synonyms": [],
               "antonyms": []
             }
           ]
         }
       ],
-      "stage": 1,
+      "stage": 0,
       "category": "",
       "folder": "",
-      "id": 1
+      "time": 1643283071051,
+      "id": 4
     },
     {
-      "translate": "луна, лунный",
+      "translate": "банан",
       "translations": {
-        "Moon": [
-          "Moon"
+        "Banana": [
+          "банан",
+          "банановый",
+          "Banana"
         ],
-        "Ћуна": [
-          "moon",
-          ""
+        "банан": [
+          "banana",
+          "Banan"
         ],
-        "Луне": [
-          "moon",
-          "lunar",
-          "Luna"
-        ],
-        "Мун": [
-          "Moon",
-          "Mun",
-          "Mong",
-          "Myong"
-        ],
-        "Муном": [
-          "Moon"
-        ],
-        "луна": [
-          "moon",
-          "luna",
-          "parish lantern",
-          "Launa"
-        ],
-        "лунный": [
-          "moon",
-          "lunar",
-          "moonshine",
-          "moonbase",
-          "moondust"
-        ],
-        "месяц": [
-          "month",
-          "monthly",
-          "moon",
-          "month old",
-          "30 days",
-          "crescent moon",
-          "mnth"
-        ],
-        "седьмом небе": [
-          "moon",
-          "seventh heaven",
-          "cloud nine",
-          "top of the world",
-          ""
-        ],
-        "спутник": [
-          "satellite",
-          "companion",
-          "moon",
-          "sputnik",
-          "attendent",
-          "Grazer"
+        "банановый": [
+          "banana",
+          "bana"
         ]
       },
-      "word": "moon",
-      "phonetic": "muːn",
+      "word": "banana",
+      "phonetic": "bəˈnɑːnə",
       "phonetics": [
         {
-          "text": "muːn",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/moon--1_gb_2.mp3"
+          "text": "bəˈnɑːnə",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/banana--_gb_1.mp3"
         }
       ],
-      "origin": "Old English mōna, of Germanic origin; related to Dutch maan and German Mond, also to month, from an Indo-European root shared by Latin mensis and Greek mēn ‘month’, and also Latin metiri ‘to measure’ (the moon being used to measure time).",
+      "origin": "late 16th century: via Portuguese or Spanish from Mande.",
       "meanings": [
         {
           "partOfSpeech": "noun",
           "definitions": [
             {
-              "definition": "the natural satellite of the earth, visible (chiefly at night) by reflected light from the sun.",
-              "example": "there was no moon, but a sky sparkling with brilliant stars",
+              "definition": "a long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe.",
+              "example": "a bunch of bananas",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the tropical and subtropical palmlike plant that bears bananas, having very large leaves but lacking a woody trunk.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "definition": "insane or extremely silly.",
+              "example": "I've spent two months in a studio—I must be bananas",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": 0,
+      "category": "",
+      "folder": "",
+      "time": 1643284567152,
+      "id": 5
+    },
+    {
+      "translate": "молоко",
+      "translations": {
+        "давать молоко": [
+          "milk",
+          ""
+        ],
+        "доить": [
+          "milk"
+        ],
+        "использовать": [
+          "use",
+          "utilize",
+          "make use",
+          "exploit",
+          "utilise",
+          "apply",
+          "employ",
+          "benefit from",
+          "harness",
+          "draw on"
+        ],
+        "молоко": [
+          "milk"
+        ],
+        "молочко": [
+          "milk"
+        ],
+        "молочная": [
+          "dairy",
+          "milk",
+          "lactic",
+          "milky",
+          "creamery"
+        ],
+        "молочный": [
+          "milk",
+          "dairy",
+          "milky",
+          "deciduous",
+          "milch",
+          "lactean",
+          "ethylidene-lactic",
+          "lactescent"
+        ],
+        "подоить": [
+          "milk",
+          "milky"
+        ],
+        "разновидности молока": [
+          ""
+        ],
+        "эксплуатировать": [
+          "exploit",
+          "operate",
+          "exploitation",
+          "use",
+          "milk",
+          "take advantage of",
+          "have in operation"
+        ]
+      },
+      "word": "milk",
+      "phonetic": "mɪlk",
+      "phonetics": [
+        {
+          "text": "mɪlk",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/milk--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English milc, milcian, of Germanic origin; related to Dutch melk and German Milch, from an Indo-European root shared by Latin mulgere and Greek amelgein ‘to milk’.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "an opaque white fluid rich in fat and protein, secreted by female mammals for the nourishment of their young.",
+              "example": "a healthy mother will produce enough milk for her baby",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "draw milk from (a cow or other animal), either by hand or mechanically.",
+              "example": "two hours later he was up again to milk the cows",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "exploit or defraud by taking small amounts of money over a period of time.",
+              "example": "executives milked the health plan's funds for their personal use",
               "synonyms": [
-                "satellite"
+                "exploit",
+                "take advantage of",
+                "cash in on",
+                "impose on",
+                "bleed",
+                "suck dry",
+                "fleece",
+                "squeeze",
+                "wring",
+                "blackmail"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": 0,
+      "category": "",
+      "folder": "",
+      "time": 1643287880018,
+      "id": 6
+    },
+    {
+      "translate": "корова",
+      "translations": {
+        "Cow": [
+          "Cow"
+        ],
+        "КПС": [
+          "CEN",
+          "SPC",
+          "RCEN",
+          "CPS",
+          "COW",
+          "TUC",
+          "CSC"
+        ],
+        "запугать": [
+          "intimidate",
+          "scare",
+          "frighten",
+          "terrorize",
+          "threaten",
+          "bully",
+          "intimidation",
+          "be intimidated",
+          "rattle",
+          "intimidated by"
+        ],
+        "запугивать": [
+          "intimidate",
+          "bully",
+          "harass",
+          "intimidation",
+          "threaten",
+          "terrorize",
+          "terrify",
+          "brow-beat",
+          "cow",
+          "hector"
+        ],
+        "затюкивать": [],
+        "копирование при записи": [
+          "COW",
+          ""
+        ],
+        "корова": [
+          "cow",
+          "neat",
+          "corowa"
+        ],
+        "коровий": [
+          "cow",
+          ""
+        ],
+        "коровка": [
+          "cow",
+          "moo-moo",
+          "lady beetle",
+          "moo moo",
+          "moomoo"
+        ],
+        "тёлка": [
+          "chick",
+          "cow",
+          "pussy",
+          "bird",
+          "hen"
+        ]
+      },
+      "word": "cow",
+      "phonetic": "kaʊ",
+      "phonetics": [
+        {
+          "text": "kaʊ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cow--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English cū, of Germanic origin; related to Dutch koe and German Kuh, from an Indo-European root shared by Latin bos and Greek bous .",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a fully grown female animal of a domesticated breed of ox, kept to produce milk or beef.",
+              "example": "a dairy cow",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "an unpleasant or disliked woman.",
+              "example": "what does he see in that cow?",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": 0,
+      "category": "",
+      "folder": "",
+      "time": 1643288830545,
+      "id": 7
+    },
+    {
+      "translate": "Работа",
+      "translations": {
+        "действовать": [
+          "act",
+          "operate",
+          "work",
+          "proceed",
+          "operational",
+          "move",
+          "go",
+          "take action",
+          "apply",
+          "do"
+        ],
+        "деятельность": [
+          "activity",
+          "work",
+          "effort",
+          "action",
+          "operation",
+          "business",
+          "active",
+          "performance",
+          "working",
+          "functioning"
+        ],
+        "поработать": [
+          "work",
+          "job"
+        ],
+        "работа": [
+          "work",
+          "job",
+          "working",
+          "activity",
+          "done",
+          "progress",
+          "effort",
+          "exercise",
+          "employment",
+          "business"
+        ],
+        "работать": [
+          "work",
+          "operate",
+          "job",
+          "run",
+          "function",
+          "serve",
+          "go",
+          "use",
+          "employed",
+          "engage"
+        ],
+        "рабочий": [
+          "working",
+          "work",
+          "worker",
+          "operational",
+          "operating",
+          "labourer",
+          "employee",
+          "laborer",
+          "workman",
+          "handyman"
+        ],
+        "сотрудничать": [
+          "cooperate",
+          "work",
+          "collaborate",
+          "work together",
+          "to working",
+          "engage",
+          "co-operate",
+          "cooperative",
+          "partner",
+          "play ball"
+        ],
+        "сработать": [
+          "work",
+          "do the trick",
+          "do the job",
+          "play out",
+          "set it off",
+          "operate"
+        ],
+        "труд": [
+          "work",
+          "labour",
+          "labor",
+          "employment",
+          "remuneration",
+          "job",
+          "effort",
+          "labouring",
+          "laboring",
+          "toiling"
+        ],
+        "усилия": [
+          "efforts",
+          "effort",
+          "work",
+          "endeavour",
+          "made",
+          "steps",
+          "commitment",
+          "attempt",
+          "trying",
+          "strides"
+        ]
+      },
+      "word": "work",
+      "phonetic": "wəːk",
+      "phonetics": [
+        {
+          "text": "wəːk",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/work--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English weorc (noun), wyrcan (verb), of Germanic origin; related to Dutch werk and German Werk, from an Indo-European root shared by Greek ergon .",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "activity involving mental or physical effort done in order to achieve a purpose or result.",
+              "example": "he was tired after a day's work",
+              "synonyms": [
+                "labour",
+                "toil",
+                "exertion",
+                "effort",
+                "slog",
+                "drudgery",
+                "the sweat of one's brow",
+                "industry",
+                "service",
+                "grind",
+                "sweat",
+                "donkey work",
+                "spadework",
+                "elbow grease",
+                "graft",
+                "fag",
+                "yakka",
+                "travail",
+                "moil"
+              ],
+              "antonyms": [
+                "leisure",
+                "rest"
+              ]
+            },
+            {
+              "definition": "a task or tasks to be undertaken.",
+              "example": "they made sure the work was progressing smoothly",
+              "synonyms": [
+                "tasks",
+                "jobs",
+                "duties",
+                "assignments",
+                "commissions",
+                "projects",
+                "chores"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "a thing or things done or made; the result of an action.",
+              "example": "her work hangs in all the main American collections",
+              "synonyms": [
+                "handiwork",
+                "doing",
+                "act",
+                "deed",
+                "feat",
+                "performance"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "a place or premises in which industrial or manufacturing processes are carried out.",
+              "example": "he found a job in the locomotive works",
+              "synonyms": [
+                "factory",
+                "plant",
+                "manufacturing complex",
+                "mill",
+                "foundry",
+                "yard",
+                "industrial unit",
+                "business unit",
+                "workshop",
+                "shop"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "the operative part of a clock or other machine.",
+              "example": "she could almost hear the tick of its works",
+              "synonyms": [
+                "mechanism",
+                "machinery",
+                "workings",
+                "working parts",
+                "parts",
+                "movement",
+                "action",
+                "innards",
+                "insides"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "a defensive structure.",
+              "example": "just north of the fort were trenches and the freshly reconstructed patriot siege works",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the exertion of force overcoming resistance or producing molecular change.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "everything needed, desired, or expected.",
+              "example": "the heavens put on a show: sheet lightning, hailstones, the works",
+              "synonyms": [
+                "everything",
+                "the full treatment",
+                "the lot",
+                "the whole shooting match",
+                "the whole (kit and) caboodle",
+                "the whole shebang",
+                "the whole nine yards",
+                "the full monty",
+                "the whole ball of wax"
               ],
               "antonyms": []
             }
@@ -596,35 +1143,269 @@
           "partOfSpeech": "verb",
           "definitions": [
             {
-              "definition": "behave or move in a listless and aimless manner.",
-              "example": "I don't want her mooning about in the morning",
+              "definition": "be engaged in physical or mental activity in order to achieve a result; do work.",
+              "example": "she has been working so hard",
               "synonyms": [
-                "waste time",
-                "fiddle",
-                "loaf",
-                "idle",
-                "mope",
-                "drift",
-                "stooge around",
-                "mooch",
-                "lollygag",
-                "bat"
+                "toil",
+                "labour",
+                "exert oneself",
+                "slave (away)",
+                "plod away",
+                "work one's fingers to the bone",
+                "work like a Trojan/dog",
+                "work day and night",
+                "keep at it",
+                "slog (away)",
+                "beaver away",
+                "plug away",
+                "peg away",
+                "put one's back into something",
+                "work one's guts out",
+                "work one's socks off",
+                "knock oneself out",
+                "sweat blood",
+                "kill oneself",
+                "graft",
+                "fag",
+                "bullock",
+                "drudge",
+                "travail",
+                "moil",
+                "work one's balls/arse off",
+                "work one's ass/butt off"
+              ],
+              "antonyms": [
+                "rest",
+                "play"
+              ]
+            },
+            {
+              "definition": "(of a machine or system) function, especially properly or effectively.",
+              "example": "his phone doesn't work unless he goes to a high point",
+              "synonyms": [
+                "function",
+                "go",
+                "run",
+                "operate",
+                "perform",
+                "be in working order",
+                "behave"
               ],
               "antonyms": []
             },
             {
-              "definition": "expose one's buttocks to someone in order to insult or amuse them.",
-              "example": "the crew dropped their trousers and mooned at them",
+              "definition": "(of a plan or method) have the desired result or effect.",
+              "example": "the desperate ploy had worked",
+              "synonyms": [
+                "succeed",
+                "be successful",
+                "work out",
+                "turn out well",
+                "go as planned",
+                "have the desired result",
+                "get results",
+                "be effective",
+                "take effect",
+                "be efficacious",
+                "come off",
+                "pay off",
+                "do the trick",
+                "do the business",
+                "turn the trick"
+              ],
+              "antonyms": [
+                "fail"
+              ]
+            },
+            {
+              "definition": "bring (a material or mixture) to a desired shape or consistency by hammering, kneading, etc.",
+              "example": "work the mixture into a paste with your hands",
+              "synonyms": [
+                "knead",
+                "squeeze",
+                "form",
+                "shape",
+                "fashion",
+                "mould",
+                "model",
+                "mix",
+                "stir",
+                "blend"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "move or cause to move gradually or with difficulty into another position.",
+              "example": "comb hair from tip to root, working out the knots at the end",
+              "synonyms": [
+                "manoeuvre",
+                "manipulate",
+                "negotiate",
+                "guide",
+                "edge",
+                "make",
+                "thread",
+                "wind",
+                "weave"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "bring into a specified emotional state.",
+              "example": "Harold had worked himself into a minor rage",
+              "synonyms": [
+                "stir (up)",
+                "excite",
+                "drive",
+                "move",
+                "spur",
+                "rouse",
+                "fire",
+                "galvanize",
+                "whip up",
+                "inflame",
+                "incite",
+                "agitate"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": 0,
+      "category": "",
+      "folder": "",
+      "time": 1643355464398,
+      "id": 8
+    },
+    {
+      "translate": "Привет",
+      "translations": {
+        "Hi": [
+          "привет",
+          "здравствуйте",
+          "здрасьте",
+          "эй",
+          "здравствуй",
+          "здрасте",
+          "добрый день",
+          "приветик",
+          "ѕривет",
+          "Hi"
+        ],
+        "добрый день": [
+          "good afternoon",
+          "good day",
+          "hello",
+          "good morning",
+          "hi",
+          "good evening",
+          "bonjour",
+          "How do you do",
+          "G'day",
+          "Good morrow"
+        ],
+        "здравствуй": [
+          "hello",
+          "hi",
+          "greetings",
+          "Dumela"
+        ],
+        "здравствуйте": [
+          "hello",
+          "hi",
+          "hey",
+          "good morning",
+          "how do you do",
+          "welcome",
+          "good afternoon",
+          "good evening",
+          "how are you",
+          "greetings"
+        ],
+        "здрасте": [
+          "hi",
+          "hey",
+          "hello",
+          "G'day",
+          "Hallo"
+        ],
+        "здрасьте": [
+          "hi",
+          "hello",
+          "hey",
+          "howdy"
+        ],
+        "привет": [
+          "hey",
+          "hi",
+          "hello",
+          "regards",
+          "love",
+          "greetings",
+          "hiya",
+          "howdy",
+          "uh",
+          "what's up"
+        ],
+        "приветик": [
+          "hello",
+          "hi",
+          "howdy",
+          "hiya"
+        ],
+        "эй": [
+          "hey",
+          "whoa",
+          "yo",
+          "hello",
+          "uh",
+          "eh",
+          "man",
+          "Oh",
+          "Oi",
+          "Hi"
+        ],
+        "ѕривет": [
+          "Hey",
+          "Hi",
+          "Hello"
+        ]
+      },
+      "word": "hi",
+      "phonetic": "hʌɪ",
+      "phonetics": [
+        {
+          "text": "hʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hi--_gb_1.mp3"
+        }
+      ],
+      "origin": "natural exclamation: first recorded in late Middle English.",
+      "meanings": [
+        {
+          "partOfSpeech": "exclamation",
+          "definitions": [
+            {
+              "definition": "used as a friendly greeting or to attract attention.",
+              "example": "‘Hi there. How was the flight?’",
               "synonyms": [],
               "antonyms": []
             }
           ]
         }
       ],
-      "stage": 2,
-      "category": "",
+      "stage": 0,
+      "category": "easy words",
       "folder": "",
-      "id": 2
+      "time": 1643362191643,
+      "id": 9
+    }
+  ],
+  "word-category": [
+    {
+      "value": "easy words",
+      "label": "easy words",
+      "id": 1
     }
   ]
 }

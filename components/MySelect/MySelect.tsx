@@ -1,7 +1,7 @@
 import s from './MySelect.module.scss';
 import classNames from 'classnames/bind';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Color } from '../../types/classnameTypes';
 import { ICategory } from '../../types/investTypes';
 
@@ -14,8 +14,9 @@ interface ISelectProps {
   setSelected(arg: ICategory): void;
   theme?: Color;
   animated?: boolean;
-  padding?: boolean;
+  padding?: boolean | string;
   extraClass?: string;
+  extraBorderClass: string;
 }
 
 function MySelect({
@@ -27,19 +28,28 @@ function MySelect({
   animated = false,
   padding = true,
   extraClass,
+  extraBorderClass,
 }: ISelectProps) {
   const [isOpen, setIsOpen] = useState(false);
-
+  const combinedSelectClasses = classNames(s.select, extraClass);
+  const combinedLabelWrapper = classNames(
+    s.labelWrapper,
+    s[theme],
+    extraBorderClass,
+  );
   return (
     <div
-      className={cx(s.wrapper, s[extraClass])}
+      className={cx(combinedSelectClasses)}
       onClick={list ? () => setIsOpen(!isOpen) : () => setIsOpen(false)}
+      id="select"
     >
       <div
-        className={cx(s.labelWrapper, s[theme], s[extraClass], {
+        style={typeof padding === 'string' ? { padding } : null}
+        className={cx(combinedLabelWrapper, {
           disabled: !list,
           withPadding: padding,
           noPadding: !padding,
+          deviderCenter: typeof padding === 'string',
         })}
       >
         <div

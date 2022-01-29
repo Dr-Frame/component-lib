@@ -25,12 +25,7 @@ function WordItem({ wordData }: WordItemProps) {
 
   return (
     <>
-      <li
-        className={s.item}
-        onClick={() => {
-          setIsModalOpen(true);
-        }}
-      >
+      <li className={s.item}>
         <IconButton
           extraClass={s.soundButton}
           size="medium"
@@ -42,7 +37,12 @@ function WordItem({ wordData }: WordItemProps) {
           <HiVolumeUp className={s.soundButtonIcon} />
         </IconButton>
 
-        <div className={s.translationWrapper}>
+        <div
+          className={s.translationWrapper}
+          onClick={() => {
+            setIsModalOpen(true);
+          }}
+        >
           <p className={s.english}>{word}</p>
           <p className={s.translation}>{translate}</p>
         </div>

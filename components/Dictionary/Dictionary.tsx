@@ -13,6 +13,10 @@ import {
 import Modal from '../Modal';
 import { IWord } from '../../types/dictionaryTypes';
 import WordCard from '../WordCard';
+import { CircularProgress } from '@mui/material';
+import translit from '../../utils/translitFn';
+import MySelect from '../MySelect';
+import { IoCloseSharp } from 'react-icons/io5';
 
 const cx = classNames.bind(s);
 
@@ -25,28 +29,21 @@ function Dictionary() {
   const [wordsToShow, setWordsToShow] = useState<wordStateT>('all');
   const [wordData, setWordData] = useState<IWord[] | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isErrorOcurred, setIsErrorOcurred] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [filteredList, setFilteredList] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('');
 
   //redux
   const { data: wordList } = wordsApi.useGetWordsQuery();
   const [getTranslation] = dictionaryApi.useLazyGetTranslationQuery();
-  const [getWord] = dictionaryApi2.useLazyGetWordQuery();
+  const [getWord, { error }] = dictionaryApi2.useLazyGetWordQuery();
+  const { data: userCategoriesList } = wordsApi.useGetCategoryQuery();
 
-  const filterWordList = (
-    list: IWord[],
-    filter: string | number,
-    filterType: 'word' | 'stage',
-  ) => {
-    let filtered;
-    if (filterType === 'word' && typeof filter === 'string') {
-      return (filtered = list.filter(item => item.word.includes(filter)));
-    }
-    if (filterType === 'stage' && typeof filter === 'number') {
-      return (filtered = list.filter(item => item.stage === filter));
-    }
-  };
+  console.log(selectedCategory);
+
+  useEffect(() => {
+    setWordData(null);
+  }, []);
 
   useEffect(() => {
     setSearch('');
@@ -56,25 +53,44 @@ function Dictionary() {
     if (wordList) {
       setFilteredList(filterWordList(wordList, search, 'word'));
     }
-  }, [search, wordList]);
+  }, [search, wordList, selectedCategory]);
 
-  useEffect(() => {
-    if (isErrorOcurred) {
-      setIsModalOpen(false);
-      alert('please search a word again');
+  function handleCategoryChange(e) {
+    setSelectedCategory(e.label);
+  }
+
+  function filterWordList(
+    list: IWord[],
+    filter: string | number,
+    filterType: 'word' | 'stage',
+  ) {
+    const sortByDate = (a: IWord, b: IWord) => b.time - a.time;
+
+    let filtered = [...list].sort(sortByDate);
+    if (filterType === 'word' && typeof filter === 'string') {
+      if (selectedCategory) {
+        return filtered
+          .filter(item => item.word.includes(filter))
+          .filter(item => item.category === selectedCategory);
+      }
+      return filtered.filter(item => item.word.includes(filter));
     }
-
-    return () => {
-      setIsErrorOcurred(false);
-    };
-  }, [isErrorOcurred]);
+    if (filterType === 'stage' && typeof filter === 'number') {
+      if (selectedCategory) {
+        return filtered
+          .filter(item => item.stage === filter)
+          .filter(item => item.category === selectedCategory);
+      }
+      return filtered.filter(item => item.stage === filter);
+    }
+  }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     switch (name) {
       case 'search':
-        setSearch(value.toLowerCase());
+        setSearch(translit(value.toLowerCase()));
         break;
 
       default:
@@ -85,7 +101,7 @@ function Dictionary() {
   const handleAddWord = async () => {
     setIsLoading(true);
     let wordData;
-    setIsModalOpen(true);
+
     try {
       const { data } = await getTranslation(search);
       const apiData = await getWord(search);
@@ -101,15 +117,16 @@ function Dictionary() {
 
       setWordData(wordData);
       setIsLoading(false);
+      setIsModalOpen(true);
     } catch (error) {
-      setIsErrorOcurred(true);
-      console.log('ERROR', error);
+      setIsModalOpen(true);
+      setIsLoading(false);
     }
   };
 
   return (
     <div className={s.wrapper}>
-      <h1 className={s.title}>My Dictionary {`(${123})`}</h1>
+      <h1 className={s.title}>My Dictionary {`(${wordList?.length})`}</h1>
       <div className={s.topWrapper}>
         <div className={s.wordsWrapper}>
           <Input
@@ -126,7 +143,9 @@ function Dictionary() {
           <Button
             onClick={handleAddWord}
             as="button"
-            disabled={!search}
+            disabled={
+              !search || filteredList.map(item => item.word).includes(search)
+            }
             extraClass={s.addBtn}
             size="default"
           >
@@ -135,6 +154,22 @@ function Dictionary() {
         </div>
 
         <div className={s.btnGroup}>
+          <MySelect
+            label="Category"
+            list={userCategoriesList}
+            extraClass={s.categoryFilter}
+            extraBorderClass={s.categoryFilterBorder}
+            selected={selectedCategory}
+            setSelected={handleCategoryChange}
+            padding={'5px 5px 5px 10px'}
+          />
+          <Button
+            as="button"
+            extraClass={cx(s.button, s.deleteCategoryBtn)}
+            onClick={() => setSelectedCategory('')}
+          >
+            <IoCloseSharp fontSize={30} />
+          </Button>
           <Button
             as="button"
             extraClass={cx(s.button, {
@@ -142,7 +177,7 @@ function Dictionary() {
             })}
             onClick={() => {
               setWordsToShow('all');
-              setFilteredList(wordList);
+              setFilteredList(filterWordList(wordList, search, 'word'));
             }}
           >
             All
@@ -197,9 +232,19 @@ function Dictionary() {
       <Modal
         active={isModalOpen}
         setActive={setIsModalOpen}
-        onClose={() => setSearch('')}
+        onClose={() => {
+          setSearch('');
+        }}
       >
-        {wordData && (
+        {error && (
+          <div className={s.errorWrapper}>
+            <div className={s.errorDescr}>{error.data.message} </div>
+            <div className={s.errorHandle}>
+              Type the correct word and try again
+            </div>
+          </div>
+        )}
+        {wordData && !error && (
           <WordCard
             wordData={wordData}
             isLoading={isLoading}
@@ -208,6 +253,11 @@ function Dictionary() {
           />
         )}
       </Modal>
+      {isLoading && (
+        <div className={s.loadingBackdrop}>
+          <CircularProgress size={60} />
+        </div>
+      )}
     </div>
   );
 }

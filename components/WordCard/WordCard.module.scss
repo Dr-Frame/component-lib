@@ -1,5 +1,10 @@
 @import '../../styles/shared.scss';
 
+.categoryModalContentWrapper {
+  .extraWrapper {
+  }
+}
+
 .cardWrapper {
   position: relative;
   min-width: 500px;
@@ -10,6 +15,54 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .userActionsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .selectCategoryWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .noCategory {
+        font-size: 14px;
+        color: $color-light-mainTheme;
+        margin-right: 10px;
+      }
+      .buttonsWrapper {
+        display: flex;
+      }
+
+      .categoryBtn {
+        font-size: 26px;
+        color: $color-light-mainTheme;
+        &:hover {
+          color: $color-letter-border;
+          background-color: transparent;
+        }
+      }
+
+      .select {
+        width: 200px;
+        margin-right: 10px;
+      }
+    }
+    .addBtn {
+      width: 145px;
+      padding: 10px 0;
+      background-color: transparent;
+      color: $color-letter-border;
+      border-color: $color-letter-border;
+      font-size: 16px;
+      &:hover {
+        background-color: rgba(178, 198, 250, 0.2);
+      }
+    }
+  }
+
   .img {
     display: block;
     margin: 0 auto;
@@ -108,31 +161,6 @@
     }
   }
 
-  .addBtn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 145px;
-    padding: 10px 0;
-    background-color: transparent;
-    /* color: $color-light-mainTheme;
-    border-color: $color-light-mainTheme; */
-    color: $color-letter-border;
-    border-color: $color-letter-border;
-    font-size: 16px;
-    &:hover {
-      /*       color: $color-letter-border;
-      border-color: $color-letter-border; */
-      /* background-color: $color-letterLight-border; */
-      background-color: rgba(178, 198, 250, 0.2);
-
-      /* background-color: transparent; */
-      /*  color: $color-letter-border;
-      border-color: $color-letter-border;
-      background-color: $color-superLight-mainTheme; */
-    }
-  }
-
   .extraTranslation {
     margin-left: 20px;
     margin-bottom: 10px;
@@ -180,6 +208,7 @@
 
   .defList {
     .defItem {
+      max-width: 600px;
       margin-left: 20px;
       margin-bottom: 10px;
     }

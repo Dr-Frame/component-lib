@@ -3,6 +3,7 @@ import { cryptoApi } from '../services/CryptoService';
 import {
   dictionaryApi,
   dictionaryApi2,
+  microsoftApi,
   wordsApi,
 } from '../services/DictionaryService';
 import { investAPI } from '../services/InvestService';
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   [dictionaryApi.reducerPath]: dictionaryApi.reducer,
   [dictionaryApi2.reducerPath]: dictionaryApi2.reducer,
   [wordsApi.reducerPath]: wordsApi.reducer,
+  [microsoftApi.reducerPath]: microsoftApi.reducer,
 });
 
 export const setupStore = () => {
@@ -25,6 +27,7 @@ export const setupStore = () => {
         dictionaryApi.middleware,
         dictionaryApi2.middleware,
         wordsApi.middleware,
+        microsoftApi.middleware,
       );
     },
   });

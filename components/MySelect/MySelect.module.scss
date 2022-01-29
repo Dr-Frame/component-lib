@@ -1,6 +1,6 @@
 @import '../../styles/shared.scss';
 
-.wrapper {
+.select {
   background-color: $main-text-color;
   position: relative;
   width: 100%;
@@ -21,10 +21,24 @@
     &::after {
       content: '';
       position: absolute;
-      top: 25%;
-      right: 36px;
-      width: 2px;
-      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20%;
+      width: 1%;
+      height: 60%;
+      background-color: $color-light-mainTheme;
+    }
+  }
+
+  &.deviderCenter {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 18%;
+      width: 1%;
+      height: 60%;
       background-color: $color-light-mainTheme;
     }
   }
@@ -46,10 +60,11 @@
   &::after {
     content: '';
     position: absolute;
-    top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 48px;
     width: 2px;
-    height: 32px;
+    height: 60%;
     background-color: $color-light-mainTheme;
   }
 }

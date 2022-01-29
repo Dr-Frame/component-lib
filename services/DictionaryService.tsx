@@ -1,8 +1,15 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 import { IWord } from '../types/dictionaryTypes';
+import { ICategory } from '../types/investTypes';
 
 const headers = {
   'x-rapidapi-host': 'translo.p.rapidapi.com',
+  'x-rapidapi-key': '42faddc7b6msh739e48229432cd5p16abeejsn18fdcaaa812d',
+};
+
+const headersMicrosoft = {
+  'content-type': 'application/json',
+  'x-rapidapi-host': 'microsoft-translator-text.p.rapidapi.com',
   'x-rapidapi-key': '42faddc7b6msh739e48229432cd5p16abeejsn18fdcaaa812d',
 };
 
@@ -41,14 +48,32 @@ export const dictionaryApi2 = createApi({
   }),
 });
 
+//TODO: need https protocol
+export const microsoftApi = createApi({
+  reducerPath: 'microsoftApi',
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'https://microsoft-translator-text.p.rapidapi.com',
+  }),
+  endpoints: build => ({
+    getTranslation: build.query<>({
+      query: word => ({
+        url: `/Dictionary/Lookup?to=ru&api-version=3.0&from=en`,
+        method: 'POST',
+        headers: headersMicrosoft,
+        body: word,
+      }),
+    }),
+  }),
+});
+
 export const wordsApi = createApi({
   reducerPath: 'userDictionatyApi',
   baseQuery: fetchBaseQuery({
     baseUrl: LHBaseUrl,
   }),
-  tagTypes: ['Words'],
+  tagTypes: ['Words', 'Categories'],
   endpoints: build => ({
-    getWords: build.query<IWord, IWord[]>({
+    getWords: build.query<IWord[], void>({
       query: () => ({
         url: '/dictionary',
         method: 'GET',
@@ -77,6 +102,21 @@ export const wordsApi = createApi({
         body: word,
       }),
       invalidatesTags: ['Words'],
+    }),
+    getCategory: build.query<ICategory[], void>({
+      query: () => ({
+        url: `word-category`,
+        method: 'GET',
+      }),
+      providesTags: ['Categories'],
+    }),
+    addCategory: build.mutation<ICategory[], ICategory>({
+      query: category => ({
+        url: `word-category`,
+        method: 'POST',
+        body: category,
+      }),
+      invalidatesTags: ['Categories'],
     }),
   }),
 });

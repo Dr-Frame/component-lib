@@ -7,6 +7,19 @@
   @extend %boxBorder;
   padding: 20px;
 }
+.loadingBackdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: $color-modal-backdrop;
+  position: fixed;
+  pointer-events: none;
+  transition: $transitionModal;
+}
 
 .title {
   font-size: 20px;
@@ -51,6 +64,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.categoryFilter {
+  width: 200px !important;
+  margin-right: 5px;
+}
+
+.deleteCategoryBtn {
+  margin-right: 30px !important;
 }
 
 .button {
@@ -126,5 +148,20 @@
   font-size: 20px;
 }
 
-.listWrapper {
+.errorWrapper {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.errorDescr {
+  font-weight: 500;
+  color: $color-light-mainTheme;
+  margin-bottom: 10px;
+}
+.errorHandle {
+  text-align: center;
+  font-weight: 700;
+  color: $color-dark-mainTheme;
 }

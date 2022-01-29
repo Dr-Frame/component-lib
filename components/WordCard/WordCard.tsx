@@ -10,7 +10,11 @@ import Input from '../Input';
 import Button from '../Button';
 import { wordsApi } from '../../services/DictionaryService';
 import classNames from 'classnames/bind';
-import { CircularProgress } from '@mui/material';
+import MySelect from '../MySelect';
+import { RiDeleteBack2Fill } from 'react-icons/ri';
+import { RiAddBoxFill } from 'react-icons/ri';
+import Modal from '../Modal';
+import { ICategory } from '../../types/investTypes';
 
 const cx = classNames.bind(s);
 
@@ -31,13 +35,15 @@ function WordCard({
 }: IWordCardProps) {
   const [userTranslation, setUserTranslation] = useState(wordData.translate);
   const [isRedacting, setIsRedacting] = useState(false);
-
-  /* console.log('isLoading', isLoading);
-  console.log('wordData', wordData); */
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
+  const [inputCategory, setInputCategory] = useState('');
 
   //redux
   const [addWord] = wordsApi.useAddWordMutation();
   const [updateWord] = wordsApi.useUpdateWordMutation();
+  const [addNewCategory] = wordsApi.useAddCategoryMutation();
+  const { data: categoryList } = wordsApi.useGetCategoryQuery();
 
   useEffect(() => {
     setIsRedacting(false);
@@ -51,11 +57,20 @@ function WordCard({
     setUserTranslation(e.target.value.toLowerCase());
   };
 
+  const handleSelectCategory = (e: ICategory) => {
+    setSelectedCategory(e.label);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputCategory(e.target.value);
+  };
+
   const handleWordAdd = () => {
     const newWord = {
       ...wordData,
       translate: userTranslation,
       time: Date.now(),
+      category: selectedCategory,
     };
     addWord(newWord);
     setUserTranslation('');
@@ -63,16 +78,64 @@ function WordCard({
     setIsRedacting(false);
   };
 
+  const handleAddCategory = (name: string) => {
+    const newCategory: ICategory = { value: name, label: name };
+    addNewCategory(newCategory);
+  };
+
   return (
     <>
       <div className={s.cardWrapper}>
-        {(!wordData || isLoading) && (
-          <div className={s.loading}>
-            <CircularProgress size={100} />
-          </div>
-        )}
         {!isLoading && (
           <>
+            {isAddFuncOn && (
+              <div className={s.userActionsWrapper}>
+                <Button
+                  color="mainDark"
+                  as="button"
+                  size="default"
+                  extraClass={s.addBtn}
+                  onClick={handleWordAdd}
+                >
+                  Add word
+                </Button>
+                <div className={s.selectCategoryWrapper}>
+                  {categoryList?.length > 0 ? (
+                    <MySelect
+                      list={categoryList}
+                      label="Category"
+                      selected={selectedCategory}
+                      setSelected={handleSelectCategory}
+                      theme="mainLight"
+                      extraClass={s.select}
+                      padding={'6px 5px 6px 10px'}
+                    />
+                  ) : (
+                    <p className={s.noCategory}>Add new category</p>
+                  )}
+
+                  <div className={s.buttonsWrapper}>
+                    <IconButton
+                      size="small"
+                      theme="transparent"
+                      extraClass={s.categoryBtn}
+                      onClick={() => setIsCategoryModalOpen(true)}
+                    >
+                      <RiAddBoxFill />
+                    </IconButton>
+                    <IconButton
+                      size="small"
+                      theme="transparent"
+                      extraClass={s.categoryBtn}
+                      onClick={() => setSelectedCategory('')}
+                    >
+                      <RiDeleteBack2Fill />
+                    </IconButton>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <div className={s.img}>
               <Image
                 src="/../public/img/imagePlaceholder.png"
@@ -129,7 +192,7 @@ function WordCard({
                   styleType="standart"
                   label="Your translate"
                   name="translate"
-                  value={userTranslation}
+                  value={userTranslation || wordData.translate}
                   onChange={handleTranslationChange}
                   theme="mainLight"
                   isLabelHidden
@@ -155,17 +218,6 @@ function WordCard({
                 </IconButton>
               </div>
             </div>
-            {isAddFuncOn && (
-              <Button
-                color="mainDark"
-                as="button"
-                size="default"
-                extraClass={s.addBtn}
-                onClick={handleWordAdd}
-              >
-                Add word
-              </Button>
-            )}
 
             <p className={s.additionalText}>translation variants: </p>
             <ul className={s.extraTranslation}>
@@ -248,6 +300,35 @@ function WordCard({
           </>
         )}
       </div>
+      <Modal active={isCategoryModalOpen} setActive={setIsCategoryModalOpen}>
+        <div className={s.categoryModalContentWrapper}>
+          <Input
+            label="Category name"
+            name="category"
+            value={inputCategory}
+            styleType="animated"
+            theme="mainLight"
+            onChange={handleInputChange}
+            extraWrapperClass={s.extraWrapper}
+          />
+          <Button
+            as="button"
+            type="button"
+            view="outlined"
+            color="mainLight"
+            size="default"
+            animation="mouseRipple"
+            disabled={inputCategory ? false : true}
+            onClick={() => {
+              handleAddCategory(inputCategory);
+              setIsCategoryModalOpen(false);
+              setInputCategory('');
+            }}
+          >
+            Add category
+          </Button>
+        </div>
+      </Modal>
     </>
   );
 }
