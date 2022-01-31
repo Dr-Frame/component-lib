@@ -58,14 +58,10 @@
     color: $color-stage-0;
   }
   &.half {
-    /* border: 2px solid $color-letterLight-border;
-    color: $color-letterLight-border; */
     border: 2px solid $color-stage-1;
     color: $color-stage-1;
   }
   &.done {
-    /* border: 2px solid $color-letter-border;
-    color: $color-letter-border; */
     border: 2px solid $color-stage-2;
     color: $color-stage-2;
   }
@@ -82,7 +78,7 @@
   color: $color-light-mainTheme;
 
   &:hover {
-    border: 2px solid $color-letter-border !important;
-    color: $color-letter-border;
+    border: 2px solid $color-wrong-letter !important;
+    color: $color-wrong-letter;
   }
 }

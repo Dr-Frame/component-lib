@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
+import { IWord } from '../../types/dictionaryTypes';
 import Button from '../Button';
-import WordContainer2 from '../WordContainer';
+import WordContainer from '../WordContainer';
 import s from './Constructor.module.scss';
 
-interface IConstructorProps {}
+interface IConstructorProps {
+  wordList: IWord[];
+}
 
-const wordList = [
+/* const wordList = [
   {
     word: 'concrete',
     translate: 'цемент',
@@ -48,9 +51,9 @@ const wordList = [
     word: 'priest',
     translate: 'священник',
   },
-];
+]; */
 
-function Constructor() {
+function Constructor({ wordList }: IConstructorProps) {
   const [currentSlide, setCurrentSlide] = useState<number>(1);
   const [isCorrect, setIsCorrect] = useState(false);
   const [currentWord, setCurrentWord] = useState(wordList[0]);
@@ -61,28 +64,32 @@ function Constructor() {
 
   return (
     <div className={s.slide}>
-      <p className={s.wordAmount}>
-        Word: {currentSlide}/{wordList.length}
-      </p>
+      {wordList && (
+        <>
+          <p className={s.wordAmount}>
+            Word: {currentSlide}/{wordList.length}
+          </p>
 
-      <WordContainer2
-        word={currentWord}
-        isCorrect={isCorrect}
-        setIsCorrect={setIsCorrect}
-        slide={currentSlide}
-        setSlide={setCurrentSlide}
-      />
-      <Button
-        as="button"
-        color="mainDark"
-        size="small"
-        uppercase
-        disabled={!isCorrect}
-        onClick={() => setCurrentSlide(prevState => prevState + 1)}
-        extraClass={s.button}
-      >
-        next word
-      </Button>
+          <WordContainer
+            word={currentWord}
+            isCorrect={isCorrect}
+            setIsCorrect={setIsCorrect}
+            slide={currentSlide}
+            setSlide={setCurrentSlide}
+          />
+          <Button
+            as="button"
+            color="mainDark"
+            size="small"
+            uppercase
+            disabled={!isCorrect}
+            onClick={() => setCurrentSlide(prevState => prevState + 1)}
+            extraClass={s.button}
+          >
+            next word
+          </Button>
+        </>
+      )}
     </div>
   );
 }

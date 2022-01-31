@@ -15,6 +15,8 @@ export interface IMeanings {
   definitions: IDefenitions[];
 }
 
+type trainingsDoneType = ['word-constructor' | 'translate' | 'type'];
+
 export interface IWord {
   category: string;
   folder: string;
@@ -28,4 +30,5 @@ export interface IWord {
   word: string;
   id?: number;
   time: number;
+  trainingsDone: trainingsDoneType;
 }

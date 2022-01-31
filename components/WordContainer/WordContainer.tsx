@@ -1,30 +1,72 @@
 import { useEffect, useRef, useState } from 'react';
 import s from './WordContainer.module.scss';
 import classNames from 'classnames/bind';
+import { IWord } from '../../types/dictionaryTypes';
+import { HiVolumeUp } from 'react-icons/hi';
+import IconButton from '../IconButton';
+import Image from 'next/image';
+import { BsBook, BsBookHalf, BsBookFill } from 'react-icons/bs';
+import { wordsApi } from '../../services/DictionaryService';
+import updateWordProgress from '../../utils/updateWordProgress';
 
 const cx = classNames.bind(s);
 
-function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
+interface IWordContainerProps {
+  word: IWord;
+  setIsCorrect(arg: boolean): void;
+  slide: number;
+  setSlide(): void;
+  isCorrect: boolean;
+}
+
+function WordContainer({
+  word,
+  setIsCorrect,
+  slide,
+  setSlide,
+  isCorrect,
+}: IWordContainerProps) {
   const [answer, setAnswer] = useState<string[]>([]);
   const [position, setPosition] = useState<number>(0);
   const [startWordSplitted, setStartWordSplitted] = useState(
-    word.word.split(''),
+    word?.word.split(''),
   );
   const [splittedQuessWord, setSplittedQuessWord] = useState(
-    word.word.split(''),
+    word?.word.split(''),
   );
   const [wordObj, setWordObj] = useState({});
+  const [mistakeAmount, setMistakeAmount] = useState(0);
+  console.log('mistake', mistakeAmount);
+
+  //rtk
+  const [updateWord] = wordsApi.useUpdateWordMutation();
 
   //link to the <ul>
   const letterList = useRef(null);
+
+  useEffect(() => {
+    setMistakeAmount(0);
+  }, [word]);
 
   useEffect(() => {
     setPosition(0);
     setAnswer([]);
   }, [slide]);
 
+  console.log(word.stage);
+
   useEffect(() => {
-    answer.join('') === word.word ? setIsCorrect(true) : setIsCorrect(false);
+    //when correct word play the sound if exsist
+    if (answer.join('') === word.word) {
+      setIsCorrect(true);
+      updateWordProgress(mistakeAmount, word, updateWord, 'word-constructor');
+      if (word.phonetics[0]) {
+        const audio = new Audio(word.phonetics[0].audio);
+        audio.play();
+      }
+      return;
+    }
+    setIsCorrect(false);
   }, [answer]);
 
   useEffect(() => {
@@ -36,7 +78,7 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
     setStartWordSplitted(word.word.split(''));
   }, [word]);
 
-  function wordObjCreator(lettersArr) {
+  function wordObjCreator(lettersArr: string[]) {
     const wordToQuessObject = lettersArr
       .sort(() => Math.random() - 0.5)
       .reduce((prev, cur) => {
@@ -46,7 +88,14 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
     return wordToQuessObject;
   }
 
-  function newHandleClick(e, type) {
+  function handleMistake() {
+    setMistakeAmount(prevState => prevState + 1);
+  }
+
+  function newHandleClick(
+    e: MouseEvent | KeyboardEvent,
+    type: 'mouse' | 'keyboard',
+  ) {
     if (type === 'mouse') {
       if (e.target.firstChild.textContent === startWordSplitted[position]) {
         const letterPosition = splittedQuessWord.indexOf(
@@ -58,7 +107,9 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
         setSplittedQuessWord(copySplittedWord);
         setAnswer(prevState => [...prevState, e.target.firstChild.textContent]);
         setPosition(prevState => prevState + 1);
+        return;
       }
+      handleMistake();
     }
     //если буква верная
     if (type === 'keyboard' && e.key === startWordSplitted[position]) {
@@ -74,6 +125,7 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
       if (letterList.current.children) {
         Object.values(letterList.current.children).forEach(liItem => {
           if (liItem?.firstChild?.textContent === e.key) {
+            handleMistake();
             liItem.classList.add(cx(s.keyWrong));
           }
         });
@@ -123,10 +175,40 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
 
   return (
     <div className={s.wrapper}>
+      <div className={s.stageWrapper}>
+        {word.stage === 0 && <BsBook className={cx(s.progressIcon, s.new)} />}
+        {word.stage === 1 && (
+          <BsBookHalf className={cx(s.progressIcon, s.half)} />
+        )}
+        {word.stage === 2 && (
+          <BsBookFill className={cx(s.progressIcon, s.done)} />
+        )}
+      </div>
       <p className={s.translatedWord}>{word.translate}</p>
-      <p className={s.description}>make up a word from letters below</p>
+      {isCorrect ? (
+        <div className={s.soundWrapper}>
+          {word.phonetics[0] ? (
+            <IconButton
+              extraClass={s.soundButton}
+              size="small"
+              theme="transparent"
+              onClick={() => {
+                const audio = new Audio(word.phonetics[0].audio);
+                audio.play();
+              }}
+            >
+              <HiVolumeUp className={s.soundButtonIcon} />
+            </IconButton>
+          ) : null}
+          {word.phonetic ? (
+            <p className={s.phonetic}>[`${word.phonetic}`]</p>
+          ) : null}
+        </div>
+      ) : (
+        <p className={s.description}>make up a word from letters below</p>
+      )}
 
-      <ul className={s.list}>
+      <ul className={cx(s.list)}>
         {answer
           ? startWordSplitted.map((letter, i) => {
               return (
@@ -145,14 +227,19 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
               return <li key={i} className={s.cellToFill}></li>;
             })}
       </ul>
-      <ul className={s.list} ref={letterList}>
-        {Object.keys(wordObj).length > 0 ? (
+      <ul
+        className={cx(s.quessList, {
+          hidden: isCorrect,
+        })}
+        ref={letterList}
+      >
+        {Object.keys(wordObj).length > 0 &&
           Object.entries(wordObj).map((letter, i) => {
             return (
               <li
                 onClick={e => newHandleClick(e, 'mouse')}
                 key={i}
-                className={cx(s.cellToFill, s.cellToClick, {
+                className={cx(s.cellToClick, {
                   wrong: letter[0] !== startWordSplitted[position],
                   right: letter[0] === startWordSplitted[position],
                 })}
@@ -163,11 +250,27 @@ function WordContainer({ word, setIsCorrect, slide, setSlide, isCorrect }) {
                 )}
               </li>
             );
-          })
-        ) : (
-          <div className={s.wordQuessed}></div>
-        )}
+          })}
       </ul>
+
+      {isCorrect ? (
+        <div className={s.wordDescriptionWrapper}>
+          <Image
+            src="/../public/img/imagePlaceholder.png"
+            alt="noImage"
+            width={100}
+            height={100}
+          />
+          {word.meanings[0].definitions && (
+            <div className={s.exampleWrapper}>
+              <p className={s.exTitle}>example:</p>
+              <p className={s.exDescr}>
+                {word.meanings[0].definitions[0].example}
+              </p>
+            </div>
+          )}
+        </div>
+      ) : null}
     </div>
   );
 }

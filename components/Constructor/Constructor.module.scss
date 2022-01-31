@@ -12,6 +12,8 @@
   display: block;
   margin-left: auto;
   margin-bottom: 20px;
+  font-weight: 500;
+  color: $color-light-mainTheme;
 }
 
 .button {
@@ -20,4 +22,12 @@
   margin-left: auto;
   font-size: 14px;
   width: 120px;
+  border-color: $color-letterSuperLight-border !important;
+  background-color: transparent !important;
+  color: $color-letterSuperLight-border !important;
+
+  &:hover {
+    color: $color-letter-border !important;
+    border-color: $color-letter-border !important;
+  }
 }

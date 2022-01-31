@@ -39,8 +39,6 @@ function Dictionary() {
   const [getWord, { error }] = dictionaryApi2.useLazyGetWordQuery();
   const { data: userCategoriesList } = wordsApi.useGetCategoryQuery();
 
-  console.log(selectedCategory);
-
   useEffect(() => {
     setWordData(null);
   }, []);

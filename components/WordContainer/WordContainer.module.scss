@@ -1,15 +1,56 @@
 @import '../../styles/shared.scss';
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
+
+.stageWrapper {
+  position: absolute;
+  top: -40px;
+  left: 0;
+
+  .progressIcon {
+    font-size: 26px;
+    &.new {
+      color: $color-stage-0;
+    }
+    &.half {
+      color: $color-stage-1;
+    }
+    &.done {
+      color: $color-stage-2;
+    }
+  }
+}
+
 .translatedWord {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: $color-darkest-mainTheme;
+  color: $color-letter-border;
+}
+
+.soundWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .phonetic {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-light-mainTheme;
+  }
+  .soundButton {
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .soundButtonIcon {
+    font-size: 16px;
+    color: $color-dark-mainTheme;
+  }
 }
 
 .description {
@@ -23,6 +64,24 @@
   margin-bottom: 20px;
 }
 
+.quessList {
+  display: flex;
+  margin-bottom: 20px;
+
+  &.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .cellToFill {
   position: relative;
   display: flex;
@@ -32,9 +91,11 @@
   width: 40px;
   height: 40px;
   padding: 10px;
-  border: 1px solid $color-darkest-mainTheme;
+  border: 1px solid $color-dark-mainTheme;
   border-radius: 3px;
   font-size: 12px;
+  font-weight: 500;
+  color: $color-darkest-mainTheme;
 
   &.current {
     border: 2px solid $color-letter-border;
@@ -42,10 +103,26 @@
 
   &.quessed {
     background-color: $color-right-letter;
+    border: none;
+    font-weight: 700;
   }
 }
 
 .cellToClick {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  /* border: 2px solid $color-dark-mainTheme; */
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  color: $color-darkest-mainTheme;
+
   background-color: $color-letter-border;
   cursor: pointer;
   transition: $transition;
@@ -82,20 +159,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   top: -5px;
   right: -5px;
   z-index: 1;
   border-radius: 50%;
-  padding: 7px;
-  border: 1px solid black;
+  padding: 8px;
+  border: 1px solid $color-dark-mainTheme;
   font-size: 10px;
   background: $color-letter-border;
-  color: white;
+  color: $main-text-color;
 }
 
-.wordQuessed {
-  height: 30px;
-  width: 100%;
+.wordDescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .exampleWrapper {
+    margin-top: 10px;
+  }
+  .exTitle {
+    margin-bottom: 5px;
+    text-align: center;
+    color: $color-letterLight-border;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .exDescr {
+    text-align: center;
+    color: $color-superLight-mainTheme;
+    font-weight: 500;
+    font-size: 14px;
+  }
 }

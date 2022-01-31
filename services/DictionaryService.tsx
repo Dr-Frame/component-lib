@@ -73,10 +73,19 @@ export const wordsApi = createApi({
   }),
   tagTypes: ['Words', 'Categories'],
   endpoints: build => ({
-    getWords: build.query<IWord[], void>({
+    getWordsForTraining: build.query<IWord[], undefined>({
       query: () => ({
         url: '/dictionary',
         method: 'GET',
+      }),
+    }),
+    getWords: build.query<IWord[], number | undefined>({
+      query: limits => ({
+        url: '/dictionary',
+        method: 'GET',
+        params: {
+          _limit: limits,
+        },
       }),
       providesTags: result => ['Words'],
     }),

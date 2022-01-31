@@ -609,9 +609,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643283071051,
       "id": 4
     },
@@ -670,9 +673,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643284567152,
       "id": 5
     },
@@ -788,9 +794,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643287880018,
       "id": 6
     },
@@ -890,9 +899,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643288830545,
       "id": 7
     },
@@ -1272,9 +1284,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643355464398,
       "id": 8
     },
@@ -1394,9 +1409,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "easy words",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643362191643,
       "id": 9
     },
@@ -1545,9 +1563,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643452586255,
       "id": 10
     },
@@ -1685,9 +1706,12 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": 1,
       "category": "difficult",
       "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
       "time": 1643452679424,
       "id": 11
     },
@@ -1795,8 +1819,591 @@
       "stage": 0,
       "category": "difficult",
       "folder": "",
+      "trainingsDone": [],
       "time": 1643452954474,
       "id": 12
+    },
+    {
+      "translate": "совпадают",
+      "translations": {
+        "несовпадения": [
+          "mismatch",
+          "coincide",
+          "incompatibility",
+          "divergence"
+        ],
+        "приурочить": [
+          "back-to-back with",
+          "held back-to-back",
+          ""
+        ],
+        "совместиться": [
+          ""
+        ],
+        "совмещаться": [
+          "coincide",
+          "fit together",
+          ""
+        ],
+        "совпадать": [
+          "coincide",
+          "overlap",
+          "match",
+          "correspond",
+          "be identical",
+          "be equal",
+          "concurrent",
+          "converge",
+          "clash",
+          "dovetail"
+        ],
+        "совпасть": [
+          "coincide",
+          "match",
+          "overlap",
+          "clash"
+        ],
+        "соответствовать": [
+          "meet",
+          "comply with",
+          "be consistent with",
+          "conform to",
+          "correspond to",
+          "match",
+          "be in line with",
+          "be in accordance with",
+          "follow",
+          "fit"
+        ]
+      },
+      "word": "coincide",
+      "phonetic": "ˌkəʊɪnˈsʌɪd",
+      "phonetics": [
+        {
+          "text": "ˌkəʊɪnˈsʌɪd",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/coincide--_gb_1.mp3"
+        }
+      ],
+      "origin": "early 18th century (in the sense ‘occupy the same space’): from medieval Latin coincidere, from co- ‘together with’ + incidere ‘fall upon or into’.",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "occur at the same time.",
+              "example": "publication is timed to coincide with a major exhibition",
+              "synonyms": [
+                "occur simultaneously",
+                "happen together",
+                "happen at the same time",
+                "be concurrent",
+                "coexist",
+                "concur",
+                "clash",
+                "conflict"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "correspond in nature; tally.",
+              "example": "the interests of employers and employees do not always coincide",
+              "synonyms": [
+                "tally",
+                "correspond",
+                "agree",
+                "accord",
+                "concur",
+                "match",
+                "fit",
+                "be in agreement",
+                "be consistent",
+                "conform",
+                "equate",
+                "harmonize",
+                "be in tune",
+                "be compatible",
+                "dovetail",
+                "correlate",
+                "be the same as",
+                "parallel",
+                "square",
+                "jibe",
+                "quadrate"
+              ],
+              "antonyms": [
+                "differ"
+              ]
+            }
+          ]
+        }
+      ],
+      "stage": 1,
+      "category": "difficult",
+      "folder": "",
+      "trainingsDone": [
+        "word-constructor"
+      ],
+      "time": 1643612097366,
+      "id": 13
+    },
+    {
+      "translate": "чувак",
+      "translations": {
+        "блин": [
+          "man",
+          "hell",
+          "boy",
+          "dude",
+          "oh",
+          "geez",
+          "bloody",
+          "pancake",
+          "shoot",
+          "jeez"
+        ],
+        "друг": [
+          "each",
+          "friend",
+          "one",
+          "man",
+          "buddy",
+          "mate",
+          "boyfriend",
+          "pal",
+          "between",
+          "dude"
+        ],
+        "дружище": [
+          "buddy",
+          "man",
+          "mate",
+          "my friend",
+          "pal",
+          "dude",
+          "bud",
+          "bro",
+          "old friend",
+          "brother"
+        ],
+        "мужик": [
+          "man",
+          "guy",
+          "dude",
+          "mate",
+          "bloke",
+          "fella",
+          "pal",
+          "bro",
+          "male",
+          "peasant"
+        ],
+        "парень": [
+          "guy",
+          "boy",
+          "boyfriend",
+          "kid",
+          "man",
+          "lad",
+          "dude",
+          "fellow",
+          "fella",
+          "bloke"
+        ],
+        "приятель": [
+          "buddy",
+          "mate",
+          "pal",
+          "man",
+          "friend",
+          "bud",
+          "dude",
+          "boyfriend",
+          "fella",
+          "boy"
+        ],
+        "старик": [
+          "old man",
+          "an old man",
+          "dude",
+          "old guy",
+          "buddy",
+          "old boy",
+          "mate",
+          "pal",
+          "old-timer",
+          "old chap"
+        ],
+        "увак": [
+          "Dude"
+        ],
+        "чел": [
+          "man",
+          "dude",
+          "people",
+          "persons",
+          "guy",
+          "men",
+          "pers",
+          "buddy",
+          "cel"
+        ],
+        "чувак": [
+          "man",
+          "dude",
+          "guy",
+          "mate",
+          "buddy",
+          "bro",
+          "dawg",
+          "bloke",
+          "pal",
+          "fella"
+        ]
+      },
+      "word": "dude",
+      "phonetic": "d(j)uːd",
+      "phonetics": [
+        {
+          "text": "d(j)uːd",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/dude--_gb_1.mp3"
+        }
+      ],
+      "origin": "late 19th century (denoting a dandy): probably shortened from doodle, perhaps with allusion to Yankee Doodle Dandy.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a man; a guy (often as a form of address).",
+              "example": "hey dude, what's up?",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "dress up elaborately.",
+              "example": "my brother was all duded up in silver and burgundy",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": 1,
+      "category": "",
+      "folder": "",
+      "time": 1643626282597,
+      "trainingsDone": [
+        "word-constructor"
+      ],
+      "id": 14
+    },
+    {
+      "translate": "сыр",
+      "translations": {
+        "Cheese": [
+          "сыр",
+          "сырный",
+          "творог",
+          "сырок",
+          "бобина с пряжей",
+          "головка сыра",
+          "Cheese",
+          "Чиз",
+          "Чиза",
+          "Чизом"
+        ],
+        "Чиз": [
+          "Cheese",
+          "C.H.E.E.S.E"
+        ],
+        "Чиза": [
+          "Cheese",
+          ""
+        ],
+        "Чизом": [
+          "Cheese",
+          ""
+        ],
+        "бобина с пряжей": [
+          ""
+        ],
+        "головка сыра": [
+          "cheese",
+          "head of cheese",
+          ""
+        ],
+        "сыр": [
+          "cheese",
+          "gouda"
+        ],
+        "сырный": [
+          "cheese",
+          "cheesy",
+          "grilled-cheese",
+          "caseous",
+          "cheesey"
+        ],
+        "сырок": [
+          "cheese",
+          ""
+        ],
+        "творог": [
+          "cottage cheese",
+          "curd",
+          "schmear",
+          "quark",
+          "labneh"
+        ]
+      },
+      "word": "cheese",
+      "phonetic": "tʃiːz",
+      "phonetics": [
+        {
+          "text": "tʃiːz",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cheese--_gb_3.mp3"
+        }
+      ],
+      "origin": "Old English cēse, cȳse, of West Germanic origin; related to Dutch kaas and German Käse ; from Latin caseus .",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a food made from the pressed curds of milk, firm and elastic or soft and semi-liquid in texture.",
+              "example": "grated cheese",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the quality of being too obviously sentimental.",
+              "example": "the conversations tend too far towards cheese",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": 1,
+      "category": "",
+      "folder": "",
+      "time": 1643630735280,
+      "trainingsDone": [
+        "word-constructor"
+      ],
+      "id": 15
+    },
+    {
+      "translate": "приятель",
+      "translations": {
+        "друг": [
+          "each",
+          "friend",
+          "one",
+          "man",
+          "buddy",
+          "mate",
+          "boyfriend",
+          "pal",
+          "between",
+          "dude"
+        ],
+        "дружище": [
+          "buddy",
+          "man",
+          "mate",
+          "my friend",
+          "pal",
+          "dude",
+          "bud",
+          "bro",
+          "old friend",
+          "brother"
+        ],
+        "дружок": [
+          "buddy",
+          "friend",
+          "boyfriend",
+          "pal",
+          "mate",
+          "boy",
+          "bud",
+          "man",
+          "pally",
+          "kiddo"
+        ],
+        "мужик": [
+          "man",
+          "guy",
+          "dude",
+          "mate",
+          "bloke",
+          "fella",
+          "pal",
+          "bro",
+          "male",
+          "peasant"
+        ],
+        "парень": [
+          "guy",
+          "boy",
+          "boyfriend",
+          "kid",
+          "man",
+          "lad",
+          "dude",
+          "fellow",
+          "fella",
+          "bloke"
+        ],
+        "подруга": [
+          "friend",
+          "girlfriend",
+          "girl",
+          "dude",
+          "mate",
+          "lady friend",
+          "pal",
+          "girl friend",
+          "female friend",
+          "woman friend"
+        ],
+        "подружка": [
+          "girlfriend",
+          "friend",
+          "girl",
+          "ex-girlfriend",
+          "gal pal",
+          "woman"
+        ],
+        "приятель": [
+          "buddy",
+          "mate",
+          "pal",
+          "man",
+          "friend",
+          "bud",
+          "dude",
+          "boyfriend",
+          "fella",
+          "boy"
+        ],
+        "старик": [
+          "old man",
+          "an old man",
+          "dude",
+          "old guy",
+          "buddy",
+          "old boy",
+          "mate",
+          "pal",
+          "old-timer",
+          "old chap"
+        ],
+        "чувак": [
+          "man",
+          "dude",
+          "guy",
+          "mate",
+          "buddy",
+          "bro",
+          "dawg",
+          "bloke",
+          "pal",
+          "fella"
+        ]
+      },
+      "word": "pal",
+      "phonetic": "pal",
+      "phonetics": [
+        {
+          "text": "pal",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pal--_gb_3.mp3"
+        }
+      ],
+      "origin": "late 17th century: from Romani, ‘brother, mate’, based on Sanskrit bhrātṛ ‘brother’.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a friend.",
+              "example": "we've been pals for a long time",
+              "synonyms": [
+                "friend",
+                "companion",
+                "comrade",
+                "intimate",
+                "familiar",
+                "confidant",
+                "alter ego",
+                "second self",
+                "playmate",
+                "classmate",
+                "schoolmate",
+                "workmate",
+                "chum",
+                "buddy",
+                "bosom pal",
+                "sidekick",
+                "cully",
+                "spar",
+                "crony",
+                "mucker",
+                "butty",
+                "main man",
+                "mate",
+                "oppo",
+                "china",
+                "marrow",
+                "marrer",
+                "marra",
+                "amigo",
+                "compadre",
+                "paisan",
+                "bro",
+                "homeboy",
+                "homegirl",
+                "gabba",
+                "compeer",
+                "fidus Achates"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "form a friendship.",
+              "example": "she palled up with some English chaps",
+              "synonyms": [
+                "become friendly",
+                "make friends",
+                "become friends",
+                "form a friendship",
+                "get in",
+                "buddy up",
+                "chum up"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": 1,
+      "category": "",
+      "folder": "",
+      "time": 1643633221074,
+      "trainingsDone": [
+        "word-constructor"
+      ],
+      "id": 16
     }
   ],
   "word-category": [
