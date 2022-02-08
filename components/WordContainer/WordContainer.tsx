@@ -5,9 +5,9 @@ import { IWord } from '../../types/dictionaryTypes';
 import { HiVolumeUp } from 'react-icons/hi';
 import IconButton from '../IconButton';
 import Image from 'next/image';
-import { BsBook, BsBookHalf, BsBookFill } from 'react-icons/bs';
 import { wordsApi } from '../../services/DictionaryService';
 import updateWordProgress from '../../utils/updateWordProgress';
+import ProgressIcon from '../ProgressIcon';
 
 const cx = classNames.bind(s);
 
@@ -176,13 +176,7 @@ function WordContainer({
   return (
     <div className={s.wrapper}>
       <div className={s.stageWrapper}>
-        {word.stage === 0 && <BsBook className={cx(s.progressIcon, s.new)} />}
-        {word.stage === 1 && (
-          <BsBookHalf className={cx(s.progressIcon, s.half)} />
-        )}
-        {word.stage === 2 && (
-          <BsBookFill className={cx(s.progressIcon, s.done)} />
-        )}
+        <ProgressIcon trainingsCompleteAmount={word.trainingsDone.length} />
       </div>
       <p className={s.translatedWord}>{word.translate}</p>
       {isCorrect ? (

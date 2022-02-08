@@ -15,7 +15,15 @@ export interface IMeanings {
   definitions: IDefenitions[];
 }
 
-type trainingsDoneType = ['word-constructor' | 'translate' | 'type'];
+export type trainingsType =
+  | 'word-constructor'
+  | 'translate'
+  | 'type'
+  | 'writing';
+
+type trainingsDoneType = [
+  'word-constructor' | 'translate' | 'type' | 'writing',
+];
 
 export interface IWord {
   category: string;
@@ -24,7 +32,7 @@ export interface IWord {
   origin: string;
   phonetic: string;
   phonetics: IPhonetic[];
-  stage: number;
+  stage: string;
   translate: string;
   translations: object;
   word: string;

@@ -8,55 +8,10 @@ interface IConstructorProps {
   wordList: IWord[];
 }
 
-/* const wordList = [
-  {
-    word: 'concrete',
-    translate: 'цемент',
-  },
-  {
-    word: 'mother',
-    translate: 'мама',
-  },
-
-  {
-    word: 'father',
-    translate: 'папа',
-  },
-  {
-    word: 'road',
-    translate: 'мама',
-  },
-
-  {
-    word: 'lazy',
-    translate: 'ленивый',
-  },
-  {
-    word: 'crazy',
-    translate: 'сумасшедший',
-  },
-  {
-    word: 'victim',
-    translate: 'жертва',
-  },
-  {
-    word: 'brave',
-    translate: 'мужественный',
-  },
-  {
-    word: 'learn',
-    translate: 'учить',
-  },
-  {
-    word: 'priest',
-    translate: 'священник',
-  },
-]; */
-
 function Constructor({ wordList }: IConstructorProps) {
   const [currentSlide, setCurrentSlide] = useState<number>(1);
   const [isCorrect, setIsCorrect] = useState(false);
-  const [currentWord, setCurrentWord] = useState(wordList[0]);
+  const [currentWord, setCurrentWord] = useState<IWord>(wordList[0]);
 
   useEffect(() => {
     setCurrentWord(wordList[currentSlide - 1]);
@@ -69,7 +24,6 @@ function Constructor({ wordList }: IConstructorProps) {
           <p className={s.wordAmount}>
             Word: {currentSlide}/{wordList.length}
           </p>
-
           <WordContainer
             word={currentWord}
             isCorrect={isCorrect}

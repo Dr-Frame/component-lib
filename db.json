@@ -7,44 +7,44 @@
         "name": "Bitcoin",
         "color": "#f7931A",
         "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
-        "marketCap": "716043128098",
-        "price": "37799.66854948797",
+        "marketCap": "729179320499",
+        "price": "38486.10214872008",
         "listedAt": 1330214400,
         "tier": 1,
-        "change": "3.67",
+        "change": "-0.15",
         "rank": 1,
         "sparkline": [
-          "36461.4637892043863448320000",
-          "36960.6925969042886312690000",
-          "36860.6196864738982031540000",
-          "37140.8240114431313767070000",
-          "37181.3920566038253057780000",
-          "36953.7920945885727159500000",
-          "36988.5133419063181677040000",
-          "37008.6116584046602049140000",
-          "37402.9389497445618099860000",
-          "37828.0801691251320985120000",
-          "37858.6313891791433981320000",
-          "37744.7637700208233878350000",
-          "37842.7864045077648740670000",
-          "37734.0265848897389279630000",
-          "37586.4013047992908586510000",
-          "37599.5904993646367325610000",
-          "37796.1300926868061016760000",
-          "37808.1052340976067672990000",
-          "37692.3509195501257940060000",
-          "37739.6866178039477575900000",
-          "37836.9724068064604375510000",
-          "37755.6047797153250170840000",
-          "37683.9399987372143075560000",
-          "37747.9898152891529052990000",
-          "37736.9283638927884570090000",
-          "37836.5410984188632044620000",
-          "37799.6685494879712638340000"
+          "38542.1454837693339645590000",
+          "38577.7544798147376343960000",
+          "38689.3054539722111057810000",
+          "38875.9128247159763230720000",
+          "38632.4397610616247551790000",
+          "38459.3074100817457358690000",
+          "38620.3939389608717709800000",
+          "38835.9320141988830871990000",
+          "38966.8655496921541653090000",
+          "38932.0661930513280025620000",
+          "38566.1292156996540973430000",
+          "38894.1022488836243028870000",
+          "38913.1394713324930502980000",
+          "38833.9365387157070706350000",
+          "38504.3273537315993416760000",
+          "38538.1200932902298215940000",
+          "38714.9896186355038955140000",
+          "38755.7262186871390234360000",
+          "38716.5565207385602918390000",
+          "38754.2051097397397690070000",
+          "38574.1637135405528813160000",
+          "38500.5296791363528498090000",
+          "38665.8832635237258535230000",
+          "38562.9897537737962842680000",
+          "38486.6825782961825578180000",
+          "38403.1227160893040897050000",
+          "38486.1021487200774883400000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/Qwsogvtv82FCd+bitcoin-btc",
-        "24hVolume": "16820326964",
+        "24hVolume": "18281034490",
         "btcPrice": "1"
       },
       "buyPrice": 40000,
@@ -62,45 +62,45 @@
         "name": "Ethereum",
         "color": "#3C3C3D",
         "iconUrl": "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
-        "marketCap": "308158938660",
-        "price": "2589.9429712053848",
+        "marketCap": "330518116942",
+        "price": "2776.6878183676026",
         "listedAt": 1438905600,
         "tier": 1,
-        "change": "7.45",
+        "change": "1.79",
         "rank": 2,
         "sparkline": [
-          "2410.4144448970675354400000",
-          "2441.2545940299635687860000",
-          "2425.6931637996958885940000",
-          "2453.3267685429654701720000",
-          "2491.9592791835517632810000",
-          "2483.7019228221265318180000",
-          "2486.1274013074846507940000",
-          "2472.4306524853115171140000",
-          "2502.5694997947119761830000",
-          "2551.3347087963186242830000",
-          "2557.4254042508484726480000",
-          "2555.1153625141241057980000",
-          "2581.1393449694163420910000",
-          "2570.9733817908373986280000",
-          "2554.2617484441210677670000",
-          "2550.6922773960094233610000",
-          "2562.8624861847399172640000",
-          "2557.7499204331450815450000",
-          "2554.2214090396838151560000",
-          "2562.3772490754782349280000",
-          "2580.8138081420149398060000",
-          "2569.6894081201728218330000",
-          "2569.9345481966477263890000",
-          "2569.9836485666925027440000",
-          "2572.8770442161165788920000",
-          "2592.9826861454745520680000",
-          "2589.9429712053847160120000"
+          "2727.8181635070117636880000",
+          "2738.5297593997656670900000",
+          "2742.1827248994426105730000",
+          "2759.9805474109795901390000",
+          "2750.2176269838105520780000",
+          "2739.5244388296546451770000",
+          "2756.9886406213326390920000",
+          "2779.2539181060204443880000",
+          "2789.3788257457557444770000",
+          "2788.1840311139533476440000",
+          "2755.8723302812162759820000",
+          "2785.4698063492954422630000",
+          "2785.7429115370942091210000",
+          "2784.1053585974361148550000",
+          "2765.1439317792409986320000",
+          "2767.6266380653690617550000",
+          "2785.0643890326718819260000",
+          "2789.2817820279372491640000",
+          "2788.1906161754382971380000",
+          "2792.8323983487573043510000",
+          "2770.0744941363300154720000",
+          "2759.6608078189542802980000",
+          "2779.9122127584503881800000",
+          "2779.7114537727496236020000",
+          "2764.8984503754992707970000",
+          "2761.1066126036329000140000",
+          "2776.6878183676028451900000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/razxDUgYGNAdQ+ethereum-eth",
-        "24hVolume": "11308075138",
-        "btcPrice": "0.06851761061911395"
+        "24hVolume": "11194616124",
+        "btcPrice": "0.07214780565820295"
       },
       "buyPrice": 4000,
       "invested": 5000,
@@ -115,45 +115,45 @@
         "name": "Chainlink",
         "color": "#4680b0",
         "iconUrl": "https://cdn.coinranking.com/9NOP9tOem/chainlink.svg",
-        "marketCap": "7631797182",
-        "price": "16.34184414517511",
+        "marketCap": "8094283537",
+        "price": "17.332158712817094",
         "listedAt": 1505952000,
         "tier": 1,
-        "change": "9.31",
-        "rank": 22,
+        "change": "0.82",
+        "rank": 20,
         "sparkline": [
-          "14.9502342188978652330000",
-          "15.1651569783086051280000",
-          "15.1540433321030770280000",
-          "15.4232320483339712870000",
-          "15.8222841024463146910000",
-          "15.7240952799853357890000",
-          "15.7631181708557743590000",
-          "15.7021739597381187440000",
-          "15.8634981934946317790000",
-          "16.1471981104826922250000",
-          "16.0935252168470348870000",
-          "16.0432150657065671600000",
-          "16.2592829005196401590000",
-          "16.2340960851114622940000",
-          "16.0982269106343945420000",
-          "16.0344202172429495970000",
-          "16.1059041735249433560000",
-          "16.1061657603649930090000",
-          "16.2133965830744003540000",
-          "16.3419835389536568270000",
-          "16.3490581764477709160000",
-          "16.2422506124613841160000",
-          "16.2488264319942524800000",
-          "16.2425707195146565290000",
-          "16.2266232509361726170000",
-          "16.3681903102339223650000",
-          "16.3418441451751105570000"
+          "17.1917726577715037290000",
+          "17.3193486299406037790000",
+          "17.4564557018828394290000",
+          "17.5895940985628095770000",
+          "17.3313821018746618440000",
+          "17.2631236203350844270000",
+          "17.2552348197789546910000",
+          "17.2931499528698924710000",
+          "17.3281682619299088520000",
+          "17.3196876574586335410000",
+          "17.1149476905146155790000",
+          "17.2367294139761833640000",
+          "17.2069852495961965450000",
+          "17.1963984137930239850000",
+          "17.1109780125456982730000",
+          "16.9347320479322895500000",
+          "17.0173008147285809820000",
+          "17.0850083565440894860000",
+          "17.0499455634537384650000",
+          "17.0096963201681730650000",
+          "16.8890898692123680300000",
+          "16.8894367430715370330000",
+          "17.0446767072931745640000",
+          "17.0935199785524821730000",
+          "17.1954850223264394520000",
+          "17.2311241390285936990000",
+          "17.3321587128170925010000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/VLqpJwogdhHNb+chainlink-link",
-        "24hVolume": "661886291",
-        "btcPrice": "0.000432327710063915"
+        "24hVolume": "674862691",
+        "btcPrice": "0.00045034850881602"
       },
       "buyPrice": 20,
       "invested": 3000,
@@ -168,45 +168,45 @@
         "name": "Litecoin",
         "color": "#345d9d",
         "iconUrl": "https://cdn.coinranking.com/BUvPxmc9o/ltcnew.svg",
-        "marketCap": "7674643818",
-        "price": "110.39855963578995",
+        "marketCap": "7954513904",
+        "price": "114.37595272360572",
         "listedAt": 1382572800,
         "tier": 1,
-        "change": "3.41",
-        "rank": 21,
+        "change": "3.73",
+        "rank": 22,
         "sparkline": [
-          "106.7552167323118078040000",
-          "108.0754940017812205660000",
-          "107.3729931578280001980000",
-          "107.4515799132798177390000",
-          "107.9098905357225562940000",
-          "107.1960368080695048770000",
-          "107.4553940979405155690000",
-          "107.2200429233396336220000",
-          "108.3064221719814802030000",
-          "109.5414912336257679180000",
-          "109.2290432754386624510000",
-          "109.1229863319829780730000",
-          "109.6920248822903676270000",
-          "109.7412113171856472690000",
-          "109.1846103148721004450000",
-          "109.3553886573070770570000",
-          "109.6897520843080499060000",
-          "109.2627815077805729440000",
-          "109.1535666064535168110000",
-          "109.4292557661503358490000",
-          "110.1935551598829489140000",
-          "109.9377914604278309030000",
-          "109.9556490294263415650000",
-          "109.9156232983258553280000",
-          "109.8391284249065301610000",
-          "110.4929133671843370390000",
-          "110.3985596357899472430000"
+          "110.2678365961492440840000",
+          "110.6970806772084343900000",
+          "110.8233995744138398920000",
+          "111.5243597331381529040000",
+          "110.4921434107253354340000",
+          "109.5249489505930176290000",
+          "110.1212802620607682190000",
+          "110.9874086769854813810000",
+          "111.6427416617744851540000",
+          "111.7313584212959950290000",
+          "110.9525377205175954540000",
+          "112.2754756218510080050000",
+          "113.4511274606471207940000",
+          "113.8282015262922349390000",
+          "113.8556264494922801810000",
+          "114.5843278971239160080000",
+          "114.9432254585775556740000",
+          "114.8627904182792554530000",
+          "115.1924819397460963110000",
+          "115.4675675206956647510000",
+          "114.2730358045957127100000",
+          "113.7722491054079023840000",
+          "114.5661440766037069190000",
+          "114.3766016515593611930000",
+          "114.2213686879353553140000",
+          "114.0283164876268693610000",
+          "114.3759527236057224990000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/D7B1x_ks7WhV5+litecoin-ltc",
-        "24hVolume": "502690397",
-        "btcPrice": "0.002920622425333023"
+        "24hVolume": "680784715",
+        "btcPrice": "0.002971876764283065"
       },
       "buyPrice": 200,
       "invested": 20000,
@@ -221,45 +221,45 @@
         "name": "Binance Coin",
         "color": "#e8b342",
         "iconUrl": "https://cdn.coinranking.com/B1N19L_dZ/bnb.svg",
-        "marketCap": "58298077742",
-        "price": "392.1529819478622",
+        "marketCap": "57029250734",
+        "price": "383.6179784932974",
         "listedAt": 1503014400,
         "tier": 1,
-        "change": "3.15",
+        "change": "0.71",
         "rank": 4,
         "sparkline": [
-          "380.1844179659412095980000",
-          "382.5225929376430184240000",
-          "381.2390293140417042520000",
-          "383.4667200382551720790000",
-          "386.8876071881775828600000",
-          "385.0556208872297899960000",
-          "385.8931146634233256250000",
-          "386.9372239654267905910000",
-          "389.7014683678055066420000",
-          "388.0985848235966850900000",
-          "384.4412603243228716720000",
-          "385.3287743928038366860000",
-          "387.5076378139944467970000",
-          "387.3177341381989533160000",
-          "386.3150289840983465290000",
-          "387.0584490582002804330000",
-          "388.3836403110717610100000",
-          "388.1559560087989399360000",
-          "389.0397934032277536360000",
-          "390.8766440107401014540000",
-          "392.1520314421398597170000",
-          "391.2976916230526734350000",
-          "390.8016233854965456580000",
-          "390.2183805509852599350000",
-          "390.8343719784856797490000",
-          "392.8354997543149578300000",
-          "392.1529819478622217670000"
+          "380.9251732187110802010000",
+          "381.4337072890151655130000",
+          "382.3466950368375399600000",
+          "383.9024471684752576170000",
+          "382.8194175472266065890000",
+          "382.0827371198227513420000",
+          "383.4671818346527113750000",
+          "384.5947259149817840810000",
+          "385.0436416734096259460000",
+          "384.3998436542395582010000",
+          "382.6504272987753550490000",
+          "384.8516213374509984390000",
+          "385.8391586372366443480000",
+          "386.5663131002989200310000",
+          "384.3407527821324567370000",
+          "384.4151606500085223220000",
+          "386.1572242373260999870000",
+          "386.2184150848137383850000",
+          "385.7985971833839292030000",
+          "384.4882605904828363740000",
+          "382.7458171974172253830000",
+          "382.1312328497805867050000",
+          "384.2437827859266037450000",
+          "384.2821318282655684800000",
+          "382.6990394601863515710000",
+          "382.3418049036747269000000",
+          "383.6179784932974208570000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/WcwrkfNI4FUAe+binancecoin-bnb",
-        "24hVolume": "1441759896",
-        "btcPrice": "0.010374508481058474"
+        "24hVolume": "1159549241",
+        "btcPrice": "0.009967701509778779"
       },
       "buyPrice": 300,
       "invested": 1000,
@@ -276,45 +276,45 @@
         "name": "Monero",
         "color": "#ff7519",
         "iconUrl": "https://cdn.coinranking.com/Syz-oSd_Z/xmr.svg",
-        "marketCap": "2760235494",
-        "price": "152.75016599100263",
+        "marketCap": "2646984129",
+        "price": "146.46612451370382",
         "listedAt": 1422489600,
         "tier": 1,
-        "change": "7.03",
-        "rank": 45,
+        "change": "0.95",
+        "rank": 46,
         "sparkline": [
-          "142.7225705565843791540000",
-          "144.1842036045752508310000",
-          "143.1736452813645503070000",
-          "143.9343614174458247400000",
-          "145.1748327678866238070000",
-          "145.3008625525574257930000",
-          "145.7056349638000710290000",
-          "145.0112050187667202820000",
-          "146.0400527379474376130000",
-          "147.6911716566312482480000",
-          "148.6452570501598363480000",
-          "148.5341523959471731790000",
-          "149.6575858970625251310000",
-          "149.7383830504509005280000",
-          "149.4245443253461641520000",
-          "149.8904640084536240820000",
-          "150.9366885687148667680000",
-          "151.2200474065896238360000",
-          "151.3153168022788902100000",
-          "151.6522684206060838850000",
-          "152.1993917214051559270000",
-          "152.0062736270646606030000",
-          "152.0779428963357080050000",
-          "152.2553622636333192290000",
-          "152.5185769294588979210000",
-          "152.9381906046497122820000",
-          "152.7501659910026346190000"
+          "145.0936339149878508020000",
+          "145.3148117584890228250000",
+          "145.8746333379080101040000",
+          "146.2531533599043670170000",
+          "145.2664574041508798670000",
+          "145.1917247300995005990000",
+          "146.3112866647574489100000",
+          "146.8335212316300233090000",
+          "146.2879697029743862590000",
+          "145.4236775088540968240000",
+          "144.5843053147643428520000",
+          "145.5000878328549954080000",
+          "145.5984677178706092680000",
+          "145.4598739316535817940000",
+          "144.6247499642930419030000",
+          "144.8951826577218951470000",
+          "145.2541785153214669910000",
+          "145.5097701684841535930000",
+          "146.2357766742478244010000",
+          "146.2169845446023579670000",
+          "145.9674918472691851410000",
+          "145.8047272062430018560000",
+          "146.4538452944558725040000",
+          "146.5019890354765090740000",
+          "146.2272332254481392740000",
+          "146.0566281515678730910000",
+          "146.4661245137038199070000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/3mVx2FX_iJFp5+monero-xmr",
-        "24hVolume": "76115500",
-        "btcPrice": "0.004041045116335333"
+        "24hVolume": "94750990",
+        "btcPrice": "0.003805688711933505"
       },
       "buyPrice": 20,
       "invested": 1000,
@@ -609,11 +609,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643283071051,
       "id": 4
@@ -673,11 +674,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643284567152,
       "id": 5
@@ -794,11 +796,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643287880018,
       "id": 6
@@ -899,11 +902,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643288830545,
       "id": 7
@@ -1284,11 +1288,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643355464398,
       "id": 8
@@ -1409,11 +1414,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "easy words",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643362191643,
       "id": 9
@@ -1563,11 +1569,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643452586255,
       "id": 10
@@ -1706,11 +1713,12 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "difficult",
       "folder": "",
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "time": 1643452679424,
       "id": 11
@@ -1816,10 +1824,13 @@
           ]
         }
       ],
-      "stage": 0,
+      "stage": "inProgress",
       "category": "difficult",
       "folder": "",
-      "trainingsDone": [],
+      "trainingsDone": [
+        "word-constructor",
+        "writing"
+      ],
       "time": 1643452954474,
       "id": 12
     },
@@ -1937,10 +1948,11 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": 2,
       "category": "difficult",
       "folder": "",
       "trainingsDone": [
+        "writing",
         "word-constructor"
       ],
       "time": 1643612097366,
@@ -2093,12 +2105,13 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1643626282597,
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "id": 14
     },
@@ -2193,7 +2206,8 @@
       "folder": "",
       "time": 1643630735280,
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "id": 15
     },
@@ -2396,14 +2410,2166 @@
           ]
         }
       ],
-      "stage": 1,
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1643633221074,
       "trainingsDone": [
-        "word-constructor"
+        "word-constructor",
+        "writing"
       ],
       "id": 16
+    },
+    {
+      "translate": "играть в азартные игры",
+      "translations": {
+        "азартные игры": [
+          "gambling",
+          "gamble",
+          "gaming",
+          "reindeer games",
+          "games of chance"
+        ],
+        "азартным играм": [
+          "gambling",
+          "gaming commission",
+          "games of chance",
+          "Gaming Authority"
+        ],
+        "азартными играми": [
+          "gambling"
+        ],
+        "азартных игр": [
+          "gambling",
+          "gaming",
+          "games of chance"
+        ],
+        "азартных играх": [
+          "gambling"
+        ],
+        "игорные": [
+          "gambling",
+          "casinos"
+        ],
+        "игорных": [
+          "gambling",
+          "gaming"
+        ],
+        "играть": [
+          "play",
+          "take",
+          "have a",
+          "act",
+          "game",
+          "gamble",
+          "perform",
+          "assume",
+          "piano",
+          "fulfil"
+        ],
+        "игровой": [
+          "game",
+          "play",
+          "gaming",
+          "gambling",
+          "playful",
+          "playable",
+          "in-game"
+        ],
+        "карточный": [
+          "card",
+          "gambling"
+        ]
+      },
+      "word": "gamble",
+      "phonetic": "ˈɡamb(ə)l",
+      "phonetics": [
+        {
+          "text": "ˈɡamb(ə)l",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/gamble--_gb_1.mp3"
+        }
+      ],
+      "origin": "early 18th century: from obsolete gamel ‘play games’, or from the verb game1.",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "play games of chance for money; bet.",
+              "example": "he gambles on football",
+              "synonyms": [
+                "bet",
+                "wager",
+                "place a bet",
+                "lay a bet",
+                "stake money on something",
+                "back the horses",
+                "try one's luck on the horses",
+                "play the ponies",
+                "punt",
+                "chance one's arm",
+                "have a flutter",
+                "game"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "take risky action in the hope of a desired result.",
+              "example": "he was gambling on the success of his satellite TV channel",
+              "synonyms": [
+                "take a chance",
+                "take a risk",
+                "take a leap in the dark",
+                "leave things to chance",
+                "speculate",
+                "venture",
+                "buy a pig in a poke",
+                "take a flyer",
+                "stick one's neck out",
+                "go out on a limb",
+                "chance one's arm",
+                "act in the hope of",
+                "trust in",
+                "take a chance on",
+                "bank on"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643643454826,
+      "trainingsDone": [
+        "word-constructor",
+        "writing"
+      ],
+      "id": 17
+    },
+    {
+      "translate": "последний",
+      "translations": {
+        "недавний": [
+          "recent",
+          "recently",
+          "latest"
+        ],
+        "недавно": [
+          "recently",
+          "newly",
+          "just",
+          "lately",
+          "earlier",
+          "long ago",
+          "while ago",
+          "latest",
+          "just recently",
+          "other night"
+        ],
+        "новейшей": [
+          "recent",
+          "latest",
+          "modern",
+          "newest",
+          "up-to-date",
+          "state-of-the-art",
+          "advanced",
+          "contemporary"
+        ],
+        "новейший": [
+          "newest",
+          "latest",
+          "new",
+          "up-to-date",
+          "shiny new",
+          "bleeding edge",
+          "bleedingedge"
+        ],
+        "новый": [
+          "new",
+          "another",
+          "fresh",
+          "next",
+          "renewed",
+          "newest",
+          "innovative",
+          "novel",
+          "modern",
+          "latest"
+        ],
+        "очереднои": [],
+        "последний": [
+          "last",
+          "final",
+          "the latter",
+          "the latest",
+          "recent",
+          "latest",
+          "late",
+          "senior",
+          "ultimate",
+          "the last one"
+        ],
+        "самые современные": [
+          "the most modern",
+          "state-of-the-art",
+          "latest",
+          "the most up-to-date",
+          "the most advanced",
+          "cutting-edge",
+          "the most sophisticated",
+          "the most contemporary",
+          "state-of-the art"
+        ],
+        "самый последний": [
+          "the most recent",
+          "latest",
+          "last",
+          "very last",
+          "most recently",
+          "lattermost"
+        ],
+        "самых современных": [
+          "the most modern",
+          "state-of-the-art",
+          "latest",
+          "the most advanced",
+          "the most up-to-date",
+          "cutting-edge",
+          "the most sophisticated",
+          "cutting edge",
+          "the most current"
+        ]
+      },
+      "word": "latest",
+      "phonetic": "ˈleɪtɪst",
+      "phonetics": [
+        {
+          "text": "ˈleɪtɪst",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/latest--_gb_1.mp3"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "definition": "of most recent date.",
+              "example": "the latest news",
+              "synonyms": [
+                "most recent",
+                "newest",
+                "brand new",
+                "just out",
+                "just released",
+                "fresh",
+                "present-day",
+                "up to date",
+                "up to the minute",
+                "state-of-the-art",
+                "current",
+                "modern",
+                "contemporary",
+                "modernistic",
+                "fashionable",
+                "in fashion",
+                "in vogue",
+                "voguish",
+                "bang up to date",
+                "in",
+                "à la mode",
+                "with it",
+                "trendy",
+                "hip",
+                "hot",
+                "happening",
+                "cool",
+                "now"
+              ],
+              "antonyms": [
+                "old",
+                "unfashionable"
+              ]
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the most recent news or fashion.",
+              "example": "have you heard the latest?",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643643513300,
+      "trainingsDone": [
+        "word-constructor",
+        "writing"
+      ],
+      "id": 18
+    },
+    {
+      "translate": "пеший туризм",
+      "translations": {
+        "в походе": [
+          "hiking",
+          "in the campaign",
+          "in a hike",
+          "on a camping trip",
+          "on campaign",
+          "on the hike",
+          "backpacking",
+          "on the march",
+          "on a hike",
+          "in the march"
+        ],
+        "пешего туризма": [
+          "hiking"
+        ],
+        "пешеходных": [
+          "pedestrian",
+          "hiking",
+          "footpath",
+          "pedestrian-only"
+        ],
+        "пешие": [
+          "foot",
+          "walking",
+          "hiking",
+          "pedestrian"
+        ],
+        "поход": [
+          "camping",
+          "hike",
+          "trip",
+          "campaign",
+          "going",
+          "march",
+          "hiking",
+          "expedition",
+          "patrol",
+          "quest"
+        ],
+        "походные": [
+          "hiking",
+          ""
+        ],
+        "походных": [
+          "hiking",
+          ""
+        ],
+        "туризм": [
+          "tourism",
+          "hiking",
+          "touring",
+          "tourist trading"
+        ],
+        "туристические": [
+          "tourist",
+          "tourism",
+          "travel",
+          "tour",
+          "hiking",
+          "touristic",
+          "tourism-related"
+        ],
+        "туристических": [
+          "tourist",
+          "tourism",
+          "travel",
+          "tour",
+          "touristic",
+          "tourism-related",
+          "hiking"
+        ]
+      },
+      "word": "hiking",
+      "phonetic": "ˈhʌɪkɪŋ",
+      "phonetics": [
+        {
+          "text": "ˈhʌɪkɪŋ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hiking--_gb_1.mp3"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the activity of going for long walks, especially across country.",
+              "example": "she enjoys hiking and climbing in her spare time",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643643649967,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 19
+    },
+    {
+      "translate": "цель, задача, ворота",
+      "translations": {
+        "ворота": [
+          "gate",
+          "gates",
+          "gateway",
+          "door",
+          "goal",
+          "net",
+          "entrance",
+          "goalposts",
+          "portal",
+          "hoop"
+        ],
+        "гол": [
+          "goal",
+          "score",
+          "touchdown",
+          "rollin",
+          "Gol"
+        ],
+        "достижение": [
+          "achievement",
+          "achieving",
+          "attainment",
+          "reaching",
+          "progress",
+          "reach",
+          "towards",
+          "accomplishment",
+          "attaining",
+          "meeting"
+        ],
+        "задача": [
+          "task",
+          "objective",
+          "goal",
+          "aim",
+          "mission",
+          "purpose",
+          "job",
+          "problem",
+          "target",
+          "role"
+        ],
+        "касающейся": [
+          "concerning",
+          "relating to",
+          "regarding",
+          "related to",
+          "pertaining to",
+          "dealing with",
+          "relevant to",
+          "with regard to",
+          "addressing",
+          "regards"
+        ],
+        "мяч": [
+          "ball",
+          "football",
+          "catch",
+          "basketball",
+          "goal",
+          "baseball",
+          "pitch",
+          "ballgame"
+        ],
+        "поставленной": [
+          "goal",
+          "target",
+          "set",
+          "objective",
+          "stated",
+          "intended",
+          "delivered"
+        ],
+        "целевой": [
+          "target",
+          "targeted",
+          "targeting",
+          "dedicated",
+          "focus",
+          "earmarked",
+          "goal",
+          "objective",
+          "destination",
+          "special-purpose"
+        ],
+        "цель": [
+          "goal",
+          "objective",
+          "purpose",
+          "aim",
+          "target",
+          "aimed at",
+          "intention",
+          "intended",
+          "designed",
+          "object"
+        ],
+        "шайбу": [
+          "puck",
+          "goal",
+          "washer"
+        ]
+      },
+      "word": "goal",
+      "phonetic": "ɡəʊl",
+      "phonetics": [
+        {
+          "text": "ɡəʊl",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/goal--_gb_1.mp3"
+        }
+      ],
+      "origin": "Middle English (in the sense ‘limit, boundary’): of unknown origin.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "(in soccer, rugby, hockey, and some other games) a pair of posts linked by a crossbar and typically with a net between, forming a space into or over which the ball has to be sent in order to score.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the object of a person's ambition or effort; an aim or desired result.",
+              "example": "he achieved his goal of becoming King of England",
+              "synonyms": [
+                "aim",
+                "objective",
+                "object",
+                "grail",
+                "holy grail",
+                "end",
+                "target",
+                "design",
+                "desire",
+                "desired result",
+                "intention",
+                "intent",
+                "plan",
+                "purpose",
+                "idea",
+                "point",
+                "object of the exercise",
+                "ambition",
+                "aspiration",
+                "wish",
+                "dream",
+                "hope",
+                "resolve",
+                "raison d'être"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643958201993,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 20
+    },
+    {
+      "translate": "козел",
+      "translations": {
+        "Goat": [
+          "коза",
+          "козий",
+          "козлиный",
+          "козленка",
+          "козлятины",
+          "козлик",
+          "козловый",
+          "репортер",
+          "Goat",
+          "Козерога"
+        ],
+        "Козерога": [
+          "Capricorn",
+          "goat",
+          "ibex"
+        ],
+        "коза": [
+          "goat",
+          "she-goat",
+          "shegoat",
+          "Cosa",
+          "Koza",
+          "Kohza"
+        ],
+        "козий": [
+          "goat",
+          "Koziy"
+        ],
+        "козленка": [
+          "kid",
+          "young goat",
+          "a baby goat",
+          "a lamb",
+          ""
+        ],
+        "козлик": [
+          "goat",
+          "Lazy Boy",
+          ""
+        ],
+        "козлиный": [
+          "goat",
+          ""
+        ],
+        "козловый": [
+          ""
+        ],
+        "козлятины": [
+          "goat",
+          ""
+        ],
+        "репортер": [
+          "reporter",
+          "newsman",
+          "paragraphist",
+          "news gatherer",
+          "goat",
+          "news digger-upper",
+          "newswriter",
+          "paragrapher",
+          "paragraph writer",
+          "newshack"
+        ]
+      },
+      "word": "goat",
+      "phonetic": "ɡəʊt",
+      "phonetics": [
+        {
+          "text": "ɡəʊt",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/goat--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English gāt  ‘nanny goat’, of Germanic origin; related to Dutch geit and German Geiss, also to Latin haedus ‘kid’.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a hardy domesticated ruminant mammal that has backward-curving horns and (in the male) a beard. It is kept for its milk and meat, and noted for its lively behaviour.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a lecherous man.",
+              "synonyms": [
+                "lecher",
+                "lecherous man",
+                "lascivious man",
+                "libertine",
+                "womanizer",
+                "seducer",
+                "adulterer",
+                "pervert",
+                "debauchee",
+                "rake",
+                "roué",
+                "profligate",
+                "wanton",
+                "loose-liver",
+                "sensualist",
+                "sybarite",
+                "voluptuary",
+                "Don Juan",
+                "Casanova",
+                "Lothario",
+                "Romeo",
+                "lech",
+                "perv",
+                "dirty old man",
+                "wolf",
+                "ladykiller",
+                "rip",
+                "fornicator"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "a stupid person; a fool.",
+              "example": "just for once, stop acting the goat",
+              "synonyms": [
+                "fool",
+                "idiot",
+                "halfwit",
+                "nincompoop",
+                "blockhead",
+                "buffoon",
+                "dunce",
+                "dolt",
+                "ignoramus",
+                "cretin",
+                "imbecile",
+                "dullard",
+                "moron",
+                "simpleton",
+                "clod",
+                "dope",
+                "ninny",
+                "chump",
+                "dimwit",
+                "nitwit",
+                "goon",
+                "dumbo",
+                "dummy",
+                "dum-dum",
+                "dumb-bell",
+                "loon",
+                "jackass",
+                "bonehead",
+                "fathead",
+                "numbskull",
+                "dunderhead",
+                "chucklehead",
+                "knucklehead",
+                "muttonhead",
+                "pudding-head",
+                "thickhead",
+                "wooden-head",
+                "airhead",
+                "pinhead",
+                "lamebrain",
+                "pea-brain",
+                "birdbrain",
+                "zombie",
+                "jerk",
+                "nerd",
+                "dipstick",
+                "donkey",
+                "noodle",
+                "nit",
+                "numpty",
+                "twit",
+                "ass",
+                "clot",
+                "plonker",
+                "berk",
+                "prat",
+                "pillock",
+                "wally",
+                "git",
+                "wazzock",
+                "divvy",
+                "nerk",
+                "twerp",
+                "charlie",
+                "mug",
+                "muppet",
+                "nyaff",
+                "balloon",
+                "sumph",
+                "gowk",
+                "gobdaw",
+                "schmuck",
+                "bozo",
+                "boob",
+                "lamer",
+                "turkey",
+                "schlepper",
+                "chowderhead",
+                "dumbhead",
+                "dumbass",
+                "goofball",
+                "goof",
+                "goofus",
+                "galoot",
+                "dork",
+                "lummox",
+                "klutz",
+                "putz",
+                "schlemiel",
+                "sap",
+                "meatball",
+                "gink",
+                "cluck",
+                "clunk",
+                "ding-dong",
+                "dingbat",
+                "wiener",
+                "weeny",
+                "dip",
+                "simp",
+                "spud",
+                "coot",
+                "palooka",
+                "poop",
+                "squarehead",
+                "yo-yo",
+                "dingleberry",
+                "wing nut",
+                "drongo",
+                "dill",
+                "alec",
+                "galah",
+                "nong",
+                "bogan",
+                "poon",
+                "boofhead",
+                "mompara",
+                "tomfool",
+                "noddy",
+                "clodpole",
+                "loggerhead",
+                "spoony",
+                "mooncalf",
+                "knobhead",
+                "asshat"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "a scapegoat.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643958360985,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 21
+    },
+    {
+      "translate": "пляж",
+      "translations": {
+        "берег": [
+          "bank",
+          "shore",
+          "beach",
+          "coast",
+          "land",
+          "river",
+          "riverbank",
+          "saving",
+          "disembarking",
+          "shoreline"
+        ],
+        "море": [
+          "sea",
+          "ocean",
+          "marine",
+          "beach",
+          "seaside",
+          "deep briny",
+          "Maura"
+        ],
+        "пляж": [
+          "beach",
+          "shore",
+          "beachfront",
+          "plage",
+          "plaža",
+          "strand",
+          "bathing beach"
+        ],
+        "пляжная": [
+          "beach"
+        ],
+        "пляжного": [
+          "beach",
+          "beachfront"
+        ],
+        "пляжном": [
+          "beach"
+        ],
+        "пляжные": [
+          "beach"
+        ],
+        "пляжный": [
+          "beach",
+          "beachfront",
+          "beachside",
+          "bathing hut",
+          "sun'n'surf"
+        ],
+        "пляжных": [
+          "beach",
+          "bathing"
+        ],
+        "побережье": [
+          "coast",
+          "shore",
+          "beach",
+          "coastline",
+          "coastal",
+          "seaboard",
+          "seaside",
+          "sea",
+          "seashore",
+          "waterfront"
+        ]
+      },
+      "word": "beach",
+      "phonetic": "biːtʃ",
+      "phonetics": [
+        {
+          "text": "biːtʃ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/beach--_gb_1.mp3"
+        }
+      ],
+      "origin": "mid 16th century (denoting shingle on the seashore): perhaps related to Old English bæce, bece ‘brook’ (an element that survives in place names such as Wis bech and Sand bach ), assuming an intermediate sense ‘pebbly river valley’.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a pebbly or sandy shore, especially by the sea between high- and low-water marks.",
+              "example": "fabulous sandy beaches",
+              "synonyms": [
+                "seaside",
+                "seashore",
+                "shore",
+                "coast",
+                "coastline",
+                "coastal region",
+                "seaboard",
+                "foreshore",
+                "water's edge",
+                "margin",
+                "sands",
+                "sand",
+                "shingle",
+                "(sand) dunes",
+                "lido",
+                "plage",
+                "littoral",
+                "strand"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "run or haul up (a boat or ship) on to a beach.",
+              "example": "at the water's edge a rowing boat was beached",
+              "synonyms": [
+                "land",
+                "reach the shore",
+                "run ashore",
+                "ground",
+                "be grounded",
+                "run aground",
+                "shipwreck",
+                "wreck",
+                "run on the rocks",
+                "be high and dry"
+              ],
+              "antonyms": [
+                "put to sea",
+                "depart"
+              ]
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643958369472,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 22
+    },
+    {
+      "translate": "парень",
+      "translations": {
+        "кого": [
+          "someone",
+          "anyone",
+          "one",
+          "whom",
+          "person",
+          "man",
+          "everyone",
+          "whoever",
+          "somebody",
+          "nobody"
+        ],
+        "мужик": [
+          "man",
+          "guy",
+          "dude",
+          "mate",
+          "bloke",
+          "fella",
+          "pal",
+          "bro",
+          "peasant",
+          "male"
+        ],
+        "мужчина": [
+          "man",
+          "male",
+          "guy",
+          "gentleman",
+          "manhood",
+          "human male"
+        ],
+        "ним": [
+          "him",
+          "them",
+          "he's",
+          "guy",
+          "terrorism",
+          "em",
+          "nim",
+          "BAT"
+        ],
+        "паренек": [
+          "kid",
+          "boy",
+          "guy",
+          "lad",
+          "laddie",
+          "little fella",
+          "young man",
+          "little dude",
+          "keed",
+          "chappie"
+        ],
+        "парень": [
+          "guy",
+          "boy",
+          "boyfriend",
+          "kid",
+          "man",
+          "lad",
+          "dude",
+          "fellow",
+          "fella",
+          "bloke"
+        ],
+        "тип": [
+          "type",
+          "guy",
+          "kind",
+          "man",
+          "style",
+          "bloke",
+          "character",
+          "sort",
+          "dude",
+          "fellow"
+        ],
+        "того": [
+          "fact",
+          "because",
+          "ensuring",
+          "evidence",
+          "given",
+          "rather",
+          "worth",
+          "enough",
+          "someone",
+          "view"
+        ],
+        "человек": [
+          "person",
+          "man",
+          "million",
+          "human",
+          "guy",
+          "one",
+          "someone",
+          "individual",
+          "participants",
+          "personnel"
+        ],
+        "чувак": [
+          "man",
+          "dude",
+          "guy",
+          "mate",
+          "buddy",
+          "bro",
+          "dawg",
+          "bloke",
+          "pal",
+          "fella"
+        ]
+      },
+      "word": "guy",
+      "phonetic": "ɡʌɪ",
+      "phonetics": [
+        {
+          "text": "ɡʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/guy--_gb_1.mp3"
+        }
+      ],
+      "origin": "early 19th century (in guy1 (sense 2 of the noun)): named after Guy Fawkes (see Gunpowder Plot).",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a man.",
+              "example": "he's a nice guy",
+              "synonyms": [
+                "man",
+                "fellow",
+                "gentleman",
+                "lad",
+                "youth",
+                "boy",
+                "individual",
+                "person",
+                "soul",
+                "fella",
+                "geezer",
+                "gent",
+                "character",
+                "customer",
+                "creature",
+                "sort",
+                "type",
+                "chap",
+                "bloke",
+                "bod",
+                "dude",
+                "hombre",
+                "digger",
+                "ou",
+                "oom",
+                "oke",
+                "admi",
+                "cove",
+                "wight",
+                "carl",
+                "sod",
+                "bugger"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "a figure representing Guy Fawkes, burnt on a bonfire on Guy Fawkes Night, and often displayed by children begging for money for fireworks.",
+              "synonyms": [
+                "effigy of Guy Fawkes",
+                "effigy",
+                "figure",
+                "representation",
+                "likeness",
+                "image",
+                "model",
+                "dummy"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "make fun of; ridicule.",
+              "example": "she never stopped guying him about his weight",
+              "synonyms": [
+                "ridicule",
+                "make fun of",
+                "poke fun at",
+                "laugh at",
+                "make a joke of",
+                "mock",
+                "sneer at",
+                "jibe at",
+                "jeer at",
+                "deride",
+                "scorn",
+                "scoff at",
+                "satirize",
+                "lampoon",
+                "send up",
+                "rib",
+                "take off",
+                "take the mickey out of",
+                "rag",
+                "goof on",
+                "rag on",
+                "poke mullock at",
+                "sling off at",
+                "make sport of",
+                "take the piss out of"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643958399994,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 23
+    },
+    {
+      "translate": "Посмотрите",
+      "translations": {
+        "взгляд": [
+          "view",
+          "look",
+          "glance",
+          "sight",
+          "perspective",
+          "eye",
+          "gaze",
+          "looking",
+          "vision",
+          "outlook"
+        ],
+        "взглянуть": [
+          "look",
+          "see",
+          "take a look",
+          "have a look",
+          "face",
+          "glimpse",
+          "check",
+          "to have a look",
+          "view",
+          "glance"
+        ],
+        "выглядеть": [
+          "look",
+          "appear",
+          "seem",
+          "looks like"
+        ],
+        "послушай": [
+          "look",
+          "listen to",
+          "hey",
+          "hear"
+        ],
+        "послушайте": [
+          "look",
+          "listen",
+          "hear",
+          "hey"
+        ],
+        "посмотреть": [
+          "see",
+          "look",
+          "watch",
+          "view",
+          "take a look",
+          "check out",
+          "check",
+          "to look at",
+          "look up",
+          "one looks"
+        ],
+        "похоже": [
+          "it looks like",
+          "it seems",
+          "sounds like",
+          "look like",
+          "it appears",
+          "apparently",
+          "seem to be",
+          "well",
+          "it's",
+          "sound"
+        ],
+        "слушай": [
+          "look",
+          "listen",
+          "hey",
+          "okay",
+          "you know",
+          "well",
+          "man",
+          "hear",
+          "Yo"
+        ],
+        "слушайте": [
+          "look",
+          "listen",
+          "hey",
+          "hear",
+          "okay",
+          "hearken"
+        ],
+        "смотреть": [
+          "watch",
+          "look",
+          "see",
+          "look at",
+          "stare",
+          "view",
+          "eye",
+          "gaze",
+          "sight",
+          "take a look"
+        ]
+      },
+      "word": "look",
+      "phonetic": "lʊk",
+      "phonetics": [
+        {
+          "text": "lʊk",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/look--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English lōcian (verb), of West Germanic origin; related to German dialect lugen .",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "direct one's gaze toward someone or something or in a specified direction.",
+              "example": "people were looking at him",
+              "synonyms": [
+                "glance",
+                "gaze",
+                "stare",
+                "gape",
+                "peer",
+                "fix one's gaze",
+                "focus",
+                "peep",
+                "peek",
+                "take a look",
+                "watch",
+                "examine",
+                "study",
+                "inspect",
+                "scan",
+                "scrutinize",
+                "survey",
+                "check",
+                "contemplate",
+                "consider",
+                "see",
+                "observe",
+                "view",
+                "regard",
+                "pay attention to",
+                "take note of",
+                "mark",
+                "check out",
+                "glimpse",
+                "spot",
+                "spy",
+                "lay one's eyes on",
+                "catch sight of",
+                "eye",
+                "take in",
+                "ogle",
+                "take a gander",
+                "have a squint",
+                "get a load of",
+                "rubberneck",
+                "recce",
+                "take a dekko",
+                "take a butcher's",
+                "take a shufti",
+                "clock",
+                "gawp",
+                "eyeball",
+                "behold",
+                "espy",
+                "descry"
+              ],
+              "antonyms": [
+                "ignore"
+              ]
+            },
+            {
+              "definition": "think of or regard in a specified way.",
+              "example": "I look at tennis differently from some coaches",
+              "synonyms": [
+                "regard",
+                "consider",
+                "think of",
+                "deem",
+                "judge",
+                "count",
+                "see",
+                "view",
+                "take",
+                "reckon",
+                "believe to be"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "have the appearance or give the impression of being.",
+              "example": "her father looked unhappy",
+              "synonyms": [
+                "seem",
+                "seem to be",
+                "appear",
+                "appear to be",
+                "give the impression of being",
+                "look to be",
+                "present as being",
+                "strike someone as being",
+                "resemble",
+                "bear a resemblance to",
+                "look similar to",
+                "have a look of",
+                "have the appearance of",
+                "remind one of",
+                "put one in mind of",
+                "make one think of",
+                "be the image of",
+                "echo",
+                "have (all) the hallmarks of",
+                "simulate",
+                "take after",
+                "be the spitting image of",
+                "be the spit of",
+                "be a dead ringer for",
+                "favour"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "rely on (someone) to do or provide something.",
+              "example": "she will look to you for help",
+              "synonyms": [
+                "turn to",
+                "resort to",
+                "have recourse to",
+                "fall back on",
+                "avail oneself of",
+                "make use of"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "an act of directing one's gaze in order to see someone or something.",
+              "example": "let me get a closer look",
+              "synonyms": [
+                "glance",
+                "observation",
+                "view",
+                "examination",
+                "study",
+                "inspection",
+                "scan",
+                "survey",
+                "sight",
+                "peep",
+                "peek",
+                "glimpse",
+                "gaze",
+                "stare",
+                "gape",
+                "ogle",
+                "eyeful",
+                "gander",
+                "look-see",
+                "once-over",
+                "squint",
+                "recce",
+                "shufti",
+                "dekko",
+                "butcher's",
+                "geek",
+                "squiz",
+                "Jack Nohi"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "the appearance of someone or something, especially as expressing a particular quality.",
+              "example": "the bedraggled look of the village",
+              "synonyms": [
+                "appearance",
+                "air",
+                "aspect",
+                "bearing",
+                "cast",
+                "manner",
+                "mien",
+                "demeanour",
+                "features",
+                "semblance",
+                "guise",
+                "facade",
+                "impression",
+                "effect",
+                "atmosphere",
+                "mood",
+                "quality",
+                "ambience",
+                "feeling",
+                "flavour"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "exclamation",
+          "definitions": [
+            {
+              "definition": "used to call attention to what one is going to say.",
+              "example": "‘Look, this is ridiculous.’",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643958410624,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 24
+    },
+    {
+      "translate": "говорить",
+      "translations": {
+        "болтать": [
+          "talk",
+          "chat",
+          "chatter",
+          "chitchat",
+          "blab",
+          "mouth",
+          "chit-chat",
+          "babbling",
+          "yap",
+          "gossip"
+        ],
+        "говорить": [
+          "talk",
+          "say",
+          "speak",
+          "tell",
+          "talk to",
+          "mention",
+          "discuss",
+          "about",
+          "use",
+          "be said"
+        ],
+        "обсудить": [
+          "discuss",
+          "talk about",
+          "discussion",
+          "consider",
+          "debate",
+          "address",
+          "negotiate",
+          "talk",
+          "go over",
+          "reflect on"
+        ],
+        "общаться": [
+          "communicate",
+          "talk",
+          "hang out",
+          "contact",
+          "communication",
+          "chat",
+          "talk to",
+          "socialize",
+          "interact",
+          "connect"
+        ],
+        "поболтать": [
+          "chat",
+          "talk",
+          "catch up",
+          "hang out",
+          "conversation",
+          "chitchat",
+          "shoot the breeze",
+          "natter"
+        ],
+        "поговорить": [
+          "talk",
+          "speak",
+          "speak to",
+          "talking to",
+          "see",
+          "conversation",
+          "chat",
+          "discuss",
+          "tell",
+          "talked to"
+        ],
+        "разговаривать": [
+          "talk",
+          "to talk",
+          "talking to",
+          "speak",
+          "conversation",
+          "speaking to",
+          "again",
+          "say",
+          "communicate",
+          "chat"
+        ],
+        "разговор": [
+          "conversation",
+          "talk",
+          "talking",
+          "discussion",
+          "call",
+          "chat",
+          "phone",
+          "speaking",
+          "subject",
+          "speech"
+        ],
+        "рассказать": [
+          "tell",
+          "talk to",
+          "say",
+          "talk",
+          "describe",
+          "give",
+          "share",
+          "know",
+          "speak",
+          "explain"
+        ],
+        "сказать": [
+          "say",
+          "tell",
+          "say to",
+          "know",
+          "speak",
+          "true",
+          "talk",
+          "point",
+          "word",
+          "something"
+        ]
+      },
+      "word": "talk",
+      "phonetic": "tɔːk",
+      "phonetics": [
+        {
+          "text": "tɔːk",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/talk--_gb_1.mp3"
+        }
+      ],
+      "origin": "Middle English: frequentative verb from the Germanic base of tale or tell1.",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "speak in order to give information or express ideas or feelings; converse or communicate by spoken words.",
+              "example": "the two men talked",
+              "synonyms": [
+                "speak",
+                "give voice",
+                "chat",
+                "chatter",
+                "gossip",
+                "prattle",
+                "prate",
+                "babble",
+                "rattle on",
+                "blather",
+                "blether",
+                "orate",
+                "yak",
+                "gab",
+                "jaw",
+                "go on",
+                "chew the fat",
+                "natter",
+                "rabbit",
+                "witter",
+                "chunter",
+                "rap",
+                "run off at the mouth",
+                "mag",
+                "utter",
+                "say",
+                "voice",
+                "express",
+                "articulate",
+                "pronounce",
+                "enunciate",
+                "verbalize",
+                "vocalize",
+                "converse",
+                "communicate",
+                "speak to each other",
+                "discuss things",
+                "have a talk",
+                "have a chat",
+                "have a tête-à-tête",
+                "confer",
+                "consult each other",
+                "negotiate",
+                "have negotiations",
+                "parley",
+                "palaver",
+                "have a confab",
+                "chew the fat/rag",
+                "confabulate"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "have formal dealings or discussions; negotiate.",
+              "example": "they won't talk to the regime that killed their families",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "use (a particular language) in speech.",
+              "example": "we were talking German",
+              "synonyms": [
+                "speak",
+                "speak in",
+                "talk in",
+                "communicate in",
+                "converse in",
+                "express oneself in",
+                "discourse in",
+                "use"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "communication by spoken words; conversation or discussion.",
+              "example": "there was a slight but noticeable lull in the talk",
+              "synonyms": [
+                "chatter",
+                "chatting",
+                "chattering",
+                "gossiping",
+                "prattling",
+                "prating",
+                "gibbering",
+                "jabbering",
+                "babbling",
+                "gabbling",
+                "rattling on",
+                "speaking",
+                "talking",
+                "yakking",
+                "gabbing",
+                "nattering",
+                "rabbiting",
+                "wittering",
+                "chat",
+                "conversation",
+                "discussion",
+                "gossip",
+                "subject",
+                "theme",
+                "topic",
+                "information",
+                "news"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "formal discussions or negotiations over a period.",
+              "example": "peace talks",
+              "synonyms": [
+                "negotiations",
+                "discussions",
+                "conference",
+                "summit",
+                "meeting",
+                "consultation",
+                "dialogue",
+                "symposium",
+                "seminar",
+                "conclave",
+                "colloquy",
+                "palaver",
+                "parley",
+                "bargaining",
+                "haggling",
+                "wheeling and dealing",
+                "mediation",
+                "arbitration",
+                "intercession",
+                "conciliation",
+                "powwow",
+                "confabulation"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "an informal address or lecture.",
+              "example": "a thirty-minute illustrated talk",
+              "synonyms": [
+                "lecture",
+                "speech",
+                "address",
+                "discourse",
+                "oration",
+                "presentation",
+                "report",
+                "sermon",
+                "disquisition",
+                "dissertation",
+                "symposium",
+                "spiel"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643958428494,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 25
+    },
+    {
+      "translate": "понимать",
+      "translations": {
+        "знаю": [
+          "know",
+          "sure",
+          "knew",
+          "understand",
+          "knowing",
+          "heard",
+          "I know"
+        ],
+        "осознавать": [
+          "be aware",
+          "realize",
+          "understand",
+          "know",
+          "recognize",
+          "realise",
+          "be conscious",
+          "become conscious",
+          "appreciate",
+          "think"
+        ],
+        "осознать": [
+          "realize",
+          "understand",
+          "recognize",
+          "realise",
+          "grasp",
+          "appreciate",
+          "face",
+          "process",
+          "accept",
+          "acknowledge"
+        ],
+        "пониманию": [
+          "understanding",
+          "awareness",
+          "understood",
+          "appreciation",
+          "comprehension",
+          "knowledge",
+          "insight"
+        ],
+        "понимания": [
+          "understanding",
+          "awareness",
+          "understood",
+          "comprehension",
+          "knowledge",
+          "perception",
+          "grasp",
+          "sensitivity",
+          "insight into"
+        ],
+        "понимать": [
+          "understand",
+          "know",
+          "realize",
+          "be understood",
+          "realise",
+          "be aware",
+          "see",
+          "mean",
+          "learn",
+          "interpret"
+        ],
+        "понятно": [
+          "okay",
+          "all right",
+          "understand",
+          "understandable",
+          "it is clear",
+          "clearly",
+          "understandably",
+          "obviously",
+          "get it",
+          "you know"
+        ],
+        "понять": [
+          "understand",
+          "figure out",
+          "know",
+          "see",
+          "clear",
+          "realize",
+          "get",
+          "tell",
+          "find out",
+          "comprehend"
+        ],
+        "разобраться": [
+          "figure out",
+          "understand",
+          "handle",
+          "deal",
+          "take care",
+          "figure it out",
+          "find out",
+          "sort out",
+          "sort",
+          "make sense"
+        ],
+        "ясно": [
+          "okay",
+          "clearly",
+          "all right",
+          "it is clear",
+          "obvious",
+          "obviously",
+          "explicitly",
+          "apparent",
+          "expressly",
+          "evident"
+        ]
+      },
+      "word": "understand",
+      "phonetic": "ʌndəˈstand",
+      "phonetics": [
+        {
+          "text": "ʌndəˈstand",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/understand--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English understandan  (see under-, stand).",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "perceive the intended meaning of (words, a language, or a speaker).",
+              "example": "he didn't understand a word I said",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "interpret or view (something) in a particular way.",
+              "example": "as the term is usually understood, legislation refers to regulations and directives",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "be sympathetically or knowledgeably aware of the character or nature of.",
+              "example": "Picasso understood colour",
+              "synonyms": [
+                "appreciate",
+                "recognize",
+                "realize",
+                "acknowledge",
+                "know",
+                "be aware of",
+                "be conscious of",
+                "be cognizant of",
+                "accept",
+                "commiserate with",
+                "feel compassionate towards",
+                "sympathize with",
+                "empathize with",
+                "take on board",
+                "be wise to"
+              ],
+              "antonyms": [
+                "ignore"
+              ]
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643958477536,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 26
+    },
+    {
+      "translate": "пират",
+      "translations": {
+        "Pirate": [
+          "Pirate"
+        ],
+        "незаконный": [
+          "illegal",
+          "illicit",
+          "unlawful",
+          "illegitimate",
+          "irregular",
+          "arbitrary",
+          "improper",
+          "pirate",
+          "undue",
+          "contrary to law"
+        ],
+        "пират": [
+          "pirate",
+          "buccaneer",
+          "privateer",
+          "filibuster",
+          "corsair"
+        ],
+        "пиратка": [
+          "pirate",
+          ""
+        ],
+        "пиратский": [
+          "pirate",
+          "piracy",
+          "pirated",
+          "piratical",
+          "piratic",
+          "Buccaneer",
+          "Pirating"
+        ]
+      },
+      "word": "pirate",
+      "phonetic": "ˈpʌɪrət",
+      "phonetics": [
+        {
+          "text": "ˈpʌɪrət",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pirate--_gb_1.mp3"
+        }
+      ],
+      "origin": "Middle English: from Latin pirata, from Greek peiratēs, from peirein ‘to attempt, attack’ (from peira ‘an attempt’).",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a person who attacks and robs ships at sea.",
+              "example": "in the three weeks leading up to the attack, sixteen container ships had been boarded by pirates",
+              "synonyms": [
+                "freebooter",
+                "marauder",
+                "raider",
+                "buccaneer",
+                "privateer",
+                "corsair",
+                "rover",
+                "sea rover",
+                "picaroon",
+                "filibuster",
+                "sea thief",
+                "sea robber",
+                "water thief",
+                "sea wolf",
+                "sea rat",
+                "water rat",
+                "marooner"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "use or reproduce (another's work) for profit without permission, usually in contravention of patent or copyright.",
+              "example": "his latest album has been pirated and downloaded so many times since its release that he's lost $10 million in sales",
+              "synonyms": [
+                "reproduce illegally",
+                "infringe the copyright of",
+                "copy illegally",
+                "plagiarize",
+                "poach",
+                "steal",
+                "appropriate",
+                "bootleg",
+                "crib",
+                "lift",
+                "rip off",
+                "nick",
+                "pinch"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "rob or plunder (a ship).",
+              "example": "nine ships were pirated off the coast of the country between 2006 and May of last year",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1643965085029,
+      "trainingsDone": [
+        "writing"
+      ],
+      "id": 27
     }
   ],
   "word-category": [

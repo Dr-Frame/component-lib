@@ -5,6 +5,7 @@ import {
   dictionaryApi2,
   microsoftApi,
   wordsApi,
+  zoomApi,
 } from '../services/DictionaryService';
 import { investAPI } from '../services/InvestService';
 
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   [dictionaryApi2.reducerPath]: dictionaryApi2.reducer,
   [wordsApi.reducerPath]: wordsApi.reducer,
   [microsoftApi.reducerPath]: microsoftApi.reducer,
+  [zoomApi.reducerPath]: zoomApi.reducer,
 });
 
 export const setupStore = () => {
@@ -28,6 +30,7 @@ export const setupStore = () => {
         dictionaryApi2.middleware,
         wordsApi.middleware,
         microsoftApi.middleware,
+        zoomApi.middleware,
       );
     },
   });

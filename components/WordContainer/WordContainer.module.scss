@@ -12,19 +12,6 @@
   position: absolute;
   top: -40px;
   left: 0;
-
-  .progressIcon {
-    font-size: 26px;
-    &.new {
-      color: $color-stage-0;
-    }
-    &.half {
-      color: $color-stage-1;
-    }
-    &.done {
-      color: $color-stage-2;
-    }
-  }
 }
 
 .translatedWord {

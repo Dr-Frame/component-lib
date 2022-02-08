@@ -14,9 +14,18 @@ $color-letterSuperLight-border: rgb(154, 220, 255);
 $color-wrong-letter: rgb(208, 3, 3);
 $color-right-letter: rgba(0, 170, 0, 0.837);
 
+// 0 - new, 1- in progress, 2 - done
 $color-stage-0: rgb(84, 192, 250);
-$color-stage-1: rgb(255, 185, 35);
+$color-stage-1: rgb(255, 174, 0);
+$color-stage-1-transparent: rgb(255, 218, 138);
 $color-stage-2: rgb(2, 189, 2);
+$color-stage-2-transparent: rgb(163, 247, 163);
+
+//place result
+$color-gold-trophy: rgba(255, 217, 0);
+$color-silver-trophy: rgb(128, 128, 128);
+$color-bronze-trophy: rgb(205, 127, 50);
+$color-empty-trophy: rgb(181, 181, 181);
 
 //main theme
 $color-superLight-mainTheme: #cfd8dc;

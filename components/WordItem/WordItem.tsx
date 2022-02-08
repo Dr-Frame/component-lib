@@ -9,6 +9,7 @@ import { wordsApi } from '../../services/DictionaryService';
 import { useState } from 'react';
 import Modal from '../Modal';
 import WordCard from '../WordCard';
+import ProgressIcon from '../ProgressIcon';
 
 const cx = classNames.bind(s);
 
@@ -47,15 +48,9 @@ function WordItem({ wordData }: WordItemProps) {
           <p className={s.translation}>{translate}</p>
         </div>
         <div className={s.stageWrapper}>
-          {wordData.stage === 0 && (
-            <BsBook className={cx(s.stageIcon, s.new)} />
-          )}
-          {wordData.stage === 1 && (
-            <BsBookHalf className={cx(s.stageIcon, s.half)} />
-          )}
-          {wordData.stage === 2 && (
-            <BsBookFill className={cx(s.stageIcon, s.done)} />
-          )}
+          <ProgressIcon
+            trainingsCompleteAmount={wordData.trainingsDone.length}
+          />
           <IconButton
             extraClass={s.deleteBtn}
             size="medium"

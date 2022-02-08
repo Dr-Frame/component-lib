@@ -1,4 +1,4 @@
-import { IWord } from '../types/dictionaryTypes';
+import { IWord, trainingsType } from '../types/dictionaryTypes';
 
 type updateFnType = (obj: IWord) => void;
 
@@ -6,21 +6,22 @@ export default function updateWordProgress(
   mistakes: number,
   word: IWord,
   updateFn: updateFnType,
-  trainType: 'word-constructor' | 'translate' | 'type',
+  trainType: trainingsType,
 ) {
-  let currentStage;
-  let trainings = [];
-  console.log(word.trainingsDone.includes(trainType));
+  let currentStage = 'new';
+  let trainings = [...word.trainingsDone];
 
   if (!word.trainingsDone.includes(trainType)) {
     trainings.push(trainType);
   }
 
-  if (word.trainingsDone.length > 2) {
-    currentStage = 2;
-  } else if (word.trainingsDone.length >= 0 && word.trainingsDone.length < 2) {
-    currentStage = 1;
+  if (trainings.length >= 1 && trainings.length <= 3) {
+    currentStage = 'inProgress';
+  } else if (trainings.length >= 4) {
+    currentStage = 'done';
   }
+  console.log('stage to add', currentStage);
+
   if (mistakes === 0) {
     console.log('должно апдейтить');
 

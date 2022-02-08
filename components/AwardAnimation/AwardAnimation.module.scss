@@ -1,0 +1,110 @@
+@import '../../styles/shared.scss';
+
+.congratsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .awardText {
+    font-family: 'Sigmar One', cursive;
+    font-size: 26px;
+    color: $color-darkest-mainTheme;
+    margin-bottom: 50px;
+  }
+
+  .quessed {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: $color-letter-border;
+    font-weight: 700;
+  }
+  .success {
+    color: $color-light-mainTheme;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .homeLink {
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid $color-letter-border;
+    border-radius: 3px;
+    background-color: transparent;
+    background-position: center;
+    transition: 0.3s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-letter-border;
+
+    &:hover {
+      background-color: $color-letter-border;
+      color: $main-text-color;
+    }
+  }
+}
+.congrats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trophyWrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+  color: inherit;
+  z-index: 1;
+  font-size: 30px;
+}
+
+.trophy {
+  position: relative;
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.number {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Sigmar One', cursive;
+  color: $color-dark-mainTheme;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bronzeIcon {
+  font-size: 70px;
+  color: $color-bronze-trophy;
+}
+
+.goldIcon {
+  font-size: 100px;
+  color: $color-gold-trophy;
+}
+
+.silverIcon {
+  font-size: 80px;
+  color: $color-silver-trophy;
+}
+
+.inActive {
+  color: $color-empty-trophy;
+  opacity: 0.2;
+}

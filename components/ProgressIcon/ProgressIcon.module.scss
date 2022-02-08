@@ -1,0 +1,102 @@
+@import '../../styles/shared.scss';
+
+// -- vars
+$bg-color: $main-text-color;
+$default-size: 100px;
+
+.border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.setSize {
+  font-size: 10em;
+}
+
+.chartsContainer {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+.pieWrapper {
+  @include size($default-size, $default-size);
+  float: left;
+  position: relative;
+
+  &:nth-child(3n + 1) {
+    clear: both;
+  }
+
+  .label {
+    border-radius: 50%;
+    display: block;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.pieWrapperSolid {
+  border-radius: 50%;
+  overflow: hidden;
+
+  &:before {
+    border-radius: 0 100% 100% 0 / 50%;
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+  }
+
+  .label {
+    background: transparent;
+  }
+
+  &.progress0 {
+    @include draw-progress--solid(0, $color-stage-1-transparent, $bg-color);
+  }
+  &.progress25 {
+    @include draw-progress--solid(25, $color-stage-1-transparent, $bg-color);
+  }
+  &.progress50 {
+    @include draw-progress--solid(50, $color-stage-1-transparent, $bg-color);
+  }
+  &.progress75 {
+    @include draw-progress--solid(75, $color-stage-1-transparent, $bg-color);
+  }
+  &.progress100 {
+    @include draw-progress--solid(100, $color-stage-2-transparent, $bg-color);
+  }
+}
+
+.stage0 {
+  color: $color-stage-0;
+  border-color: $color-stage-0;
+}
+
+.stage1,
+.stage2,
+.stage3 {
+  color: $color-stage-1;
+  border-color: $color-stage-1;
+}
+
+.stage4 {
+  color: $color-stage-2;
+  border-color: $color-stage-2;
+}

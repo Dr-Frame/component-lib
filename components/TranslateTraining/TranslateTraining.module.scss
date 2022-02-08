@@ -1,0 +1,137 @@
+@import '../../styles/shared.scss';
+
+.slide {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 40px;
+  @extend %boxBorder;
+}
+
+.wordAmount {
+  text-align: right;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: $color-light-mainTheme;
+}
+
+.stageWrapper {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.trainingWrapper {
+  min-width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  &.correct {
+    border-radius: 5px;
+    border: 3px solid $color-right-letter;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding: 5px 10px;
+  border-color: $color-letterSuperLight-border !important;
+  font-size: 16px;
+  color: $color-dark-mainTheme;
+  font-weight: 500;
+
+  &::placeholder {
+    font-size: 14px;
+    color: $color-light-mainTheme !important;
+  }
+
+  &:focus {
+    border-color: $color-letter-border !important;
+    color: $color-dark-mainTheme !important;
+  }
+}
+
+.wrong {
+  border-color: $color-wrong-letter !important;
+}
+
+.buttonCheckWrapper {
+  position: relative;
+  .buttonCheck {
+    background-color: $color-letter-border !important;
+    border-color: $color-letter-border !important;
+    height: 32px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  .wrongAnswerIcon {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: $color-wrong-letter;
+  }
+}
+
+.translation {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: $color-light-mainTheme;
+  margin-bottom: 10px;
+}
+
+.soundWrapper {
+  display: flex;
+  align-items: center;
+  .phonetic {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-light-mainTheme;
+  }
+  .soundButton {
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .soundButtonIcon {
+    font-size: 16px;
+    color: $color-dark-mainTheme;
+  }
+}
+
+.word {
+  font-size: 20px;
+  color: $color-letter-border;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  font-size: 14px;
+  width: 120px;
+  background-color: transparent !important;
+  color: $color-letter-border !important;
+  border-color: $color-letter-border !important;
+  :hover {
+    background-color: $color-letterLight-border !important;
+  }
+}

@@ -38,8 +38,11 @@ const menu: IMenuItem[] = [
     sub: [
       { title: 'Drag&Drops', link: '/dragdrop' },
       { title: 'Invest', link: '/invest-tab' },
+      { title: 'Writing', link: '/writing' },
       { title: 'Word Constructor', link: '/word-constructor' },
       { title: 'Dictionary', link: '/dictionary' },
+      { title: 'Animation', link: '/congrats' },
+      { title: 'Zoom', link: '/zoom' },
     ],
   },
 ];

@@ -8,6 +8,7 @@ import WordItem from '../WordItem';
 import {
   dictionaryApi,
   dictionaryApi2,
+  microsoftApi,
   wordsApi,
 } from '../../services/DictionaryService';
 import Modal from '../Modal';
@@ -26,7 +27,7 @@ type wordStateT = 'all' | 'new' | 'inProgress' | 'done';
 
 function Dictionary() {
   const [search, setSearch] = useState('');
-  const [wordsToShow, setWordsToShow] = useState<wordStateT>('all');
+  const [stageValue, setStageValue] = useState<wordStateT>('all');
   const [wordData, setWordData] = useState<IWord[] | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -39,6 +40,13 @@ function Dictionary() {
   const [getWord, { error }] = dictionaryApi2.useLazyGetWordQuery();
   const { data: userCategoriesList } = wordsApi.useGetCategoryQuery();
 
+  const [getMicrosoft] = microsoftApi.useLazyGetTranslationQuery();
+
+  /*  useEffect(() => {
+    getMicrosoft({ Text: 'mother' });
+    console.log(getTranslation('monkey'));
+  }, []); */
+
   useEffect(() => {
     setWordData(null);
   }, []);
@@ -49,9 +57,11 @@ function Dictionary() {
 
   useEffect(() => {
     if (wordList) {
-      setFilteredList(filterWordList(wordList, search, 'word'));
+      setFilteredList(
+        filterWordList(wordList, stageValue, selectedCategory, search),
+      );
     }
-  }, [search, wordList, selectedCategory]);
+  }, [search, wordList, selectedCategory, stageValue]);
 
   function handleCategoryChange(e) {
     setSelectedCategory(e.label);
@@ -59,13 +69,40 @@ function Dictionary() {
 
   function filterWordList(
     list: IWord[],
-    filter: string | number,
-    filterType: 'word' | 'stage',
+    stageValue: string,
+    selectedCategory: string,
+    filter: string,
   ) {
     const sortByDate = (a: IWord, b: IWord) => b.time - a.time;
 
     let filtered = [...list].sort(sortByDate);
-    if (filterType === 'word' && typeof filter === 'string') {
+    /*   console.log('filter', filter);
+    console.log('category', selectedCategory);
+    console.log(stageValue);
+
+    console.log('filtered', filtered);
+
+    console.log(
+      filtered
+        .filter(item => (filter ? item.word.includes(filter) : true))
+        .filter(item =>
+          selectedCategory ? item.category === selectedCategory : true,
+        )
+        .filter(item =>
+          stageValue === 'all' ? true : item.stage === stageValue,
+        ),
+    ); */
+
+    return filtered
+      .filter(item => (filter ? item.word.includes(filter) : true))
+      .filter(item =>
+        selectedCategory ? item.category === selectedCategory : true,
+      )
+      .filter(item =>
+        stageValue === 'all' ? true : item.stage === stageValue,
+      );
+
+    /*  if (filterType === 'word' && typeof filter === 'string') {
       if (selectedCategory) {
         return filtered
           .filter(item => item.word.includes(filter))
@@ -80,7 +117,7 @@ function Dictionary() {
           .filter(item => item.category === selectedCategory);
       }
       return filtered.filter(item => item.stage === filter);
-    }
+    } */
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -103,6 +140,10 @@ function Dictionary() {
     try {
       const { data } = await getTranslation(search);
       const apiData = await getWord(search);
+      const microSoft = await getMicrosoft();
+      console.log(data);
+      console.log(apiData);
+      console.log(microSoft);
 
       wordData = {
         translate: data.translated_text,
@@ -124,7 +165,7 @@ function Dictionary() {
 
   return (
     <div className={s.wrapper}>
-      <h1 className={s.title}>My Dictionary {`(${wordList?.length})`}</h1>
+      <h1 className={s.title}>My Dictionary {`(${filteredList?.length})`}</h1>
       <div className={s.topWrapper}>
         <div className={s.wordsWrapper}>
           <Input
@@ -171,11 +212,11 @@ function Dictionary() {
           <Button
             as="button"
             extraClass={cx(s.button, {
-              active: wordsToShow === 'all',
+              active: stageValue === 'all',
             })}
             onClick={() => {
-              setWordsToShow('all');
-              setFilteredList(filterWordList(wordList, search, 'word'));
+              setStageValue('all');
+              /* setFilteredList(filterWordList(wordList, search, 'word')); */
             }}
           >
             All
@@ -183,11 +224,11 @@ function Dictionary() {
           <Button
             as="button"
             extraClass={cx(s.button, s.new, {
-              active: wordsToShow === 'new',
+              active: stageValue === 'new',
             })}
             onClick={() => {
-              setWordsToShow('new');
-              setFilteredList(filterWordList(wordList, 0, 'stage'));
+              setStageValue('new');
+              /* setFilteredList(filterWordList(wordList, 0, 'stage')); */
             }}
           >
             <BsBook className={s.icon} />
@@ -195,11 +236,11 @@ function Dictionary() {
           <Button
             as="button"
             extraClass={cx(s.button, s.half, {
-              active: wordsToShow === 'inProgress',
+              active: stageValue === 'inProgress',
             })}
             onClick={() => {
-              setWordsToShow('inProgress');
-              setFilteredList(filterWordList(wordList, 1, 'stage'));
+              setStageValue('inProgress');
+              /* setFilteredList(filterWordList(wordList, 1, 'stage')); */
             }}
           >
             <BsBookHalf className={s.icon} />
@@ -207,11 +248,11 @@ function Dictionary() {
           <Button
             as="button"
             extraClass={cx(s.button, s.done, {
-              active: wordsToShow === 'done',
+              active: stageValue === 'done',
             })}
             onClick={() => {
-              setWordsToShow('done');
-              setFilteredList(filterWordList(wordList, 2, 'stage'));
+              setStageValue('done');
+              /* setFilteredList(filterWordList(wordList, 4, 'stage')); */
             }}
           >
             <BsBookFill className={s.icon} />
