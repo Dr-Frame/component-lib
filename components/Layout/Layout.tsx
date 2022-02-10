@@ -42,7 +42,6 @@ const menu: IMenuItem[] = [
       { title: 'Word Constructor', link: '/word-constructor' },
       { title: 'Dictionary', link: '/dictionary' },
       { title: 'Animation', link: '/congrats' },
-      { title: 'Zoom', link: '/zoom' },
     ],
   },
 ];

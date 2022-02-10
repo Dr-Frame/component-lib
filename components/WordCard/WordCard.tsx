@@ -101,7 +101,7 @@ function WordCard({
                   Add word
                 </Button>
                 <div className={s.selectCategoryWrapper}>
-                  {categoryList?.length > 0 ? (
+                  {categoryList && categoryList?.length > 0 ? (
                     <MySelect
                       list={categoryList}
                       label="Category"

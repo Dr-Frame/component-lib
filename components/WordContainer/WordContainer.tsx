@@ -15,8 +15,9 @@ interface IWordContainerProps {
   word: IWord;
   setIsCorrect(arg: boolean): void;
   slide: number;
-  setSlide(): void;
+  setSlide(arg: number): void;
   isCorrect: boolean;
+  setTotalQuesedWords(arg: number): void;
 }
 
 function WordContainer({
@@ -25,6 +26,7 @@ function WordContainer({
   slide,
   setSlide,
   isCorrect,
+  setTotalQuesedWords,
 }: IWordContainerProps) {
   const [answer, setAnswer] = useState<string[]>([]);
   const [position, setPosition] = useState<number>(0);
@@ -53,7 +55,7 @@ function WordContainer({
     setAnswer([]);
   }, [slide]);
 
-  console.log(word.stage);
+  /*  console.log(word.stage); */
 
   useEffect(() => {
     //when correct word play the sound if exsist
@@ -63,6 +65,9 @@ function WordContainer({
       if (word.phonetics[0]) {
         const audio = new Audio(word.phonetics[0].audio);
         audio.play();
+      }
+      if (mistakeAmount === 0) {
+        setTotalQuesedWords(prev => prev + 1);
       }
       return;
     }
@@ -88,9 +93,9 @@ function WordContainer({
     return wordToQuessObject;
   }
 
-  function handleMistake() {
+  /*  function handleMistake() {
     setMistakeAmount(prevState => prevState + 1);
-  }
+  } */
 
   function newHandleClick(
     e: MouseEvent | KeyboardEvent,
@@ -109,7 +114,7 @@ function WordContainer({
         setPosition(prevState => prevState + 1);
         return;
       }
-      handleMistake();
+      setMistakeAmount(prevState => prevState + 1);
     }
     //если буква верная
     if (type === 'keyboard' && e.key === startWordSplitted[position]) {
@@ -125,7 +130,7 @@ function WordContainer({
       if (letterList.current.children) {
         Object.values(letterList.current.children).forEach(liItem => {
           if (liItem?.firstChild?.textContent === e.key) {
-            handleMistake();
+            setMistakeAmount(prevState => prevState + 1);
             liItem.classList.add(cx(s.keyWrong));
           }
         });

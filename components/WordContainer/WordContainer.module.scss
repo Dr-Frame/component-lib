@@ -1,6 +1,7 @@
 @import '../../styles/shared.scss';
 
 .wrapper {
+  padding-top: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,6 +16,7 @@
 }
 
 .translatedWord {
+  text-align: center;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;

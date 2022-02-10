@@ -55,36 +55,12 @@ export const microsoftApi = createApi({
     baseUrl: 'https://microsoft-translator-text.p.rapidapi.com',
   }),
   endpoints: build => ({
-    getTranslation: build.query<>({
+    getTranslation: build.query({
       query: () => ({
         url: `/Dictionary/Lookup?to=ru&api-version=3.0&from=en`,
         method: 'POST',
         headers: headersMicrosoft,
         body: [{ Text: 'mother' }],
-      }),
-    }),
-  }),
-});
-
-//TODO: zoom api try
-const JWT_TOKEN =
-  'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6IkdUbmJtbW80UXR5czJoLU14SndsUGciLCJleHAiOjE3OTg3MzI4MDAsImlhdCI6MTY0NDI0MzgxM30.dMq4AvzydksEg2f86sN_QXbjyq6KQuMcpoGdnUiQRPY'; //expires 31.12.2026
-export const zoomApi = createApi({
-  reducerPath: 'Zoom',
-  baseQuery: fetchBaseQuery({
-    baseUrl: 'https://api.zoom.us/v2',
-  }),
-  endpoints: build => ({
-    getMeetings: build.query({
-      query: () => ({
-        url: '/users/me/meetings?page_size=300',
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${JWT_TOKEN}`,
-          Cookie:
-            'TS01a42040=01b2081ea584489023ca3632a4da7e1837fe8d3c01382568a9a122164b619734817c8ef2bbb9be516aaed919170ca3a4ca6512922b; TS01d0dc3f=01b2081ea584489023ca3632a4da7e1837fe8d3c01382568a9a122164b619734817c8ef2bbb9be516aaed919170ca3a4ca6512922b; cred=CA7E42C5A6ED919F5DA8B2C9F2A57698',
-        },
-        redirect: 'follow',
       }),
     }),
   }),

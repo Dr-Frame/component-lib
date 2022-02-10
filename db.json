@@ -7,44 +7,44 @@
         "name": "Bitcoin",
         "color": "#f7931A",
         "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
-        "marketCap": "729179320499",
-        "price": "38486.10214872008",
+        "marketCap": "830414987312",
+        "price": "43814.6084212114",
         "listedAt": 1330214400,
         "tier": 1,
-        "change": "-0.15",
+        "change": "0.18",
         "rank": 1,
         "sparkline": [
-          "38542.1454837693339645590000",
-          "38577.7544798147376343960000",
-          "38689.3054539722111057810000",
-          "38875.9128247159763230720000",
-          "38632.4397610616247551790000",
-          "38459.3074100817457358690000",
-          "38620.3939389608717709800000",
-          "38835.9320141988830871990000",
-          "38966.8655496921541653090000",
-          "38932.0661930513280025620000",
-          "38566.1292156996540973430000",
-          "38894.1022488836243028870000",
-          "38913.1394713324930502980000",
-          "38833.9365387157070706350000",
-          "38504.3273537315993416760000",
-          "38538.1200932902298215940000",
-          "38714.9896186355038955140000",
-          "38755.7262186871390234360000",
-          "38716.5565207385602918390000",
-          "38754.2051097397397690070000",
-          "38574.1637135405528813160000",
-          "38500.5296791363528498090000",
-          "38665.8832635237258535230000",
-          "38562.9897537737962842680000",
-          "38486.6825782961825578180000",
-          "38403.1227160893040897050000",
-          "38486.1021487200774883400000"
+          "43735.7163296127971603460000",
+          "43429.1922630829570970480000",
+          "43519.4975673345052052580000",
+          "43632.4552181534882410200000",
+          "43327.8673644030997199720000",
+          "43419.7797517652567956560000",
+          "43023.0727115609830763460000",
+          "43096.0798150818235863450000",
+          "42986.5148360075897488310000",
+          "43585.2392298166690901130000",
+          "44169.3073984069608030670000",
+          "44137.9818741834161592280000",
+          "44149.4891986536490585960000",
+          "44123.7908263171026215800000",
+          "44158.2106678012081829380000",
+          "43637.3297318334618636900000",
+          "43401.8286070224828829720000",
+          "43447.5446884604618597210000",
+          "43413.7327780336430151880000",
+          "43634.9088437847420645800000",
+          "43689.4544022307375284990000",
+          "43605.5478261858421570940000",
+          "43452.9186455085952035420000",
+          "43498.5137853268396479260000",
+          "43575.0624607837434416840000",
+          "43677.6408922103209770140000",
+          "43814.6084212114032228820000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/Qwsogvtv82FCd+bitcoin-btc",
-        "24hVolume": "18281034490",
+        "24hVolume": "350989961182",
         "btcPrice": "1"
       },
       "buyPrice": 40000,
@@ -62,45 +62,45 @@
         "name": "Ethereum",
         "color": "#3C3C3D",
         "iconUrl": "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
-        "marketCap": "330518116942",
-        "price": "2776.6878183676026",
+        "marketCap": "375939612249",
+        "price": "3155.6645850692234",
         "listedAt": 1438905600,
         "tier": 1,
-        "change": "1.79",
+        "change": "2.1",
         "rank": 2,
         "sparkline": [
-          "2727.8181635070117636880000",
-          "2738.5297593997656670900000",
-          "2742.1827248994426105730000",
-          "2759.9805474109795901390000",
-          "2750.2176269838105520780000",
-          "2739.5244388296546451770000",
-          "2756.9886406213326390920000",
-          "2779.2539181060204443880000",
-          "2789.3788257457557444770000",
-          "2788.1840311139533476440000",
-          "2755.8723302812162759820000",
-          "2785.4698063492954422630000",
-          "2785.7429115370942091210000",
-          "2784.1053585974361148550000",
-          "2765.1439317792409986320000",
-          "2767.6266380653690617550000",
-          "2785.0643890326718819260000",
-          "2789.2817820279372491640000",
-          "2788.1906161754382971380000",
-          "2792.8323983487573043510000",
-          "2770.0744941363300154720000",
-          "2759.6608078189542802980000",
-          "2779.9122127584503881800000",
-          "2779.7114537727496236020000",
-          "2764.8984503754992707970000",
-          "2761.1066126036329000140000",
-          "2776.6878183676028451900000"
+          "3090.7701052626238391590000",
+          "3068.7077978229636719190000",
+          "3082.4230458675489696480000",
+          "3084.6557844254785562280000",
+          "3066.0581298460401697120000",
+          "3070.0635623981346771280000",
+          "3049.1626879790446679060000",
+          "3061.8432679118851060900000",
+          "3050.0824046906437817540000",
+          "3083.6686874739699751830000",
+          "3118.0727682201018524790000",
+          "3112.4594045308987628050000",
+          "3123.4919025078981022950000",
+          "3119.5319976504744500960000",
+          "3124.0161383723601938220000",
+          "3086.9953229557740723400000",
+          "3078.4612830614024051020000",
+          "3083.2667713462495190120000",
+          "3077.7824299641998328600000",
+          "3091.6239717444135118180000",
+          "3098.7019452283664005170000",
+          "3093.7040171373004969490000",
+          "3096.5397565699136654020000",
+          "3108.3210086022192248290000",
+          "3131.4940131891930264070000",
+          "3143.8527636099882121930000",
+          "3155.6645850692235100120000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/razxDUgYGNAdQ+ethereum-eth",
-        "24hVolume": "11194616124",
-        "btcPrice": "0.07214780565820295"
+        "24hVolume": "13241612456",
+        "btcPrice": "0.07202311509285364"
       },
       "buyPrice": 4000,
       "invested": 5000,
@@ -115,45 +115,45 @@
         "name": "Chainlink",
         "color": "#4680b0",
         "iconUrl": "https://cdn.coinranking.com/9NOP9tOem/chainlink.svg",
-        "marketCap": "8094283537",
-        "price": "17.332158712817094",
+        "marketCap": "8543397759",
+        "price": "18.293839747657255",
         "listedAt": 1505952000,
         "tier": 1,
-        "change": "0.82",
-        "rank": 20,
+        "change": "0.8",
+        "rank": 24,
         "sparkline": [
-          "17.1917726577715037290000",
-          "17.3193486299406037790000",
-          "17.4564557018828394290000",
-          "17.5895940985628095770000",
-          "17.3313821018746618440000",
-          "17.2631236203350844270000",
-          "17.2552348197789546910000",
-          "17.2931499528698924710000",
-          "17.3281682619299088520000",
-          "17.3196876574586335410000",
-          "17.1149476905146155790000",
-          "17.2367294139761833640000",
-          "17.2069852495961965450000",
-          "17.1963984137930239850000",
-          "17.1109780125456982730000",
-          "16.9347320479322895500000",
-          "17.0173008147285809820000",
-          "17.0850083565440894860000",
-          "17.0499455634537384650000",
-          "17.0096963201681730650000",
-          "16.8890898692123680300000",
-          "16.8894367430715370330000",
-          "17.0446767072931745640000",
-          "17.0935199785524821730000",
-          "17.1954850223264394520000",
-          "17.2311241390285936990000",
-          "17.3321587128170925010000"
+          "18.1488290888354927550000",
+          "18.0002004811805028490000",
+          "18.0220117668941998760000",
+          "18.0859535832438821610000",
+          "17.9322774669709848250000",
+          "17.9510745622780572860000",
+          "17.9196946957686486730000",
+          "18.1100420666525917200000",
+          "18.0145926204495960340000",
+          "18.1844328477111875310000",
+          "18.3314593943051049340000",
+          "18.3079850914550408510000",
+          "18.4433084644045118260000",
+          "18.4116207419361485440000",
+          "18.3839075423942795360000",
+          "18.1608347453492261820000",
+          "17.9768675407742052100000",
+          "17.9701591464117479400000",
+          "17.9464478649052222150000",
+          "18.0751386383733631070000",
+          "18.0921364065062984480000",
+          "18.0584732735173171580000",
+          "18.0371727762058187010000",
+          "18.0901089538086832290000",
+          "18.1898586114585940620000",
+          "18.2959487106567388870000",
+          "18.2938397476572567820000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/VLqpJwogdhHNb+chainlink-link",
-        "24hVolume": "674862691",
-        "btcPrice": "0.00045034850881602"
+        "24hVolume": "326325809476",
+        "btcPrice": "0.00041752831776538"
       },
       "buyPrice": 20,
       "invested": 3000,
@@ -168,45 +168,45 @@
         "name": "Litecoin",
         "color": "#345d9d",
         "iconUrl": "https://cdn.coinranking.com/BUvPxmc9o/ltcnew.svg",
-        "marketCap": "7954513904",
-        "price": "114.37595272360572",
+        "marketCap": "9598144217",
+        "price": "137.90940733674623",
         "listedAt": 1382572800,
         "tier": 1,
-        "change": "3.73",
-        "rank": 22,
+        "change": "2.09",
+        "rank": 21,
         "sparkline": [
-          "110.2678365961492440840000",
-          "110.6970806772084343900000",
-          "110.8233995744138398920000",
-          "111.5243597331381529040000",
-          "110.4921434107253354340000",
-          "109.5249489505930176290000",
-          "110.1212802620607682190000",
-          "110.9874086769854813810000",
-          "111.6427416617744851540000",
-          "111.7313584212959950290000",
-          "110.9525377205175954540000",
-          "112.2754756218510080050000",
-          "113.4511274606471207940000",
-          "113.8282015262922349390000",
-          "113.8556264494922801810000",
-          "114.5843278971239160080000",
-          "114.9432254585775556740000",
-          "114.8627904182792554530000",
-          "115.1924819397460963110000",
-          "115.4675675206956647510000",
-          "114.2730358045957127100000",
-          "113.7722491054079023840000",
-          "114.5661440766037069190000",
-          "114.3766016515593611930000",
-          "114.2213686879353553140000",
-          "114.0283164876268693610000",
-          "114.3759527236057224990000"
+          "135.0800841328875675310000",
+          "133.5365405687231692550000",
+          "134.1065465248978854680000",
+          "133.8560574894009141270000",
+          "133.0261396519914088270000",
+          "132.5998601137050000970000",
+          "131.4711300949763004480000",
+          "131.8363220674988303140000",
+          "131.5574895824182825180000",
+          "132.9699415576804706480000",
+          "134.1191063364888694520000",
+          "133.3647155501108850570000",
+          "134.5136338594068928170000",
+          "134.0281673283386757440000",
+          "134.3718578944440035280000",
+          "133.5071670649024711610000",
+          "134.1218858973082089890000",
+          "134.8692499290666730020000",
+          "136.0365655296955947400000",
+          "136.6703867279723291530000",
+          "137.5569717833156052970000",
+          "137.7304227667538972180000",
+          "138.4301621844872097750000",
+          "138.2302543003153716240000",
+          "138.8400833346193470260000",
+          "138.1348539055227358320000",
+          "137.9094073367462293520000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/D7B1x_ks7WhV5+litecoin-ltc",
-        "24hVolume": "680784715",
-        "btcPrice": "0.002971876764283065"
+        "24hVolume": "1018585273",
+        "btcPrice": "0.003147566811757284"
       },
       "buyPrice": 200,
       "invested": 20000,
@@ -221,45 +221,45 @@
         "name": "Binance Coin",
         "color": "#e8b342",
         "iconUrl": "https://cdn.coinranking.com/B1N19L_dZ/bnb.svg",
-        "marketCap": "57029250734",
-        "price": "383.6179784932974",
+        "marketCap": "62373725603",
+        "price": "419.56859364394415",
         "listedAt": 1503014400,
         "tier": 1,
-        "change": "0.71",
+        "change": "-1.15",
         "rank": 4,
         "sparkline": [
-          "380.9251732187110802010000",
-          "381.4337072890151655130000",
-          "382.3466950368375399600000",
-          "383.9024471684752576170000",
-          "382.8194175472266065890000",
-          "382.0827371198227513420000",
-          "383.4671818346527113750000",
-          "384.5947259149817840810000",
-          "385.0436416734096259460000",
-          "384.3998436542395582010000",
-          "382.6504272987753550490000",
-          "384.8516213374509984390000",
-          "385.8391586372366443480000",
-          "386.5663131002989200310000",
-          "384.3407527821324567370000",
-          "384.4151606500085223220000",
-          "386.1572242373260999870000",
-          "386.2184150848137383850000",
-          "385.7985971833839292030000",
-          "384.4882605904828363740000",
-          "382.7458171974172253830000",
-          "382.1312328497805867050000",
-          "384.2437827859266037450000",
-          "384.2821318282655684800000",
-          "382.6990394601863515710000",
-          "382.3418049036747269000000",
-          "383.6179784932974208570000"
+          "424.4509936498448955310000",
+          "420.6652413502201257030000",
+          "420.5047289098249885790000",
+          "419.5395199600005357750000",
+          "416.9157865888340346640000",
+          "417.9680452571507088920000",
+          "416.5270560650425663650000",
+          "414.4932716404887677110000",
+          "409.5573334117507212830000",
+          "410.7258032714980603540000",
+          "413.0768859569094571420000",
+          "410.5303777868135631800000",
+          "410.2275486341697017560000",
+          "410.8380600853306933200000",
+          "414.2463039413394130690000",
+          "410.3793873889680203550000",
+          "410.1890768823785371400000",
+          "410.7527092136153759750000",
+          "410.4564978443661743030000",
+          "412.8966360618992220820000",
+          "414.1448862341477285310000",
+          "414.4383023361024970590000",
+          "414.5988789432369807650000",
+          "415.1710728166082738600000",
+          "416.8690126762077621760000",
+          "418.8835111896202731470000",
+          "419.5685936439441481240000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/WcwrkfNI4FUAe+binancecoin-bnb",
-        "24hVolume": "1159549241",
-        "btcPrice": "0.009967701509778779"
+        "24hVolume": "1785496734",
+        "btcPrice": "0.009575997795311205"
       },
       "buyPrice": 300,
       "invested": 1000,
@@ -276,45 +276,45 @@
         "name": "Monero",
         "color": "#ff7519",
         "iconUrl": "https://cdn.coinranking.com/Syz-oSd_Z/xmr.svg",
-        "marketCap": "2646984129",
-        "price": "146.46612451370382",
+        "marketCap": "3304006779",
+        "price": "182.7851885514955",
         "listedAt": 1422489600,
         "tier": 1,
-        "change": "0.95",
-        "rank": 46,
+        "change": "0.98",
+        "rank": 51,
         "sparkline": [
-          "145.0936339149878508020000",
-          "145.3148117584890228250000",
-          "145.8746333379080101040000",
-          "146.2531533599043670170000",
-          "145.2664574041508798670000",
-          "145.1917247300995005990000",
-          "146.3112866647574489100000",
-          "146.8335212316300233090000",
-          "146.2879697029743862590000",
-          "145.4236775088540968240000",
-          "144.5843053147643428520000",
-          "145.5000878328549954080000",
-          "145.5984677178706092680000",
-          "145.4598739316535817940000",
-          "144.6247499642930419030000",
-          "144.8951826577218951470000",
-          "145.2541785153214669910000",
-          "145.5097701684841535930000",
-          "146.2357766742478244010000",
-          "146.2169845446023579670000",
-          "145.9674918472691851410000",
-          "145.8047272062430018560000",
-          "146.4538452944558725040000",
-          "146.5019890354765090740000",
-          "146.2272332254481392740000",
-          "146.0566281515678730910000",
-          "146.4661245137038199070000"
+          "181.0089194294929936010000",
+          "179.0259530081902486100000",
+          "179.6304970677343061080000",
+          "179.6578294995552383080000",
+          "178.4175652941178940990000",
+          "179.7170588085016459040000",
+          "179.3052794696553072580000",
+          "179.3170811216907168630000",
+          "176.3455141088943671640000",
+          "177.1606651194489376970000",
+          "178.3913054321754036820000",
+          "177.1452125823112471850000",
+          "177.3711754132934038770000",
+          "178.7853254496977573250000",
+          "178.8997014402946263240000",
+          "177.2028202309332528310000",
+          "177.4423952279609715060000",
+          "177.8340204226965590390000",
+          "177.8964094623593841700000",
+          "178.8106683221256568870000",
+          "178.9898846112005676700000",
+          "178.5274456982827259980000",
+          "178.3977450385612901220000",
+          "178.5614435068700968130000",
+          "179.8315380087395887710000",
+          "181.8189414527794000320000",
+          "182.7851885514955077030000"
         ],
         "lowVolume": false,
         "coinrankingUrl": "https://coinranking.com/coin/3mVx2FX_iJFp5+monero-xmr",
-        "24hVolume": "94750990",
-        "btcPrice": "0.003805688711933505"
+        "24hVolume": "131392899",
+        "btcPrice": "0.004171786423247048"
       },
       "buyPrice": 20,
       "invested": 1000,
@@ -347,1526 +347,228 @@
   },
   "dictionary": [
     {
-      "translate": "по рукам, договор",
+      "translate": "красный",
       "translations": {
-        "дело": [
-          "case",
-          "it's",
-          "business",
-          "matter",
-          "deal",
-          "the thing",
-          "dealing",
-          "cause",
-          "point",
-          "job"
+        "Red": [
+          "Red"
         ],
-        "договор": [
-          "treaty",
-          "contract",
-          "agreement",
-          "compact",
-          "deal",
-          "pact",
-          "instrument",
-          "convention",
-          "arrangement",
-          "deed"
+        "алый": [
+          "scarlet",
+          "red",
+          "crimson",
+          "hunter's pink",
+          "vermeil",
+          "ruby-red",
+          "poppy"
         ],
-        "договориться": [
-          "agree",
-          "negotiate",
-          "arrange",
-          "make a deal",
-          "reach agreement",
-          "make arrangements",
-          "reason",
-          "reach an agreement",
-          "settle",
-          "work something out"
-        ],
-        "иметь дело": [
-          "deal",
-          "doing business",
-          "be dealing",
-          "be dealt",
-          "do business",
-          "contend"
-        ],
-        "касаться": [
-          "address",
-          "touch",
-          "concern",
-          "deal with",
-          "relate to",
-          "include",
-          "apply to",
-          "refer to",
-          "cover",
-          "involve"
-        ],
-        "контракт": [
-          "contract",
-          "signed",
-          "deal",
-          "contracted",
-          "sign",
-          "appointment",
-          "signing",
-          "agreement",
-          "engagement",
-          "indenture"
-        ],
-        "разбираться": [
-          "deal",
-          "understand",
-          "figure out",
-          "handle",
-          "knowledge",
-          "sort",
-          "sort out",
-          "make au fait",
-          "get right",
-          "have an eye for"
-        ],
-        "сделка": [
-          "deal",
-          "transaction",
-          "bargain",
-          "trade",
-          "sale",
-          "business",
-          "plea",
-          "operation",
-          "trans",
-          "bargin"
-        ],
-        "соглашение": [
-          "agreement",
-          "arrangement",
-          "accord",
-          "treaty",
-          "deal",
-          "contract",
-          "settlement",
-          "compact",
-          "convention",
-          "pact"
-        ],
-        "уговор": [
-          "deal",
-          "agreement",
-          "arrangement",
-          "pact",
-          "engagement",
-          "remonstrance",
-          "perswasion"
-        ]
-      },
-      "word": "deal",
-      "phonetic": "diːl",
-      "phonetics": [
-        {
-          "text": "diːl",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/deal--_gb_1.mp3"
-        }
-      ],
-      "origin": "Old English dǣlan  ‘divide’, ‘participate’, of Germanic origin; related to Dutch deel and German Teil ‘part’ (noun), also to dole1. The sense ‘divide’ gave rise to ‘distribute’, hence deal1 (sense 1 of the verb, sense 4 of the verb); the sense ‘participate’ gave rise to ‘have dealings with’, hence deal1 (sense 2 of the verb, sense 3 of the verb).",
-      "meanings": [
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "distribute (cards) in an orderly rotation to players for a game or round.",
-              "example": "the cards were dealt for the last hand",
-              "synonyms": [
-                "distribute",
-                "give out",
-                "share out",
-                "divide out",
-                "divide up",
-                "hand out",
-                "pass out",
-                "pass round",
-                "dole out",
-                "mete out",
-                "dispense",
-                "allocate",
-                "allot",
-                "assign",
-                "apportion",
-                "bestow",
-                "divvy up"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "take part in commercial trading of a particular commodity.",
-              "example": "directors were prohibited from dealing in the company's shares",
-              "synonyms": [
-                "trade in",
-                "buy and sell",
-                "be concerned with trading",
-                "be engaged in trading",
-                "do business in",
-                "sell",
-                "vend",
-                "purvey",
-                "supply",
-                "stock",
-                "offer",
-                "offer for sale",
-                "have for sale",
-                "peddle",
-                "market",
-                "merchandise",
-                "traffic in",
-                "smuggle",
-                "run",
-                "rustle",
-                "push",
-                "flog"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "take measures concerning (someone or something), especially with the intention of putting something right.",
-              "synonyms": [
-                "cope with",
-                "handle",
-                "manage",
-                "attend to",
-                "see to",
-                "take care of",
-                "take charge of",
-                "take in hand",
-                "sort out",
-                "tackle",
-                "take on",
-                "control",
-                "master",
-                "influence",
-                "manipulate"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "inflict (a blow) on (someone or something).",
-              "example": "hopes of an economic recovery were dealt another blow",
-              "synonyms": [
-                "deliver",
-                "administer",
-                "dispense",
-                "inflict",
-                "give",
-                "impose",
-                "direct",
-                "aim"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "an agreement entered into by two or more parties for their mutual benefit, especially in a business or political context.",
-              "example": "the government was ready to do a deal with the opposition",
-              "synonyms": [
-                "agreement",
-                "understanding",
-                "pact",
-                "compact",
-                "bargain",
-                "covenant",
-                "contract",
-                "treaty",
-                "protocol",
-                "concordat",
-                "entente",
-                "accord",
-                "arrangement",
-                "accommodation",
-                "compromise",
-                "settlement",
-                "negotiation",
-                "terms",
-                "transaction",
-                "sale",
-                "account",
-                "indenture",
-                "engagement"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "the process of distributing the cards to players in a card game.",
-              "example": "after the deal, players A and B stay out",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643283071051,
-      "id": 4
-    },
-    {
-      "translate": "банан",
-      "translations": {
-        "Banana": [
-          "банан",
-          "банановый",
-          "Banana"
-        ],
-        "банан": [
-          "banana",
-          "Banan"
-        ],
-        "банановый": [
-          "banana",
-          "bana"
-        ]
-      },
-      "word": "banana",
-      "phonetic": "bəˈnɑːnə",
-      "phonetics": [
-        {
-          "text": "bəˈnɑːnə",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/banana--_gb_1.mp3"
-        }
-      ],
-      "origin": "late 16th century: via Portuguese or Spanish from Mande.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe.",
-              "example": "a bunch of bananas",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "the tropical and subtropical palmlike plant that bears bananas, having very large leaves but lacking a woody trunk.",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "adjective",
-          "definitions": [
-            {
-              "definition": "insane or extremely silly.",
-              "example": "I've spent two months in a studio—I must be bananas",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643284567152,
-      "id": 5
-    },
-    {
-      "translate": "молоко",
-      "translations": {
-        "давать молоко": [
-          "milk",
+        "краситель красного цвета": [
           ""
         ],
-        "доить": [
-          "milk"
+        "краснокочанный": [],
+        "красныи цвет": [],
+        "красный": [
+          "red",
+          "rouge",
+          "ruddy",
+          "Krasny",
+          "Krasniy"
         ],
-        "использовать": [
-          "use",
-          "utilize",
-          "make use",
-          "exploit",
-          "utilise",
-          "apply",
-          "employ",
-          "benefit from",
-          "harness",
-          "draw on"
+        "кумачовый": [],
+        "покраснение": [
+          "redness",
+          "reddening",
+          "red",
+          "flush",
+          "reddened",
+          "blush",
+          "rubor",
+          "red discoloration"
         ],
-        "молоко": [
-          "milk"
+        "рыжий": [
+          "red",
+          "ginger",
+          "redhead",
+          "red-haired",
+          "orange",
+          "red-headed",
+          "redheaded",
+          "ginge",
+          "rufous",
+          "carroty"
         ],
-        "молочко": [
-          "milk"
-        ],
-        "молочная": [
-          "dairy",
-          "milk",
-          "lactic",
-          "milky",
-          "creamery"
-        ],
-        "молочный": [
-          "milk",
-          "dairy",
-          "milky",
-          "deciduous",
-          "milch",
-          "lactean",
-          "ethylidene-lactic",
-          "lactescent"
-        ],
-        "подоить": [
-          "milk",
-          "milky"
-        ],
-        "разновидности молока": [
-          ""
-        ],
-        "эксплуатировать": [
-          "exploit",
-          "operate",
-          "exploitation",
-          "use",
-          "milk",
-          "take advantage of",
-          "have in operation"
+        "цвета": [
+          "color",
+          "colour",
+          "white",
+          "blue",
+          "red",
+          "yellow",
+          "brown",
+          "pink",
+          "livery"
         ]
       },
-      "word": "milk",
-      "phonetic": "mɪlk",
+      "word": "red",
+      "phonetic": "rɛd",
       "phonetics": [
         {
-          "text": "mɪlk",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/milk--_gb_1.mp3"
+          "text": "rɛd",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/red--_gb_5.mp3"
         }
       ],
-      "origin": "Old English milc, milcian, of Germanic origin; related to Dutch melk and German Milch, from an Indo-European root shared by Latin mulgere and Greek amelgein ‘to milk’.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "an opaque white fluid rich in fat and protein, secreted by female mammals for the nourishment of their young.",
-              "example": "a healthy mother will produce enough milk for her baby",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "draw milk from (a cow or other animal), either by hand or mechanically.",
-              "example": "two hours later he was up again to milk the cows",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "exploit or defraud by taking small amounts of money over a period of time.",
-              "example": "executives milked the health plan's funds for their personal use",
-              "synonyms": [
-                "exploit",
-                "take advantage of",
-                "cash in on",
-                "impose on",
-                "bleed",
-                "suck dry",
-                "fleece",
-                "squeeze",
-                "wring",
-                "blackmail"
-              ],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643287880018,
-      "id": 6
-    },
-    {
-      "translate": "корова",
-      "translations": {
-        "Cow": [
-          "Cow"
-        ],
-        "КПС": [
-          "CEN",
-          "SPC",
-          "RCEN",
-          "CPS",
-          "COW",
-          "TUC",
-          "CSC"
-        ],
-        "запугать": [
-          "intimidate",
-          "scare",
-          "frighten",
-          "terrorize",
-          "threaten",
-          "bully",
-          "intimidation",
-          "be intimidated",
-          "rattle",
-          "intimidated by"
-        ],
-        "запугивать": [
-          "intimidate",
-          "bully",
-          "harass",
-          "intimidation",
-          "threaten",
-          "terrorize",
-          "terrify",
-          "brow-beat",
-          "cow",
-          "hector"
-        ],
-        "затюкивать": [],
-        "копирование при записи": [
-          "COW",
-          ""
-        ],
-        "корова": [
-          "cow",
-          "neat",
-          "corowa"
-        ],
-        "коровий": [
-          "cow",
-          ""
-        ],
-        "коровка": [
-          "cow",
-          "moo-moo",
-          "lady beetle",
-          "moo moo",
-          "moomoo"
-        ],
-        "тёлка": [
-          "chick",
-          "cow",
-          "pussy",
-          "bird",
-          "hen"
-        ]
-      },
-      "word": "cow",
-      "phonetic": "kaʊ",
-      "phonetics": [
-        {
-          "text": "kaʊ",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cow--_gb_1.mp3"
-        }
-      ],
-      "origin": "Old English cū, of Germanic origin; related to Dutch koe and German Kuh, from an Indo-European root shared by Latin bos and Greek bous .",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a fully grown female animal of a domesticated breed of ox, kept to produce milk or beef.",
-              "example": "a dairy cow",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "an unpleasant or disliked woman.",
-              "example": "what does he see in that cow?",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643288830545,
-      "id": 7
-    },
-    {
-      "translate": "Работа",
-      "translations": {
-        "действовать": [
-          "act",
-          "operate",
-          "work",
-          "proceed",
-          "operational",
-          "move",
-          "go",
-          "take action",
-          "apply",
-          "do"
-        ],
-        "деятельность": [
-          "activity",
-          "work",
-          "effort",
-          "action",
-          "operation",
-          "business",
-          "active",
-          "performance",
-          "working",
-          "functioning"
-        ],
-        "поработать": [
-          "work",
-          "job"
-        ],
-        "работа": [
-          "work",
-          "job",
-          "working",
-          "activity",
-          "done",
-          "progress",
-          "effort",
-          "exercise",
-          "employment",
-          "business"
-        ],
-        "работать": [
-          "work",
-          "operate",
-          "job",
-          "run",
-          "function",
-          "serve",
-          "go",
-          "use",
-          "employed",
-          "engage"
-        ],
-        "рабочий": [
-          "working",
-          "work",
-          "worker",
-          "operational",
-          "operating",
-          "labourer",
-          "employee",
-          "laborer",
-          "workman",
-          "handyman"
-        ],
-        "сотрудничать": [
-          "cooperate",
-          "work",
-          "collaborate",
-          "work together",
-          "to working",
-          "engage",
-          "co-operate",
-          "cooperative",
-          "partner",
-          "play ball"
-        ],
-        "сработать": [
-          "work",
-          "do the trick",
-          "do the job",
-          "play out",
-          "set it off",
-          "operate"
-        ],
-        "труд": [
-          "work",
-          "labour",
-          "labor",
-          "employment",
-          "remuneration",
-          "job",
-          "effort",
-          "labouring",
-          "laboring",
-          "toiling"
-        ],
-        "усилия": [
-          "efforts",
-          "effort",
-          "work",
-          "endeavour",
-          "made",
-          "steps",
-          "commitment",
-          "attempt",
-          "trying",
-          "strides"
-        ]
-      },
-      "word": "work",
-      "phonetic": "wəːk",
-      "phonetics": [
-        {
-          "text": "wəːk",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/work--_gb_1.mp3"
-        }
-      ],
-      "origin": "Old English weorc (noun), wyrcan (verb), of Germanic origin; related to Dutch werk and German Werk, from an Indo-European root shared by Greek ergon .",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "activity involving mental or physical effort done in order to achieve a purpose or result.",
-              "example": "he was tired after a day's work",
-              "synonyms": [
-                "labour",
-                "toil",
-                "exertion",
-                "effort",
-                "slog",
-                "drudgery",
-                "the sweat of one's brow",
-                "industry",
-                "service",
-                "grind",
-                "sweat",
-                "donkey work",
-                "spadework",
-                "elbow grease",
-                "graft",
-                "fag",
-                "yakka",
-                "travail",
-                "moil"
-              ],
-              "antonyms": [
-                "leisure",
-                "rest"
-              ]
-            },
-            {
-              "definition": "a task or tasks to be undertaken.",
-              "example": "they made sure the work was progressing smoothly",
-              "synonyms": [
-                "tasks",
-                "jobs",
-                "duties",
-                "assignments",
-                "commissions",
-                "projects",
-                "chores"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "a thing or things done or made; the result of an action.",
-              "example": "her work hangs in all the main American collections",
-              "synonyms": [
-                "handiwork",
-                "doing",
-                "act",
-                "deed",
-                "feat",
-                "performance"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "a place or premises in which industrial or manufacturing processes are carried out.",
-              "example": "he found a job in the locomotive works",
-              "synonyms": [
-                "factory",
-                "plant",
-                "manufacturing complex",
-                "mill",
-                "foundry",
-                "yard",
-                "industrial unit",
-                "business unit",
-                "workshop",
-                "shop"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "the operative part of a clock or other machine.",
-              "example": "she could almost hear the tick of its works",
-              "synonyms": [
-                "mechanism",
-                "machinery",
-                "workings",
-                "working parts",
-                "parts",
-                "movement",
-                "action",
-                "innards",
-                "insides"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "a defensive structure.",
-              "example": "just north of the fort were trenches and the freshly reconstructed patriot siege works",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "the exertion of force overcoming resistance or producing molecular change.",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "everything needed, desired, or expected.",
-              "example": "the heavens put on a show: sheet lightning, hailstones, the works",
-              "synonyms": [
-                "everything",
-                "the full treatment",
-                "the lot",
-                "the whole shooting match",
-                "the whole (kit and) caboodle",
-                "the whole shebang",
-                "the whole nine yards",
-                "the full monty",
-                "the whole ball of wax"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "be engaged in physical or mental activity in order to achieve a result; do work.",
-              "example": "she has been working so hard",
-              "synonyms": [
-                "toil",
-                "labour",
-                "exert oneself",
-                "slave (away)",
-                "plod away",
-                "work one's fingers to the bone",
-                "work like a Trojan/dog",
-                "work day and night",
-                "keep at it",
-                "slog (away)",
-                "beaver away",
-                "plug away",
-                "peg away",
-                "put one's back into something",
-                "work one's guts out",
-                "work one's socks off",
-                "knock oneself out",
-                "sweat blood",
-                "kill oneself",
-                "graft",
-                "fag",
-                "bullock",
-                "drudge",
-                "travail",
-                "moil",
-                "work one's balls/arse off",
-                "work one's ass/butt off"
-              ],
-              "antonyms": [
-                "rest",
-                "play"
-              ]
-            },
-            {
-              "definition": "(of a machine or system) function, especially properly or effectively.",
-              "example": "his phone doesn't work unless he goes to a high point",
-              "synonyms": [
-                "function",
-                "go",
-                "run",
-                "operate",
-                "perform",
-                "be in working order",
-                "behave"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "(of a plan or method) have the desired result or effect.",
-              "example": "the desperate ploy had worked",
-              "synonyms": [
-                "succeed",
-                "be successful",
-                "work out",
-                "turn out well",
-                "go as planned",
-                "have the desired result",
-                "get results",
-                "be effective",
-                "take effect",
-                "be efficacious",
-                "come off",
-                "pay off",
-                "do the trick",
-                "do the business",
-                "turn the trick"
-              ],
-              "antonyms": [
-                "fail"
-              ]
-            },
-            {
-              "definition": "bring (a material or mixture) to a desired shape or consistency by hammering, kneading, etc.",
-              "example": "work the mixture into a paste with your hands",
-              "synonyms": [
-                "knead",
-                "squeeze",
-                "form",
-                "shape",
-                "fashion",
-                "mould",
-                "model",
-                "mix",
-                "stir",
-                "blend"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "move or cause to move gradually or with difficulty into another position.",
-              "example": "comb hair from tip to root, working out the knots at the end",
-              "synonyms": [
-                "manoeuvre",
-                "manipulate",
-                "negotiate",
-                "guide",
-                "edge",
-                "make",
-                "thread",
-                "wind",
-                "weave"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "bring into a specified emotional state.",
-              "example": "Harold had worked himself into a minor rage",
-              "synonyms": [
-                "stir (up)",
-                "excite",
-                "drive",
-                "move",
-                "spur",
-                "rouse",
-                "fire",
-                "galvanize",
-                "whip up",
-                "inflame",
-                "incite",
-                "agitate"
-              ],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643355464398,
-      "id": 8
-    },
-    {
-      "translate": "Привет",
-      "translations": {
-        "Hi": [
-          "привет",
-          "здравствуйте",
-          "здрасьте",
-          "эй",
-          "здравствуй",
-          "здрасте",
-          "добрый день",
-          "приветик",
-          "ѕривет",
-          "Hi"
-        ],
-        "добрый день": [
-          "good afternoon",
-          "good day",
-          "hello",
-          "good morning",
-          "hi",
-          "good evening",
-          "bonjour",
-          "How do you do",
-          "G'day",
-          "Good morrow"
-        ],
-        "здравствуй": [
-          "hello",
-          "hi",
-          "greetings",
-          "Dumela"
-        ],
-        "здравствуйте": [
-          "hello",
-          "hi",
-          "hey",
-          "good morning",
-          "how do you do",
-          "welcome",
-          "good afternoon",
-          "good evening",
-          "how are you",
-          "greetings"
-        ],
-        "здрасте": [
-          "hi",
-          "hey",
-          "hello",
-          "G'day",
-          "Hallo"
-        ],
-        "здрасьте": [
-          "hi",
-          "hello",
-          "hey",
-          "howdy"
-        ],
-        "привет": [
-          "hey",
-          "hi",
-          "hello",
-          "regards",
-          "love",
-          "greetings",
-          "hiya",
-          "howdy",
-          "uh",
-          "what's up"
-        ],
-        "приветик": [
-          "hello",
-          "hi",
-          "howdy",
-          "hiya"
-        ],
-        "эй": [
-          "hey",
-          "whoa",
-          "yo",
-          "hello",
-          "uh",
-          "eh",
-          "man",
-          "Oh",
-          "Oi",
-          "Hi"
-        ],
-        "ѕривет": [
-          "Hey",
-          "Hi",
-          "Hello"
-        ]
-      },
-      "word": "hi",
-      "phonetic": "hʌɪ",
-      "phonetics": [
-        {
-          "text": "hʌɪ",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hi--_gb_1.mp3"
-        }
-      ],
-      "origin": "natural exclamation: first recorded in late Middle English.",
-      "meanings": [
-        {
-          "partOfSpeech": "exclamation",
-          "definitions": [
-            {
-              "definition": "used as a friendly greeting or to attract attention.",
-              "example": "‘Hi there. How was the flight?’",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "easy words",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643362191643,
-      "id": 9
-    },
-    {
-      "translate": "Привет",
-      "translations": {
-        "алло": [
-          "hello",
-          "hey",
-          "hi",
-          "yes",
-          "hallo",
-          "Yeah",
-          "Allo",
-          "Yello",
-          "Yah"
-        ],
-        "алё": [
-          "hello",
-          "hullo",
-          "hilloa",
-          "hallo"
-        ],
-        "добрый день": [
-          "good afternoon",
-          "good day",
-          "hello",
-          "good morning",
-          "hi",
-          "good evening",
-          "bonjour",
-          "How do you do",
-          "G'day",
-          "Good morrow"
-        ],
-        "здравствуй": [
-          "hello",
-          "hi",
-          "greetings",
-          "Dumela"
-        ],
-        "здравствуйте": [
-          "hello",
-          "hi",
-          "hey",
-          "good morning",
-          "how do you do",
-          "welcome",
-          "good afternoon",
-          "good evening",
-          "how are you",
-          "greetings"
-        ],
-        "здрасьте": [
-          "hi",
-          "hello",
-          "hey",
-          "howdy"
-        ],
-        "привет": [
-          "hey",
-          "hi",
-          "hello",
-          "regards",
-          "love",
-          "greetings",
-          "hiya",
-          "howdy",
-          "uh",
-          "what's up"
-        ],
-        "приветик": [
-          "hello",
-          "hi",
-          "howdy",
-          "hiya"
-        ],
-        "приветствую": [
-          "welcome",
-          "greetings",
-          "hello",
-          "salute",
-          "applaud",
-          "commend",
-          "hail",
-          "greeting",
-          "all hail"
-        ],
-        "эй": [
-          "hey",
-          "whoa",
-          "yo",
-          "hello",
-          "uh",
-          "eh",
-          "man",
-          "Oh",
-          "Oi",
-          "Hi"
-        ]
-      },
-      "word": "hello",
-      "phonetic": "həˈləʊ",
-      "phonetics": [
-        {
-          "text": "həˈləʊ",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
-        },
-        {
-          "text": "hɛˈləʊ"
-        }
-      ],
-      "origin": "early 19th century: variant of earlier hollo ; related to holla.",
-      "meanings": [
-        {
-          "partOfSpeech": "exclamation",
-          "definitions": [
-            {
-              "definition": "used as a greeting or to begin a phone conversation.",
-              "example": "hello there, Katie!",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "an utterance of ‘hello’; a greeting.",
-              "example": "she was getting polite nods and hellos from people",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "say or shout ‘hello’.",
-              "example": "I pressed the phone button and helloed",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643452586255,
-      "id": 10
-    },
-    {
-      "translate": "виновный",
-      "translations": {
-        "вина": [
-          "fault",
-          "wine",
-          "guilt",
-          "blame",
-          "guilty",
-          "responsible",
-          "bad",
-          "vino",
-          "culpability",
-          "blame for"
-        ],
-        "виновата": [
-          "my fault",
-          "your fault",
-          "her fault",
-          "guilty",
-          "to blame",
-          "responsible",
-          "sorry",
-          "innocent"
-        ],
-        "виноватой": [
-          "guilty",
-          "fault"
-        ],
-        "виноватый": [
-          "guilty",
-          "culprit",
-          "hangdog",
-          "to blame"
-        ],
-        "виновность": [
-          "guilt",
-          "guilty",
-          "culpability",
-          "guiltliness",
-          "guiltiness"
-        ],
-        "виновный": [
-          "perpetrator",
-          "guilty",
-          "offender",
-          "culprit",
-          "guilty person",
-          "abuser"
-        ],
-        "вину": [
-          "guilty",
-          "blame",
-          "guilt",
-          "fall",
-          "fault",
-          "blamed",
-          "responsible",
-          "wine",
-          "plea",
-          "responsibility"
-        ],
-        "вины": [
-          "guilt",
-          "fault",
-          "guilty",
-          "blame",
-          "culpability",
-          "culpable"
-        ],
-        "обвинительный": [
-          "guilty",
-          "accusatory",
-          "condemnatory",
-          "denunciatory",
-          "incriminatory",
-          "criminative",
-          "inculpatory",
-          "denunciative"
-        ],
-        "повинен": [
-          "perpetrators",
-          "guilty"
-        ]
-      },
-      "word": "guilty",
-      "phonetic": "ˈɡɪlti",
-      "phonetics": [
-        {
-          "text": "ˈɡɪlti",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/guilty--_gb_1.mp3"
-        }
-      ],
-      "origin": "Old English gyltig  (see guilt, -y1).",
+      "origin": "Old English rēad, of Germanic origin; related to Dutch rood and German rot, from an Indo-European root shared by Latin rufus, ruber, Greek eruthros, and Sanskrit rudhira ‘red’.",
       "meanings": [
         {
           "partOfSpeech": "adjective",
           "definitions": [
             {
-              "definition": "culpable of or responsible for a specified wrongdoing.",
-              "example": "he was found guilty of manslaughter",
+              "definition": "of a colour at the end of the spectrum next to orange and opposite violet, as of blood, fire, or rubies.",
+              "example": "her red lips",
               "synonyms": [
-                "culpable",
-                "to blame",
-                "blameworthy",
-                "blameable",
-                "at fault",
-                "in the wrong",
-                "responsible",
-                "answerable",
-                "accountable",
-                "liable",
-                "censurable",
-                "reproachable",
-                "condemnable",
-                "reprehensible",
-                "erring",
-                "errant",
-                "delinquent",
-                "offending",
-                "sinful",
-                "felonious",
-                "iniquitous",
-                "criminal",
-                "convicted",
-                "peccant"
+                "scarlet",
+                "vermilion",
+                "ruby",
+                "ruby red",
+                "ruby-coloured",
+                "cherry",
+                "cherry red",
+                "cerise",
+                "cardinal",
+                "carmine",
+                "wine",
+                "wine red",
+                "wine-coloured",
+                "claret",
+                "claret red",
+                "claret-coloured",
+                "blood red",
+                "flame",
+                "flaming",
+                "coral",
+                "cochineal",
+                "rose",
+                "rosy",
+                "brick red",
+                "maroon",
+                "rusty",
+                "foxy",
+                "rufous",
+                "reddish",
+                "damask",
+                "vermeil",
+                "sanguine",
+                "gules",
+                "rufescent"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "communist or socialist (used especially during the Cold War with reference to the Soviet Union).",
+              "example": "the era of nuclear anxiety, the red scare and covert CIA plots",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "involving bloodshed or violence.",
+              "example": "red battle stamps his foot and nations feel the shock",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "(of a Xhosa) coming from a traditional tribal culture.",
+              "example": "a red Xhosa wife spends several years in her mother-in-law's homestead",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "red colour or pigment.",
+              "example": "their work is marked in red by the teacher",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a red thing.",
+              "example": "which dress - the black or the red?",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a communist or socialist.",
+              "synonyms": [
+                "Communist",
+                "Marxist",
+                "socialist",
+                "left-winger",
+                "leftist",
+                "Bolshevik",
+                "revolutionary",
+                "anti-capitalist",
+                "commie",
+                "lefty"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "the situation of owing money to a bank or making a loss in a business operation.",
+              "example": "the company was £4 million in the red",
+              "synonyms": [
+                "overdrawn",
+                "in debt",
+                "in debit",
+                "in deficit",
+                "owing money",
+                "in arrears",
+                "showing a loss"
               ],
               "antonyms": [
-                "innocent"
+                "in the black"
               ]
             }
           ]
         }
       ],
       "stage": "inProgress",
-      "category": "difficult",
+      "category": "",
       "folder": "",
+      "time": 1644478790473,
       "trainingsDone": [
-        "word-constructor",
-        "writing"
+        "word-constructor"
       ],
-      "time": 1643452679424,
-      "id": 11
-    },
-    {
-      "translate": "сходство",
-      "translations": {
-        "напоминает": [
-          "recalled",
-          "reminds",
-          "reminded",
-          "said",
-          "resembles",
-          "remind",
-          "pointed out",
-          "noted",
-          "reminiscent",
-          "points out"
-        ],
-        "подобие": [
-          "semblance",
-          "similarity",
-          "excuse for a",
-          "sort of",
-          "resemblance",
-          "likeness",
-          "image",
-          "simularity",
-          "semblaunce",
-          "propinquity"
-        ],
-        "походил": [
-          "looked more",
-          "resemblance",
-          "pacing",
-          ""
-        ],
-        "похож": [
-          "looks like",
-          "is similar",
-          "kind",
-          "resemblance",
-          "looked",
-          "unlike",
-          "strike me",
-          "reminds me",
-          "sort"
-        ],
-        "похожа": [
-          "looks like",
-          "is similar",
-          "unlike",
-          "resemblance",
-          "kind",
-          "resembled",
-          "strike me",
-          "reminds me"
-        ],
-        "похожи": [
-          "are similar",
-          "same",
-          "much alike",
-          "are alike",
-          "in common",
-          "resemblance",
-          "identical",
-          "similarities",
-          "unlike",
-          "looked"
-        ],
-        "сходство": [
-          "similarity",
-          "resemblance",
-          "similar",
-          "likeness",
-          "affinity",
-          "convergence",
-          "commonalities",
-          "commonality",
-          "resembling",
-          "sameness"
-        ]
-      },
-      "word": "resemblance",
-      "phonetic": "rɪˈzɛmbl(ə)ns",
-      "phonetics": [
-        {
-          "text": "rɪˈzɛmbl(ə)ns",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/resemblance--_gb_1.mp3"
-        }
-      ],
-      "origin": "Middle English: from Anglo-Norman French, from the verb resembler (see resemble).",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "the state of resembling or being alike.",
-              "example": "they bear some resemblance to Italian figurines",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "difficult",
-      "folder": "",
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "time": 1643452954474,
-      "id": 12
+      "id": 29
     },
     {
       "translate": "совпадают",
       "translations": {
-        "несовпадения": [
-          "mismatch",
-          "coincide",
-          "incompatibility",
-          "divergence"
-        ],
         "приурочить": [
+          "coincide with",
           "back-to-back with",
           "held back-to-back",
-          ""
+          "held back to back with"
         ],
         "совместиться": [
           ""
         ],
         "совмещаться": [
+          "be combined",
           "coincide",
-          "fit together",
-          ""
+          "fit together"
         ],
         "совпадать": [
           "coincide",
-          "overlap",
           "match",
-          "correspond",
+          "overlap",
+          "be the same",
           "be identical",
+          "differ",
+          "correspond",
+          "align",
           "be equal",
-          "concurrent",
-          "converge",
-          "clash",
-          "dovetail"
+          "necessarily reflect"
         ],
         "совпасть": [
           "coincide",
@@ -1877,14 +579,14 @@
         "соответствовать": [
           "meet",
           "comply with",
+          "match",
           "be consistent with",
           "conform to",
           "correspond to",
-          "match",
-          "be in line with",
+          "fit",
           "be in accordance with",
-          "follow",
-          "fit"
+          "be in line with",
+          "follow"
         ]
       },
       "word": "coincide",
@@ -1948,591 +650,184 @@
           ]
         }
       ],
-      "stage": 2,
-      "category": "difficult",
+      "stage": "inProgress",
+      "category": "",
       "folder": "",
+      "time": 1644478890529,
       "trainingsDone": [
-        "writing",
         "word-constructor"
       ],
-      "time": 1643612097366,
-      "id": 13
+      "id": 30
     },
     {
-      "translate": "чувак",
+      "translate": "учиться, учить, узнавать",
       "translations": {
-        "блин": [
-          "man",
-          "hell",
-          "boy",
-          "dude",
-          "oh",
-          "geez",
-          "bloody",
-          "pancake",
-          "shoot",
-          "jeez"
+        "выучить": [
+          "learn",
+          "teach",
+          "memorize",
+          "study",
+          "studying to",
+          "at acquiring"
         ],
-        "друг": [
-          "each",
-          "friend",
-          "one",
-          "man",
-          "buddy",
-          "mate",
-          "boyfriend",
-          "pal",
-          "between",
-          "dude"
+        "знать": [
+          "know",
+          "wonder",
+          "aware",
+          "hear",
+          "tell",
+          "learn",
+          "knowledge",
+          "have",
+          "nobility",
+          "nobles"
         ],
-        "дружище": [
-          "buddy",
-          "man",
-          "mate",
-          "my friend",
-          "pal",
-          "dude",
-          "bud",
-          "bro",
-          "old friend",
-          "brother"
+        "изучать": [
+          "study",
+          "explore",
+          "examine",
+          "learn",
+          "review",
+          "investigate",
+          "consider",
+          "research",
+          "scrutinize",
+          "look into"
         ],
-        "мужик": [
-          "man",
-          "guy",
-          "dude",
-          "mate",
-          "bloke",
-          "fella",
-          "pal",
-          "bro",
-          "male",
-          "peasant"
+        "изучение": [
+          "study",
+          "examination",
+          "studying",
+          "explore",
+          "learning",
+          "exploring",
+          "review",
+          "research",
+          "examining",
+          "consideration"
         ],
-        "парень": [
-          "guy",
-          "boy",
-          "boyfriend",
-          "kid",
-          "man",
-          "lad",
-          "dude",
-          "fellow",
-          "fella",
-          "bloke"
+        "изучить": [
+          "explore",
+          "study",
+          "examine",
+          "learn",
+          "look into",
+          "considered",
+          "investigate",
+          "review",
+          "look at",
+          "research"
         ],
-        "приятель": [
-          "buddy",
-          "mate",
-          "pal",
-          "man",
-          "friend",
-          "bud",
-          "dude",
-          "boyfriend",
-          "fella",
-          "boy"
+        "научиться": [
+          "learn",
+          "learning to",
+          "teach",
+          "learning how",
+          "master",
+          "know how",
+          "acquire",
+          "to learn to do"
         ],
-        "старик": [
-          "old man",
-          "an old man",
-          "dude",
-          "old guy",
-          "buddy",
-          "old boy",
-          "mate",
-          "pal",
-          "old-timer",
-          "old chap"
+        "узнавать": [
+          "learn",
+          "know",
+          "find out",
+          "recognize",
+          "get to know",
+          "discover",
+          "recognise",
+          "hear",
+          "identify",
+          "educate"
         ],
-        "увак": [
-          "Dude"
+        "узнать": [
+          "know",
+          "find out",
+          "learn",
+          "wonder",
+          "ask",
+          "see",
+          "hear",
+          "recognize",
+          "figure out",
+          "get to know"
         ],
-        "чел": [
-          "man",
-          "dude",
-          "people",
-          "persons",
-          "guy",
-          "men",
-          "pers",
-          "buddy",
-          "cel"
+        "учить": [
+          "teach",
+          "learn",
+          "study",
+          "tell",
+          "train",
+          "telling",
+          "educate",
+          "lecture",
+          "teacher",
+          "instruct"
         ],
-        "чувак": [
-          "man",
-          "dude",
-          "guy",
-          "mate",
-          "buddy",
-          "bro",
-          "dawg",
-          "bloke",
-          "pal",
-          "fella"
+        "учиться": [
+          "study",
+          "learn",
+          "learning to",
+          "school",
+          "go",
+          "attend",
+          "college",
+          "enrol",
+          "teach",
+          "student"
         ]
       },
-      "word": "dude",
-      "phonetic": "d(j)uːd",
+      "word": "learn",
+      "phonetic": "ləːn",
       "phonetics": [
         {
-          "text": "d(j)uːd",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/dude--_gb_1.mp3"
+          "text": "ləːn",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/learn--_gb_1.mp3"
         }
       ],
-      "origin": "late 19th century (denoting a dandy): probably shortened from doodle, perhaps with allusion to Yankee Doodle Dandy.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a man; a guy (often as a form of address).",
-              "example": "hey dude, what's up?",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "dress up elaborately.",
-              "example": "my brother was all duded up in silver and burgundy",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643626282597,
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "id": 14
-    },
-    {
-      "translate": "сыр",
-      "translations": {
-        "Cheese": [
-          "сыр",
-          "сырный",
-          "творог",
-          "сырок",
-          "бобина с пряжей",
-          "головка сыра",
-          "Cheese",
-          "Чиз",
-          "Чиза",
-          "Чизом"
-        ],
-        "Чиз": [
-          "Cheese",
-          "C.H.E.E.S.E"
-        ],
-        "Чиза": [
-          "Cheese",
-          ""
-        ],
-        "Чизом": [
-          "Cheese",
-          ""
-        ],
-        "бобина с пряжей": [
-          ""
-        ],
-        "головка сыра": [
-          "cheese",
-          "head of cheese",
-          ""
-        ],
-        "сыр": [
-          "cheese",
-          "gouda"
-        ],
-        "сырный": [
-          "cheese",
-          "cheesy",
-          "grilled-cheese",
-          "caseous",
-          "cheesey"
-        ],
-        "сырок": [
-          "cheese",
-          ""
-        ],
-        "творог": [
-          "cottage cheese",
-          "curd",
-          "schmear",
-          "quark",
-          "labneh"
-        ]
-      },
-      "word": "cheese",
-      "phonetic": "tʃiːz",
-      "phonetics": [
-        {
-          "text": "tʃiːz",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cheese--_gb_3.mp3"
-        }
-      ],
-      "origin": "Old English cēse, cȳse, of West Germanic origin; related to Dutch kaas and German Käse ; from Latin caseus .",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a food made from the pressed curds of milk, firm and elastic or soft and semi-liquid in texture.",
-              "example": "grated cheese",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "the quality of being too obviously sentimental.",
-              "example": "the conversations tend too far towards cheese",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": 1,
-      "category": "",
-      "folder": "",
-      "time": 1643630735280,
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "id": 15
-    },
-    {
-      "translate": "приятель",
-      "translations": {
-        "друг": [
-          "each",
-          "friend",
-          "one",
-          "man",
-          "buddy",
-          "mate",
-          "boyfriend",
-          "pal",
-          "between",
-          "dude"
-        ],
-        "дружище": [
-          "buddy",
-          "man",
-          "mate",
-          "my friend",
-          "pal",
-          "dude",
-          "bud",
-          "bro",
-          "old friend",
-          "brother"
-        ],
-        "дружок": [
-          "buddy",
-          "friend",
-          "boyfriend",
-          "pal",
-          "mate",
-          "boy",
-          "bud",
-          "man",
-          "pally",
-          "kiddo"
-        ],
-        "мужик": [
-          "man",
-          "guy",
-          "dude",
-          "mate",
-          "bloke",
-          "fella",
-          "pal",
-          "bro",
-          "male",
-          "peasant"
-        ],
-        "парень": [
-          "guy",
-          "boy",
-          "boyfriend",
-          "kid",
-          "man",
-          "lad",
-          "dude",
-          "fellow",
-          "fella",
-          "bloke"
-        ],
-        "подруга": [
-          "friend",
-          "girlfriend",
-          "girl",
-          "dude",
-          "mate",
-          "lady friend",
-          "pal",
-          "girl friend",
-          "female friend",
-          "woman friend"
-        ],
-        "подружка": [
-          "girlfriend",
-          "friend",
-          "girl",
-          "ex-girlfriend",
-          "gal pal",
-          "woman"
-        ],
-        "приятель": [
-          "buddy",
-          "mate",
-          "pal",
-          "man",
-          "friend",
-          "bud",
-          "dude",
-          "boyfriend",
-          "fella",
-          "boy"
-        ],
-        "старик": [
-          "old man",
-          "an old man",
-          "dude",
-          "old guy",
-          "buddy",
-          "old boy",
-          "mate",
-          "pal",
-          "old-timer",
-          "old chap"
-        ],
-        "чувак": [
-          "man",
-          "dude",
-          "guy",
-          "mate",
-          "buddy",
-          "bro",
-          "dawg",
-          "bloke",
-          "pal",
-          "fella"
-        ]
-      },
-      "word": "pal",
-      "phonetic": "pal",
-      "phonetics": [
-        {
-          "text": "pal",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pal--_gb_3.mp3"
-        }
-      ],
-      "origin": "late 17th century: from Romani, ‘brother, mate’, based on Sanskrit bhrātṛ ‘brother’.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a friend.",
-              "example": "we've been pals for a long time",
-              "synonyms": [
-                "friend",
-                "companion",
-                "comrade",
-                "intimate",
-                "familiar",
-                "confidant",
-                "alter ego",
-                "second self",
-                "playmate",
-                "classmate",
-                "schoolmate",
-                "workmate",
-                "chum",
-                "buddy",
-                "bosom pal",
-                "sidekick",
-                "cully",
-                "spar",
-                "crony",
-                "mucker",
-                "butty",
-                "main man",
-                "mate",
-                "oppo",
-                "china",
-                "marrow",
-                "marrer",
-                "marra",
-                "amigo",
-                "compadre",
-                "paisan",
-                "bro",
-                "homeboy",
-                "homegirl",
-                "gabba",
-                "compeer",
-                "fidus Achates"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "form a friendship.",
-              "example": "she palled up with some English chaps",
-              "synonyms": [
-                "become friendly",
-                "make friends",
-                "become friends",
-                "form a friendship",
-                "get in",
-                "buddy up",
-                "chum up"
-              ],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643633221074,
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "id": 16
-    },
-    {
-      "translate": "играть в азартные игры",
-      "translations": {
-        "азартные игры": [
-          "gambling",
-          "gamble",
-          "gaming",
-          "reindeer games",
-          "games of chance"
-        ],
-        "азартным играм": [
-          "gambling",
-          "gaming commission",
-          "games of chance",
-          "Gaming Authority"
-        ],
-        "азартными играми": [
-          "gambling"
-        ],
-        "азартных игр": [
-          "gambling",
-          "gaming",
-          "games of chance"
-        ],
-        "азартных играх": [
-          "gambling"
-        ],
-        "игорные": [
-          "gambling",
-          "casinos"
-        ],
-        "игорных": [
-          "gambling",
-          "gaming"
-        ],
-        "играть": [
-          "play",
-          "take",
-          "have a",
-          "act",
-          "game",
-          "gamble",
-          "perform",
-          "assume",
-          "piano",
-          "fulfil"
-        ],
-        "игровой": [
-          "game",
-          "play",
-          "gaming",
-          "gambling",
-          "playful",
-          "playable",
-          "in-game"
-        ],
-        "карточный": [
-          "card",
-          "gambling"
-        ]
-      },
-      "word": "gamble",
-      "phonetic": "ˈɡamb(ə)l",
-      "phonetics": [
-        {
-          "text": "ˈɡamb(ə)l",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/gamble--_gb_1.mp3"
-        }
-      ],
-      "origin": "early 18th century: from obsolete gamel ‘play games’, or from the verb game1.",
+      "origin": "Old English leornian  ‘learn’ (in Middle English also ‘teach’), of West Germanic origin; related to German lernen, also to lore1.",
       "meanings": [
         {
           "partOfSpeech": "verb",
           "definitions": [
             {
-              "definition": "play games of chance for money; bet.",
-              "example": "he gambles on football",
+              "definition": "gain or acquire knowledge of or skill in (something) by study, experience, or being taught.",
+              "example": "they'd started learning French",
               "synonyms": [
-                "bet",
-                "wager",
-                "place a bet",
-                "lay a bet",
-                "stake money on something",
-                "back the horses",
-                "try one's luck on the horses",
-                "play the ponies",
-                "punt",
-                "chance one's arm",
-                "have a flutter",
-                "game"
+                "acquire a knowledge of",
+                "gain an understanding of",
+                "acquire skill in",
+                "become competent in",
+                "become proficient in",
+                "grasp",
+                "master",
+                "take in",
+                "absorb",
+                "assimilate",
+                "pick up",
+                "digest",
+                "familiarize oneself with",
+                "become expert in",
+                "know inside out",
+                "know backwards",
+                "comprehend",
+                "study",
+                "read up on",
+                "work at",
+                "apply oneself to",
+                "be taught",
+                "have lessons in",
+                "pursue",
+                "get the hang of",
+                "get clued up about",
+                "get the point of"
               ],
               "antonyms": []
             },
             {
-              "definition": "take risky action in the hope of a desired result.",
-              "example": "he was gambling on the success of his satellite TV channel",
-              "synonyms": [
-                "take a chance",
-                "take a risk",
-                "take a leap in the dark",
-                "leave things to chance",
-                "speculate",
-                "venture",
-                "buy a pig in a poke",
-                "take a flyer",
-                "stick one's neck out",
-                "go out on a limb",
-                "chance one's arm",
-                "act in the hope of",
-                "trust in",
-                "take a chance on",
-                "bank on"
-              ],
+              "definition": "teach (someone).",
+              "example": "‘That'll learn you,’ he chuckled",
+              "synonyms": [],
               "antonyms": []
             }
           ]
@@ -2541,855 +836,280 @@
       "stage": "inProgress",
       "category": "",
       "folder": "",
-      "time": 1643643454826,
+      "time": 1644478922287,
       "trainingsDone": [
-        "word-constructor",
-        "writing"
+        "word-constructor"
       ],
-      "id": 17
+      "id": 31
     },
     {
-      "translate": "последний",
+      "translate": "сходство, быть похожим на, напоминать что-то",
       "translations": {
-        "недавний": [
-          "recent",
-          "recently",
-          "latest"
+        "напоминает": [
+          "recalled",
+          "reminds",
+          "reminded",
+          "resembles",
+          "said",
+          "remind",
+          "pointed out",
+          "noted",
+          "notes",
+          "similar"
         ],
-        "недавно": [
-          "recently",
-          "newly",
-          "just",
-          "lately",
-          "earlier",
-          "long ago",
-          "while ago",
-          "latest",
-          "just recently",
-          "other night"
+        "подобие": [
+          "semblance",
+          "likeness",
+          "similarity",
+          "kind of",
+          "image",
+          "resemblance",
+          "excuse for a",
+          "similitude",
+          "analogy",
+          "simularity"
         ],
-        "новейшей": [
-          "recent",
-          "latest",
-          "modern",
-          "newest",
-          "up-to-date",
-          "state-of-the-art",
-          "advanced",
-          "contemporary"
+        "похож": [
+          "looks like",
+          "is similar",
+          "unlike",
+          "resemblance",
+          "kind",
+          "looked",
+          "strike me",
+          "reminds me"
         ],
-        "новейший": [
-          "newest",
-          "latest",
-          "new",
-          "up-to-date",
-          "shiny new",
-          "bleeding edge",
-          "bleedingedge"
+        "похожа": [
+          "looks like",
+          "is similar",
+          "resemblance",
+          "kind",
+          "looked",
+          "resembled",
+          "strike me",
+          "reminds me"
         ],
-        "новый": [
-          "new",
-          "another",
-          "fresh",
-          "next",
-          "renewed",
-          "newest",
-          "innovative",
-          "novel",
-          "modern",
-          "latest"
+        "похожи": [
+          "are similar",
+          "same",
+          "much alike",
+          "in common",
+          "resemblance",
+          "similarity",
+          "unlike",
+          "identical",
+          "looked",
+          "kind"
         ],
-        "очереднои": [],
-        "последний": [
-          "last",
-          "final",
-          "the latter",
-          "the latest",
-          "recent",
-          "latest",
-          "late",
-          "senior",
-          "ultimate",
-          "the last one"
+        "сходство": [
+          "similarity",
+          "resemblance",
+          "similar",
+          "likeness",
+          "affinity",
+          "convergence",
+          "commonalities",
+          "resembled",
+          "resembling",
+          "sameness"
         ],
-        "самые современные": [
-          "the most modern",
-          "state-of-the-art",
-          "latest",
-          "the most up-to-date",
-          "the most advanced",
-          "cutting-edge",
-          "the most sophisticated",
-          "the most contemporary",
-          "state-of-the art"
-        ],
-        "самый последний": [
-          "the most recent",
-          "latest",
-          "last",
-          "very last",
-          "most recently",
-          "lattermost"
-        ],
-        "самых современных": [
-          "the most modern",
-          "state-of-the-art",
-          "latest",
-          "the most advanced",
-          "the most up-to-date",
-          "cutting-edge",
-          "the most sophisticated",
-          "cutting edge",
-          "the most current"
+        "схожесть": [
+          "similarity",
+          "similar",
+          "resemblance"
         ]
       },
-      "word": "latest",
-      "phonetic": "ˈleɪtɪst",
+      "word": "resemblance",
+      "phonetic": "rɪˈzɛmbl(ə)ns",
       "phonetics": [
         {
-          "text": "ˈleɪtɪst",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/latest--_gb_1.mp3"
+          "text": "rɪˈzɛmbl(ə)ns",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/resemblance--_gb_1.mp3"
         }
       ],
+      "origin": "Middle English: from Anglo-Norman French, from the verb resembler (see resemble).",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the state of resembling or being alike.",
+              "example": "they bear some resemblance to Italian figurines",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1644479078632,
+      "trainingsDone": [
+        "word-constructor"
+      ],
+      "id": 32
+    },
+    {
+      "translate": "лаконичный, краткий, сжатый, четкий",
+      "translations": {
+        "краткий": [
+          "brief",
+          "summary",
+          "short",
+          "concise",
+          "quick",
+          "succinct",
+          "summarized",
+          "shorter",
+          "compendious",
+          "epitomic"
+        ],
+        "краткость": [
+          "brevity",
+          "short",
+          "concise",
+          "conciseness",
+          "shortness",
+          "concision",
+          "terseness",
+          "briefness",
+          "curtness"
+        ],
+        "лаконичность": [
+          "brevity",
+          "concise",
+          "conciseness",
+          "laconism",
+          "concision",
+          "laconicism",
+          "laconic"
+        ],
+        "лаконичный": [
+          "concise",
+          "laconic",
+          "terse",
+          "brief",
+          "curt",
+          "sententious"
+        ],
+        "сжатый": [
+          "compressed",
+          "concise",
+          "succinct",
+          "condensed",
+          "shorter",
+          "clenched",
+          "compendious",
+          "curt",
+          "oblate",
+          "pithy"
+        ],
+        "четкие": [
+          "clear",
+          "explicit",
+          "precise",
+          "clearer",
+          "clearly",
+          "strict",
+          "clear-cut",
+          "distinct",
+          "definite",
+          "well-defined"
+        ],
+        "четкий": [
+          "clear",
+          "precise",
+          "clearer",
+          "clearly",
+          "strong",
+          "clear-cut",
+          "clarity",
+          "explicitly",
+          "lucid",
+          "crisp"
+        ],
+        "четким": [
+          "clear",
+          "clearly",
+          "clearer",
+          "precise",
+          "explicit",
+          "clarity",
+          "concise",
+          "clear-cut"
+        ],
+        "четкими": [
+          "clear",
+          "precise",
+          "clearer",
+          "explicit",
+          "clarity",
+          "clear-cut",
+          "clearly legible",
+          "clearly defined",
+          "distinct",
+          "concise"
+        ],
+        "четкого": [
+          "clear",
+          "clearly",
+          "clearer",
+          "explicit",
+          "precise",
+          "explicitly",
+          "unclear",
+          "clear-cut",
+          "express",
+          "accurate"
+        ]
+      },
+      "word": "concise",
+      "phonetic": "kənˈsʌɪs",
+      "phonetics": [
+        {
+          "text": "kənˈsʌɪs",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/xconcise--_gb_1.mp3"
+        }
+      ],
+      "origin": "late 16th century: from French concis or Latin concisus, past participle of concidere ‘cut up, cut down’, from con- ‘completely’ + caedere ‘to cut’.",
       "meanings": [
         {
           "partOfSpeech": "adjective",
           "definitions": [
             {
-              "definition": "of most recent date.",
-              "example": "the latest news",
+              "definition": "giving a lot of information clearly and in a few words; brief but comprehensive.",
+              "example": "a concise account of the country's history",
               "synonyms": [
-                "most recent",
-                "newest",
-                "brand new",
-                "just out",
-                "just released",
-                "fresh",
-                "present-day",
-                "up to date",
-                "up to the minute",
-                "state-of-the-art",
-                "current",
-                "modern",
-                "contemporary",
-                "modernistic",
-                "fashionable",
-                "in fashion",
-                "in vogue",
-                "voguish",
-                "bang up to date",
-                "in",
-                "à la mode",
-                "with it",
-                "trendy",
-                "hip",
-                "hot",
-                "happening",
-                "cool",
-                "now"
+                "succinct",
+                "short",
+                "brief",
+                "to the point",
+                "pithy",
+                "incisive",
+                "short and sweet",
+                "crisp",
+                "abridged",
+                "condensed",
+                "compressed",
+                "abbreviated",
+                "compact",
+                "compendious",
+                "potted",
+                "thumbnail",
+                "in a nutshell",
+                "epigrammatic",
+                "aphoristic",
+                "terse",
+                "laconic",
+                "sparing",
+                "snappy",
+                "lapidary"
               ],
               "antonyms": [
-                "old",
-                "unfashionable"
-              ]
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "the most recent news or fashion.",
-              "example": "have you heard the latest?",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643643513300,
-      "trainingsDone": [
-        "word-constructor",
-        "writing"
-      ],
-      "id": 18
-    },
-    {
-      "translate": "пеший туризм",
-      "translations": {
-        "в походе": [
-          "hiking",
-          "in the campaign",
-          "in a hike",
-          "on a camping trip",
-          "on campaign",
-          "on the hike",
-          "backpacking",
-          "on the march",
-          "on a hike",
-          "in the march"
-        ],
-        "пешего туризма": [
-          "hiking"
-        ],
-        "пешеходных": [
-          "pedestrian",
-          "hiking",
-          "footpath",
-          "pedestrian-only"
-        ],
-        "пешие": [
-          "foot",
-          "walking",
-          "hiking",
-          "pedestrian"
-        ],
-        "поход": [
-          "camping",
-          "hike",
-          "trip",
-          "campaign",
-          "going",
-          "march",
-          "hiking",
-          "expedition",
-          "patrol",
-          "quest"
-        ],
-        "походные": [
-          "hiking",
-          ""
-        ],
-        "походных": [
-          "hiking",
-          ""
-        ],
-        "туризм": [
-          "tourism",
-          "hiking",
-          "touring",
-          "tourist trading"
-        ],
-        "туристические": [
-          "tourist",
-          "tourism",
-          "travel",
-          "tour",
-          "hiking",
-          "touristic",
-          "tourism-related"
-        ],
-        "туристических": [
-          "tourist",
-          "tourism",
-          "travel",
-          "tour",
-          "touristic",
-          "tourism-related",
-          "hiking"
-        ]
-      },
-      "word": "hiking",
-      "phonetic": "ˈhʌɪkɪŋ",
-      "phonetics": [
-        {
-          "text": "ˈhʌɪkɪŋ",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hiking--_gb_1.mp3"
-        }
-      ],
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "the activity of going for long walks, especially across country.",
-              "example": "she enjoys hiking and climbing in her spare time",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643643649967,
-      "trainingsDone": [
-        "writing"
-      ],
-      "id": 19
-    },
-    {
-      "translate": "цель, задача, ворота",
-      "translations": {
-        "ворота": [
-          "gate",
-          "gates",
-          "gateway",
-          "door",
-          "goal",
-          "net",
-          "entrance",
-          "goalposts",
-          "portal",
-          "hoop"
-        ],
-        "гол": [
-          "goal",
-          "score",
-          "touchdown",
-          "rollin",
-          "Gol"
-        ],
-        "достижение": [
-          "achievement",
-          "achieving",
-          "attainment",
-          "reaching",
-          "progress",
-          "reach",
-          "towards",
-          "accomplishment",
-          "attaining",
-          "meeting"
-        ],
-        "задача": [
-          "task",
-          "objective",
-          "goal",
-          "aim",
-          "mission",
-          "purpose",
-          "job",
-          "problem",
-          "target",
-          "role"
-        ],
-        "касающейся": [
-          "concerning",
-          "relating to",
-          "regarding",
-          "related to",
-          "pertaining to",
-          "dealing with",
-          "relevant to",
-          "with regard to",
-          "addressing",
-          "regards"
-        ],
-        "мяч": [
-          "ball",
-          "football",
-          "catch",
-          "basketball",
-          "goal",
-          "baseball",
-          "pitch",
-          "ballgame"
-        ],
-        "поставленной": [
-          "goal",
-          "target",
-          "set",
-          "objective",
-          "stated",
-          "intended",
-          "delivered"
-        ],
-        "целевой": [
-          "target",
-          "targeted",
-          "targeting",
-          "dedicated",
-          "focus",
-          "earmarked",
-          "goal",
-          "objective",
-          "destination",
-          "special-purpose"
-        ],
-        "цель": [
-          "goal",
-          "objective",
-          "purpose",
-          "aim",
-          "target",
-          "aimed at",
-          "intention",
-          "intended",
-          "designed",
-          "object"
-        ],
-        "шайбу": [
-          "puck",
-          "goal",
-          "washer"
-        ]
-      },
-      "word": "goal",
-      "phonetic": "ɡəʊl",
-      "phonetics": [
-        {
-          "text": "ɡəʊl",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/goal--_gb_1.mp3"
-        }
-      ],
-      "origin": "Middle English (in the sense ‘limit, boundary’): of unknown origin.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "(in soccer, rugby, hockey, and some other games) a pair of posts linked by a crossbar and typically with a net between, forming a space into or over which the ball has to be sent in order to score.",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "the object of a person's ambition or effort; an aim or desired result.",
-              "example": "he achieved his goal of becoming King of England",
-              "synonyms": [
-                "aim",
-                "objective",
-                "object",
-                "grail",
-                "holy grail",
-                "end",
-                "target",
-                "design",
-                "desire",
-                "desired result",
-                "intention",
-                "intent",
-                "plan",
-                "purpose",
-                "idea",
-                "point",
-                "object of the exercise",
-                "ambition",
-                "aspiration",
-                "wish",
-                "dream",
-                "hope",
-                "resolve",
-                "raison d'être"
-              ],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643958201993,
-      "trainingsDone": [
-        "writing"
-      ],
-      "id": 20
-    },
-    {
-      "translate": "козел",
-      "translations": {
-        "Goat": [
-          "коза",
-          "козий",
-          "козлиный",
-          "козленка",
-          "козлятины",
-          "козлик",
-          "козловый",
-          "репортер",
-          "Goat",
-          "Козерога"
-        ],
-        "Козерога": [
-          "Capricorn",
-          "goat",
-          "ibex"
-        ],
-        "коза": [
-          "goat",
-          "she-goat",
-          "shegoat",
-          "Cosa",
-          "Koza",
-          "Kohza"
-        ],
-        "козий": [
-          "goat",
-          "Koziy"
-        ],
-        "козленка": [
-          "kid",
-          "young goat",
-          "a baby goat",
-          "a lamb",
-          ""
-        ],
-        "козлик": [
-          "goat",
-          "Lazy Boy",
-          ""
-        ],
-        "козлиный": [
-          "goat",
-          ""
-        ],
-        "козловый": [
-          ""
-        ],
-        "козлятины": [
-          "goat",
-          ""
-        ],
-        "репортер": [
-          "reporter",
-          "newsman",
-          "paragraphist",
-          "news gatherer",
-          "goat",
-          "news digger-upper",
-          "newswriter",
-          "paragrapher",
-          "paragraph writer",
-          "newshack"
-        ]
-      },
-      "word": "goat",
-      "phonetic": "ɡəʊt",
-      "phonetics": [
-        {
-          "text": "ɡəʊt",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/goat--_gb_1.mp3"
-        }
-      ],
-      "origin": "Old English gāt  ‘nanny goat’, of Germanic origin; related to Dutch geit and German Geiss, also to Latin haedus ‘kid’.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a hardy domesticated ruminant mammal that has backward-curving horns and (in the male) a beard. It is kept for its milk and meat, and noted for its lively behaviour.",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "a lecherous man.",
-              "synonyms": [
-                "lecher",
-                "lecherous man",
-                "lascivious man",
-                "libertine",
-                "womanizer",
-                "seducer",
-                "adulterer",
-                "pervert",
-                "debauchee",
-                "rake",
-                "roué",
-                "profligate",
-                "wanton",
-                "loose-liver",
-                "sensualist",
-                "sybarite",
-                "voluptuary",
-                "Don Juan",
-                "Casanova",
-                "Lothario",
-                "Romeo",
-                "lech",
-                "perv",
-                "dirty old man",
-                "wolf",
-                "ladykiller",
-                "rip",
-                "fornicator"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "a stupid person; a fool.",
-              "example": "just for once, stop acting the goat",
-              "synonyms": [
-                "fool",
-                "idiot",
-                "halfwit",
-                "nincompoop",
-                "blockhead",
-                "buffoon",
-                "dunce",
-                "dolt",
-                "ignoramus",
-                "cretin",
-                "imbecile",
-                "dullard",
-                "moron",
-                "simpleton",
-                "clod",
-                "dope",
-                "ninny",
-                "chump",
-                "dimwit",
-                "nitwit",
-                "goon",
-                "dumbo",
-                "dummy",
-                "dum-dum",
-                "dumb-bell",
-                "loon",
-                "jackass",
-                "bonehead",
-                "fathead",
-                "numbskull",
-                "dunderhead",
-                "chucklehead",
-                "knucklehead",
-                "muttonhead",
-                "pudding-head",
-                "thickhead",
-                "wooden-head",
-                "airhead",
-                "pinhead",
-                "lamebrain",
-                "pea-brain",
-                "birdbrain",
-                "zombie",
-                "jerk",
-                "nerd",
-                "dipstick",
-                "donkey",
-                "noodle",
-                "nit",
-                "numpty",
-                "twit",
-                "ass",
-                "clot",
-                "plonker",
-                "berk",
-                "prat",
-                "pillock",
-                "wally",
-                "git",
-                "wazzock",
-                "divvy",
-                "nerk",
-                "twerp",
-                "charlie",
-                "mug",
-                "muppet",
-                "nyaff",
-                "balloon",
-                "sumph",
-                "gowk",
-                "gobdaw",
-                "schmuck",
-                "bozo",
-                "boob",
-                "lamer",
-                "turkey",
-                "schlepper",
-                "chowderhead",
-                "dumbhead",
-                "dumbass",
-                "goofball",
-                "goof",
-                "goofus",
-                "galoot",
-                "dork",
-                "lummox",
-                "klutz",
-                "putz",
-                "schlemiel",
-                "sap",
-                "meatball",
-                "gink",
-                "cluck",
-                "clunk",
-                "ding-dong",
-                "dingbat",
-                "wiener",
-                "weeny",
-                "dip",
-                "simp",
-                "spud",
-                "coot",
-                "palooka",
-                "poop",
-                "squarehead",
-                "yo-yo",
-                "dingleberry",
-                "wing nut",
-                "drongo",
-                "dill",
-                "alec",
-                "galah",
-                "nong",
-                "bogan",
-                "poon",
-                "boofhead",
-                "mompara",
-                "tomfool",
-                "noddy",
-                "clodpole",
-                "loggerhead",
-                "spoony",
-                "mooncalf",
-                "knobhead",
-                "asshat"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "a scapegoat.",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643958360985,
-      "trainingsDone": [
-        "writing"
-      ],
-      "id": 21
-    },
-    {
-      "translate": "пляж",
-      "translations": {
-        "берег": [
-          "bank",
-          "shore",
-          "beach",
-          "coast",
-          "land",
-          "river",
-          "riverbank",
-          "saving",
-          "disembarking",
-          "shoreline"
-        ],
-        "море": [
-          "sea",
-          "ocean",
-          "marine",
-          "beach",
-          "seaside",
-          "deep briny",
-          "Maura"
-        ],
-        "пляж": [
-          "beach",
-          "shore",
-          "beachfront",
-          "plage",
-          "plaža",
-          "strand",
-          "bathing beach"
-        ],
-        "пляжная": [
-          "beach"
-        ],
-        "пляжного": [
-          "beach",
-          "beachfront"
-        ],
-        "пляжном": [
-          "beach"
-        ],
-        "пляжные": [
-          "beach"
-        ],
-        "пляжный": [
-          "beach",
-          "beachfront",
-          "beachside",
-          "bathing hut",
-          "sun'n'surf"
-        ],
-        "пляжных": [
-          "beach",
-          "bathing"
-        ],
-        "побережье": [
-          "coast",
-          "shore",
-          "beach",
-          "coastline",
-          "coastal",
-          "seaboard",
-          "seaside",
-          "sea",
-          "seashore",
-          "waterfront"
-        ]
-      },
-      "word": "beach",
-      "phonetic": "biːtʃ",
-      "phonetics": [
-        {
-          "text": "biːtʃ",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/beach--_gb_1.mp3"
-        }
-      ],
-      "origin": "mid 16th century (denoting shingle on the seashore): perhaps related to Old English bæce, bece ‘brook’ (an element that survives in place names such as Wis bech and Sand bach ), assuming an intermediate sense ‘pebbly river valley’.",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a pebbly or sandy shore, especially by the sea between high- and low-water marks.",
-              "example": "fabulous sandy beaches",
-              "synonyms": [
-                "seaside",
-                "seashore",
-                "shore",
-                "coast",
-                "coastline",
-                "coastal region",
-                "seaboard",
-                "foreshore",
-                "water's edge",
-                "margin",
-                "sands",
-                "sand",
-                "shingle",
-                "(sand) dunes",
-                "lido",
-                "plage",
-                "littoral",
-                "strand"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "run or haul up (a boat or ship) on to a beach.",
-              "example": "at the water's edge a rowing boat was beached",
-              "synonyms": [
-                "land",
-                "reach the shore",
-                "run ashore",
-                "ground",
-                "be grounded",
-                "run aground",
-                "shipwreck",
-                "wreck",
-                "run on the rocks",
-                "be high and dry"
-              ],
-              "antonyms": [
-                "put to sea",
-                "depart"
+                "lengthy",
+                "discursive",
+                "wordy"
               ]
             }
           ]
@@ -3398,1046 +1118,137 @@
       "stage": "inProgress",
       "category": "",
       "folder": "",
-      "time": 1643958369472,
+      "time": 1644479199381,
       "trainingsDone": [
-        "writing"
+        "word-constructor"
       ],
-      "id": 22
+      "id": 33
     },
     {
-      "translate": "парень",
+      "translate": "точный, конкретный, определенный",
       "translations": {
-        "кого": [
-          "someone",
-          "anyone",
-          "one",
-          "whom",
-          "person",
-          "man",
-          "everyone",
-          "whoever",
-          "somebody",
-          "nobody"
+        "Precise": [
+          "точный",
+          "конкретный",
+          "четкий",
+          "точность",
+          "определенный",
+          "педантичный",
+          "Precise"
         ],
-        "мужик": [
-          "man",
-          "guy",
-          "dude",
-          "mate",
-          "bloke",
-          "fella",
-          "pal",
-          "bro",
-          "peasant",
-          "male"
-        ],
-        "мужчина": [
-          "man",
-          "male",
-          "guy",
-          "gentleman",
-          "manhood",
-          "human male"
-        ],
-        "ним": [
-          "him",
-          "them",
-          "he's",
-          "guy",
-          "terrorism",
-          "em",
-          "nim",
-          "BAT"
-        ],
-        "паренек": [
-          "kid",
-          "boy",
-          "guy",
-          "lad",
-          "laddie",
-          "little fella",
-          "young man",
-          "little dude",
-          "keed",
-          "chappie"
-        ],
-        "парень": [
-          "guy",
-          "boy",
-          "boyfriend",
-          "kid",
-          "man",
-          "lad",
-          "dude",
-          "fellow",
-          "fella",
-          "bloke"
-        ],
-        "тип": [
-          "type",
-          "guy",
-          "kind",
-          "man",
-          "style",
-          "bloke",
-          "character",
-          "sort",
-          "dude",
-          "fellow"
-        ],
-        "того": [
-          "fact",
-          "because",
-          "ensuring",
-          "evidence",
+        "конкретный": [
+          "specific",
+          "particular",
+          "concrete",
           "given",
-          "rather",
-          "worth",
-          "enough",
-          "someone",
-          "view"
-        ],
-        "человек": [
-          "person",
-          "man",
-          "million",
-          "human",
-          "guy",
+          "precise",
+          "specified",
           "one",
-          "someone",
-          "individual",
-          "participants",
-          "personnel"
+          "exact",
+          "certain",
+          "individual"
         ],
-        "чувак": [
-          "man",
-          "dude",
-          "guy",
-          "mate",
-          "buddy",
-          "bro",
-          "dawg",
-          "bloke",
-          "pal",
-          "fella"
-        ]
-      },
-      "word": "guy",
-      "phonetic": "ɡʌɪ",
-      "phonetics": [
-        {
-          "text": "ɡʌɪ",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/guy--_gb_1.mp3"
-        }
-      ],
-      "origin": "early 19th century (in guy1 (sense 2 of the noun)): named after Guy Fawkes (see Gunpowder Plot).",
-      "meanings": [
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "a man.",
-              "example": "he's a nice guy",
-              "synonyms": [
-                "man",
-                "fellow",
-                "gentleman",
-                "lad",
-                "youth",
-                "boy",
-                "individual",
-                "person",
-                "soul",
-                "fella",
-                "geezer",
-                "gent",
-                "character",
-                "customer",
-                "creature",
-                "sort",
-                "type",
-                "chap",
-                "bloke",
-                "bod",
-                "dude",
-                "hombre",
-                "digger",
-                "ou",
-                "oom",
-                "oke",
-                "admi",
-                "cove",
-                "wight",
-                "carl",
-                "sod",
-                "bugger"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "a figure representing Guy Fawkes, burnt on a bonfire on Guy Fawkes Night, and often displayed by children begging for money for fireworks.",
-              "synonyms": [
-                "effigy of Guy Fawkes",
-                "effigy",
-                "figure",
-                "representation",
-                "likeness",
-                "image",
-                "model",
-                "dummy"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "make fun of; ridicule.",
-              "example": "she never stopped guying him about his weight",
-              "synonyms": [
-                "ridicule",
-                "make fun of",
-                "poke fun at",
-                "laugh at",
-                "make a joke of",
-                "mock",
-                "sneer at",
-                "jibe at",
-                "jeer at",
-                "deride",
-                "scorn",
-                "scoff at",
-                "satirize",
-                "lampoon",
-                "send up",
-                "rib",
-                "take off",
-                "take the mickey out of",
-                "rag",
-                "goof on",
-                "rag on",
-                "poke mullock at",
-                "sling off at",
-                "make sport of",
-                "take the piss out of"
-              ],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643958399994,
-      "trainingsDone": [
-        "writing"
-      ],
-      "id": 23
-    },
-    {
-      "translate": "Посмотрите",
-      "translations": {
-        "взгляд": [
-          "view",
-          "look",
-          "glance",
-          "sight",
-          "perspective",
-          "eye",
-          "gaze",
-          "looking",
-          "vision",
-          "outlook"
+        "определенный": [
+          "certain",
+          "specific",
+          "particular",
+          "defined",
+          "given",
+          "specified",
+          "definite",
+          "fixed",
+          "set",
+          "determined"
         ],
-        "взглянуть": [
-          "look",
-          "see",
-          "take a look",
-          "have a look",
-          "face",
-          "glimpse",
-          "check",
-          "to have a look",
-          "view",
-          "glance"
+        "педантичный": [
+          "pedantic",
+          "meticulous",
+          "precise",
+          "bookish",
+          "punctilious",
+          "letterbound",
+          "donnish",
+          "priggish",
+          "pedantical",
+          "inkhorn"
         ],
-        "выглядеть": [
-          "look",
-          "appear",
-          "seem",
-          "looks like"
+        "точность": [
+          "accuracy",
+          "precision",
+          "accurate",
+          "precise",
+          "correctness",
+          "punctuality",
+          "fidelity",
+          "rigour",
+          "exactness",
+          "preciseness"
         ],
-        "послушай": [
-          "look",
-          "listen to",
-          "hey",
-          "hear"
+        "точный": [
+          "exact",
+          "accurate",
+          "precise",
+          "precision",
+          "definitive",
+          "correct",
+          "definite",
+          "definitely",
+          "careful",
+          "rigorous"
         ],
-        "послушайте": [
-          "look",
-          "listen",
-          "hear",
-          "hey"
-        ],
-        "посмотреть": [
-          "see",
-          "look",
-          "watch",
-          "view",
-          "take a look",
-          "check out",
-          "check",
-          "to look at",
-          "look up",
-          "one looks"
-        ],
-        "похоже": [
-          "it looks like",
-          "it seems",
-          "sounds like",
-          "look like",
-          "it appears",
-          "apparently",
-          "seem to be",
-          "well",
-          "it's",
-          "sound"
-        ],
-        "слушай": [
-          "look",
-          "listen",
-          "hey",
-          "okay",
-          "you know",
-          "well",
-          "man",
-          "hear",
-          "Yo"
-        ],
-        "слушайте": [
-          "look",
-          "listen",
-          "hey",
-          "hear",
-          "okay",
-          "hearken"
-        ],
-        "смотреть": [
-          "watch",
-          "look",
-          "see",
-          "look at",
-          "stare",
-          "view",
-          "eye",
-          "gaze",
-          "sight",
-          "take a look"
-        ]
-      },
-      "word": "look",
-      "phonetic": "lʊk",
-      "phonetics": [
-        {
-          "text": "lʊk",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/look--_gb_1.mp3"
-        }
-      ],
-      "origin": "Old English lōcian (verb), of West Germanic origin; related to German dialect lugen .",
-      "meanings": [
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "direct one's gaze toward someone or something or in a specified direction.",
-              "example": "people were looking at him",
-              "synonyms": [
-                "glance",
-                "gaze",
-                "stare",
-                "gape",
-                "peer",
-                "fix one's gaze",
-                "focus",
-                "peep",
-                "peek",
-                "take a look",
-                "watch",
-                "examine",
-                "study",
-                "inspect",
-                "scan",
-                "scrutinize",
-                "survey",
-                "check",
-                "contemplate",
-                "consider",
-                "see",
-                "observe",
-                "view",
-                "regard",
-                "pay attention to",
-                "take note of",
-                "mark",
-                "check out",
-                "glimpse",
-                "spot",
-                "spy",
-                "lay one's eyes on",
-                "catch sight of",
-                "eye",
-                "take in",
-                "ogle",
-                "take a gander",
-                "have a squint",
-                "get a load of",
-                "rubberneck",
-                "recce",
-                "take a dekko",
-                "take a butcher's",
-                "take a shufti",
-                "clock",
-                "gawp",
-                "eyeball",
-                "behold",
-                "espy",
-                "descry"
-              ],
-              "antonyms": [
-                "ignore"
-              ]
-            },
-            {
-              "definition": "think of or regard in a specified way.",
-              "example": "I look at tennis differently from some coaches",
-              "synonyms": [
-                "regard",
-                "consider",
-                "think of",
-                "deem",
-                "judge",
-                "count",
-                "see",
-                "view",
-                "take",
-                "reckon",
-                "believe to be"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "have the appearance or give the impression of being.",
-              "example": "her father looked unhappy",
-              "synonyms": [
-                "seem",
-                "seem to be",
-                "appear",
-                "appear to be",
-                "give the impression of being",
-                "look to be",
-                "present as being",
-                "strike someone as being",
-                "resemble",
-                "bear a resemblance to",
-                "look similar to",
-                "have a look of",
-                "have the appearance of",
-                "remind one of",
-                "put one in mind of",
-                "make one think of",
-                "be the image of",
-                "echo",
-                "have (all) the hallmarks of",
-                "simulate",
-                "take after",
-                "be the spitting image of",
-                "be the spit of",
-                "be a dead ringer for",
-                "favour"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "rely on (someone) to do or provide something.",
-              "example": "she will look to you for help",
-              "synonyms": [
-                "turn to",
-                "resort to",
-                "have recourse to",
-                "fall back on",
-                "avail oneself of",
-                "make use of"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "an act of directing one's gaze in order to see someone or something.",
-              "example": "let me get a closer look",
-              "synonyms": [
-                "glance",
-                "observation",
-                "view",
-                "examination",
-                "study",
-                "inspection",
-                "scan",
-                "survey",
-                "sight",
-                "peep",
-                "peek",
-                "glimpse",
-                "gaze",
-                "stare",
-                "gape",
-                "ogle",
-                "eyeful",
-                "gander",
-                "look-see",
-                "once-over",
-                "squint",
-                "recce",
-                "shufti",
-                "dekko",
-                "butcher's",
-                "geek",
-                "squiz",
-                "Jack Nohi"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "the appearance of someone or something, especially as expressing a particular quality.",
-              "example": "the bedraggled look of the village",
-              "synonyms": [
-                "appearance",
-                "air",
-                "aspect",
-                "bearing",
-                "cast",
-                "manner",
-                "mien",
-                "demeanour",
-                "features",
-                "semblance",
-                "guise",
-                "facade",
-                "impression",
-                "effect",
-                "atmosphere",
-                "mood",
-                "quality",
-                "ambience",
-                "feeling",
-                "flavour"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "exclamation",
-          "definitions": [
-            {
-              "definition": "used to call attention to what one is going to say.",
-              "example": "‘Look, this is ridiculous.’",
-              "synonyms": [],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643958410624,
-      "trainingsDone": [
-        "writing"
-      ],
-      "id": 24
-    },
-    {
-      "translate": "говорить",
-      "translations": {
-        "болтать": [
-          "talk",
-          "chat",
-          "chatter",
-          "chitchat",
-          "blab",
-          "mouth",
-          "chit-chat",
-          "babbling",
-          "yap",
-          "gossip"
-        ],
-        "говорить": [
-          "talk",
-          "say",
-          "speak",
-          "tell",
-          "talk to",
-          "mention",
-          "discuss",
-          "about",
-          "use",
-          "be said"
-        ],
-        "обсудить": [
-          "discuss",
-          "talk about",
-          "discussion",
-          "consider",
-          "debate",
-          "address",
-          "negotiate",
-          "talk",
-          "go over",
-          "reflect on"
-        ],
-        "общаться": [
-          "communicate",
-          "talk",
-          "hang out",
-          "contact",
-          "communication",
-          "chat",
-          "talk to",
-          "socialize",
-          "interact",
-          "connect"
-        ],
-        "поболтать": [
-          "chat",
-          "talk",
-          "catch up",
-          "hang out",
-          "conversation",
-          "chitchat",
-          "shoot the breeze",
-          "natter"
-        ],
-        "поговорить": [
-          "talk",
-          "speak",
-          "speak to",
-          "talking to",
-          "see",
-          "conversation",
-          "chat",
-          "discuss",
-          "tell",
-          "talked to"
-        ],
-        "разговаривать": [
-          "talk",
-          "to talk",
-          "talking to",
-          "speak",
-          "conversation",
-          "speaking to",
-          "again",
-          "say",
-          "communicate",
-          "chat"
-        ],
-        "разговор": [
-          "conversation",
-          "talk",
-          "talking",
-          "discussion",
-          "call",
-          "chat",
-          "phone",
-          "speaking",
-          "subject",
-          "speech"
-        ],
-        "рассказать": [
-          "tell",
-          "talk to",
-          "say",
-          "talk",
-          "describe",
-          "give",
-          "share",
-          "know",
-          "speak",
-          "explain"
-        ],
-        "сказать": [
-          "say",
-          "tell",
-          "say to",
-          "know",
-          "speak",
-          "true",
-          "talk",
-          "point",
-          "word",
-          "something"
-        ]
-      },
-      "word": "talk",
-      "phonetic": "tɔːk",
-      "phonetics": [
-        {
-          "text": "tɔːk",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/talk--_gb_1.mp3"
-        }
-      ],
-      "origin": "Middle English: frequentative verb from the Germanic base of tale or tell1.",
-      "meanings": [
-        {
-          "partOfSpeech": "verb",
-          "definitions": [
-            {
-              "definition": "speak in order to give information or express ideas or feelings; converse or communicate by spoken words.",
-              "example": "the two men talked",
-              "synonyms": [
-                "speak",
-                "give voice",
-                "chat",
-                "chatter",
-                "gossip",
-                "prattle",
-                "prate",
-                "babble",
-                "rattle on",
-                "blather",
-                "blether",
-                "orate",
-                "yak",
-                "gab",
-                "jaw",
-                "go on",
-                "chew the fat",
-                "natter",
-                "rabbit",
-                "witter",
-                "chunter",
-                "rap",
-                "run off at the mouth",
-                "mag",
-                "utter",
-                "say",
-                "voice",
-                "express",
-                "articulate",
-                "pronounce",
-                "enunciate",
-                "verbalize",
-                "vocalize",
-                "converse",
-                "communicate",
-                "speak to each other",
-                "discuss things",
-                "have a talk",
-                "have a chat",
-                "have a tête-à-tête",
-                "confer",
-                "consult each other",
-                "negotiate",
-                "have negotiations",
-                "parley",
-                "palaver",
-                "have a confab",
-                "chew the fat/rag",
-                "confabulate"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "have formal dealings or discussions; negotiate.",
-              "example": "they won't talk to the regime that killed their families",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "use (a particular language) in speech.",
-              "example": "we were talking German",
-              "synonyms": [
-                "speak",
-                "speak in",
-                "talk in",
-                "communicate in",
-                "converse in",
-                "express oneself in",
-                "discourse in",
-                "use"
-              ],
-              "antonyms": []
-            }
-          ]
-        },
-        {
-          "partOfSpeech": "noun",
-          "definitions": [
-            {
-              "definition": "communication by spoken words; conversation or discussion.",
-              "example": "there was a slight but noticeable lull in the talk",
-              "synonyms": [
-                "chatter",
-                "chatting",
-                "chattering",
-                "gossiping",
-                "prattling",
-                "prating",
-                "gibbering",
-                "jabbering",
-                "babbling",
-                "gabbling",
-                "rattling on",
-                "speaking",
-                "talking",
-                "yakking",
-                "gabbing",
-                "nattering",
-                "rabbiting",
-                "wittering",
-                "chat",
-                "conversation",
-                "discussion",
-                "gossip",
-                "subject",
-                "theme",
-                "topic",
-                "information",
-                "news"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "formal discussions or negotiations over a period.",
-              "example": "peace talks",
-              "synonyms": [
-                "negotiations",
-                "discussions",
-                "conference",
-                "summit",
-                "meeting",
-                "consultation",
-                "dialogue",
-                "symposium",
-                "seminar",
-                "conclave",
-                "colloquy",
-                "palaver",
-                "parley",
-                "bargaining",
-                "haggling",
-                "wheeling and dealing",
-                "mediation",
-                "arbitration",
-                "intercession",
-                "conciliation",
-                "powwow",
-                "confabulation"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "an informal address or lecture.",
-              "example": "a thirty-minute illustrated talk",
-              "synonyms": [
-                "lecture",
-                "speech",
-                "address",
-                "discourse",
-                "oration",
-                "presentation",
-                "report",
-                "sermon",
-                "disquisition",
-                "dissertation",
-                "symposium",
-                "spiel"
-              ],
-              "antonyms": []
-            }
-          ]
-        }
-      ],
-      "stage": "inProgress",
-      "category": "",
-      "folder": "",
-      "time": 1643958428494,
-      "trainingsDone": [
-        "writing"
-      ],
-      "id": 25
-    },
-    {
-      "translate": "понимать",
-      "translations": {
-        "знаю": [
-          "know",
-          "sure",
-          "knew",
-          "understand",
-          "knowing",
-          "heard",
-          "I know"
-        ],
-        "осознавать": [
-          "be aware",
-          "realize",
-          "understand",
-          "know",
-          "recognize",
-          "realise",
-          "be conscious",
-          "become conscious",
-          "appreciate",
-          "think"
-        ],
-        "осознать": [
-          "realize",
-          "understand",
-          "recognize",
-          "realise",
-          "grasp",
-          "appreciate",
-          "face",
-          "process",
-          "accept",
-          "acknowledge"
-        ],
-        "пониманию": [
-          "understanding",
-          "awareness",
-          "understood",
-          "appreciation",
-          "comprehension",
-          "knowledge",
-          "insight"
-        ],
-        "понимания": [
-          "understanding",
-          "awareness",
-          "understood",
-          "comprehension",
-          "knowledge",
-          "perception",
-          "grasp",
-          "sensitivity",
-          "insight into"
-        ],
-        "понимать": [
-          "understand",
-          "know",
-          "realize",
-          "be understood",
-          "realise",
-          "be aware",
-          "see",
-          "mean",
-          "learn",
-          "interpret"
-        ],
-        "понятно": [
-          "okay",
-          "all right",
-          "understand",
-          "understandable",
-          "it is clear",
-          "clearly",
-          "understandably",
-          "obviously",
-          "get it",
-          "you know"
-        ],
-        "понять": [
-          "understand",
-          "figure out",
-          "know",
-          "see",
+        "четкий": [
           "clear",
-          "realize",
-          "get",
-          "tell",
-          "find out",
-          "comprehend"
-        ],
-        "разобраться": [
-          "figure out",
-          "understand",
-          "handle",
-          "deal",
-          "take care",
-          "figure it out",
-          "find out",
-          "sort out",
-          "sort",
-          "make sense"
-        ],
-        "ясно": [
-          "okay",
+          "precise",
+          "clearer",
           "clearly",
-          "all right",
-          "it is clear",
-          "obvious",
-          "obviously",
+          "strong",
+          "clear-cut",
+          "clarity",
           "explicitly",
-          "apparent",
-          "expressly",
-          "evident"
+          "lucid",
+          "crisp"
         ]
       },
-      "word": "understand",
-      "phonetic": "ʌndəˈstand",
+      "word": "precise",
+      "phonetic": "prɪˈsʌɪs",
       "phonetics": [
         {
-          "text": "ʌndəˈstand",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/understand--_gb_1.mp3"
+          "text": "prɪˈsʌɪs",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/precise--_gb_1.mp3"
         }
       ],
-      "origin": "Old English understandan  (see under-, stand).",
+      "origin": "late Middle English: from Old French prescis, from Latin praecis- ‘cut short’, from the verb praecidere, from prae ‘in advance’ + caedere ‘to cut’.",
       "meanings": [
         {
-          "partOfSpeech": "verb",
+          "partOfSpeech": "adjective",
           "definitions": [
             {
-              "definition": "perceive the intended meaning of (words, a language, or a speaker).",
-              "example": "he didn't understand a word I said",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "interpret or view (something) in a particular way.",
-              "example": "as the term is usually understood, legislation refers to regulations and directives",
-              "synonyms": [],
-              "antonyms": []
-            },
-            {
-              "definition": "be sympathetically or knowledgeably aware of the character or nature of.",
-              "example": "Picasso understood colour",
+              "definition": "marked by exactness and accuracy of expression or detail.",
+              "example": "precise directions",
               "synonyms": [
-                "appreciate",
-                "recognize",
-                "realize",
-                "acknowledge",
-                "know",
-                "be aware of",
-                "be conscious of",
-                "be cognizant of",
-                "accept",
-                "commiserate with",
-                "feel compassionate towards",
-                "sympathize with",
-                "empathize with",
-                "take on board",
-                "be wise to"
+                "exact",
+                "accurate",
+                "correct",
+                "error-free",
+                "pinpoint",
+                "specific",
+                "detailed",
+                "explicit",
+                "clear-cut",
+                "unambiguous",
+                "meticulous",
+                "close",
+                "strict",
+                "definite",
+                "particular",
+                "express",
+                "minute",
+                "faithful",
+                "inch-perfect"
               ],
               "antonyms": [
-                "ignore"
+                "imprecise",
+                "inaccurate"
               ]
             }
           ]
@@ -4446,86 +1257,388 @@
       "stage": "inProgress",
       "category": "",
       "folder": "",
-      "time": 1643958477536,
+      "time": 1644479264642,
       "trainingsDone": [
-        "writing"
+        "word-constructor"
       ],
-      "id": 26
+      "id": 34
     },
     {
-      "translate": "пират",
+      "translate": "конкретный, определенный, особый, специальный, характерный",
       "translations": {
-        "Pirate": [
-          "Pirate"
+        "конкретный": [
+          "specific",
+          "particular",
+          "concrete",
+          "given",
+          "precise",
+          "specified",
+          "one",
+          "exact",
+          "certain",
+          "individual"
         ],
-        "незаконный": [
-          "illegal",
-          "illicit",
-          "unlawful",
-          "illegitimate",
-          "irregular",
-          "arbitrary",
-          "improper",
-          "pirate",
-          "undue",
-          "contrary to law"
+        "непосредственно": [
+          "directly",
+          "direct",
+          "immediately",
+          "specifically",
+          "immediate",
+          "just",
+          "explicitly",
+          "specific",
+          "itself",
+          "closely"
         ],
-        "пират": [
-          "pirate",
-          "buccaneer",
-          "privateer",
-          "filibuster",
-          "corsair"
+        "определенный": [
+          "certain",
+          "specific",
+          "particular",
+          "defined",
+          "given",
+          "specified",
+          "definite",
+          "fixed",
+          "set",
+          "determined"
         ],
-        "пиратка": [
-          "pirate",
+        "особенности": [
+          "particular",
+          "features",
+          "characteristics",
+          "peculiarities",
+          "specificities",
+          "particularities",
+          "specific",
+          "circumstances",
+          "special",
+          "feature"
+        ],
+        "особый": [
+          "special",
+          "particular",
+          "specific",
+          "unique",
+          "especially",
+          "distinct",
+          "distinctive",
+          "separate",
+          "exceptional",
+          "peculiar"
+        ],
+        "отдельный": [
+          "separate",
+          "individual",
+          "single",
+          "specific",
+          "distinct",
+          "private",
+          "special",
+          "stand-alone",
+          "separately",
+          "independent"
+        ],
+        "специальный": [
+          "special",
+          "ad hoc",
+          "specific",
+          "dedicated",
+          "specialized",
+          "technical",
+          "particular",
+          "adhoc",
+          "perticular",
+          "specifick"
+        ],
+        "специфики": [
+          "specificities",
+          "specific",
+          "specificity",
+          "circumstances",
+          "context",
+          "nature",
+          "perspective",
+          "characteristics",
+          "particularities",
+          "particular"
+        ],
+        "специфический": [
+          "specific",
+          "particular",
+          "peculiar",
+          "distinctive",
+          "an acquired",
+          "perticular",
+          "specifick",
+          "specifical"
+        ],
+        "характерный": [
+          "characteristic",
+          "distinctive",
+          "typical",
+          "common",
+          "character",
+          "specific",
+          "particular",
+          "characteristical",
+          "tipical",
+          "typcial"
+        ]
+      },
+      "word": "specific",
+      "phonetic": "spəˈsɪfɪk",
+      "phonetics": [
+        {
+          "text": "spəˈsɪfɪk",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/specific--_gb_1.mp3"
+        }
+      ],
+      "origin": "mid 17th century (originally in the sense ‘having a special determining quality’): from late Latin specificus, from Latin species (see species).",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "definition": "clearly defined or identified.",
+              "example": "savings were made by increasing the electricity supply only until it met specific development needs",
+              "synonyms": [
+                "particular",
+                "specified",
+                "certain",
+                "fixed",
+                "set",
+                "determined",
+                "distinct",
+                "separate",
+                "definite",
+                "single",
+                "individual",
+                "peculiar",
+                "discrete",
+                "express",
+                "precise"
+              ],
+              "antonyms": [
+                "general"
+              ]
+            },
+            {
+              "definition": "relating to species or a species.",
+              "example": "the differences between them can only be on the specific level",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "(of a duty or a tax) levied at a fixed rate per physical unit of the thing taxed, regardless of its price.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "of or denoting a number equal to the ratio of the value of some property of a given substance to the value of the same property of some other substance used as a reference, such as water, or of a vacuum, under equivalent conditions.",
+              "example": "specific dielectric strength",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a medicine or remedy effective in treating a particular disease or part of the body.",
+              "example": "he grasped at the idea as though she had offered him a specific for cancer",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a precise detail.",
+              "example": "I wish I'd put more thought into the specifics",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1644479651948,
+      "trainingsDone": [
+        "word-constructor"
+      ],
+      "id": 35
+    },
+    {
+      "translate": "белый",
+      "translations": {
+        "белая": [
+          "white",
+          "caucasian",
+          "belaya",
+          "cottony",
+          "honky",
+          "white man",
+          "whiteman",
+          "Divok"
+        ],
+        "беленький": [
+          "white one",
+          "white",
           ""
         ],
-        "пиратский": [
-          "pirate",
-          "piracy",
-          "pirated",
-          "piratical",
-          "piratic",
-          "Buccaneer",
-          "Pirating"
+        "белизна": [
+          "white",
+          "whiteness"
+        ],
+        "белок": [
+          "protein",
+          "squirrel",
+          "white",
+          "albumen",
+          "egg white",
+          "lactoferrin",
+          "albumin"
+        ],
+        "белокочанный": [],
+        "белыи цвет": [],
+        "белый": [
+          "white",
+          "caucasian",
+          "white man",
+          "honky",
+          "whitey",
+          "honkey",
+          "high-wash",
+          "kvitoya",
+          "honkie",
+          "whiteman"
+        ],
+        "бледный": [
+          "pale",
+          "white",
+          "pale-faced",
+          "pallid",
+          "wan",
+          "bleak",
+          "acyanotic",
+          "lurid",
+          "paly",
+          "light"
+        ],
+        "седой": [
+          "grey",
+          "white-haired",
+          "white",
+          "grizzled",
+          "gray-haired",
+          "silver",
+          "grey-haired",
+          "hoary",
+          "silver-haired",
+          "grizzly"
+        ],
+        "цвета": [
+          "color",
+          "colour",
+          "white",
+          "blue",
+          "red",
+          "yellow",
+          "brown",
+          "pink",
+          "livery"
         ]
       },
-      "word": "pirate",
-      "phonetic": "ˈpʌɪrət",
+      "word": "white",
+      "phonetic": "wʌɪt",
       "phonetics": [
         {
-          "text": "ˈpʌɪrət",
-          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pirate--_gb_1.mp3"
+          "text": "wʌɪt",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/white--_gb_1.mp3"
         }
       ],
-      "origin": "Middle English: from Latin pirata, from Greek peiratēs, from peirein ‘to attempt, attack’ (from peira ‘an attempt’).",
+      "origin": "late Old English hwīt, of Germanic origin; related to Dutch wit and German weiss, also to wheat.",
       "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "definition": "of the colour of milk or fresh snow, due to the reflection of all visible rays of light; the opposite of black.",
+              "example": "a sheet of white paper",
+              "synonyms": [
+                "colourless",
+                "unpigmented",
+                "undyed",
+                "bleached",
+                "natural",
+                "snowy",
+                "milky",
+                "chalky",
+                "snow white",
+                "snowy white",
+                "milk white",
+                "milky white",
+                "chalk white",
+                "chalky white",
+                "ivory",
+                "pale",
+                "clear",
+                "transparent",
+                "grey",
+                "silver",
+                "silvery",
+                "hoary",
+                "grizzled",
+                "albino"
+              ],
+              "antonyms": [
+                "black"
+              ]
+            },
+            {
+              "definition": "belonging to or denoting a human group having light-coloured skin (chiefly used of peoples of European extraction).",
+              "example": "a white farming community",
+              "synonyms": [
+                "Caucasian",
+                "European",
+                "non-black"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "counter-revolutionary or reactionary.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
         {
           "partOfSpeech": "noun",
           "definitions": [
             {
-              "definition": "a person who attacks and robs ships at sea.",
-              "example": "in the three weeks leading up to the attack, sixteen container ships had been boarded by pirates",
-              "synonyms": [
-                "freebooter",
-                "marauder",
-                "raider",
-                "buccaneer",
-                "privateer",
-                "corsair",
-                "rover",
-                "sea rover",
-                "picaroon",
-                "filibuster",
-                "sea thief",
-                "sea robber",
-                "water thief",
-                "sea wolf",
-                "sea rat",
-                "water rat",
-                "marooner"
-              ],
+              "definition": "white colour or pigment.",
+              "example": "garnet-red flowers flecked with white",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the visible pale part of the eyeball around the iris.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the outer part (white when cooked) which surrounds the yolk of an egg; the albumen.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a member of a light-skinned people, especially one of European extraction.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a white or cream butterfly which has dark veins or spots on the wings and can be a serious crop pest.",
+              "synonyms": [],
               "antonyms": []
             }
           ]
@@ -4534,28 +1647,8 @@
           "partOfSpeech": "verb",
           "definitions": [
             {
-              "definition": "use or reproduce (another's work) for profit without permission, usually in contravention of patent or copyright.",
-              "example": "his latest album has been pirated and downloaded so many times since its release that he's lost $10 million in sales",
-              "synonyms": [
-                "reproduce illegally",
-                "infringe the copyright of",
-                "copy illegally",
-                "plagiarize",
-                "poach",
-                "steal",
-                "appropriate",
-                "bootleg",
-                "crib",
-                "lift",
-                "rip off",
-                "nick",
-                "pinch"
-              ],
-              "antonyms": []
-            },
-            {
-              "definition": "rob or plunder (a ship).",
-              "example": "nine ships were pirated off the coast of the country between 2006 and May of last year",
+              "definition": "paint or turn (something) white.",
+              "example": "your passion hath whited your face",
               "synonyms": [],
               "antonyms": []
             }
@@ -4565,11 +1658,329 @@
       "stage": "inProgress",
       "category": "",
       "folder": "",
-      "time": 1643965085029,
+      "time": 1644486653025,
       "trainingsDone": [
-        "writing"
+        "word-constructor"
       ],
-      "id": 27
+      "id": 36
+    },
+    {
+      "translate": "чернить",
+      "translations": {
+        "блэк": [
+          "black",
+          ""
+        ],
+        "негритянский": [
+          "Black",
+          "negro",
+          ""
+        ],
+        "темнокожий": [
+          "black",
+          "dark-skinned",
+          "dark skinned",
+          "darkskinned",
+          "swart"
+        ],
+        "темный": [
+          "dark",
+          "darker",
+          "black",
+          "brown",
+          "shadowy",
+          "a dark-colored",
+          "dingy",
+          "gloomy",
+          "murky",
+          "darksome"
+        ],
+        "черная": [
+          "black",
+          "dark",
+          "iron",
+          "menial",
+          "Chorna"
+        ],
+        "черное": [
+          "black",
+          "dark",
+          "blackened",
+          "Chernoe"
+        ],
+        "чернокожий": [
+          "black",
+          "Negro",
+          ""
+        ],
+        "чернота": [
+          "black",
+          "blackness",
+          "nigritude"
+        ],
+        "черный": [
+          "black",
+          "back",
+          "dark",
+          "menial",
+          "Chernyy",
+          "nigga"
+        ],
+        "чёрный": [
+          "black",
+          "dark",
+          "stygian",
+          "picaninny",
+          "pickaninny",
+          "molasses",
+          "piccaninny",
+          "Blacky",
+          "Cherny"
+        ]
+      },
+      "word": "black",
+      "phonetic": "blak",
+      "phonetics": [
+        {
+          "text": "blak",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/black--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English blæc, of Germanic origin.",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "definition": "of the very darkest colour owing to the absence of or complete absorption of light; the opposite of white.",
+              "example": "black smoke",
+              "synonyms": [
+                "dark",
+                "pitch black",
+                "as black as pitch",
+                "pitch-dark",
+                "jet black",
+                "inky",
+                "coal black",
+                "blackish",
+                "sable",
+                "Stygian"
+              ],
+              "antonyms": [
+                "white"
+              ]
+            },
+            {
+              "definition": "belonging to or denoting any human group having dark-coloured skin, especially of African or Australian Aboriginal ancestry.",
+              "example": "black adolescents of Jamaican descent",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "characterized by tragic or disastrous events; causing despair or pessimism.",
+              "example": "five thousand men were killed on the blackest day of the war",
+              "synonyms": [
+                "tragic",
+                "disastrous",
+                "calamitous",
+                "catastrophic",
+                "cataclysmic",
+                "ruinous",
+                "devastating",
+                "fatal",
+                "fateful",
+                "wretched",
+                "woeful",
+                "grievous",
+                "lamentable",
+                "miserable",
+                "dire",
+                "unfortunate",
+                "awful",
+                "terrible",
+                "direful"
+              ],
+              "antonyms": [
+                "joyful"
+              ]
+            },
+            {
+              "definition": "denoting a covert military procedure.",
+              "example": "clearance for black operations came from the highest political level",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "(of goods or work) not to be handled or undertaken by trade union members, especially so as to express support for an industrial dispute elsewhere.",
+              "example": "the union declared the ship black",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "black colour or pigment.",
+              "example": "a tray decorated in black and green",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a member of a dark-skinned people, especially one of African or Australian Aboriginal ancestry.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the situation of not owing money to a bank or of making a profit in a business operation.",
+              "example": "it is hoped the club will be back in the black by the end of the season",
+              "synonyms": [
+                "in credit",
+                "in funds",
+                "debt-free",
+                "out of debt",
+                "solvent",
+                "financially sound",
+                "able to pay one's debts",
+                "creditworthy",
+                "of good financial standing",
+                "solid",
+                "secure",
+                "profit-making",
+                "profitable",
+                "unindebted"
+              ],
+              "antonyms": [
+                "in debt"
+              ]
+            },
+            {
+              "definition": "blackcurrant cordial.",
+              "example": "a rum and black",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "make (something) black; blacken.",
+              "example": "the house was pocked with bullet holes and blacked by smoke",
+              "synonyms": [
+                "blacken",
+                "darken",
+                "dirty",
+                "make dirty",
+                "make sooty",
+                "make smoky",
+                "stain",
+                "grime",
+                "begrime",
+                "befoul",
+                "soil"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "refuse to handle (goods), undertake (work), or have dealings with (a person or business) as a way of taking industrial action.",
+              "example": "the union blacked the film because overtime was not being paid",
+              "synonyms": [
+                "boycott",
+                "embargo",
+                "put/place an embargo on",
+                "blacklist",
+                "ban",
+                "bar",
+                "proscribe"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "inProgress",
+      "category": "",
+      "folder": "",
+      "time": 1644488251889,
+      "trainingsDone": [
+        "word-constructor"
+      ],
+      "id": 37
+    },
+    {
+      "translate": "акула",
+      "translations": {
+        "Shark": [
+          "Shark"
+        ],
+        "акула": [
+          "shark",
+          "sharky",
+          "Akula"
+        ],
+        "акулий": [
+          "shark"
+        ],
+        "акульими": [
+          "shark",
+          ""
+        ],
+        "акулья": [
+          "shark",
+          ""
+        ]
+      },
+      "word": "shark",
+      "phonetic": "ʃɑːk",
+      "phonetics": [
+        {
+          "text": "ʃɑːk",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/shark--_gb_1.mp3"
+        }
+      ],
+      "origin": "late Middle English: of unknown origin.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a long-bodied chiefly marine fish with a cartilaginous skeleton, a prominent dorsal fin, and toothlike scales. Most sharks are predatory, although the largest kinds feed on plankton, and some can grow to a large size.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a small SE Asian freshwater fish with a tail resembling that of a shark, popular in aquaria.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "a light greyish-brown European moth, the male of which has pale silvery hindwings.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "(typically of a man at a social gathering) be in active pursuit of a sexual partner.",
+              "example": "as soon as he arrived he was sharking among the women",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ],
+      "stage": "new",
+      "category": "",
+      "folder": "",
+      "time": 1644489825779,
+      "trainingsDone": [],
+      "id": 38
     }
   ],
   "word-category": [

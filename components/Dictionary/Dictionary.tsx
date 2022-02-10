@@ -12,7 +12,7 @@ import {
   wordsApi,
 } from '../../services/DictionaryService';
 import Modal from '../Modal';
-import { IWord } from '../../types/dictionaryTypes';
+import { IWord, wordLearningStageType } from '../../types/dictionaryTypes';
 import WordCard from '../WordCard';
 import { CircularProgress } from '@mui/material';
 import translit from '../../utils/translitFn';
@@ -23,15 +23,15 @@ const cx = classNames.bind(s);
 
 interface DictionaryProps {}
 
-type wordStateT = 'all' | 'new' | 'inProgress' | 'done';
-
 function Dictionary() {
   const [search, setSearch] = useState('');
-  const [stageValue, setStageValue] = useState<wordStateT>('all');
+  const [stageValue, setStageValue] = useState<wordLearningStageType | 'all'>(
+    'all',
+  );
   const [wordData, setWordData] = useState<IWord[] | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [filteredList, setFilteredList] = useState([]);
+  const [filteredList, setFilteredList] = useState<IWord[]>([]);
   const [selectedCategory, setSelectedCategory] = useState('');
 
   //redux
@@ -40,12 +40,7 @@ function Dictionary() {
   const [getWord, { error }] = dictionaryApi2.useLazyGetWordQuery();
   const { data: userCategoriesList } = wordsApi.useGetCategoryQuery();
 
-  const [getMicrosoft] = microsoftApi.useLazyGetTranslationQuery();
-
-  /*  useEffect(() => {
-    getMicrosoft({ Text: 'mother' });
-    console.log(getTranslation('monkey'));
-  }, []); */
+  /* const [getMicrosoft] = microsoftApi.useLazyGetTranslationQuery(); */
 
   useEffect(() => {
     setWordData(null);
@@ -76,22 +71,6 @@ function Dictionary() {
     const sortByDate = (a: IWord, b: IWord) => b.time - a.time;
 
     let filtered = [...list].sort(sortByDate);
-    /*   console.log('filter', filter);
-    console.log('category', selectedCategory);
-    console.log(stageValue);
-
-    console.log('filtered', filtered);
-
-    console.log(
-      filtered
-        .filter(item => (filter ? item.word.includes(filter) : true))
-        .filter(item =>
-          selectedCategory ? item.category === selectedCategory : true,
-        )
-        .filter(item =>
-          stageValue === 'all' ? true : item.stage === stageValue,
-        ),
-    ); */
 
     return filtered
       .filter(item => (filter ? item.word.includes(filter) : true))
@@ -101,23 +80,6 @@ function Dictionary() {
       .filter(item =>
         stageValue === 'all' ? true : item.stage === stageValue,
       );
-
-    /*  if (filterType === 'word' && typeof filter === 'string') {
-      if (selectedCategory) {
-        return filtered
-          .filter(item => item.word.includes(filter))
-          .filter(item => item.category === selectedCategory);
-      }
-      return filtered.filter(item => item.word.includes(filter));
-    }
-    if (filterType === 'stage' && typeof filter === 'number') {
-      if (selectedCategory) {
-        return filtered
-          .filter(item => item.stage === filter)
-          .filter(item => item.category === selectedCategory);
-      }
-      return filtered.filter(item => item.stage === filter);
-    } */
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -135,26 +97,26 @@ function Dictionary() {
 
   const handleAddWord = async () => {
     setIsLoading(true);
-    let wordData;
+    let wordInfo;
 
     try {
       const { data } = await getTranslation(search);
       const apiData = await getWord(search);
-      const microSoft = await getMicrosoft();
-      console.log(data);
-      console.log(apiData);
-      console.log(microSoft);
+      /* const microSoft = await getMicrosoft(search); */
+      console.log('TRANSLO', data);
+      console.log('GOOGLE', apiData);
+      /* console.log('MICRO', microSoft); */
 
-      wordData = {
+      wordInfo = {
         translate: data.translated_text,
         translations: data.translations,
         ...apiData.data[0],
-        stage: 0,
+        stage: 'new',
         category: '',
         folder: '',
       };
 
-      setWordData(wordData);
+      setWordData(wordInfo);
       setIsLoading(false);
       setIsModalOpen(true);
     } catch (error) {
@@ -193,15 +155,18 @@ function Dictionary() {
         </div>
 
         <div className={s.btnGroup}>
-          <MySelect
-            label="Category"
-            list={userCategoriesList}
-            extraClass={s.categoryFilter}
-            extraBorderClass={s.categoryFilterBorder}
-            selected={selectedCategory}
-            setSelected={handleCategoryChange}
-            padding={'5px 5px 5px 10px'}
-          />
+          {userCategoriesList && (
+            <MySelect
+              label="Category"
+              list={userCategoriesList}
+              extraClass={s.categoryFilter}
+              extraBorderClass={s.categoryFilterBorder}
+              selected={selectedCategory}
+              setSelected={handleCategoryChange}
+              padding={'5px 5px 5px 10px'}
+            />
+          )}
+
           <Button
             as="button"
             extraClass={cx(s.button, s.deleteCategoryBtn)}
@@ -216,7 +181,6 @@ function Dictionary() {
             })}
             onClick={() => {
               setStageValue('all');
-              /* setFilteredList(filterWordList(wordList, search, 'word')); */
             }}
           >
             All
@@ -228,7 +192,6 @@ function Dictionary() {
             })}
             onClick={() => {
               setStageValue('new');
-              /* setFilteredList(filterWordList(wordList, 0, 'stage')); */
             }}
           >
             <BsBook className={s.icon} />
@@ -240,7 +203,6 @@ function Dictionary() {
             })}
             onClick={() => {
               setStageValue('inProgress');
-              /* setFilteredList(filterWordList(wordList, 1, 'stage')); */
             }}
           >
             <BsBookHalf className={s.icon} />
@@ -252,7 +214,6 @@ function Dictionary() {
             })}
             onClick={() => {
               setStageValue('done');
-              /* setFilteredList(filterWordList(wordList, 4, 'stage')); */
             }}
           >
             <BsBookFill className={s.icon} />

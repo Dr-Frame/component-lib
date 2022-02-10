@@ -12,8 +12,8 @@ import { wordsApi } from '../../services/DictionaryService';
 import IconButton from '../IconButton';
 import { HiVolumeUp } from 'react-icons/hi';
 import AwardAnimation from '../AwardAnimation';
-import Link from 'next/link';
 import NoWords from '../NoWords';
+import getUserPlace from '../../utils/linguo/getUserPlace';
 
 const cx = classNames.bind(s);
 
@@ -38,22 +38,9 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
   function updateQuesedWordsAmount() {
     setTotalQuesedWords(prevState => prevState + 1);
   }
-  function countPlace() {
-    const percentageOfCorrectWords = Math.round(
-      totalQuesedWords / wordList.length,
-    );
-    if (percentageOfCorrectWords === 1) {
-      return setUserPlace(1);
-    }
-    if (percentageOfCorrectWords >= 0.6 && percentageOfCorrectWords < 1) {
-      return setUserPlace(2);
-    } else {
-      return setUserPlace(3);
-    }
-  }
 
   useEffect(() => {
-    countPlace();
+    setUserPlace(getUserPlace(totalQuesedWords, wordList.length));
   }, [totalQuesedWords]);
 
   useEffect(() => {

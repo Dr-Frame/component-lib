@@ -16,7 +16,7 @@ interface ISelectProps {
   animated?: boolean;
   padding?: boolean | string;
   extraClass?: string;
-  extraBorderClass: string;
+  extraBorderClass?: string;
 }
 
 function MySelect({

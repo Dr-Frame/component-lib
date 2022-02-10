@@ -21,9 +21,11 @@ export type trainingsType =
   | 'type'
   | 'writing';
 
-type trainingsDoneType = [
+export type trainingsDoneType = [
   'word-constructor' | 'translate' | 'type' | 'writing',
 ];
+
+export type wordLearningStageType = 'new' | 'inProgress' | 'done';
 
 export interface IWord {
   category: string;
@@ -32,11 +34,11 @@ export interface IWord {
   origin: string;
   phonetic: string;
   phonetics: IPhonetic[];
-  stage: string;
   translate: string;
   translations: object;
   word: string;
   id?: number;
   time: number;
+  stage: wordLearningStageType;
   trainingsDone: trainingsDoneType;
 }

@@ -5,7 +5,7 @@ export default function NoWords() {
   return (
     <div className={s.noWordsWrapper}>
       <p className={s.noWords}>
-        You dont have words to train, <br /> <br />
+        You dont have words for this particular training, <br /> <br />
         go to the dictionary and add one!
       </p>
       <Link href="/dictionary">
