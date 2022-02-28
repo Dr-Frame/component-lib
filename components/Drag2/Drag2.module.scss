@@ -1,0 +1,38 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  margin-top: 50px;
+}
+.board {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boardRow {
+  height: 400px;
+  width: 200px;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.listItem {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: grab;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

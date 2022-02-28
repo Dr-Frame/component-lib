@@ -1,0 +1,63 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colWrapper {
+  width: 700px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: $color-darkest-mainTheme;
+  border-radius: 5px;
+}
+
+.col {
+  width: 40%;
+}
+
+.col:not(:last-of-type) {
+  margin-right: 30px;
+}
+.title {
+  font-size: 1.2rem;
+  color: $main-text-color;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wordList {
+  width: 100%;
+}
+
+.word {
+  overflow: hidden;
+  padding: 10px;
+  background-color: $color-superLight-mainTheme;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 700;
+  color: $color-darkest-mainTheme;
+  cursor: grab;
+  transition: 0.5s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+.word:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.dragging {
+  /* transform: scale(1.1) rotate(-2deg);
+  background-color: $color-dark-mainTheme;
+  color: $color-dark-mainTheme; */
+  background-color: $color-darkest-mainTheme;
+}

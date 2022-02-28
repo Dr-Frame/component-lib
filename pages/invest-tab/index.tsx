@@ -248,7 +248,7 @@ export default function InvestTabPage() {
                 type="submit"
                 view="outlined"
                 color="mainDark"
-                size="default"
+                size="allSpace"
                 animation="mouseRipple"
                 isFlex
                 disabled={isBtnDisabled}

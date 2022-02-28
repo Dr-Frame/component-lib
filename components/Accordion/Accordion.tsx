@@ -31,7 +31,7 @@ const Accordion: FC<AccordionProps> = ({ menuItems, size = 'small' }) => {
               as="button"
               onClick={e => handleMenuClick(e)}
               color="mainDark"
-              size="default"
+              size="allSpace"
               view="contained"
               animation="mouseRipple"
               extraClass={styles.menuItem}

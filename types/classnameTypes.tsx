@@ -1,4 +1,4 @@
-export type Size = 'small' | 'large' | 'medium' | 'default';
+export type Size = 'small' | 'large' | 'medium' | 'default' | 'allSpace';
 export type Color = 'mainLight' | 'mainDark';
 
 export type ButtonType = 'button' | 'submit' | 'reset';

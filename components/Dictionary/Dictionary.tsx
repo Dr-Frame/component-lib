@@ -14,10 +14,17 @@ import {
 import Modal from '../Modal';
 import { IWord, wordLearningStageType } from '../../types/dictionaryTypes';
 import WordCard from '../WordCard';
-import { CircularProgress } from '@mui/material';
+import { CircularProgress, duration } from '@mui/material';
 import translit from '../../utils/translitFn';
 import MySelect from '../MySelect';
 import { IoCloseSharp } from 'react-icons/io5';
+import 'regenerator-runtime/runtime';
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from 'react-speech-recognition';
+import { FaMicrophone, FaMicrophoneSlash } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import Tooltip from '../Tooltip';
 
 const cx = classNames.bind(s);
 
@@ -25,6 +32,8 @@ interface DictionaryProps {}
 
 function Dictionary() {
   const [search, setSearch] = useState('');
+  console.log(search);
+
   const [stageValue, setStageValue] = useState<wordLearningStageType | 'all'>(
     'all',
   );
@@ -33,6 +42,11 @@ function Dictionary() {
   const [isLoading, setIsLoading] = useState(false);
   const [filteredList, setFilteredList] = useState<IWord[]>([]);
   const [selectedCategory, setSelectedCategory] = useState('');
+
+  //Speech microphone
+  const [isListening, setIsListening] = useState(false);
+  const [isMicroAvailable, setIsMicroAvailable] = useState(false);
+  const [isSupported, setIsSupported] = useState(true);
 
   //redux
   const { data: wordList } = wordsApi.useGetWordsQuery();
@@ -125,9 +139,49 @@ function Dictionary() {
     }
   };
 
+  //speech =================================
+  const commands = [
+    {
+      command: 'clear',
+      callback: ({ resetTranscript }) => resetTranscript(),
+    },
+  ];
+
+  const { listening, isMicrophoneAvailable, finalTranscript, resetTranscript } =
+    useSpeechRecognition({ commands });
+
+  useEffect(() => {
+    setIsListening(listening);
+  }, [listening]);
+
+  useEffect(() => {
+    setSearch(finalTranscript);
+  }, [finalTranscript]);
+
+  useEffect(() => {
+    if (isMicrophoneAvailable) {
+      setIsMicroAvailable(true);
+    } else {
+      setIsMicroAvailable(false);
+    }
+  }, [isMicrophoneAvailable]);
+
+  useEffect(() => {
+    if (!SpeechRecognition.browserSupportsSpeechRecognition) {
+      setIsSupported(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    resetTranscript();
+    setSearch('');
+    setIsListening(false);
+  }, []);
+
   return (
     <div className={s.wrapper}>
       <h1 className={s.title}>My Dictionary {`(${filteredList?.length})`}</h1>
+      <Tooltip />
       <div className={s.topWrapper}>
         <div className={s.wordsWrapper}>
           <Input
@@ -141,6 +195,95 @@ function Dictionary() {
             placeholder="Search..."
             extraClass={s.input}
           />
+          {isMicroAvailable && isSupported && (
+            <motion.div
+              className={s.soundBtnWrapper}
+              animate={
+                isListening
+                  ? {
+                      scale: [1, 0.9, 1, 1.1, 1],
+                    }
+                  : undefined
+              }
+              transition={
+                isListening
+                  ? { ease: 'linear', duration: 1.2, repeat: Infinity }
+                  : undefined
+              }
+            >
+              {' '}
+              {!isListening && (
+                <Button
+                  type="button"
+                  as="button"
+                  extraClass={cx(s.button, {
+                    active: isListening,
+                  })}
+                  size="default"
+                  onClick={() => {
+                    setIsListening(true);
+                    if (!SpeechRecognition.browserSupportsSpeechRecognition) {
+                      setIsSupported(false);
+                    } else {
+                      SpeechRecognition.startListening({
+                        continuous: false,
+                        language: 'en-US',
+                      });
+                    }
+                  }}
+                  tooltip
+                  tooltipText="voice"
+                  tooltipSide="bottom"
+                >
+                  <FaMicrophone />
+                </Button>
+              )}
+              {isListening && (
+                <Button
+                  type="button"
+                  as="button"
+                  extraClass={cx(s.button, {
+                    active: isListening,
+                  })}
+                  size="default"
+                  onClick={() => {
+                    setIsListening(false);
+                    if (!SpeechRecognition.browserSupportsSpeechRecognition) {
+                      setIsSupported(false);
+                    } else {
+                      SpeechRecognition.stopListening();
+                    }
+                  }}
+                  tooltip
+                  tooltipText="stop listening"
+                  tooltipSide="bottom"
+                >
+                  <FaMicrophoneSlash />
+                </Button>
+              )}
+            </motion.div>
+          )}
+
+          <motion.div
+            className={s.clearBtnWrapper}
+            animate={isListening ? { marginLeft: '10px' } : undefined}
+            transition={{ ease: 'linear', duration: 0.3 }}
+          >
+            <Button
+              type="button"
+              as="button"
+              extraClass={s.button}
+              size="default"
+              onClick={() => setSearch('')}
+              disabled={!search}
+              tooltip
+              tooltipText="clear search"
+              tooltipSide="bottom"
+            >
+              <IoCloseSharp fontSize={30} />
+            </Button>
+          </motion.div>
+
           <Button
             onClick={handleAddWord}
             as="button"
@@ -171,9 +314,14 @@ function Dictionary() {
             as="button"
             extraClass={cx(s.button, s.deleteCategoryBtn)}
             onClick={() => setSelectedCategory('')}
+            tooltip
+            tooltipText="clear category"
+            tooltipSide="bottom"
+            size="default"
           >
             <IoCloseSharp fontSize={30} />
           </Button>
+
           <Button
             as="button"
             extraClass={cx(s.button, {
@@ -182,9 +330,14 @@ function Dictionary() {
             onClick={() => {
               setStageValue('all');
             }}
+            tooltip
+            tooltipText="view all"
+            tooltipSide="bottom"
+            size="default"
           >
             All
           </Button>
+
           <Button
             as="button"
             extraClass={cx(s.button, s.new, {
@@ -193,20 +346,30 @@ function Dictionary() {
             onClick={() => {
               setStageValue('new');
             }}
+            tooltip
+            tooltipText="new"
+            tooltipSide="bottom"
+            size="default"
           >
             <BsBook className={s.icon} />
           </Button>
+
           <Button
             as="button"
             extraClass={cx(s.button, s.half, {
               active: stageValue === 'inProgress',
             })}
+            tooltip
+            tooltipText="in progress"
+            tooltipSide="bottom"
+            size="default"
             onClick={() => {
               setStageValue('inProgress');
             }}
           >
             <BsBookHalf className={s.icon} />
           </Button>
+
           <Button
             as="button"
             extraClass={cx(s.button, s.done, {
@@ -215,6 +378,10 @@ function Dictionary() {
             onClick={() => {
               setStageValue('done');
             }}
+            tooltip
+            tooltipText="done"
+            tooltipSide="bottom"
+            size="default"
           >
             <BsBookFill className={s.icon} />
           </Button>

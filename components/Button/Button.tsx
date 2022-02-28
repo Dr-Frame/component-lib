@@ -7,10 +7,10 @@ import {
   Size,
 } from '../../types/classnameTypes';
 import classNames from 'classnames/bind';
-import styles from './Button.module.scss';
+import s from './Button.module.scss';
 import creteRippleEffect from '../../utils/rippleEffectCreator';
 
-const cx = classNames.bind(styles);
+const cx = classNames.bind(s);
 
 type RootComponent = 'button' | 'link';
 
@@ -28,6 +28,9 @@ interface ButtonProps<T> {
   extraClass?: string;
   children: React.ReactChild | React.ReactNode;
   rest?: T[];
+  tooltip?: boolean;
+  tooltipText?: string;
+  tooltipSide?: 'left' | 'top' | 'bottom' | 'right';
 }
 
 function Button<T>({
@@ -43,14 +46,17 @@ function Button<T>({
   onClick,
   children,
   extraClass,
+  tooltip = false,
+  tooltipSide,
+  tooltipText,
   ...rest
 }: ButtonProps<T>) {
   const combinedClasses = classNames(
-    styles.button,
-    styles[view],
-    styles[color],
-    styles[size],
-    styles[animation],
+    s.button,
+    s[view],
+    s[color],
+    s[size],
+    s[animation],
     extraClass,
   );
 
@@ -72,7 +78,7 @@ function Button<T>({
           ? e => {
               onClick && onClick(e);
               circle.current
-                ? creteRippleEffect(e, circle.current, styles[animation])
+                ? creteRippleEffect(e, circle.current, s[animation])
                 : null;
             }
           : onClick
@@ -80,7 +86,10 @@ function Button<T>({
     >
       {children}
       {isMouseRippleAnimation && (
-        <span className={styles.ripple} ref={circle}></span>
+        <span className={s.ripple} ref={circle}></span>
+      )}
+      {tooltip && (
+        <span className={cx(s.tooltipText, tooltipSide)}>{tooltipText}</span>
       )}
     </RootComponent>
   );

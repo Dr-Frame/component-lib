@@ -83,3 +83,23 @@
     color: $color-wrong-letter;
   }
 }
+
+.resetBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+  background-color: #fff !important;
+  border: 2px solid $color-light-mainTheme !important;
+  border-radius: 3px;
+  font-size: 24px !important;
+  color: $color-light-mainTheme !important;
+  padding: 5px !important;
+
+  &:hover {
+    border: 2px solid $color-letter-border !important;
+    color: $color-letter-border !important;
+  }
+}

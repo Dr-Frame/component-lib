@@ -10,6 +10,9 @@ import { useState } from 'react';
 import Modal from '../Modal';
 import WordCard from '../WordCard';
 import ProgressIcon from '../ProgressIcon';
+import Button from '../Button';
+import { BiReset } from 'react-icons/bi';
+import { MdOutlineSettingsBackupRestore } from 'react-icons/md';
 
 const cx = classNames.bind(s);
 
@@ -23,6 +26,11 @@ function WordItem({ wordData }: WordItemProps) {
 
   //redux
   const [deleteWord] = wordsApi.useDeleteWordMutation();
+  const [updateWord] = wordsApi.useUpdateWordMutation();
+
+  function resetWordProgress() {
+    updateWord({ ...wordData, stage: 'new', trainingsDone: [] });
+  }
 
   return (
     <>
@@ -48,12 +56,23 @@ function WordItem({ wordData }: WordItemProps) {
           <p className={s.translation}>{translate}</p>
         </div>
         <div className={s.stageWrapper}>
+          <Button
+            as="button"
+            size="default"
+            extraClass={s.resetBtn}
+            tooltip
+            tooltipText="reset progress"
+            tooltipSide="top"
+            onClick={() => resetWordProgress()}
+          >
+            <MdOutlineSettingsBackupRestore />
+          </Button>
           <ProgressIcon
             trainingsCompleteAmount={wordData.trainingsDone.length}
           />
           <IconButton
             extraClass={s.deleteBtn}
-            size="medium"
+            size="default"
             onClick={() => deleteWord(wordData.id)}
           >
             <MdDelete className={s.deleteButtonIcon} />
