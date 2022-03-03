@@ -2,7 +2,7 @@ import { IWord, trainingsType } from '../types/dictionaryTypes';
 
 type updateFnType = (obj: IWord) => void;
 
-export default function updateWordProgress(
+export default async function updateWordProgress(
   mistakes: number,
   word: IWord,
   updateFn: updateFnType,
@@ -25,7 +25,7 @@ export default function updateWordProgress(
   if (mistakes === 0) {
     console.log('должно апдейтить');
 
-    updateFn({
+    await updateFn({
       ...word,
       stage: currentStage,
       trainingsDone: trainings,

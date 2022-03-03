@@ -1,0 +1,39 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px 40px;
+  @extend %boxBorder;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: $color-letter-border;
+}
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: $color-light-mainTheme;
+}
+
+.button {
+  padding: 10px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  font-size: 1rem;
+  width: 150px;
+  border-color: $color-letterSuperLight-border !important;
+  background-color: transparent !important;
+  color: $color-letterSuperLight-border !important;
+
+  &:hover {
+    color: $color-letter-border !important;
+    border-color: $color-letter-border !important;
+  }
+}

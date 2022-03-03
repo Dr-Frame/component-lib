@@ -2,38 +2,45 @@ import { useState, useRef, useEffect } from 'react';
 import { wordsApi } from '../../services/DictionaryService';
 import s from './MatchTraining.module.scss';
 import classNames from 'classnames/bind';
+import Item from './Item/Item';
 
 const cx = classNames.bind(s);
 
 interface MatchTrainingProps {}
 
-function MatchTraining({ data }) {
-  const [list, setList] = useState(null);
+function MatchTraining({ data, isDone, setIsDone }) {
+  const [list, setList] = useState(data);
   const [dragging, setDragging] = useState(false);
-  const [isDone, setIsDone] = useState(false);
-  console.log('list', list);
+  const [equalityCkeckArr, setEqualityCkeckArr] = useState([]);
+  const [wordsLeft, setWordsLeft] = useState(data[0].items.length);
 
-  console.log('is DONE', isDone);
+  //set state when all words are corectly matched
+  useEffect(() => {
+    if (list) {
+      const words = list[0].items;
+      const translations = list[1].items;
+      let equalityArr: boolean[] = new Array(data[0].items.length).fill(false);
 
-  function transformWordsForGame(rawData) {
-    let withColumn = [
-      { title: 'Native', items: [] },
-      { title: 'Translation', items: [] },
-    ];
-
-    for (let i = 0; i < 10; i++) {
-      withColumn[1].items.push(rawData[i].translate);
-
-      withColumn[0].items.push(rawData[i].word);
+      words.forEach((word, i) => {
+        if (word.word === translations[i].translate) {
+          equalityArr.splice(i, 1, true);
+        }
+      });
+      equalityArr.includes(false) ? setIsDone(false) : setIsDone(true);
+      setEqualityCkeckArr(equalityArr);
     }
-    withColumn.map(row => row.items.sort(() => Math.random() - 0.5));
-
-    return withColumn;
-  }
+    console.log('state', equalityCkeckArr);
+  }, [list]);
 
   useEffect(() => {
-    setList(transformWordsForGame(data));
-  }, [data]);
+    let total = 0;
+    equalityCkeckArr.forEach(item => {
+      if (!item) {
+        total += 1;
+      }
+    });
+    setWordsLeft(total);
+  }, [equalityCkeckArr]);
 
   const dragItem = useRef();
   const dragNode = useRef();
@@ -43,7 +50,13 @@ function MatchTraining({ data }) {
     dragNode.current = e.target;
     dragNode.current.addEventListener('dragend', handleDragEnd);
     setDragging(true);
-    console.log('dragItem', dragItem.current);
+  }
+
+  function handleDragEnd() {
+    setDragging(false);
+    dragNode.current.removeEventListener('dragend', handleDragEnd);
+    dragNode.current = null;
+    dragItem.current = null;
   }
 
   function handleDragEnter(e, params) {
@@ -62,13 +75,6 @@ function MatchTraining({ data }) {
     }
   }
 
-  function handleDragEnd() {
-    setDragging(false);
-    dragNode.current.removeEventListener('dragend', handleDragEnd);
-    dragNode.current = null;
-    dragItem.current = null;
-  }
-
   function isCurrentItemDragging(params) {
     const currentItem = dragItem.current;
     if (
@@ -84,42 +90,55 @@ function MatchTraining({ data }) {
     setDragging(false);
   }, []);
 
+  list ? console.log(list) : null;
+
   return (
     <div className={s.wrapper}>
+      {/*  {isDone ? <h1>DONE</h1> : null} */}
       {list ? (
-        <div className={s.colWrapper}>
-          {list.map((item, groupI) => (
-            <div
-              key={groupI}
-              className={s.col}
-              onDragEnter={
-                !item.items.length
-                  ? e => handleDragEnter(e, { groupI, wordI: 0 })
-                  : null
-              }
-            >
-              <h2 className={s.title}>{item.title}</h2>
-              <ul className={s.wordList}>
-                {item.items.map((word, wordI) => {
-                  return (
-                    <li
-                      key={wordI}
-                      draggable
-                      className={cx(s.word, {
-                        dragging: dragging
-                          ? isCurrentItemDragging({ groupI, wordI })
-                          : false,
-                      })}
-                      onDragStart={e => handleDragStart(e, { groupI, wordI })}
-                      onDragEnter={e => handleDragEnter(e, { groupI, wordI })}
-                    >
-                      {word}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
+        <div className={s.matching}>
+          {wordsLeft !== 0 ? (
+            <p className={s.wordsLeft}>{wordsLeft} words left to pair</p>
+          ) : null}
+
+          <div
+            className={cx(s.colWrapper, {
+              extraPadding: wordsLeft === 0,
+            })}
+          >
+            {list.map((item, groupI) => (
+              <div
+                key={groupI}
+                className={s.col}
+                onDragEnter={
+                  !item.items.length
+                    ? e => handleDragEnter(e, { groupI, wordI: 0 })
+                    : null
+                }
+              >
+                <h2 className={s.title}>{item.title}</h2>
+                <ul className={s.wordList}>
+                  {item.items.map((word, wordI) => {
+                    return (
+                      <Item
+                        key={wordI}
+                        dragging={dragging}
+                        list={list}
+                        handleDragStart={handleDragStart}
+                        dragItem={dragItem}
+                        dragNode={dragNode}
+                        handleDragEnter={handleDragEnter}
+                        word={word.word}
+                        groupI={groupI}
+                        wordI={wordI}
+                        isCurrentItemDragging={isCurrentItemDragging}
+                      />
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       ) : null}
     </div>

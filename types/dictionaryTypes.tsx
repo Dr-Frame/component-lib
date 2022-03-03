@@ -19,10 +19,11 @@ export type trainingsType =
   | 'word-constructor'
   | 'translate'
   | 'type'
-  | 'writing';
+  | 'writing'
+  | 'matching';
 
 export type trainingsDoneType = [
-  'word-constructor' | 'translate' | 'type' | 'writing',
+  'word-constructor' | 'translate' | 'type' | 'writing' | 'matching',
 ];
 
 export type wordLearningStageType = 'new' | 'inProgress' | 'done';

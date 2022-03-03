@@ -6,58 +6,49 @@
   justify-content: center;
 }
 
-.colWrapper {
-  width: 700px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-
-  background-color: $color-darkest-mainTheme;
+.matching {
+  width: 100%;
+  background-color: $main-text-color;
   border-radius: 5px;
+  border: 2px solid $color-letter-border;
+}
+
+.colWrapper {
+  padding: 0px 30px 30px;
+  display: flex;
+  justify-content: center;
+
+  &.extraPadding {
+    padding-top: 30px;
+  }
 }
 
 .col {
-  width: 40%;
+  width: 35%;
 }
 
 .col:not(:last-of-type) {
-  margin-right: 30px;
+  margin-right: 80px;
 }
 .title {
-  font-size: 1.2rem;
+  padding: 10px;
+  font-size: 1.1rem;
   color: $main-text-color;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
+  background-color: $color-letter-border;
+  border-radius: 3px;
 }
 
 .wordList {
   width: 100%;
 }
 
-.word {
-  overflow: hidden;
-  padding: 10px;
-  background-color: $color-superLight-mainTheme;
-  border-radius: 3px;
-  text-align: center;
-  font-weight: 700;
-  color: $color-darkest-mainTheme;
-  cursor: grab;
-  transition: 0.5s;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-
-  &:active {
-    cursor: grabbing;
-  }
-}
-.word:not(:last-of-type) {
+.wordsLeft {
+  margin-top: 20px;
   margin-bottom: 10px;
-}
-
-.dragging {
-  /* transform: scale(1.1) rotate(-2deg);
-  background-color: $color-dark-mainTheme;
-  color: $color-dark-mainTheme; */
-  background-color: $color-darkest-mainTheme;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: $color-medium-mainTheme;
 }

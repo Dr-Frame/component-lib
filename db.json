@@ -532,11 +532,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644478790473,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 29
     },
     {
@@ -653,7 +655,7 @@
       "folder": "",
       "time": 1644478890529,
       "trainingsDone": [
-        "word-constructor"
+        "matching"
       ],
       "id": 30
     },
@@ -836,7 +838,7 @@
       "folder": "",
       "time": 1644478922287,
       "trainingsDone": [
-        "word-constructor"
+        "matching"
       ],
       "id": 31
     },
@@ -944,8 +946,7 @@
       "folder": "",
       "time": 1644479078632,
       "trainingsDone": [
-        "word-constructor",
-        "writing"
+        "matching"
       ],
       "id": 32
     },
@@ -1119,7 +1120,7 @@
       "folder": "",
       "time": 1644479199381,
       "trainingsDone": [
-        "word-constructor"
+        "matching"
       ],
       "id": 33
     },
@@ -1253,11 +1254,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644479264642,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 34
     },
     {
@@ -2348,6 +2351,134 @@
       "time": 1644574289395,
       "trainingsDone": [],
       "id": 39
+    },
+    {
+      "translate": "сбой, баг, глюк",
+      "translations": {
+        "баг": [
+          "bug",
+          "glitch",
+          "Bagh"
+        ],
+        "глитч": [
+          "glitch",
+          ""
+        ],
+        "глюк": [
+          "glitch",
+          "bug",
+          "hallucination",
+          "snark",
+          "gotcha",
+          "Gluck"
+        ],
+        "затруднение": [
+          "difficulty",
+          "obstruction",
+          "predicament",
+          "shortness",
+          "complication",
+          "trouble",
+          "obstructing",
+          "quandary",
+          "glitch",
+          "embarrassment"
+        ],
+        "незначительный сбой": [
+          "glitch",
+          ""
+        ],
+        "пичок": [],
+        "сбой": [
+          "failure",
+          "fail",
+          "malfunction",
+          "glitch",
+          "disruption",
+          "crash",
+          "setback",
+          "error",
+          "fault",
+          "breakdown"
+        ]
+      },
+      "word": "glitch",
+      "phonetic": "/ɡlɪtʃ/",
+      "phonetics": [
+        {
+          "text": "/ɡlɪtʃ/",
+          "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/glitch-uk.mp3",
+          "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=90913998",
+          "license": {
+            "name": "BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "A problem affecting function.",
+              "synonyms": [
+                "bug",
+                "hitch",
+                "imperfection",
+                "quirk"
+              ],
+              "antonyms": [],
+              "example": "They are still trying to work out all the glitches."
+            },
+            {
+              "definition": "An unexpected behavior in an electrical signal, especially if the signal spontaneously returns to expected behavior after a period of time.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "A bug or an exploit.",
+              "synonyms": [],
+              "antonyms": [],
+              "example": "Performing this glitch gives you extra lives."
+            },
+            {
+              "definition": "A genre of experimental electronic music since the 1990s, characterized by a deliberate use of sonic artifacts that would normally be viewed as unwanted noise.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "(especially of machines) To experience an intermittent, unexpected, malfunction.",
+              "synonyms": [],
+              "antonyms": [],
+              "example": "My computer keeps glitching; every couple of hours it just reboots without warning."
+            },
+            {
+              "definition": "To perform an exploit or recreate a bug while playing a video game.",
+              "synonyms": [],
+              "antonyms": [],
+              "example": "His character will glitch into the wall and out of the level."
+            }
+          ]
+        }
+      ],
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "sourceUrls": [
+        "https://en.wiktionary.org/wiki/glitch"
+      ],
+      "stage": "new",
+      "category": "",
+      "folder": "",
+      "time": 1646297807315,
+      "trainingsDone": [],
+      "id": 40
     }
   ],
   "word-category": [
