@@ -15,7 +15,8 @@ function MatchTraining({ data, isDone, setIsDone }) {
   const [wordsLeft, setWordsLeft] = useState(data[0].items.length);
 
   //set state when all words are corectly matched
-  useEffect(() => {
+  //variant for 1 column
+  /* useEffect(() => {
     if (list) {
       const words = list[0].items;
       const translations = list[1].items;
@@ -30,6 +31,26 @@ function MatchTraining({ data, isDone, setIsDone }) {
       setEqualityCkeckArr(equalityArr);
     }
     console.log('state', equalityCkeckArr);
+  }, [list]); */
+
+  //variant for 2 columns
+  useEffect(() => {
+    let equalityArr: boolean[] = new Array(data[0].items.length).fill(false);
+
+    list[0].random.forEach((word, i) => {
+      let translation;
+      list[0].items.forEach((wordData, i) => {
+        if (wordData.word === word) {
+          translation = wordData.translate;
+        }
+      });
+      if (translation === list[1].random[i]) {
+        equalityArr.splice(i, 1, true);
+      }
+    });
+    equalityArr.includes(false) ? setIsDone(false) : setIsDone(true);
+    setEqualityCkeckArr(equalityArr);
+    console.log(equalityArr);
   }, [list]);
 
   useEffect(() => {
@@ -64,10 +85,10 @@ function MatchTraining({ data, isDone, setIsDone }) {
     if (e.target !== dragNode.current) {
       setList(oldList => {
         let newList = JSON.parse(JSON.stringify(oldList));
-        newList[params.groupI].items.splice(
+        newList[params.groupI].random.splice(
           params.wordI,
           0,
-          newList[currentItem.groupI].items.splice(currentItem.wordI, 1)[0],
+          newList[currentItem.groupI].random.splice(currentItem.wordI, 1)[0],
         );
         dragItem.current = params;
         return newList;
@@ -90,11 +111,10 @@ function MatchTraining({ data, isDone, setIsDone }) {
     setDragging(false);
   }, []);
 
-  list ? console.log(list) : null;
+  console.log('list', list);
 
   return (
     <div className={s.wrapper}>
-      {/*  {isDone ? <h1>DONE</h1> : null} */}
       {list ? (
         <div className={s.matching}>
           {wordsLeft !== 0 ? (
@@ -111,14 +131,14 @@ function MatchTraining({ data, isDone, setIsDone }) {
                 key={groupI}
                 className={s.col}
                 onDragEnter={
-                  !item.items.length
+                  !item.random.length
                     ? e => handleDragEnter(e, { groupI, wordI: 0 })
                     : null
                 }
               >
                 <h2 className={s.title}>{item.title}</h2>
                 <ul className={s.wordList}>
-                  {item.items.map((word, wordI) => {
+                  {item.random.map((word, wordI) => {
                     return (
                       <Item
                         key={wordI}
@@ -128,10 +148,12 @@ function MatchTraining({ data, isDone, setIsDone }) {
                         dragItem={dragItem}
                         dragNode={dragNode}
                         handleDragEnter={handleDragEnter}
-                        word={word.word}
+                        /*  word={wordI % 2 ? word.word : word.translate} */
+                        word={word}
                         groupI={groupI}
                         wordI={wordI}
                         isCurrentItemDragging={isCurrentItemDragging}
+                        dataCompare={equalityCkeckArr}
                       />
                     );
                   })}

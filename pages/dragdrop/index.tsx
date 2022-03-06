@@ -38,8 +38,8 @@ export default function Drag() {
   //makes array for rendering columns
   function transformWordsForGame(rawData) {
     let withColumn = [
-      { title: 'Native', items: [] },
-      { title: 'Translation', items: [] },
+      { title: 'Native', items: [], random: [] },
+      { title: 'Translation', items: [], random: [] },
     ];
 
     for (let i = 0; i < rawData.length; i++) {
@@ -54,6 +54,31 @@ export default function Drag() {
       });
     }
     withColumn.map(row => row.items.sort(() => Math.random() - 0.5));
+
+    //=============
+
+    const newArr = rawData
+      .map(item => {
+        return [item.word, item.translate];
+      })
+      .flat(1)
+      .sort(() => Math.random() - 0.5);
+
+    /* const forColumn = [
+      { title: 'Native', items: [] },
+      { title: 'Translation', items: [] },
+    ]; */
+
+    withColumn.map((item, i) => {
+      if (i === 0) {
+        item.random = newArr.slice(0, rawData.length);
+      }
+      if (i === 1) {
+        item.random = newArr.slice(rawData.length, rawData.length * 2);
+      }
+    });
+
+    console.log('prev', withColumn);
 
     return withColumn;
   }

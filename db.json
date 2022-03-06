@@ -1459,11 +1459,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644479651948,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 35
     },
     {
@@ -1653,15 +1655,17 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644486653025,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 36
     },
     {
-      "translate": "чернить",
+      "translate": "черный",
       "translations": {
         "блэк": [
           "black",
@@ -1897,11 +1901,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644488251889,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 37
     },
     {
@@ -1969,15 +1975,17 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644489825779,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 38
     },
     {
-      "translate": "Работа",
+      "translate": "работа",
       "translations": {
         "действовать": [
           "act",
@@ -2345,11 +2353,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644574289395,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 39
     },
     {
@@ -2473,11 +2483,13 @@
       "sourceUrls": [
         "https://en.wiktionary.org/wiki/glitch"
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1646297807315,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "matching"
+      ],
       "id": 40
     }
   ],
