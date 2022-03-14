@@ -25,6 +25,8 @@ import SpeechRecognition, {
 import { FaMicrophone, FaMicrophoneSlash } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Tooltip from '../Tooltip';
+import UserInfo from '../UserInfo';
+import DictionaryStats from '../DictionaryStats';
 
 const cx = classNames.bind(s);
 
@@ -180,8 +182,11 @@ function Dictionary() {
 
   return (
     <div className={s.wrapper}>
-      <h1 className={s.title}>My Dictionary {`(${filteredList?.length})`}</h1>
-      <Tooltip />
+      <div className={s.userStatWrap}>
+        <UserInfo />
+        <DictionaryStats />
+      </div>
+
       <div className={s.topWrapper}>
         <div className={s.wordsWrapper}>
           <Input

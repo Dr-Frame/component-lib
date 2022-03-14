@@ -1,10 +1,11 @@
 import s from './dragdrop.module.scss';
 import MatchTraining from '../../components/MatchTraining';
-import { wordsApi } from '../../services/DictionaryService';
+import { userExpApi, wordsApi } from '../../services/DictionaryService';
 import Button from '../../components/Button';
 import { useEffect, useState } from 'react';
 import updateWordProgress from '../../utils/updateWordProgress';
 import AwardAnimation from '../../components/AwardAnimation';
+import getLevelAndExp from '../../utils/calculateExpLevel';
 
 export default function Drag() {
   const [isDone, setIsDone] = useState(false);
@@ -14,12 +15,14 @@ export default function Drag() {
 
   const { data: wordList } = wordsApi.useGetWordsQuery();
   const [updateWord] = wordsApi.useUpdateWordMutation();
+  const { data: userExp } = userExpApi.useGetUserExpQuery(null);
+  const [updateUserExp] = userExpApi.useUpdateUserExpMutation();
 
   useEffect(() => {
     if (wordList) {
       setList(getNotTrainedWordList(wordList));
     }
-  }, [wordList]);
+  }, []);
 
   useEffect(() => {
     setShowAward(false);
@@ -91,6 +94,9 @@ export default function Drag() {
             onClick={() => {
               setShowAward(true);
               updateWords();
+              updateUserExp(
+                getLevelAndExp(userExp?.lvl, userExp?.exp, list.length * 2),
+              );
             }}
             extraClass={s.button}
           >

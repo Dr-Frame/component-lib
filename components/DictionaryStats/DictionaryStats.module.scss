@@ -1,0 +1,28 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  margin-right: 30px;
+  color: $color-medium-mainTheme;
+  padding: 10px 20px;
+  @extend %boxBorder;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: $color-dark-mainTheme;
+}
+
+.stats {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 3px;
+
+  span {
+    color: goldenrod;
+    font-weight: 700;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

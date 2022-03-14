@@ -43,3 +43,9 @@ export interface IWord {
   stage: wordLearningStageType;
   trainingsDone: trainingsDoneType;
 }
+
+export interface IUser {
+  name: string;
+  exp: number;
+  lvl: number;
+}

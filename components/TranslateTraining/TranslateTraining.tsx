@@ -8,12 +8,13 @@ import s from './TranslateTraining.module.scss';
 import classNames from 'classnames/bind';
 import { MdOutlineClose } from 'react-icons/md';
 import updateWordProgress from '../../utils/updateWordProgress';
-import { wordsApi } from '../../services/DictionaryService';
+import { userExpApi, wordsApi } from '../../services/DictionaryService';
 import IconButton from '../IconButton';
 import { HiVolumeUp } from 'react-icons/hi';
 import AwardAnimation from '../AwardAnimation';
 import NoWords from '../NoWords';
 import getUserPlace from '../../utils/linguo/getUserPlace';
+import getLevelAndExp from '../../utils/calculateExpLevel';
 
 const cx = classNames.bind(s);
 
@@ -34,6 +35,8 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
 
   //rtk
   const [updateWord] = wordsApi.useUpdateWordMutation();
+  const { data: userExp } = userExpApi.useGetUserExpQuery(null);
+  const [updateUserExp] = userExpApi.useUpdateUserExpMutation();
 
   function updateQuesedWordsAmount() {
     setTotalQuesedWords(prevState => prevState + 1);
@@ -65,6 +68,9 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
     if (userTranslateText === currentWord.word) {
       setIsCorrect(true);
       updateWordProgress(mistakesAmount, currentWord, updateWord, 'writing');
+      if (mistakesAmount === 0) {
+        updateQuesedWordsAmount();
+      }
       if (currentWord.phonetics[0]) {
         const audio = new Audio(currentWord.phonetics[0].audio);
         audio.play();
@@ -76,8 +82,6 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
       setMistakesAmount(prevState => prevState + 1);
     }
   };
-  console.log('PLACE', userPlace);
-  console.log('wordlist', wordList);
 
   return (
     <div className={s.slide}>
@@ -176,11 +180,15 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
             uppercase
             disabled={!isCorrect}
             onClick={() => {
-              mistakesAmount === 0 ? updateQuesedWordsAmount() : null;
               setUserTranslateText('');
               setMistakesAmount(0);
               setIsCorrect(false);
               setCurrentSlide(prevState => prevState + 1);
+              if (currentSlide === wordList.length) {
+                updateUserExp(
+                  getLevelAndExp(userExp?.lvl, userExp?.exp, totalQuesedWords),
+                );
+              }
             }}
             extraClass={s.button}
           >

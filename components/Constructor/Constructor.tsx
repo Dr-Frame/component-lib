@@ -6,6 +6,8 @@ import WordContainer from '../WordContainer';
 import s from './Constructor.module.scss';
 import getUserPlace from '../../utils/linguo/getUserPlace';
 import AwardAnimation from '../AwardAnimation';
+import { userExpApi } from '../../services/DictionaryService';
+import getLevelAndExp from '../../utils/calculateExpLevel';
 
 interface IConstructorProps {
   wordList: IWord[];
@@ -18,8 +20,9 @@ function Constructor({ wordList }: IConstructorProps) {
   const [totalQuesedWords, setTotalQuesedWords] = useState(0);
   const [userPlace, setUserPlace] = useState<number>(0);
 
-  console.log('sur cl', currentSlide);
-  console.log('wl length', wordList.length);
+  //redux
+  const { data: userExp } = userExpApi.useGetUserExpQuery(null);
+  const [updateUserExp] = userExpApi.useUpdateUserExpMutation();
 
   useEffect(() => {
     setUserPlace(getUserPlace(totalQuesedWords, wordList.length));
@@ -58,7 +61,14 @@ function Constructor({ wordList }: IConstructorProps) {
             size="small"
             uppercase
             disabled={!isCorrect}
-            onClick={() => setCurrentSlide(prevState => prevState + 1)}
+            onClick={() => {
+              setCurrentSlide(prevState => prevState + 1);
+              if (currentSlide === wordList.length) {
+                updateUserExp(
+                  getLevelAndExp(userExp?.lvl, userExp?.exp, totalQuesedWords),
+                );
+              }
+            }}
             extraClass={s.button}
           >
             {currentSlide === wordList.length ? 'finish' : 'next word'}

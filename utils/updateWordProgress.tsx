@@ -1,3 +1,4 @@
+import { userExpApi, wordsApi } from '../services/DictionaryService';
 import { IWord, trainingsType } from '../types/dictionaryTypes';
 
 type updateFnType = (obj: IWord) => void;

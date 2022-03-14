@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
-import { IWord } from '../types/dictionaryTypes';
+import { IUser, IWord } from '../types/dictionaryTypes';
 import { ICategory } from '../types/investTypes';
 
 const headers = {
@@ -62,6 +62,31 @@ export const microsoftApi = createApi({
         headers: headersMicrosoft,
         body: [{ Text: 'mother' }],
       }),
+    }),
+  }),
+});
+
+export const userExpApi = createApi({
+  reducerPath: 'userExp',
+  baseQuery: fetchBaseQuery({
+    baseUrl: LHBaseUrl,
+  }),
+  tagTypes: ['User'],
+  endpoints: build => ({
+    getUserExp: build.query<IUser, null>({
+      query: () => ({
+        url: '/user',
+        method: 'GET',
+      }),
+      providesTags: () => ['User'],
+    }),
+    updateUserExp: build.mutation<IUser, IUser>({
+      query: user => ({
+        url: '/user',
+        method: 'PATCH',
+        body: user,
+      }),
+      invalidatesTags: ['User'],
     }),
   }),
 });

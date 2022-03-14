@@ -7,6 +7,13 @@
   @extend %boxBorder;
   padding: 20px;
 }
+
+.userStatWrap {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 30px;
+}
+
 .loadingBackdrop {
   display: flex;
   justify-content: center;
@@ -19,11 +26,6 @@
   position: fixed;
   pointer-events: none;
   transition: $transitionModal;
-}
-
-.title {
-  font-size: 20px;
-  margin-bottom: 20px;
 }
 
 .topWrapper {

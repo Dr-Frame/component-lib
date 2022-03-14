@@ -1,0 +1,99 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  margin-right: 30px;
+  width: 25%;
+  padding: 10px 20px;
+  @extend %boxBorder;
+}
+
+.userData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconWrapper {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid $color-dark-mainTheme;
+}
+
+.userIcon {
+  font-size: 2rem;
+  color: goldenrod;
+}
+.userName {
+  font-weight: 700;
+  font-size: 1rem;
+  color: $color-dark-mainTheme;
+}
+
+.dataWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.rankWrapper {
+  display: flex;
+  align-items: center;
+
+  .userLvl {
+    font-size: 1rem;
+    color: goldenrod;
+  }
+
+  .rankIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rank {
+    font-size: 2rem;
+    color: goldenrod;
+  }
+}
+
+.expWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.yourExp {
+  position: absolute;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  background-color: rgba(0, 170, 0, 0.5);
+  height: 15px;
+  animation: yourExp 2s;
+}
+.expLeft {
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: $color-superLight-mainTheme;
+  height: 15px;
+}
+
+.expText {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+@keyframes yourExp {
+  0% {
+    width: 0%;
+  }
+}
