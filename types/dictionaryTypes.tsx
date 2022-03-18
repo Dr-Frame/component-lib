@@ -18,12 +18,18 @@ export interface IMeanings {
 export type trainingsType =
   | 'word-constructor'
   | 'translate'
-  | 'type'
+  | 'type' //печатать
   | 'writing'
-  | 'matching';
+  | 'matching'
+  | 'translate-to';
 
 export type trainingsDoneType = [
-  'word-constructor' | 'translate' | 'type' | 'writing' | 'matching',
+  | 'word-constructor'
+  | 'translate'
+  | 'type'
+  | 'writing'
+  | 'matching'
+  | 'translate-to',
 ];
 
 export type wordLearningStageType = 'new' | 'inProgress' | 'done';
@@ -45,7 +51,12 @@ export interface IWord {
 }
 
 export interface IUser {
-  name: string;
+  name?: string;
   exp: number;
   lvl: number;
+}
+
+export interface IWordForTraining {
+  word: IWord;
+  variants: string[];
 }

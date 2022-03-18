@@ -537,7 +537,7 @@
       "folder": "",
       "time": 1644478790473,
       "trainingsDone": [
-        "writing"
+        "translate-to"
       ],
       "id": 29
     },
@@ -650,11 +650,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644478890529,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "translate-to"
+      ],
       "id": 30
     },
     {
@@ -836,7 +838,7 @@
       "folder": "",
       "time": 1644478922287,
       "trainingsDone": [
-        "writing"
+        "translate-to"
       ],
       "id": 31
     },
@@ -939,11 +941,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644479078632,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "translate-to"
+      ],
       "id": 32
     },
     {
@@ -1116,7 +1120,7 @@
       "folder": "",
       "time": 1644479199381,
       "trainingsDone": [
-        "writing"
+        "translate-to"
       ],
       "id": 33
     },
@@ -1255,7 +1259,7 @@
       "folder": "",
       "time": 1644479264642,
       "trainingsDone": [
-        "writing"
+        "translate-to"
       ],
       "id": 34
     },
@@ -1455,13 +1459,11 @@
           ]
         }
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1644479651948,
-      "trainingsDone": [
-        "writing"
-      ],
+      "trainingsDone": [],
       "id": 35
     },
     {
@@ -1651,13 +1653,11 @@
           ]
         }
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1644486653025,
-      "trainingsDone": [
-        "writing"
-      ],
+      "trainingsDone": [],
       "id": 36
     },
     {
@@ -1897,13 +1897,11 @@
           ]
         }
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1644488251889,
-      "trainingsDone": [
-        "writing"
-      ],
+      "trainingsDone": [],
       "id": 37
     },
     {
@@ -1976,7 +1974,7 @@
       "folder": "",
       "time": 1644489825779,
       "trainingsDone": [
-        "writing"
+        "translate-to"
       ],
       "id": 38
     },
@@ -2349,14 +2347,11 @@
           ]
         }
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1644574289395,
-      "trainingsDone": [
-        "matching",
-        "writing"
-      ],
+      "trainingsDone": [],
       "id": 39
     },
     {
@@ -2480,15 +2475,11 @@
       "sourceUrls": [
         "https://en.wiktionary.org/wiki/glitch"
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1646297807315,
-      "trainingsDone": [
-        "matching",
-        "word-constructor",
-        "writing"
-      ],
+      "trainingsDone": [],
       "id": 40
     }
   ],
@@ -2506,7 +2497,7 @@
   ],
   "user": {
     "name": "Dr.Frame",
-    "exp": 1693,
+    "exp": 1751,
     "lvl": 6,
     "id": 1
   }

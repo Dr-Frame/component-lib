@@ -36,12 +36,14 @@ const menu: IMenuItem[] = [
     main: 'Difficult',
     mainIcon: <AccountTreeIcon className={styles.icon} />,
     sub: [
-      { title: 'Drag&Drops', link: '/dragdrop' },
       { title: 'Invest', link: '/invest-tab' },
+      { title: 'Animation', link: '/congrats' },
+      { title: 'Dictionary', link: '/dictionary' },
+      { title: 'Drag&Drops', link: '/dragdrop' },
       { title: 'Writing', link: '/writing' },
       { title: 'Word Constructor', link: '/word-constructor' },
-      { title: 'Dictionary', link: '/dictionary' },
-      { title: 'Animation', link: '/congrats' },
+      { title: 'Translate to', link: '/translate-game' },
+      { title: 'Translate from', link: '/translate-from' },
     ],
   },
 ];

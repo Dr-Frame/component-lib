@@ -1,0 +1,142 @@
+@import '../../styles/shared.scss';
+
+.slide {
+  margin: 0 auto;
+
+  width: 40%;
+  padding: 40px;
+  @extend %boxBorder;
+}
+
+.statWrapper {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wordAmount {
+  font-weight: 500;
+  color: $color-light-mainTheme;
+}
+
+.wordsWrapper {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid $color-letter-border;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hintWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .hint {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-letter-border;
+  }
+  .img {
+    margin-bottom: 10px;
+  }
+}
+
+.soundWrapper {
+  display: flex;
+  align-items: center;
+  .phonetic {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-light-mainTheme;
+  }
+  .soundButton {
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .soundButtonIcon {
+    font-size: 16px;
+    color: $color-dark-mainTheme;
+  }
+}
+
+.listWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .itemWrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: not-allowed;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .number {
+      margin-right: 10px;
+      color: $color-letter-border;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .word {
+      text-align: center;
+      width: 200px;
+      border: 1px solid $color-letter-border;
+      border-radius: 3px;
+      padding: 10px 20px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      background-color: $main-text-color;
+
+      color: $color-dark-mainTheme;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &.correct {
+        background-color: $color-rightAnswer-transparent !important;
+        color: $main-text-color;
+      }
+      &.wrong {
+        background-color: $color-wrongAnswer-transparent !important;
+      }
+      &.shouldBe {
+        background-color: $color-rightAnswer-transparent !important;
+      }
+
+      &:disabled {
+        background-color: $color-bg-transparentLight;
+        border: 1px solid transparent;
+        pointer-events: none;
+      }
+      &:hover {
+        background-color: rgba(154, 220, 255, 0.5);
+        color: $color-letter-border;
+      }
+    }
+  }
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  font-size: 14px;
+  width: 120px;
+  background-color: transparent !important;
+  color: $color-letter-border !important;
+  border-color: $color-letter-border !important;
+  :hover {
+    background-color: $color-letterLight-border !important;
+  }
+}
