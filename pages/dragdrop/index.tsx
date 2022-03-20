@@ -18,11 +18,13 @@ export default function Drag() {
   const { data: userExp } = userExpApi.useGetUserExpQuery(null);
   const [updateUserExp] = userExpApi.useUpdateUserExpMutation();
 
+  console.log('list match', list);
+
   useEffect(() => {
     if (wordList) {
       setList(getNotTrainedWordList(wordList));
     }
-  }, []);
+  }, [wordList]);
 
   useEffect(() => {
     setShowAward(false);

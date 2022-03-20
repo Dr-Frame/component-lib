@@ -13,7 +13,7 @@ function WordConstructor() {
   const [wordList, setWordList] = useState<IWord[] | null>(null);
 
   useEffect(() => {
-    getList(fetchList, 'word-constructor', 100, setWordList);
+    getList(fetchList, 'word-constructor', 10, setWordList);
   }, []);
 
   return (

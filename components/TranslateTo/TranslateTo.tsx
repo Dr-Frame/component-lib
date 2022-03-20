@@ -40,16 +40,19 @@ function TranslateTo({ wordList }: ITranslateToProps) {
   const [updateWord] = wordsApi.useUpdateWordMutation();
   const { data: userData } = userExpApi.useGetUserExpQuery();
   const [updateUser] = userExpApi.useUpdateUserExpMutation();
-  /* console.log('currentSlide', currentSlide);
 
-  console.log('currentWord', currentWord);
-  console.log('totalQuesedWords', totalQuesedWords);
-  console.log('mistakesAmount', mistakesAmount);
-  console.log('currentAnswer', currentAnswer);
-  console.log('wordList', wordList); */
   useEffect(() => {
     setIsChosed(false);
   }, []);
+
+  useEffect(() => {
+    if (isChosed) {
+      const audio = new Audio(
+        wordList[currentSlide - 1].word.phonetics[0].audio,
+      );
+      audio.play();
+    }
+  }, [isChosed]);
 
   useEffect(() => {
     if (currentSlide <= wordList.length) {
@@ -82,7 +85,7 @@ function TranslateTo({ wordList }: ITranslateToProps) {
     } else {
       setMistakesAmount(prev => prev + 1);
     }
-
+    console.log('currentWord inside', currentWord.word);
     const choosedItemIndex = wordList[currentSlide - 1].variants.indexOf(
       e.target.textContent,
     );
@@ -93,6 +96,60 @@ function TranslateTo({ wordList }: ITranslateToProps) {
 
     setIsChosed(true);
   }
+
+  /*  function handleKeyPress(e: React.KeyboardEvent<HTMLButtonElement>) {
+    const pressedIndex = e.key - 1;
+    const keyLimits = [0, 1, 2, 3, 4];
+    if (isChosed || !keyLimits.includes(pressedIndex)) {
+      return;
+    }
+
+    if (
+      wordList[currentSlide - 1].variants[pressedIndex] ===
+      wordList[currentSlide - 1].word.word
+    ) {
+      setTotalQuesedWords(prev => prev + 1);
+      updateWordProgress(
+        mistakesAmount,
+        wordList[currentSlide - 1].word,
+        updateWord,
+        'translate-to',
+      );
+
+      updateUser(getLevelAndExp(userData?.lvl, userData?.exp, 2));
+    } else {
+      setMistakesAmount(prev => prev + 1);
+    }
+    setCurrentAnswer({
+      index: pressedIndex,
+      word: currentWord.word,
+    });
+    setIsChosed(true);
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [isChosed]);
+
+  function handleEnterPress(e: React.KeyboardEvent<HTMLButtonElement>) {
+    if (isChosed && e.key === 'Enter') {
+      setMistakesAmount(0);
+      setIsChosed(false);
+      setCurrentSlide(prevState => prevState + 1);
+    }
+  }
+
+  useEffect(() => {
+    if (isChosed) {
+      window.addEventListener('keydown', handleEnterPress);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleEnterPress);
+    };
+  }, [isChosed]); */
 
   return (
     <div className={s.slide}>
@@ -150,6 +207,21 @@ function TranslateTo({ wordList }: ITranslateToProps) {
 
             <ul className={s.listWrapper}>
               {wordList[currentSlide - 1].variants.map((word, i) => {
+                /* if (currentAnswer) {
+                  console.log('currentWord', currentWord);
+
+                  console.log(
+                    'i',
+                    i,
+                    ' | currentAnswer?.index',
+                    currentAnswer?.index,
+                    ' | word',
+                    word,
+                    ' | currentAnswer.word',
+                    currentAnswer.word,
+                  );
+                } */
+
                 return (
                   <li key={i} className={s.itemWrap}>
                     <p className={s.number}>{i + 1}</p>

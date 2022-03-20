@@ -15,6 +15,8 @@ export default function TranslateToNative() {
   //rtk
   const [fetchList] = wordsApi.useLazyGetWordsQuery();
 
+  console.log('list', list);
+
   useEffect(() => {
     getList(fetchList, 'translate-to', 100, setList);
   }, []);
@@ -22,13 +24,12 @@ export default function TranslateToNative() {
   useEffect(() => {
     if (list) {
       const allWords = list.map(word => word.word);
-      setListForTraining(getListForTraining(list, allWords));
+      setListForTraining(getListForTraining(list, allWords).slice(0, 10));
     }
   }, [list]);
 
   return (
     <div className={s.wrapper}>
-      <p>work</p>
       {listForTraining.length !== 0 && (
         <TranslateTo wordList={listForTraining} />
       )}

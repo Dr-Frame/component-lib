@@ -21,10 +21,10 @@ export default async function updateWordProgress(
   } else if (trainings.length >= 4) {
     currentStage = 'done';
   }
-  console.log('stage to add', currentStage);
+  /* console.log('stage to add', currentStage); */
 
   if (mistakes === 0) {
-    console.log('должно апдейтить');
+    /* console.log('должно апдейтить'); */
 
     await updateFn({
       ...word,

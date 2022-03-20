@@ -71,92 +71,108 @@ export default function AwardAnimation({
   return (
     <div className={s.congratsWrapper}>
       <h1 className={s.awardText}>Congradulations!</h1>
-      <div className={s.congrats}>
-        <div className={s.trophyWrapper}>
-          {starsArr.map((_, i) => {
-            return (
+      {place && totalQuesedWords && (
+        <>
+          <div className={s.congrats}>
+            <div className={s.trophyWrapper}>
+              {starsArr.map((_, i) => {
+                return (
+                  <motion.div
+                    key={i}
+                    className={cx(s.blob, {
+                      bronze: place === 3,
+                      silver: place === 2,
+                      gold: place === 1,
+                    })}
+                    animate={{
+                      x: [0, getRandomInt(-300, 300)],
+                      y: [0, getRandomInt(-100, 300)],
+                      translateX: '-50%',
+                      scale: [
+                        getRandomFloat(0.3, 1.6),
+                        getRandomFloat(0.3, 1.6),
+                      ],
+                      rotate: -360,
+                      opacity: [0, 1, 0],
+                      color: placeColors[place],
+                      backgroundColor: ['transparent', 'transparent'],
+                      transitionEnd: {
+                        display: 'none',
+                      },
+                    }}
+                    transition={{
+                      delay: 1.8,
+                      duration: 1.8,
+                      ease: 'easeOut',
+                      repeat: 1,
+                    }}
+                  >
+                    <BsStarFill />
+                  </motion.div>
+                );
+              })}
               <motion.div
-                key={i}
-                className={cx(s.blob, {
-                  bronze: place === 3,
-                  silver: place === 2,
-                  gold: place === 1,
-                })}
-                animate={{
-                  x: [0, getRandomInt(-300, 300)],
-                  y: [0, getRandomInt(-100, 300)],
-                  translateX: '-50%',
-                  scale: [getRandomFloat(0.3, 1.6), getRandomFloat(0.3, 1.6)],
-                  rotate: -360,
-                  opacity: [0, 1, 0],
-                  color: placeColors[place],
-                  backgroundColor: ['transparent', 'transparent'],
-                  transitionEnd: {
-                    display: 'none',
-                  },
-                }}
+                className={s.trophy}
+                onTap={trophy}
+                animate={animation}
                 transition={{
-                  delay: 1.8,
-                  duration: 1.8,
-                  ease: 'easeOut',
-                  repeat: 1,
+                  duration: duration,
+                  delay: getDelay(place)[0],
                 }}
               >
-                <BsStarFill />
+                {place === 3 && <p className={s.number}>3</p>}
+                <GiTrophyCup
+                  className={cx(s.bronzeIcon, {
+                    inActive: place !== 3,
+                  })}
+                />
               </motion.div>
-            );
-          })}
-          <motion.div
-            className={s.trophy}
-            onTap={trophy}
-            animate={animation}
-            transition={{ duration: duration, delay: getDelay(place)[0] }}
-          >
-            {place === 3 && <p className={s.number}>3</p>}
-            <GiTrophyCup
-              className={cx(s.bronzeIcon, {
-                inActive: place !== 3,
-              })}
-            />
-          </motion.div>
-          <motion.div
-            onTap={trophy}
-            className={s.trophy}
-            animate={animation}
-            transition={{ duration: duration, delay: getDelay(place)[1] }}
-          >
-            {place === 1 && <p className={s.number}>1</p>}
+              <motion.div
+                onTap={trophy}
+                className={s.trophy}
+                animate={animation}
+                transition={{
+                  duration: duration,
+                  delay: getDelay(place)[1],
+                }}
+              >
+                {place === 1 && <p className={s.number}>1</p>}
 
-            <GiTrophyCup
-              className={cx(s.goldIcon, {
-                inActive: place !== 1,
-              })}
-            />
-          </motion.div>
-          <motion.div
-            className={s.trophy}
-            animate={animation}
-            onTap={trophy}
-            transition={{ duration: duration, delay: getDelay(place)[2] }}
-          >
-            {place === 2 && <p className={s.number}>2</p>}
-            <GiTrophyCup
-              className={cx(s.silverIcon, {
-                inActive: place !== 2,
-              })}
-            />
-          </motion.div>
-        </div>
-      </div>
-      <p className={s.quessed}>
-        {totalQuesedWords}/{listLength} guessed words!
-      </p>
-      <p className={s.success}>You successfuly passed a training!</p>
-      <p className={s.success}>You got {place} place trophy reward!</p>
+                <GiTrophyCup
+                  className={cx(s.goldIcon, {
+                    inActive: place !== 1,
+                  })}
+                />
+              </motion.div>
+              <motion.div
+                className={s.trophy}
+                animate={animation}
+                onTap={trophy}
+                transition={{
+                  duration: duration,
+                  delay: getDelay(place)[2],
+                }}
+              >
+                {place === 2 && <p className={s.number}>2</p>}
+                <GiTrophyCup
+                  className={cx(s.silverIcon, {
+                    inActive: place !== 2,
+                  })}
+                />
+              </motion.div>
+            </div>
+          </div>
+          <p className={s.quessed}>
+            {totalQuesedWords}/{listLength} guessed words!
+          </p>
+          <p className={s.success}>You successfuly passed a training!</p>
+          <p className={s.success}>You got {place} place trophy reward!</p>
 
-      <Link href="/dictionary">
-        <a className={s.homeLink}>Go to the dictionary</a>
-      </Link>
+          <Link href="/dictionary">
+            <a className={s.homeLink}>Go to the dictionary</a>
+          </Link>
+        </>
+      )}
     </div>
   );
 }

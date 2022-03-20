@@ -537,7 +537,7 @@
       "folder": "",
       "time": 1644478790473,
       "trainingsDone": [
-        "translate-to"
+        "matching"
       ],
       "id": 29
     },
@@ -655,7 +655,7 @@
       "folder": "",
       "time": 1644478890529,
       "trainingsDone": [
-        "translate-to"
+        "matching"
       ],
       "id": 30
     },
@@ -838,6 +838,7 @@
       "folder": "",
       "time": 1644478922287,
       "trainingsDone": [
+        "matching",
         "translate-to"
       ],
       "id": 31
@@ -946,7 +947,7 @@
       "folder": "",
       "time": 1644479078632,
       "trainingsDone": [
-        "translate-to"
+        "matching"
       ],
       "id": 32
     },
@@ -1115,13 +1116,11 @@
           ]
         }
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1644479199381,
-      "trainingsDone": [
-        "translate-to"
-      ],
+      "trainingsDone": [],
       "id": 33
     },
     {
@@ -1254,13 +1253,11 @@
           ]
         }
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1644479264642,
-      "trainingsDone": [
-        "translate-to"
-      ],
+      "trainingsDone": [],
       "id": 34
     },
     {
@@ -1897,11 +1894,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644488251889,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "translate-to"
+      ],
       "id": 37
     },
     {
@@ -1969,13 +1968,11 @@
           ]
         }
       ],
-      "stage": "inProgress",
+      "stage": "new",
       "category": "",
       "folder": "",
       "time": 1644489825779,
-      "trainingsDone": [
-        "translate-to"
-      ],
+      "trainingsDone": [],
       "id": 38
     },
     {
@@ -2347,11 +2344,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644574289395,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "translate-to"
+      ],
       "id": 39
     },
     {
@@ -2475,11 +2474,13 @@
       "sourceUrls": [
         "https://en.wiktionary.org/wiki/glitch"
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1646297807315,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "translate-to"
+      ],
       "id": 40
     }
   ],
@@ -2497,7 +2498,7 @@
   ],
   "user": {
     "name": "Dr.Frame",
-    "exp": 1751,
+    "exp": 1895,
     "lvl": 6,
     "id": 1
   }

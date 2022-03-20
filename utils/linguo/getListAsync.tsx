@@ -15,7 +15,7 @@ const getList: getListFnType = async (
   setData,
 ) => {
   await fetchFn(limit, true)
-    .then(({ data }) => getFilteredForTraining(data, trainingType))
+    .then(({ data }) => getFilteredForTraining(data, trainingType, limit))
     .then(data => (data ? setData(data) : null));
 };
 

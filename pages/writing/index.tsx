@@ -10,7 +10,7 @@ function WritingPage() {
   const [wordList, setWordList] = useState<IWord[] | null>(null);
 
   useEffect(() => {
-    getList(fetchWordLIst, 'writing', 100, setWordList);
+    getList(fetchWordLIst, 'writing', 10, setWordList);
   }, []);
 
   return <div>{wordList && <TranslateTraining wordList={wordList} />}</div>;

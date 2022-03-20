@@ -14,6 +14,8 @@ function MatchTraining({ data, isDone, setIsDone }) {
   const [equalityCkeckArr, setEqualityCkeckArr] = useState([]);
   const [wordsLeft, setWordsLeft] = useState(data[0].items.length);
 
+  console.log('list drag', list);
+
   //set state when all words are corectly matched
   useEffect(() => {
     if (list) {

@@ -2,8 +2,8 @@ export default function getUserPlace(
   guesedWordsAmount: number,
   totalWordAmount: number,
 ) {
-  const percentageOfCorrectWords = Math.round(
-    guesedWordsAmount / totalWordAmount,
+  const percentageOfCorrectWords = Number(
+    (guesedWordsAmount / totalWordAmount).toFixed(2),
   );
   if (percentageOfCorrectWords === 1) {
     return 1;
