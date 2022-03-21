@@ -17,6 +17,7 @@ const cx = classNames.bind(s);
 
 interface ITranslateToProps {
   wordList: IWordForTraining[];
+  translateTo: 'native' | 'english';
 }
 
 interface ICurrentAnswer {
@@ -24,7 +25,7 @@ interface ICurrentAnswer {
   word: string;
 }
 
-function TranslateTo({ wordList }: ITranslateToProps) {
+function TranslateTo({ wordList, translateTo }: ITranslateToProps) {
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isChosed, setIsChosed] = useState(false);
   const [currentAnswer, setCurrentAnswer] = useState<ICurrentAnswer | null>(
@@ -72,26 +73,32 @@ function TranslateTo({ wordList }: ITranslateToProps) {
     if (isChosed) {
       return;
     }
-    if (e.target.textContent === currentWord.word) {
+    let wordToCompare;
+    translateTo === 'english'
+      ? (wordToCompare = currentWord.word)
+      : (wordToCompare = currentWord.translate);
+
+    if (e.target.textContent === wordToCompare) {
       setTotalQuesedWords(prev => prev + 1);
       updateWordProgress(
         mistakesAmount,
         currentWord,
         updateWord,
-        'translate-to',
+        translateTo === 'english' ? 'translate-to' : 'translate-from',
       );
 
       updateUser(getLevelAndExp(userData?.lvl, userData?.exp, 2));
     } else {
       setMistakesAmount(prev => prev + 1);
     }
-    console.log('currentWord inside', currentWord.word);
+    /* console.log('currentWord inside', currentWord.word); */
     const choosedItemIndex = wordList[currentSlide - 1].variants.indexOf(
       e.target.textContent,
     );
     setCurrentAnswer({
       index: choosedItemIndex,
-      word: currentWord.word,
+      word:
+        translateTo === 'english' ? currentWord.word : currentWord.translate,
     });
 
     setIsChosed(true);
@@ -151,6 +158,9 @@ function TranslateTo({ wordList }: ITranslateToProps) {
     };
   }, [isChosed]); */
 
+  console.log('cur word', currentWord);
+  console.log(translateTo);
+
   return (
     <div className={s.slide}>
       {wordList.length > 0 && currentSlide > wordList.length && (
@@ -202,7 +212,11 @@ function TranslateTo({ wordList }: ITranslateToProps) {
                   <p className={s.phonetic}>[`${currentWord.phonetic}`]</p>
                 )}
               </div>
-              <p className={s.hint}>{currentWord.translate}</p>
+              <p className={s.hint}>
+                {translateTo === 'english'
+                  ? currentWord.translate
+                  : currentWord.word}
+              </p>
             </div>
 
             <ul className={s.listWrapper}>
@@ -230,12 +244,26 @@ function TranslateTo({ wordList }: ITranslateToProps) {
                       disabled={isChosed}
                       className={cx(s.word, {
                         correct:
-                          currentAnswer?.index === i &&
-                          word === currentAnswer.word,
+                          (currentAnswer?.index === i &&
+                            word === currentAnswer.word &&
+                            translateTo === 'english') ||
+                          (currentAnswer?.index === i &&
+                            word === currentAnswer.translate &&
+                            translateTo === 'native'),
                         wrong:
-                          currentAnswer?.index === i &&
-                          word !== currentAnswer.word,
-                        shouldBe: currentWord.word === word && isChosed,
+                          (currentAnswer?.index === i &&
+                            word !== currentAnswer.word &&
+                            translateTo === 'english') ||
+                          (currentAnswer?.index === i &&
+                            word !== currentAnswer.translate &&
+                            translateTo === 'native'),
+                        shouldBe:
+                          (currentWord.word === word &&
+                            isChosed &&
+                            translateTo === 'english') ||
+                          (currentWord.translate === word &&
+                            isChosed &&
+                            translateTo === 'native'),
                       })}
                       onClick={e => {
                         handleAnswerClick(e);

@@ -6,7 +6,7 @@ import { getListForTraining } from '../../utils/createListForTranslateTrainings'
 import getList from '../../utils/linguo/getListAsync';
 import s from './pageTranslateTo.module.scss';
 
-export default function TranslateToNative() {
+export default function TranslateFromNative() {
   const [list, setList] = useState<IWord[] | null>(null);
   const [listForTraining, setListForTraining] = useState<IWordForTraining[]>(
     [],
@@ -15,22 +15,20 @@ export default function TranslateToNative() {
   //rtk
   const [fetchList] = wordsApi.useLazyGetWordsQuery();
 
-  console.log('list', list);
-
   useEffect(() => {
-    getList(fetchList, 'translate-to', 100, setList);
+    getList(fetchList, 'translate-from', 100, setList);
   }, []);
 
   useEffect(() => {
     if (list) {
-      setListForTraining(getListForTraining(list, 'english').slice(0, 10));
+      setListForTraining(getListForTraining(list, 'native').slice(0, 10));
     }
   }, [list]);
 
   return (
     <div className={s.wrapper}>
       {listForTraining.length !== 0 && (
-        <TranslateTo wordList={listForTraining} translateTo={'english'} />
+        <TranslateTo wordList={listForTraining} translateTo={'native'} />
       )}
     </div>
   );

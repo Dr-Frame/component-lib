@@ -537,7 +537,9 @@
       "folder": "",
       "time": 1644478790473,
       "trainingsDone": [
-        "matching"
+        "matching",
+        "translate-to",
+        "writing"
       ],
       "id": 29
     },
@@ -655,7 +657,9 @@
       "folder": "",
       "time": 1644478890529,
       "trainingsDone": [
-        "matching"
+        "matching",
+        "translate-from",
+        "writing"
       ],
       "id": 30
     },
@@ -947,7 +951,9 @@
       "folder": "",
       "time": 1644479078632,
       "trainingsDone": [
-        "matching"
+        "matching",
+        "translate-to",
+        "writing"
       ],
       "id": 32
     },
@@ -1253,11 +1259,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644479264642,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "writing"
+      ],
       "id": 34
     },
     {
@@ -1456,11 +1464,13 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644479651948,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "translate-from"
+      ],
       "id": 35
     },
     {
@@ -1968,11 +1978,14 @@
           ]
         }
       ],
-      "stage": "new",
+      "stage": "inProgress",
       "category": "",
       "folder": "",
       "time": 1644489825779,
-      "trainingsDone": [],
+      "trainingsDone": [
+        "translate-from",
+        "writing"
+      ],
       "id": 38
     },
     {
@@ -2498,7 +2511,7 @@
   ],
   "user": {
     "name": "Dr.Frame",
-    "exp": 1895,
+    "exp": 1905,
     "lvl": 6,
     "id": 1
   }

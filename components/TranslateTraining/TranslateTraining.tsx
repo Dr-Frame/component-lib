@@ -20,9 +20,10 @@ const cx = classNames.bind(s);
 
 interface ITranslateTrainingProps {
   wordList: IWord[];
+  type: 'listening' | 'translating';
 }
 
-function TranslateTraining({ wordList }: ITranslateTrainingProps) {
+function TranslateTraining({ wordList, type }: ITranslateTrainingProps) {
   const [currentSlide, setCurrentSlide] = useState<number>(1);
   const [isCorrect, setIsCorrect] = useState<boolean>(false);
   const [currentWord, setCurrentWord] = useState<IWord>(wordList[0]);
@@ -41,6 +42,17 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
   function updateQuesedWordsAmount() {
     setTotalQuesedWords(prevState => prevState + 1);
   }
+
+  useEffect(() => {
+    setCurrentWord(wordList[0]);
+  }, [wordList]);
+
+  useEffect(() => {
+    if (currentWord) {
+      const audio = new Audio(currentWord.phonetics[0].audio);
+      audio.play();
+    }
+  }, [currentWord]);
 
   useEffect(() => {
     setUserPlace(getUserPlace(totalQuesedWords, wordList.length));
@@ -93,7 +105,7 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
           listLength={wordList.length}
         />
       )}
-      {wordList.length > 0 && currentSlide <= wordList.length && (
+      {currentWord && wordList.length > 0 && currentSlide <= wordList.length && (
         <>
           <p className={s.wordAmount}>
             Word: {currentSlide}/{wordList.length}
@@ -108,42 +120,114 @@ function TranslateTraining({ wordList }: ITranslateTrainingProps) {
               correct: isCorrect,
             })}
           >
-            <Image
-              src="/../public/img/imagePlaceholder.png"
-              alt="noImage"
-              width={100}
-              height={100}
-            />
-            <p className={s.translation}>{currentWord.translate}</p>
-            {isCorrect && (
+            {type === 'translating' ? (
               <>
-                <p className={s.word}>{currentWord.word}</p>
-                <div className={s.soundWrapper}>
-                  {currentWord.phonetics[0] && (
-                    <IconButton
-                      extraClass={s.soundButton}
-                      size="small"
-                      theme="transparent"
-                      onClick={() => {
-                        const audio = new Audio(currentWord.phonetics[0].audio);
-                        audio.play();
-                      }}
-                    >
-                      <HiVolumeUp className={s.soundButtonIcon} />
-                    </IconButton>
-                  )}
-                  {currentWord.phonetic && (
-                    <p className={s.phonetic}>[`${currentWord.phonetic}`]</p>
-                  )}
-                </div>
+                <Image
+                  src="/../public/img/imagePlaceholder.png"
+                  alt="noImage"
+                  width={100}
+                  height={100}
+                />
+                <p className={s.translation}>{currentWord.translate}</p>
+                {isCorrect && (
+                  <>
+                    <p className={s.word}>{currentWord.word}</p>
+                    <div className={s.soundWrapper}>
+                      {currentWord.phonetics[0] && (
+                        <IconButton
+                          extraClass={s.soundButton}
+                          size="small"
+                          theme="transparent"
+                          onClick={() => {
+                            const audio = new Audio(
+                              currentWord.phonetics[0].audio,
+                            );
+                            audio.play();
+                          }}
+                        >
+                          <HiVolumeUp className={s.soundButtonIcon} />
+                        </IconButton>
+                      )}
+                      {currentWord.phonetic && (
+                        <p className={s.phonetic}>
+                          [`${currentWord.phonetic}`]
+                        </p>
+                      )}
+                    </div>
+                  </>
+                )}
+              </>
+            ) : (
+              <>
+                {!isCorrect ? (
+                  <>
+                    <div className={cx(s.soundWrapper, s.listening)}>
+                      <IconButton
+                        extraClass={s.soundButton}
+                        size="small"
+                        theme="transparent"
+                        onClick={() => {
+                          const audio = new Audio(
+                            currentWord.phonetics[0].audio,
+                          );
+                          audio.play();
+                        }}
+                      >
+                        <HiVolumeUp
+                          className={cx(s.soundButtonIcon, s.listening)}
+                        />
+                      </IconButton>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <Image
+                      src="/../public/img/imagePlaceholder.png"
+                      alt="noImage"
+                      width={100}
+                      height={100}
+                    />
+                    <p className={cx(s.word, s.listening)}>
+                      {currentWord.word}
+                    </p>
+                    <div className={cx(s.soundWrapper, s.correct)}>
+                      {currentWord.phonetics[0] && (
+                        <IconButton
+                          extraClass={s.soundButton}
+                          size="small"
+                          theme="transparent"
+                          onClick={() => {
+                            const audio = new Audio(
+                              currentWord.phonetics[0].audio,
+                            );
+                            audio.play();
+                          }}
+                        >
+                          <HiVolumeUp className={s.soundButtonIcon} />
+                        </IconButton>
+                      )}
+                      {currentWord.phonetic && (
+                        <p className={s.phonetic}>
+                          [`${currentWord.phonetic}`]
+                        </p>
+                      )}
+                      <p className={s.translation}>{currentWord.translate}</p>
+                    </div>
+                  </>
+                )}
               </>
             )}
+
             {!isCorrect && (
               <div className={s.inputWrapper}>
                 <Input
                   onChange={handleInputChange}
                   value={userTranslateText}
-                  placeholder="type translation here.."
+                  placeholder={
+                    type === 'translating'
+                      ? 'type translation here..'
+                      : 'type a pronounced word..'
+                  }
                   styleType="standart"
                   theme="mainDark"
                   isLabelHidden

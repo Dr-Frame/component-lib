@@ -17,13 +17,25 @@ export function getRandomAnswerVariants(
   return data;
 }
 
-export function getListForTraining(list: IWord[]) {
-  const allWords = list.map(word => word.word);
-  const trainingList = list?.map(word => {
-    return {
-      word,
-      variants: getRandomAnswerVariants(allWords, 4, word.word),
-    };
-  });
-  return trainingList;
+export function getListForTraining(list: IWord[], lang: string) {
+  if (lang === 'english') {
+    const allWords = list.map(word => word.word);
+    const trainingList = list?.map(word => {
+      return {
+        word,
+        variants: getRandomAnswerVariants(allWords, 4, word.word),
+      };
+    });
+    return trainingList;
+  }
+  if (lang === 'native') {
+    const allWordsNative = list.map(word => word.translate);
+    const trainingList = list?.map(word => {
+      return {
+        word,
+        variants: getRandomAnswerVariants(allWordsNative, 4, word.translate),
+      };
+    });
+    return trainingList;
+  }
 }

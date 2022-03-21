@@ -21,7 +21,9 @@ export type trainingsType =
   | 'type' //печатать
   | 'writing'
   | 'matching'
-  | 'translate-to';
+  | 'translate-to'
+  | 'translate-from'
+  | 'listening';
 
 export type trainingsDoneType = [
   | 'word-constructor'
@@ -29,7 +31,9 @@ export type trainingsDoneType = [
   | 'type'
   | 'writing'
   | 'matching'
-  | 'translate-to',
+  | 'translate-to'
+  | 'translate-from'
+  | 'listening',
 ];
 
 export type wordLearningStageType = 'new' | 'inProgress' | 'done';

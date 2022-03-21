@@ -5,8 +5,6 @@ export default function getFilteredForTraining(
   type: trainingsType,
   limit: number = 10,
 ) {
-  console.log('limit inside fn', limit);
-
   if (list) {
     let filteredWords = [...list]
       .sort(() => Math.random() - 0.5)

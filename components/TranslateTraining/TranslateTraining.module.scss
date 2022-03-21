@@ -102,6 +102,19 @@
 .soundWrapper {
   display: flex;
   align-items: center;
+  &.listening {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &.correct {
+    flex-direction: column;
+
+    .soundButton {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
   .phonetic {
     font-size: 16px;
     font-weight: 500;
@@ -114,6 +127,10 @@
   .soundButtonIcon {
     font-size: 16px;
     color: $color-dark-mainTheme;
+
+    &.listening {
+      font-size: 30px;
+    }
   }
 }
 
@@ -122,6 +139,10 @@
   color: $color-letter-border;
   font-weight: 700;
   margin-bottom: 10px;
+
+  &.listening {
+    margin-top: 10px;
+  }
 }
 
 .button {

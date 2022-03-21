@@ -13,7 +13,13 @@ function WritingPage() {
     getList(fetchWordLIst, 'writing', 10, setWordList);
   }, []);
 
-  return <div>{wordList && <TranslateTraining wordList={wordList} />}</div>;
+  return (
+    <div>
+      {wordList && (
+        <TranslateTraining wordList={wordList} type={'translating'} />
+      )}
+    </div>
+  );
 }
 
 export default WritingPage;
