@@ -52,6 +52,7 @@ export interface IWord {
   time: number;
   stage: wordLearningStageType;
   trainingsDone: trainingsDoneType;
+  lastRepeatDate: number;
 }
 
 export interface IUser {

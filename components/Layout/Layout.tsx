@@ -45,6 +45,7 @@ const menu: IMenuItem[] = [
       { title: 'Translate to', link: '/translate-game' },
       { title: 'Translate from', link: '/translate-from' },
       { title: 'Listening', link: '/listening' },
+      { title: 'Repeating', link: '/repeating' },
     ],
   },
 ];

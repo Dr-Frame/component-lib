@@ -72,6 +72,7 @@ function WordCard({
       time: Date.now(),
       category: selectedCategory,
       trainingsDone: [],
+      lastRepeatDate: Date.now(),
     };
     addWord(newWord);
     setUserTranslation('');

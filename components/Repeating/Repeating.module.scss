@@ -1,0 +1,131 @@
+@import '../../styles/shared.scss';
+
+.slide {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 40px;
+  @extend %boxBorder;
+}
+
+.wordAmount {
+  text-align: right;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: $color-light-mainTheme;
+}
+
+.stageWrapper {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.trainingWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .wordsAmountWrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid $color-letter-border;
+    background-color: $color-letterSuperLight-border;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .wordsAmount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $main-text-color;
+  }
+}
+
+.word {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: $color-dark-mainTheme;
+  margin-bottom: 30px;
+}
+
+.variantsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .icon {
+    color: $color-letterSuperLight-border;
+    background-color: $main-text-color;
+    font-size: 1.6rem;
+  }
+
+  .variant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 2px solid $color-letter-border;
+    background-color: $color-letterSuperLight-border;
+    color: $main-text-color;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: $transition;
+    overflow: hidden;
+
+    &:disabled {
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &.correct {
+      background-color: $color-rightAnswer-transparent;
+    }
+    &.wrong {
+      background-color: $color-wrongAnswer-transparent;
+    }
+  }
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  font-size: 14px;
+  width: 120px;
+  background-color: transparent !important;
+  color: $color-letter-border !important;
+  border-color: $color-letter-border !important;
+  :hover {
+    background-color: $color-letterLight-border !important;
+  }
+}
